@@ -1,0 +1,189 @@
+/* ****************************************************************************
+ * NOTIFICATION STYLES
+ *
+ * Those styles are identical with the free-dashboard-notification submodule.
+ * Any changes made in this section should also be made to the other module!
+ */
+
+.wrap .frash-notice.notice {
+	padding: 0;
+	margin: 5px 0 10px;
+	border: 1px solid #E5E5E5;
+	background: #FFF;
+	overflow: hidden;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+	position: relative;
+	z-index: 1;
+	min-height: 80px;
+	display: table; /* The magic ingredient! */
+	font: 13px "Open Sans", sans-serif;
+}
+.wrap .frash-notice.notice.loading:before {
+	content: attr(data-message);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(255, 255, 255, 0.7);
+	z-index: 5;
+	text-align: center;
+	line-height: 80px;
+	font-size: 22px;
+	font-weight: bold;
+}
+.frash-notice > div {
+	display: table-cell; /* The magic ingredient! */
+	vertical-align: middle;
+	cursor: default;
+}
+.frash-notice.notice.loading > div {
+	-webkit-filter: blur(2px);
+	-moz-filter: blur(2px);
+	-o-filter: blur(2px);
+	-ms-filter: blur(2px);
+	filter: blur(2px);
+}
+.frash-notice-logo {
+	background-color: #0B2F3F;
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgODAgODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQoJPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiBmaWxsPSJub25lIj48L3JlY3Q+DQoJPGVsbGlwc2UgZmlsbD0iIzJEQThERSIgY3g9IjQwIiBjeT0iNDAuMDAxOTgyOCIgcng9IjI4IiByeT0iMjguMDAxOTgyOCI+PC9lbGxpcHNlPg0KCTxwYXRoIGQ9Ik0zNC45MDc1LDM3LjYzMDU2NDkgTDM0LjkwNzUsMzUuMTgwMzkxNCBDMzQuOTA3NSwzMi4wMzg5MTg5IDMyLjY0MTI1LDI5LjQ5MjQ4ODYgMjkuODQxMjUsMjkuNDkyNDg4NiBDMjcuMDQxMjUsMjkuNDkyNDg4NiAyNC43NzUsMzIuMDM4OTE4OSAyNC43NzUsMzUuMTgwMzkxNCBMMjQuNzc1LDM1LjE4MDM5MTQgTDI0Ljc3NSw1MC41MDI3MjYzIEwyOC4xMTc1LDQ3Ljg3NzU0MDQgTDI4LjExNzUsMzUuMTgwMzkxNCBDMjguMTMzMzk1NSwzNC4xODk3Mzg1IDI4Ljg4MjkwOTksMzMuMzY1MjE0MiAyOS44Njc1LDMzLjI1NTI1NTEgQzMxLjU3Mzc1LDMzLjAwMTQ4NzEgMzQuMzgyNSwzNC44MDQxMTQ3IDM0LjkwNzUsMzcuNjMwNTY0OSBMMzQuOTA3NSwzNy42MzA1NjQ5IFoiIGZpbGw9IiNGRkZGRkYiPjwvcGF0aD4NCgk8cGF0aCBkPSJNNDMuMzg2MjUsMzMuMjU1MjU1MSBDNDUuMTM2MjUsMzMuMDEwMjM3NyA0Ny45Mjc1LDM0LjgwNDExNDcgNDguNDUyNSwzNy42MzA1NjQ5IEw0OC40NTI1LDM1LjE4MDM5MTQgQzQ4LjQ1MjUsMzIuMDM4OTE4OSA0Ni4xODYyNSwyOS40OTI0ODg2IDQzLjM4NjI1LDI5LjQ5MjQ4ODYgQzQwLjk2MjUsMjkuNDkyNDg4NiAzOC4zMiwzMS41OTI2MzczIDM4LjMyLDM1LjE5Nzg5MjYgTDM4LjMyLDQzLjc2NDc0OTIgQzM4LjMyLDQ1LjAzMzU4OTEgMzcuNTg1LDQ2LjA2NjE2MjIgMzYuNjY2MjUsNDUuOTUyNDA0MSBDMzkuMzg3NSw0Ni4yOTM2NzgzIDQxLjc3NjI1LDQyLjI0MjE0MTQgNDEuNjYyNSwzOC43NTkzOTQ4IEw0MS42NjI1LDM1LjE5Nzg5MjYgQzQxLjYwNzYxMDcsMzQuMTg3MzMxMSA0Mi4zNzY0MDI0LDMzLjMyMDkxNTYgNDMuMzg2MjUsMzMuMjU1MjU1MSBMNDMuMzg2MjUsMzMuMjU1MjU1MSBaIiBmaWxsPSIjRkZGRkZGIj48L3BhdGg+DQoJPHBhdGggZD0iTTUxLjg2NSwzMi4xMjY0MjUxIEw1MS44NjUsNDMuNzU1OTk4NiBDNTEuODY1LDQ1LjAyNDgzODQgNTEuMTIxMjUsNDYuMDU3NDExNiA1MC4yMiw0NS45NDM2NTM1IEM1Mi45NDEyNSw0Ni4yODQ5Mjc3IDU1LjMzLDQyLjIzMzM5MDggNTUuMjE2MjUsMzguNzUwNjQ0MiBMNTUuMjE2MjUsMjkuNTAxMjM5MiBMNTEuODY1LDMyLjEyNjQyNTEgWiIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPg0KCTxwYXRoIGQ9Ik01MC4xNTg3NSw0Ni43Mzk5NTk5IEM1MS45MDg3NSw0Ni45NDk5NzQ4IDU0LjcsNDUuMTkxMTAwMiA1NS4yMjUsNDIuMzY0NjUwMSBMNTUuMjI1LDQ0LjgxNDgyMzYgQzU1LjIyNSw0Ny45NTYyOTYgNTIuOTU4NzUsNTAuNTAyNzI2MyA1MC4xNTg3NSw1MC41MDI3MjYzIEM0Ny44NjYyNSw1MC41MDI3MjYzIDQ1LjA5MjUsNDguNjM4ODQ0MyA0NS4wOTI1LDQ0LjgxNDgyMzYgTDQ1LjA5MjUsMzYuMjQ3OTY3IEM0NS4wOTI1LDM0Ljk3OTEyNzEgNDQuMzQ4NzUsMzMuOTQ2NTU0IDQzLjQzODc1LDM0LjA2MDMxMjEgQzQ2LjE2LDMzLjcxOTAzNzkgNDguNTQ4NzUsMzcuNzcwNTc0OCA0OC40MzUsNDEuMjUzMzIxNCBMNDguNDM1LDQ0LjgxNDgyMzYgQzQ4LjQ0NTM5NTksNDUuNzk4MDk0MSA0OS4xODI2NTY0LDQ2LjYyMTQ4OSA1MC4xNTg3NSw0Ni43Mzk5NTk5IEw1MC4xNTg3NSw0Ni43Mzk5NTk5IFoiIGZpbGw9IiNGRkZGRkYiPjwvcGF0aD4NCgk8cGF0aCBkPSJNMzYuNjEzNzUsNDYuNzQ4NzEwNSBDMzguMzYzNzUsNDYuOTg0OTc3MiA0MS4xNTUsNDUuMTk5ODUwOCA0MS42OCw0Mi4zNzM0MDA3IEw0MS42OCw0NC44MjM1NzQyIEM0MS42OCw0Ny45NjUwNDY2IDM5LjQxMzc1LDUwLjUxMTQ3NjkgMzYuNjEzNzUsNTAuNTExNDc2OSBDMzQuMTksNTAuNTExNDc2OSAzMS41NDc1LDQ4LjQxMTMyODIgMzEuNTQ3NSw0NC44MDYwNzMgTDMxLjU0NzUsMzYuMjM5MjE2MyBDMzEuNTQ3NSwzNC45NzAzNzY1IDMwLjgwMzc1LDMzLjkzNzgwMzQgMjkuOTAyNSwzNC4wNTE1NjE0IEMzMi42MjM3NSwzMy43MTAyODczIDM1LjAxMjUsMzcuNzYxODI0MiAzNC44OTg3NSw0MS4yNDQ1NzA4IEwzNC44OTg3NSw0NC44MDYwNzMgQzM0Ljg0MzcxMTgsNDUuODEzNDQ3MyAzNS42MDczOTA5LDQ2LjY3ODQ5MiAzNi42MTM3NSw0Ni43NDg3MTA1IEwzNi42MTM3NSw0Ni43NDg3MTA1IFoiIGZpbGw9IiNGRkZGRkYiID48L3BhdGg+DQo8L3N2Zz4=);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+.frash-notice-logo span {
+	display: block;
+	width: 80px;
+}
+.frash-notice-message {
+	width: 100%;
+	padding: 10px 20px;
+	color: #444;
+}
+.frash-notice-message strong {
+	color: #000;
+}
+.frash-notice-cta {
+	border-left: 1px solid #E5E5E5;
+	background: #F8F8F8;
+	padding: 0 30px;
+	position: relative;
+	white-space: nowrap;
+}
+.wp-core-ui .frash-notice-cta button,
+.wp-core-ui .frash-notice-cta .button-primary:active {
+	vertical-align: middle;
+}
+.wp-core-ui .frash-notice-cta input[type="email"] {
+	vertical-align: middle;
+	line-height: 20px;
+	margin: 0;
+	min-width: 50px;
+	max-width: 320px;
+	text-align: center;
+	padding-left: 0;
+	padding-right: 0;
+}
+.frash-notice-dismiss {
+	background: transparent;
+	border: 0;
+	cursor: pointer;
+	color: #BBB;
+}
+.frash-notice-dismiss:hover {
+	color: #666;
+}
+
+.frash-notice .frash-notice-logo {
+	position: relative;
+}
+.frash-notice .frash-notice-logo:before,
+.frash-notice .frash-notice-logo:after {
+	content: '';
+	position: absolute;
+	z-index: 0;
+	background: inherit;
+	left: 0;
+	top: 0;
+	width: 80px;
+	bottom: 0;
+}
+.frash-notice .frash-notice-logo:before {
+	background-image: none;
+	z-index: 1;
+}
+.frash-notice .frash-notice-logo:after {
+	animation: spin 30s linear infinite;
+	background-color: rgba(0, 0, 0, 0);
+	z-index: 2;
+}
+
+@media only all and (max-width: 1200px) {
+	.frash-notice-dismiss {
+		display: block;
+		margin: 0 auto;
+		line-height: 18px;
+		padding-top: 8px;
+		padding-bottom: 2px;
+	}
+}
+
+@media only all and (max-width: 1000px) {
+	.wrap .frash-notice.notice {
+		display: block;
+		font-size: 13px;
+	}
+	.frash-notice > .frash-notice-logo {
+		float: left;
+		display: inline-block;
+		height: 80px;
+		margin: 10px;
+		border-radius: 4px;
+	}
+	.frash-notice > .frash-notice-message {
+		width: auto;
+		display: block;
+		padding: 10px;
+		min-height: 80px;
+	}
+	.frash-notice > .frash-notice-cta {
+		display: block;
+		border-top: 1px solid #E5E5E5;
+		border-left: 0;
+		text-align: center;
+		white-space: normal;
+		line-height: 30px;
+		padding: 10px 20px;
+	}
+	.wp-core-ui .frash-notice > .frash-notice-cta > input[type="email"],
+	.frash-notice > .frash-notice-cta > button {
+		font-size: 14px;
+	}
+	.frash-notice > .frash-notice-cta > .frash-notice-dismiss {
+		display: inline-block;
+		float: none;
+		line-height: 26px;
+		padding-top: 0;
+		padding-bottom: 0;
+		font-size: 13px;
+	}
+}
+
+@media only all and (max-width: 500px) {
+	.wp-core-ui .frash-notice > .frash-notice-cta > input[type="email"],
+	.frash-notice > .frash-notice-cta > button {
+		display: block;
+		width: 100% !important;
+		max-width: none;
+		margin-bottom: 4px;
+		font-size: 16px;
+		height: 34px;
+	}
+	.frash-notice > .frash-notice-cta > .frash-notice-dismiss {
+		margin-top: 5px;
+		font-size: 14px;
+		height: 23px;
+	}
+}

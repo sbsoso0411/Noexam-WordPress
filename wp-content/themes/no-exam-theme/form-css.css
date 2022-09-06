@@ -1,0 +1,86 @@
+<style>
+.button{
+			margin-top: 20px;
+            width:75%;
+			display:block;
+			cursor:pointer;
+			padding:10px 7px;
+            border-radius:5px;
+			text-transform:uppercase;
+			background: #ff7b00; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2ZmYmEwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMGFmMDIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #ff7b00 1%, #ff7b00 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ff7b00), color-stop(100%,#ff7b00)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ff7b00 1%,#ff7b00 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ff7b00 1%,#ff7b00 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ff7b00 1%,#ff7b00 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ff7b00 1%,#ff7b00 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7b00', endColorstr='#ff7b00',GradientType=0 ); /* IE6-8 */
+
+		color:#ffffff;
+		
+		border:none;
+		font-weight:bold;
+		}
+  
+  .gutformbox td{
+    padding:5px;
+  }
+  
+  .gutformbox  .labelbox{
+    font-weight:bold;
+    
+  }
+  
+  .labelbox{
+		margin-top: 11px;
+		font-family: arial;  
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 15px;
+		color: #333;
+	}
+  
+  .inputT{
+				background-color:#fafafa;
+				box-shadow:inset 0px 2px 3px #d9d9d9;
+				-webkit-box-shadow:inset 0px 2px 3px #d9d9d9;
+				-moz-box-shadow:inset 0px 2px 3px #d9d9d9;
+				border-radius:5px;
+				width: 230px;
+				font-size: 15px;
+				line-height: 15px;
+				height: 35px;
+				padding-left: 10px;
+				padding-right: 10px;
+	}
+  
+  .selectT{
+		
+    background-color:#fafafa;
+				box-shadow:inset 0px 2px 3px #d9d9d9;
+				-webkit-box-shadow:inset 0px 2px 3px #d9d9d9;
+				-moz-box-shadow:inset 0px 2px 3px #d9d9d9;
+				border-radius:5px;
+    
+			width: 100%;
+			font-size: 15px;
+			line-height: 15px;
+			height: 34px;
+			font-family: 'helvetica', 'arial', 'sans serif';
+			 
+	}
+	
+	#HeightIn{
+		width: 113px;
+	}
+	
+	#HeightFt{
+		width: 113px;
+	}
+	
+	.Health_class{
+		margin: 10px;
+	}
+</style>

@@ -1,0 +1,120 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.02 [en]C-DIAL  (Win95; U) [Netscape]">
+   <META NAME="Author" CONTENT="COMPULIFE Software, Inc.">
+   <TITLE>Life Insurance Quotes - $licensee$</TITLE>
+   <link href="../../css/styles_website.css" type="text/css" rel="stylesheet"/>
+   <!-- You can use the CONFIG.TXT in the USER folder to read the css value and 
+   permit changes for USERS to switch other css style sheets from their admin.html
+   page.  If that is your preference, you can use the following line instead of 
+   hard coding the css style sheet above. -->
+   <!-- <link href="../../css/$css$" type="text/css" rel="stylesheet"/> -->
+</HEAD>
+<BODY>
+
+
+<FORM action="cqsl.cgi" method="POST">
+
+
+<br><br>
+
+<table class="default_table">
+
+<tr class="default_header">
+<td colspan="2">Retirement Calculator Results</td>
+</tr> 
+
+<tr>
+<td class="gray_cell">For you to retire at <FONT color="#0148CB"><b>$AgeToRetireAt$</b></FONT> with an income of <FONT color="#0148CB"><b>$$AnnualIncomeToReceive$</b></FONT> in today's dollars, you will actually need an income of <FONT color="#0148CB"><b>$$ActualIncomeNeeded$</b></FONT>.&nbsp;&nbsp;(This is based on <FONT COLOR="0148CB"><b>$InflationRate$%</b></FONT> inflation)                         
+
+<p> 
+To provide an indexed income of <FONT COLOR="0148CB"><b>$$ActualIncomeNeeded$</b></FONT> for <FONT COLOR="0148CB"><b>$NumOfYearsIncomeNeededFor$</b></FONT> years, the lump sum of money needed at <FONT COLOR="0148CB"><b>$AgeToRetireAt$</b></FONT> will be <FONT COLOR="0148CB"><b>$$LumpSum$</b></FONT>.&nbsp;&nbsp;(Based on <FONT COLOR="0148CB"><b>$PostRetirementIntRate$%</b></FONT> Interest)                                   
+
+<p> 
+To accumulate <FONT COLOR="0148CB"><b>$$LumpSum$</b></FONT> by age <FONT COLOR="0148CB"><b>$AgeToRetireAt$</b></FONT>, you will need to make an annual contribution of <FONT COLOR="0148CB"><b>$$AnnualDeposit$</b></FONT> in addition to your existing <FONT COLOR="0148CB"><b>$$InitialSavings$</b></FONT> in savings.&nbsp;&nbsp;(Based on <FONT COLOR="0148CB"><b>$PreRetirementIntRate$%</b></FONT> Interest)         
+
+<p> 
+The <FONT COLOR="0148CB"><b>$$AnnualDeposit$</b></FONT> annual deposit will need to be increased each year by <FONT COLOR="0148CB"><b>$InflationRate$%</b></FONT> to keep up with inflation.                                  
+
+</td>
+</tr>
+</table>
+
+<!-- pass some environment variables onto the next page -->
+<INPUT type="hidden" name="State" value="$origstate$">
+<INPUT type="hidden" name="Birthday" value="$origday$">
+<INPUT type="hidden" name="BirthMonth" value="$origmonth$">
+<INPUT type="hidden" name="BirthYear" value="$origyear$">
+<INPUT type="hidden" name="Health" value="$orighealth$">
+<!-- <INPUT type="hidden" name="FaceAmount" value="$origface$"> -->
+<INPUT type="hidden" name="FaceAmount" value="$LumpSum$">
+<INPUT type="hidden" name="Sex" value="$origsex$">
+<INPUT type="hidden" name="Smoker" value="$origsmoker$">
+<INPUT type="hidden" name="NewCategory" value="$origcat$">
+<INPUT type="hidden" name="ModeUsed" value="$modeused$">
+<INPUT type="hidden" name="PostalCode" value="$postalcode$">
+<INPUT type="hidden" name="ZipCode" value="$zipcode$">
+<INPUT type="hidden" name="UserLocation" value="$userlocation$">
+<INPUT type="hidden" name="email" value="$email$">
+<INPUT type="hidden" name="css" value="$css$">
+<INPUT type="hidden" name="TEMPLATEFILE" value="$templatefile$">
+<INPUT type="hidden" name="HTEMPLATEFILE" value="$htemplatefile$">
+
+
+<!-- <br><br>
+ 
+<table align="center">
+<tr>
+<td><p><INPUT type="submit" name="CqsComparison" value=" Click Here ">&nbsp;
+to quote a face value of <B><FONT COLOR="#0148CB">$$LumpSum$</FONT></B>
+</td>
+</tr>
+</table> -->
+
+<br><br>
+
+<table class="default_table">
+<tr class="default_header">
+<td colspan="7" class="default_header" align="center">Retirement Table</td>
+</tr>
+
+<tr class="default_sub_header" >
+<td class="default_sub_header" align="center" width="10%">Year</td>
+<td class="default_sub_header" align="center" width="10%">Age</td>
+<td class="default_sub_header" align="center" width="20%">Today's Dollars</td>
+<td class="default_sub_header" align="center" width="20%">Actual Deposits</td>
+<td class="default_sub_header" align="center" width="20%">Total Value of Investment</td>
+<td class="default_sub_header" align="center" width="20%">Present Value of Investment</td>
+<td class="default_sub_header" align="center" width="20%">Interest</td>
+</tr>
+$tablelinev$
+<tr class="Row$rowEvenOdd$">
+<td align="center" width="10%">$year$</td> 
+<td align="center" width="10%">$age$</td> 
+<td align="center" width="20%">$$pvinvest$</td>
+<td align="center" width="20%">$$avinvest$</td> 
+<td align="center" width="20%">$$tavinvest$</td> 
+<td align="center" width="20%">$$tpvinvest$</td> 
+<td align="center" width="20%">$$interest$</td> 
+</tr>
+$/endtable$
+<tr><td colspan="7" class="default_header" align="center">You Retire and begin to draw an income</td></tr>
+$tablelinev$
+<tr class="Row$rowEvenOdd$">
+<td align="center" width="10%">$year$</td> 
+<td align="center" width="10%">$age$</td> 
+<td align="center" width="20%">$$pvinvest$</td>
+<td align="center" width="20%">$$avinvest$</td> 
+<td align="center" width="20%">$$tavinvest$</td> 
+<td align="center" width="20%">$$tpvinvest$</td> 
+<td align="center" width="20%">$$interest$</td> 
+</tr>
+$/endtable$
+</table>
+
+
+<p class="center"><b>Powered by <a class="nocolor" href="http://www.compulife.com">COMPULIFE</a><sup>&reg;</sup></b>
+
+</BODY>        
+</HTML>

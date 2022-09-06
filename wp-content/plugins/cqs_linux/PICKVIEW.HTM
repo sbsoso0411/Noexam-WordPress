@@ -1,0 +1,262 @@
+<html>
+
+<head>
+   <title>Life Insurance Quotes - $licensee$</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">   
+   <meta name="Author" content="COMPULIFE Software, Inc.">
+   <link href="../../css/styles_website.css" type="text/css" rel="stylesheet">
+   <!-- You can use the CONFIG.TXT in the USER folder to read the css value and 
+   permit changes for USERS to switch other css style sheets from their admin.html
+   page.  If that is your preference, you can use the following line instead of 
+   hard coding the css style sheet above. -->
+   <!-- <link href="../../css/$css$" type="text/css" rel="stylesheet"> -->
+   
+<script language="JavaScript" type="text/javascript">
+<!--
+function getdetailed ( selectedtype )
+{		
+  document.sidebysideform.DetailedProduct.value = selectedtype;
+  document.sidebysideform.submit();
+}
+-->
+</script>
+
+
+</head>
+<body>
+
+<br><br>
+
+<h5><u>Pick $numberofproducts$ Policy Analysis</u></h5>
+
+<body>
+<form name="sidebysideform" action="cqsl.cgi" method="GET">
+
+
+
+<table align="center" border="0">
+
+<tr>
+<td><p class="right"><b>Today's Date is:</b></td>  
+<td><p>&nbsp;$nowmonth$ $nowday$, $nowyear$</td>
+</tr>
+
+<tr>
+<td><p class="right"><b>Premiums for:</b></td>
+<td><p>&nbsp;$sex$ $health$ $smoker$</td>
+</tr>
+
+<tr>
+<td><p class="right"><b>Birthdate:</b></td> 
+<td><p>&nbsp;$month$ $day$ $year$</td>
+</tr>
+
+<tr>
+<td><p class="right"><b>Age:</b></td>
+<td><p>&nbsp;$aage$&nbsp;&nbsp;&nbsp;<b>Age Nearest:</b>&nbsp;&nbsp;$nage$</td>
+</tr>
+
+<tr> 
+<td><p class="right"><b>State:</b></td> 
+<td><p>&nbsp;$state$</td>
+</tr>
+
+<tr>
+<td><p class="right"><b>Face Amount:</b></td>  
+<td><p><b>&nbsp;$$face$</b></td>
+</tr>
+
+
+
+</table>
+
+<br><br>
+ 
+
+<!-- Set http://localhost to what ever your original lookup page is -->
+
+
+<input type="hidden" name="DetailedAnalysisJava" value="Detailed Analysis">
+<input type="hidden" name="DetailedProduct">
+
+<table class="default_table" width="100%">
+
+<tr class="default_header">
+<td class="default_header" colspan="5">Pick $numberofproducts$ Policy Analysis</td>
+</tr>
+
+<tr class="default_sub_header">
+<td class="default_sub_header" width="3%"><b>#</b></td>
+<td class="default_sub_header" width="36%">Company Name</td>
+<td class="default_sub_header" width="30%">Product</td>
+<td class="default_sub_header" width="27%">Health Category</td>
+<td class="default_sub_header" width="4%">&nbsp;</td></tr>
+
+
+
+$prodinfoline$
+<tr class="Row0">
+<td class="Row0" width="3%"><b>$rownumber$.</b></td>
+<td class="Row0" width="36%">$companyname$</td>
+<td class="Row0" width="30%">$productname$</td>
+<td class="Row0" width="27%">$rgpfpp$</td>
+<td class="Row0" width="4%">$prefstat$</td></tr>
+$/prodinfoline$
+</table>
+
+
+<!-- This is the start of the current segment.  It will ensure that -->
+<!-- the code between the start and end of the current segment will -->
+<!-- not be shown if all of the current premiums are the same as    -->
+<!-- as all of the guaranteed premiums -->
+<!-- See the README.HTM for more information -->
+
+
+<!-- $currentsegment$
+
+<table class="default_header" width="$maxcolumnpercentage$%" >
+<tr>
+<td width="100%"><b> Current $modeusedc$ Premium</b></td>
+</tr>
+</table></LEFT>
+
+<table class="default_table" COLS=$numberofcolumns$ width="100%" >
+<tr>
+<td width="9%"><div align="center"><b>Year</b></div></td>
+$repeatcolumn$<td width="9%"><div align="center"><b>Product $productnum$</b></div></td>$/repeatcolumn$
+</tr>
+<table>
+
+<table class="default_table" COLS=$numberofcolumns$ width="$maxcolumnpercentage$%" >
+$prodline=200$
+<tr>
+<td width="9%"><div align="center"><b>$year$</b></div></td>
+$repeatcolumn$
+<td width="9%"><div align="center"><b>$currprem$ $currast$</b></div></td>
+$/repeatcolumn$
+</tr>
+$/prodline$
+</table>
+
+<p>
+
+$/currentsegment$ -->
+
+
+<!-- This marks the end of current segment -->
+
+
+<!-- table settings -->
+
+<input type="hidden" name="EmbeddedAccums" value="OFF"> 
+
+<table class="default_table" width="$maxcolumnpercentage$%">
+<tr>
+<td class="default_header">Guaranteed $modeusedc$ Premium</td>
+</tr>
+</table>
+
+<table class="default_table" colspan="$numberofcolumns$" width="$maxcolumnpercentage$%"
+
+<tr class="default_table">
+<td class="default_sub_header" width="9%">Year</td>
+
+<!-- The html between the repeatcolumn markers need to be on the same line as shown below -->
+
+$repeatcolumn$<td class="default_sub_header" width="9%">Product $productnum$</td>$/repeatcolumn$
+</tr>
+$prodline=200$
+<tr class="Row0">
+<td class="Row0" width="9%"><b>$year$</b></td>
+$repeatcolumn$<td class="Row0" width="9%"><b>$guarprem$</b></td>$/repeatcolumn$
+</tr>
+$/prodline$
+
+
+<!-- The html between the repeatcolumn markers need to be on the same line as shown below -->
+
+</table>
+
+<br><br>
+
+<table class="default_table" align="center">
+<tr class="default_header">
+<td class="default_header" colspan="6">Premium Modes</td>
+</tr>
+
+<tr class="default_sub_header">
+<td class="default_sub_header" width="4%">#</td>
+<td class="default_sub_header" width="40%">Company Name</td>
+<td class="default_sub_header" width="14%">Annual</td>
+<td class="default_sub_header" width="14%">Monthly</td>
+<td class="default_sub_header" width="14%">Quarterly</td>
+<td class="default_sub_header" width="14%">Semi-Annual</td>
+<!-- <td width="15%"><div align="center"><b>Waiver Only</b></td>
+<td width="15%"><div align="center"><b>Waiver</b></td>
+<td width="7%"><div align="center"><b>Best</b></td></tr> -->
+</tr>
+
+$prodinfoline$
+<tr class="default_table">
+<td class="Row0" width="4%">$rownumber$.</td>
+<td class="Row0" width="40%">$companyname$</td>
+<td class="Row0" width="14%">$prodannual$</td>
+<td class="Row0" width="14%">$prodmonthly$</td>
+<td class="Row0" width="14%">$prodquarterly$</td>
+<td class="Row0" width="14%">$prodsemi$</td>
+<!-- <td width="15%"><div align=right><b>$prodwaiveronly$</b></td>
+<td width="15%"><div align=right><b>$prodwaiverprem$</b></td>
+<td width="7%"><div align=right><b>$ambest$</b></td></tr> -->
+</tr>
+$/prodinfoline$
+</table>
+
+
+
+<p><b>NOTE:</b> Every effort has been made to assure the accuracy of this information but we cannot guarantee accuracy and are not liable for errors or omissions.
+
+
+<!-- pass some environment variables onto the next page 
+The purpose of passing these hidden variables in is to do a re-lookup
+of the same information but in a different mode.
+
+NOTE: ModeUsed must be passed in as a hidden variable and that
+NewModeUsed which is near the top of this page is used to identify
+the new mode that we want to do the re-lookup in -->
+
+<input type="hidden" name="State" value="$origstate$">
+<input type="hidden" name="Birthday" value="$origday$">
+<input type="hidden" name="BirthMonth" value="$origmonth$">
+<input type="hidden" name="BirthYear" value="$origyear$">
+<input type="hidden" name="Health" value="$orighealth$">
+<input type="hidden" name="FaceAmount" value="$newface$">
+<input type="hidden" name="Sex" value="$origsex$">
+<input type="hidden" name="Smoker" value="$origsmoker$">
+<input type="hidden" name="NewCategory" value="$origcat$">
+<input type="hidden" name="CompanySelected" value="$origcompany$">
+<input type="hidden" name="SelectedProducts" value="$origprodselected1$">
+<input type="hidden" name="SelectedProducts" value="$origprodselected2$">
+<input type="hidden" name="SelectedProducts" value="$origprodselected3$">
+<input type="hidden" name="SelectedProducts" value="$origprodselected4$">
+<input type="hidden" name="SelectedProducts" value="$origprodselected5$">
+<input type="hidden" name="SelectedProducts" value="$origprodselected6$">
+<input type="hidden" name="SelectedProducts" value="$origprodselected7$">
+<input type="hidden" name="SelectedProducts" value="$origprodselected8$">
+<input type="hidden" name="SelectedProducts" value="$origprodselected9$">
+<input type="hidden" name="SelectedProducts" value="$origprodselected10$">
+<input type="hidden" name="EmbeddedAccums" value="$origaccums$">
+<input type="hidden" name="EmbeddedIndexes" value="$origindexes$">
+<input type="hidden" name="EmbeddedPvac" value="$origpvac$">
+<input type="hidden" name="EmbeddedAccumColor" value="$origaccumcolor$">
+<input type="hidden" name="EmbeddedIndexColor" value="$origindexcolor$">
+<input type="hidden" name="EmbeddedPvacColor" value="$origpvaccolor$">
+<input type="hidden" name="PvacIntRate" value="$origpvacintrate$">
+<input type="hidden" name="PvacTaxRate" value="$origpvactaxrate$">
+<input type="hidden" name="ModeUsed" value="$modeused$">
+<input type="hidden" name="UserLocation" value="$userlocation$">
+</form>
+
+<p class="center"><b>Powered by <a class="nocolor" href="http://www.compulife.com">COMPULIFE</a><sup>&reg;</sup></b>
+
+</body>
+</html>

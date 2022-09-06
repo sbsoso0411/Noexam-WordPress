@@ -1,0 +1,200 @@
+/* ------ wordpress.org/plugins/tabby-responsive-tabs/ ------ */
+
+.responsive-tabs .responsive-tabs__heading {
+	display: none;
+}
+
+.responsive-tabs .responsive-tabs__list__item {
+	display: inline;
+	cursor: pointer;
+}
+
+.responsive-tabs-wrapper {
+	clear: both;
+	margin-bottom: 20px;
+	zoom: 1;
+}
+
+.responsive-tabs-wrapper:before,
+.responsive-tabs-wrapper:after {
+	content: "";
+	display: table;
+}
+
+.responsive-tabs-wrapper:after {
+	clear: both;
+}
+
+.responsive-tabs .responsive-tabs__heading:focus,
+.responsive-tabs .responsive-tabs__list__item:focus {
+	outline: 1px solid transparent;
+}
+
+.responsive-tabs .responsive-tabs__heading--active:focus,
+.responsive-tabs .responsive-tabs__list__item--active:focus {
+	outline: none;
+}
+
+.responsive-tabs ul.responsive-tabs__list {
+	font-size: 18px;
+	line-height: 18px;
+	margin: 20px 0 0 12px;
+	padding: 0;
+}
+
+.responsive-tabs .responsive-tabs__list__item {
+	background: transparent;
+	border: 1px solid transparent;
+	border-bottom: none;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	color: #999;
+	font-size: 18px;
+	line-height: 19px;
+	text-transform: inherit;
+	margin: 1px 12px 0 0;
+	padding: 10px 12px 10px;
+	white-space: nowrap;
+	float: left;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.responsive-tabs .responsive-tabs__list__item .fa {
+	margin-right: 8px;
+	line-height: 0.8;
+}
+
+.responsive-tabs .responsive-tabs__list__item:hover {
+	color: #333;
+	background: transparent;
+}
+
+.responsive-tabs .responsive-tabs__list__item--active,
+.responsive-tabs .responsive-tabs__list__item--active:hover {
+	background: #fff;
+	border-color: #ddd;
+	color: #666;
+	padding-bottom: 11px;
+	margin-top: 0;
+	position: relative;
+	top: 1px;
+}
+
+.responsive-tabs .responsive-tabs__panel {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	-webkit-border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	border-top-left-radius: 0px;
+	clear: left;
+	margin-bottom: 0;
+	padding: 20px 20px 0;
+	word-wrap: break-word;
+}
+
+.responsive-tabs .responsive-tabs__panel:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+@media (min-width: 768px) {
+
+	.responsive-tabs .responsive-tabs__panel--closed-accordion-only {
+		display: block;
+	}
+}
+
+@media (max-width: 767px) {
+
+	.responsive-tabs .responsive-tabs__list {
+		display: none;
+	}
+
+	.responsive-tabs .responsive-tabs__heading {
+		display: block;
+		cursor: pointer;
+	}
+
+	.responsive-tabs-wrapper {
+		border-top: 1px solid #ccc;
+	}
+
+	.responsive-tabs .responsive-tabs__heading {
+		background: #fff;
+		border: 1px solid #ccc;
+		border-top: none;
+		color: #777;
+		font-size: 18px;
+		font-weight: normal;
+		text-transform: inherit;
+		margin: 0;
+		padding: 10px 0;
+		padding-left: 20px;
+		position: relative;
+	}
+
+	.responsive-tabs .responsive-tabs__heading .fa {
+		margin-right: 8px;
+		display:none;
+		}
+
+	.responsive-tabs .responsive-tabs__heading:after {
+		border-left: 6px solid transparent;
+		border-right: 6px solid transparent;
+		border-top: 6px solid #777;
+		content:"";
+		display: block;
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		height: 0;
+		width: 0;
+	}
+
+	.responsive-tabs .responsive-tabs__heading:hover {
+		background: #eee;
+		color: #777;
+	}
+
+	.responsive-tabs .responsive-tabs__heading:hover:after {
+		border-top: 6px solid #777;
+	}
+
+	.responsive-tabs .responsive-tabs__heading--active,
+	.responsive-tabs .responsive-tabs__heading--active:hover {
+		background: #ccc;
+		color: #fff;
+	}
+
+	.responsive-tabs .responsive-tabs__heading--active:after,
+	.responsive-tabs .responsive-tabs__heading--active:hover:after {
+		border-bottom: 6px solid #fff;
+		border-top: 0;
+		top: 18px;
+	}
+
+	.responsive-tabs .responsive-tabs__panel {
+		background: #fff;
+		border: 1px solid #ccc;
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;
+		border-top: none;
+		margin: 0;
+		padding: 0 20px;
+		padding-top: 20px;
+	}
+}

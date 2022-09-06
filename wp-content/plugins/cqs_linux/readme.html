@@ -1,0 +1,4902 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content=
+"HTML Tidy for Linux (vers 25 March 2009), see www.w3.org">
+<title>User Manual for the COMPULIFE Internet Engine - Consumer version with A.M. Best</title>
+<meta http-equiv="CONTENT-TYPE" content=
+"text/html; charset=us-ascii">
+<meta name="CREATED" content="20040309;15072451">
+<meta name="CHANGED" content="20040521;14522933">
+<style type="text/css">
+       	a:link { color: #0148CB }
+		a:visited { color: #397DFD }
+		a:hover {text-decoration: none; color: #0148CB }
+		a:active { color: #0148CB }
+	   
+	   
+	   h1 { color: #000000; 
+			font-family: Arial, Verdana, Helvetica, sans-serif; 
+			font-size: 14pt; 
+			font-weight: normal; 
+			text-align: left; 
+			}
+		h2 { color: #000000; 
+			font-family: Arial, Verdana, Helvetica, sans-serif; 
+			font-size: 13pt; 
+			font-weight: bold; 
+			text-align: left;
+			} 
+		h3 { color: #0148CB; 
+			font-family: Arial, Verdana, Helvetica, sans-serif; 
+			font-size: 13pt; 
+			font-weight: bold; 
+			text-align: left;
+			}
+		p { color: #000000; 
+			font-family: Arial, Verdana, Helvetica, sans-serif;
+			font-size: 11pt; 
+			font-weight: normal; 
+			text-align: left;
+			}
+			
+		ol{ color: #000000; 
+			font-family: Arial, Verdana, Helvetica, sans-serif; 
+			font-weight: normal; 
+			text-align: left; 
+			} 
+		ul{ color: #000000;
+			font-family: Arial, Verdana, Helvetica, sans-serif; 
+			font-weight: normal; 
+			text-align: left;
+			}
+		.default_table {
+    		border-collapse: collapse;
+    		border: 1px solid #004080;
+    		background-color: #FFFFFF;
+    		padding: 2px;
+    		color: #000000; 
+    		font-family: Arial, Verdana, Helvetica, sans-serif; 
+    		font-size: 11pt; 
+    		font-weight: normal; 
+    		text-align: left;
+    		margin-left:auto; 
+    		margin-right:auto;
+			}
+</style>
+</head>
+<body dir="ltr" lang="en-US">
+<h2>User Manual for the COMPULIFE Internet Engine - Consumer version with A.M. Best</h2><p><h1>Table of Contents</h1></p>
+<ul>
+<li>
+<h2><a href="#NewFeatures">New Features</a></h2>
+</li>
+<li>
+<h2><a href="#Overview">Overview</a></h2>
+</li>
+<li style="list-style: none; display: inline">
+<ul>
+<li>
+<h3><a href="#VersionDifference">Differences between
+versions</a></h3>
+</li>
+<li> <h3><a href="#Introduction">Introduction</a></h3></li>
+<li> <h3><a href="#PackageContents">Package Contents</a></h3></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<h2><a href="#Installation">Installation</a></h2>
+<ul>
+<li>
+<h3><a href="#GettingStarted">What is needed to get
+started</a></h3>
+<a href="#GettingStarted"></a></li>
+<li>
+<h3><a href="#PreInstallationNote">Pre-Installation Note</a></h3>
+<a href="#PreInstallationNote"></a></li>
+<li>
+<h3><a href="#BaseDirWindows">Base directory structure for
+Windows users</a></h3>
+</li>
+<li><a href="#BaseDirWindows"></a>
+<h3><a href="#BaseDirLinux">Base directory structure for
+Linux users</a></h3>
+<a href="#BaseDirLinux"></a></li>
+<li> <h3><a href="#UserLocation">UserLocation</a></h3></li>
+<li> <h3><a href="#DataFiles">Compulife data file setup and selecting companies</a></h3></li>
+<li> <h3><a href="#debug">Debugging</a></h3></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<h3><a href="#MainComparison">Main Comparison</a></h3>
+<ul>
+<li>
+<h2><a href="#FrenchLanguage">French Language (For Canadian Data)</a></h2>
+<li>
+<h2><a href="#TemplateFiles">Template file and how it
+works</a></h2>
+<a href="#TemplateFiles"></a></li>
+<li> <h2><a href="#ComparisonResult">How to display a comparison result</a></h2> </li>
+<li>
+<h2><a href="#BaseDollarCodes">Base Dollar Code</a></h2>
+<a href="#BaseDollarCodes"></a></li>
+
+
+<li> <h2><a href="#AMBest">A.M. Best</a></h2></li>
+</ul>
+</li>
+<li>
+<h3><a href="#AdvancedFunctions">Advanced Functions</a></h3>
+<ul>
+<li>
+<h2><a href="#IRC">Income Replacement Calculator</a></h2>
+<a href="#IRC"></a></li>
+<li>
+<h2><a href="#ERC">Easy Retirement Calculator</a></h2>
+<a href="#ERC"></a></li>
+<li>
+<h2><a href="#SideBySide">Side by Side Analysis</a></h2>
+</li>
+<li>
+<h2><a href="#SideRelookup">How to do a side by side re-lookup in a different mode</a></h2></li>
+<li> <h2><a href="#HealthAnalyzer">Health Analyzer</a></h2></li>
+<li> <h2><a href="#CompanySelection">Company Selection Feature</a></h2></li>
+<li> <h2><a href="#Referral">Compulife Referral Feature</a></h2></li>
+
+</ul>
+</li>
+</ul>
+<ul>
+<li> <h3><a href="#VariableReferences">Variables and Dollar Code related References</a></h3> </li>
+<li style="list-style: none; display: inline">
+<ul>
+<li> <h2><a href="#SystemFlow">System Flow</a></h2> </li> 
+<li> <h2><a href="#RefMain">for Main Lookup page</a></h2> </li>
+<li> <h2><a href="#CATEGORY">NewCategory Syntax</a></h2> </li>
+<li> <h2><a href="#RefIRC">for Income Replacement Calculator</a></h2> </li>
+<li> <h2><a href="#RefERC">for Easy Retirement Calculator</a></h2> </li>
+<li>  <h2><a href="#SideDollarCodes">for Side by Side Analysis (Spreadsheet)</a></h2></li>
+<li> <h2><a href="#RefHealth">for Health Analyzer</a></h2> </li>
+<li> <h2><a href="#RefHealthSeg">for Health Segment Codes</a></h2> </li>
+</ul>
+</li>
+</ul>
+<ul>
+<li> <h3><a href="#appendix1">Appendix 1, State and Province Codes</a></h3> </li>
+<li style="list-style: none; display: inline">
+</ul>
+<hr>
+<h2><a name="Overview">Overview</a></h2>
+<h3><a name="VersionDifference">Version Difference</a></h3>
+<h3>A.M. Best Version</h3>
+<div style="margin-left: 2em">
+<p>The A.M. Best Version of the Compulife Internet Engine can show
+the A.M. Best ratings. This version will only be sold to those
+people who have provided Compulife with a written agreement from
+A.M. Best indicating they have permission to use A.M. Best ratings
+in their comparisons.</p>
+</div>
+<h3>Basic Engine</h3>
+<div style="margin-left: 2em">
+<p>The basic Engine allows comparisons optionally using the health
+analyzer, up to 6 side by side comparisons, Income Replacement
+Calculator, and Easy Retirement Calculator.</p>
+</div>
+<h2><a name="NewFeatures">New Features</a></h2>
+<p><b>This lastest incarnation of the Compulife Internet Engine has
+several new features.</b>
+<ul>
+<li><b>New categories</b>
+<p>The categories selection has been changed to reflect the new
+categories that Compulife supports including No lapse UL. See
+<a href="#CATEGORY">NewCategory Syntax</a> for more information on how
+to use it.</p>
+</li>
+<li><b>The ability to display two modal columns in side by side
+display.</b>
+<p>This means that you can (for example) show Annual and Monthly
+premiums side by side in a comparison see <a href="#ComparisonResult">How to display a comparison result</a> for more information.</p>
+</li>
+<li><b>Expanded User Controls for application requests for
+weblinks, emails, and css style options</b>
+<p>See <a href="#CompanySelection">company selection</a> for
+more information</p>
+</li>
+<li><b>Mini Health Analysis</b>
+<p>The mini health analyzer only includes the basic health analyzer
+questions. (no Driving, Family Health History or Substance abuse
+questions). This is in addition to the full health anaylzer in the
+system</p>
+</li>
+<li><b>Template file overrides</b>
+<p>Any of the template files can be given a new name. This allows
+you to have special case template files. Any file in the system can
+be replaced by appending FILE to the name see <a href=
+"#TemplateFiles">Template file and how it works</a> for more information.</p>
+</li>
+<li><b>Even and Odd Row markers to assist with CSS</b>
+<p>Comparison results can now have Even and Odd row markers which can be be used along with css to give different visual attributes to the rows</p>
+</ul>
+<h3><a name="Introduction">Introduction</a></h3>
+<ol>
+<li>
+<p>The Compulife Internet Engine allows you to put term life
+insurance comparisons on your website. The Internet Engine is
+flexible and its output is highly customizable. We provide sample
+HTML code for reference and it is recommended that these sample
+files are used in order to get your site working. Once you have
+that done, you can modify it to suit your needs.</p>
+<p>In General, you should be transferring your data files from your
+desktop computer to your web environment whenever you have an
+update of the Compulife Quotation System. The files you will
+transfer from will be in your C:\Complife directory. The
+destination for those files will depend on your setup and is
+described below. The files that you need to transfer is also
+described below.</p>
+</li>
+</ol>
+<h3><a name="PackageContents">Package Contents</a></h3>
+
+<table width="95%" class="default_table" border="1" cellpadding="5" cellspacing="0" bordercolor="#C0C0C0">
+<colgroup>
+<col width="61">
+<col width="195"></colgroup>
+<thead style="border-collapse: collapse; border: 1px solid #164489; background-color: #164489; background-image: url(http://www.compulife.com/images/bg_36px_blue.gif); padding: 2px; color: #FFFFFF;    font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; text-align: center; margin-left:auto; margin-right:auto;">
+<tr valign="top">
+<td width="24%">
+File
+</td>
+<td width="76%">
+Description
+</td>
+</tr>
+</thead>
+<tbody>
+<tr valign="top">
+<td width="24%">
+<p>cqs32.exe or cqsl.cgi</p>
+</td>
+<td width="76%">
+<p>The main executable cgi program. cqs32.exe (for Windows) or cqsl.cgi
+(for Linux)</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="24%">
+<p>usmain.html, canmain.html, canmain_f.html</p>
+</td>
+<td width="76%">
+<p>The sample start page. usmain.html (for U.S.) and canmain.html
+(for Canadian).  For French language use canmain_f.html.  You can set French as the output language by using the <a href="#FrenchLanguage">LANGUAGE variable with Canadian data.</a></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="24%">
+<p>TEMPLATE.HTM, TEMP*.HTM</p>
+</td>
+<td width="76%">
+<p>Sample template pages which contain code for the main comparison
+result.&nbsp;&nbsp;<a href="#TemplateFiles">Click here</a> to see how you can override the default TEMPLATE output file instead of renaming the TEMP*.HTM to TEMPLATE.HTM.  Files that end with _F are the <a href="#FrenchLanguage">French</a> translation for Canadian Data.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="24%">
+<p>irc_calc.html,<br>irc_calc_canada.html, IRCSETUP.HTM, IRC.HTM</p>
+</td>
+<td width="76%">
+<p>Sample input and result template pages for doing an Income Replacement Calculator
+Lookup.  Files that end with _F are the <a href="#FrenchLanguage">French</a> translation for Canadian Data.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="24%">
+<p>erc_calc.html, ERCSETUP.HTM, ERC.HTM</p>
+</td>
+<td width="76%">
+<p>Sample input and result template pages for doing an Easy Retirement Calculator
+Lookup.  Files that end with _F are the <a href="#FrenchLanguage">French</a> translation for Canadian Data.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="24%">
+<p>ERRORTEM.HTM</p>
+</td>
+<td width="76%">
+<p>Sample template file used to show an error message.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="24%">
+<p>admin.html</p>
+</td>
+<td width="76%">
+<p>Sample configuration page which allows access to the USER control panel to make changes to their website quotes, via a web browser.  The user can select their own list of companies to quote, set the e-mail address(es) for application requests, change css styles, or set the destination for the "More Info" button on their respective result templates.  <a href="#CompanySelection">Click here</a> for more information.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="24%">
+<p>MODCOMP.HTM, SAVED.HTM</p>
+</td>
+<td width="76%">
+<p>MODCOMP.HTM is the User Control Panel Page that will save changes to COMP.INC and CONFIG.TXT.  SAVED.HTM is the page that is displayed after "Save Changes" is clicked on the MODCOMP.HTM page.  <a href="#CompanySelection">Click here</a> for more information.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="24%">
+<p>COMP.INC</p>
+</td>
+<td width="76%">
+<p>Selected list of Companies to quote.  If the file is empty or not in the COMPLIFE or COMPLIFE/USER/USER2 folder then all companies will be quoted by default.  The permissions must be set at 666 to make changes to the file from the admin.html access.  <a href="#CompanySelection">Click here</a> for more information.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="24%">
+<p>CONFIG.TXT</p>
+</td>
+<td width="76%">
+<p>Configuration file for USER folders.  CONFIG.TXT will only work in USER folders.  The TEMPLATE*.HTM can use the $css$, $email$, and $website$ dollar code variables in CONFIG.TXT if desired.  The permissions must be set at 666 to make changes to the file from the admin.html access.  <a href="#CompanySelection">Click here</a> for more information.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="24%">
+<p>PICKVIEW.HTM</p>
+</td>
+<td width="76%">
+<p>Sample template file used to show a side by side view of a pick
+6 policy analysis</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="24%">
+<p>indexminihealth.html,<br>indexminihealth_canada.html<br><br>go.bmp, no.bmp, dk.bmp,<br><br>GOREASON.HTM, NOREASON.HTM,
+DKREASON.HTM, HTEMPLATE.HTM, HTEMP*.HTM</p>
+</td>
+<td width="76%">
+<p>Health Analyzer related sample input and result template files. 
+<p>The *.bmp are bitmap image files and must go in the /public_html/images/ folder to work correctly. 
+<p>*REASON.HTM are the files that are called when
+the user wants to look at the reason behind the health result. For
+example, when a user clicks on the red x, it will use the
+NOREASON.HTM template file as input. Dk stands for don't know.</p>
+<p>HTEMPLATE.HTM is the sample health template file. When doing a
+health analysis comparison, the program will use this file instead
+of TEMPLATE.HTM.</p>
+<p>HTEM*.HTM are additional sample health templates that you can use.&nbsp;&nbsp;<a href="#TemplateFiles">Click here</a> to see how you can override the default HTEMPLATE output file instead of renaming the HTEMP*.HTM to HTEMPLATE.HTM.   
+<p><b>NOTE:</b> long file names may get truncated in the zip
+process in which case you should rename</p>
+<p>HTEMPL~1.HTM to HTEMPLATE.HTM</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="24%">
+<p>request_ap.php,<br>request_ap_health.php,<br>validation.php,<br>thankyou.php</p>
+</td>
+<td width="76%">
+<p>Sample php pages for application requests.  <br><br>In order to make the php code work, the server-side mail script will need to be modified to use your smtp mail server for the host ($host), username ($username), and password ($password).  For example, you will need to change the mail server from $host = "MAIL.YOUR_WEBSITE.COM"; to your mail server.  The areas that you need to change are in ALL CAPS for your convenience.<br><br>The php mail script uses PEAR Mail (a php extension).  PEAR Mail will need to be installed on your server for the php code to work properly.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="24%">
+<p>*.gif<br></p>
+</td>
+<td width="76%">
+<p>Life Company Logos - Available upon request.  For optional use with some of the result templates.  The logos.zip file is for US life companies and the logoscan.zip folder is for Canadian life companies.  The logos must be placed in the /public_html/images/logos(or logoscan)/ folder to work correctly.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="24%">
+<p>*.css</p>
+</td>
+<td width="76%">
+<p>Sample css style sheets to give you a head-start on styling your pages.  The default is styles_website.css (for full web-browsers) and styles_mobile.css (for mobile devices).  You may modify and/or rename any of the style sheets to your liking.  The style sheets must be placed in the /public_html/css/ folder to work correctly.  The <a href="#CompanySelection">CONFIG.TXT</a> contains the dollar code variable associated with your css style sheet.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="24%">
+<p>readme.html</p>
+</td>
+<td width="76%">
+<p>This document.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+</td>
+</tr>
+</table>
+
+
+
+<p><br>
+<br></p>
+<h2><a name="Installation">Installation</a></h2>
+<h3><a name="GettingStarted">What is needed to get
+started</a></h3>
+<div style="margin-left: 2em">
+<p>Along with Compulife's Internet Engine package, you will need
+Compulife data files which is provided by Compulife Software as
+part of a monthly subscription. The purchaser of the cqs Internet
+engine would normally be a subscriber to Compulife and should
+already have these data files.</p>
+</div>
+<h3><a name="PreInstallationNote">Pre-Installation Note</a></h3>
+<div style="margin-left: 2em" start="0">
+<p>It is suggested that if you have never done a cgi script or
+program before, you hire someone to help you do this. Remember to
+also send the Compulife data files to your web master. When
+building your site, you should try to get the sample files working
+first. After you have them working then you can modify the files as
+needed.</p>
+</div>
+<h3><a name="BaseDirWindows">Base Directory structure for Windows users:</a></h3>
+
+
+<table width="95%" class="default_table" border="1" cellpadding="5" cellspacing="0" bordercolor="#C0C0C0">
+<colgroup>
+<col width="68">
+<col width="188"></colgroup>
+<thead style="border-collapse: collapse; border: 1px solid #164489; background-color: #164489; background-image: url(http://www.compulife.com/images/bg_36px_blue.gif); padding: 2px; color: #FFFFFF;    font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; text-align: center; margin-left:auto; margin-right:auto;">
+<tr valign="top">
+<td width="27%">
+Path
+</td>
+<td width="73%">
+Files
+</td>
+</tr>
+</thead>
+<tr valign="top">
+<td width="27%">
+<p>public_html (or httpdocs)</p>
+</td>
+<td width="73%">
+<p>usmain.html or canmain.html</p>
+</td>
+</tr>
+<tbody>
+<tr valign="top">
+<td width="27%">
+<p>public_html\css</p>
+</td>
+<td width="73%">
+<p>*.css style sheets</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="27%">
+<p>public_html\images</p>
+</td>
+<td width="73%">
+<p>logos (or logoscan) folder, go.bmp, no.bmp, dk.bmp (*.bmp files
+are used for health analysis)</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="27%">
+<p>public_html\cgi-bin</p>
+</td>
+<td width="73%">
+<p>cqs32.exe, the *.HTM sample files (note: please read the
+UserLocation section that immediately follows)</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="27%">
+<p>public_html\COMPLIFE</p>
+</td>
+<td width="73%">
+<p>COMPLIFE must be in caps.  <b>PLEASE NOTE the spelling of COMPLIFE (as opposed to COMPULIFE)</b></p>
+<p>GO.PRM, DECOMP.PRM, CQS.PRM, COMP.*, COMP*.*, RATE.*, RATE*.*, COMPANY.DAT, and HEALTH.DAT </p>
+<p><b>For U.S. only:</b>  You must upload <b>ROPF.D0* and ROPFT.000</b> if
+you are quoting Return of Premium categories.</p>
+<p><b>For Canada only:</b>  You must upload <b>PROVTAX.INI</b> for premium taxes to be calculated correctly.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p><br>
+<br></p>
+<h3><a name="BaseDirLinux">Base Directory structure for Linux users:</a></h3>
+
+
+<table width="95%" class="default_table" border="1" cellpadding="5" cellspacing="0" bordercolor="#C0C0C0">
+<colgroup>
+<col width="68">
+<col width="188"></colgroup>
+<thead style="border-collapse: collapse; border: 1px solid #164489; background-color: #164489; background-image: url(http://www.compulife.com/images/bg_36px_blue.gif); padding: 2px; color: #FFFFFF;    font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; text-align: center; margin-left:auto; margin-right:auto;">
+<tr valign="top">
+<td width="27%">
+Path
+</td>
+<td width="73%">
+Files
+</td>
+</tr>
+</thead>
+<tr valign="top">
+<td width="27%">
+<p>public_html (or httpdocs)</p>
+</td>
+<td width="73%">
+<p>usmain.html or canmain.html</p>
+</td>
+</tr>
+<tbody>
+<tr valign="top">
+<td width="27%">
+<p>public_html/css</p>
+</td>
+<td width="73%">
+<p>*.css style sheets</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="27%">
+<p>public_html/images</p>
+</td>
+<td width="73%">
+<p>logos (or logoscan) folder, go.bmp, no.bmp, dk.bmp (*.bmp files
+are used for health analysis)</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="27%">
+<p>public_html/cgi-bin</p>
+</td>
+<td width="73%">
+<p>cqsl.cgi, the *.HTM sample files (note: please read the
+UserLocation section that immediately follows)</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="27%">
+<p>public_html/cgi-bin/COMPLIFE</p>
+</td>
+<td width="73%">
+<p>COMPLIFE must be in caps.  <b>PLEASE NOTE the spelling of COMPLIFE (as opposed to COMPULIFE)</b></p>
+<p>GO.PRM, DECOMP.PRM, CQS.PRM, COMP.*, COMP*.*, RATE.*, RATE*.*, COMPANY.DAT, and HEALTH.DAT </p>
+<p><b>For U.S. only:</b>  You must upload <b>ROPF.D0* and ROPFT.000</b> if
+you are quoting Return of Premium categories.</p>
+<p><b>For Canada only:</b>  You must upload <b>PROVTAX.INI</b> for premium taxes to be calculated correctly.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br>DECOMP.PRM can be put in the USER LOCATION instead of the COMPLIFE directory if one server is serving multiple agencies.
+<br></p>
+<p>The data directory (ie the COMPLIFE directory) and any UserLocation directories contained in that directory can be overwritten 
+with the COMPLIFE input variable<br>
+In general this is NOT recommended as it makes support very difficult, and should only be used in special circumstances</p>
+
+<h3><a name="UserLocation">UserLocation</a></h3>
+<div style="margin-left: 2em" start="5">
+<p>Some time back, we introduced an input variable called
+UserLocation. If you look in the usmain.html file, you will see it.
+The default location is in the directory consumer located in
+COMPLIFE/USER/CONSUMER recommended that you make use this variable
+so that you can put your *.HTM files in its own directory.In the
+sample file, we set UserLocation's value to be
+"USER2".For Linux users, they will need a directory
+called <b>public_html/cgi-bin/COMPLIFE/USER/USER2/</b> . For
+Windows users, they will need a directory called
+<b>public_html\COMPLIFE\USER\USER2\</b> . The *.HTM files will go
+into the USER2/ directory.</p>
+<p>There are many benefits to using the UserLocation variable.
+First off, it is very clean because the*.HTM files will not be
+lying around in your public_html or your cgi-bin directory.
+Secondly it allows you to have multiple starting pages. Say you
+wanted to use a different start page for testing. To do this, copy
+usmain.html to mytest.html. Edit mytest.html and change
+value="USER2" to value="MYTEST". Create
+the../COMPLIFE/USER/MYTEST/ directory. Copy the *.HTM files to the
+MYTEST directory. Now you can alter the *.HTM files in the MYTEST
+directory leaving your usmain.html lookup unaffected since it is
+using the *.HTM files from the USER2 directory.</p>
+<p>IMPORTANT: For those people who had been putting the *.HTM in
+their main public_html(Windows) or public_html/cgi-bin(Linux) directory
+and who decide they want to the UserLocation input variable. Please
+make sure that UserLocation is passed through as a hidden variable
+in the rest of your *.HTM files. I would suggest putting the
+<i>&lt;input type="hidden"
+name="UserLocation" value="$userlocation$&gt;</i>
+line under the <i>&lt;input type="hidden"
+name="Smoker" value="$origsmoker$"&gt;</i>
+line that is already there. Grouping it like this makes it easier
+to read.</p>
+</div>
+<h3><a name="DataFiles">Compulife Data File Setup and Selecting
+Companies</a></h3>
+<div style="margin-left: 2em" start="5">
+<p>The following steps must be taken before uploading your data
+files to your Internet site:</p>
+<p>- If you have not already done so, you will need to install the Compulife Quote Software on your local computer.<br>
+- To select companies or to disable companies and products,use
+"List or Modify Product Database" from the main menu.
+The 3 main options to use are: "Select a group of companies
+to quote", "disable products for a group of
+companies" and "disable products by
+category"."Select a group of companies to quote"
+is probably the most useful.<br>
+- exit program</p>
+<p>Simply set up your default system parameters to show the type of
+data you want to display and upload the following files to the
+COMPLIFE directory. <b>Note</b> : the files names must be in
+caps.</p>
+<p>GO.PRM, HEALTH.DAT, DECOMP.PRM</p>
+<p>IMPORTANT: If you are a U.S. customers quoting ROP categories,
+you must upload ROPF.D0*</p>
+<p>If you have selected a group of companies to quote or if you
+have disabled products, then upload the COMP.INC and *.DIS files.
+If you are using UserLocation then the COMP.INC and *.DIS files
+should go into your USER/USER2 directory instead of the COMPLIFE
+directory or whatever directory you had set UserLocation to be.</p>
+</div>
+<h3><a name="debug">Debugging</a></h3>
+<div style="margin-lef: 2em">
+<p>A problem we have noticed when using template or custom template files, is that it is easy to lose track of which template file you are dealing with. 
+A trick that we have incorperated in our engine is to have the engine showing the filename that it is currently using as a template. The $filename$ keyword.  This keyword will only work if a file named "debug" is located in the cgi-bin directory. Otherwise instead of showing the filename being used, it will show "". This is so that instead of having to edit all the pages to remove the debugging information, you only have to remove one file.The contents of the debug file are unimportant, and it can be 0 length. It only needs to be present.
+</div>
+<h2><a name="MainComparison">Main Comparison</a></h2>
+<h3><a name="FrenchLanguage">French Language (For Canadian Data)</a></h3>
+<div style="margin-left: 2em">
+<p>If you are using Canadian Data, you can give French Language results by using the LANGUAGE variable in your canmain.html page.</p>
+<p>For example:  &lt; input type="hidden" name="LANGUAGE" value="F" &gt;.  If the LANGUAGE variable is not used (or set to "E") then English is used by default.</p>  
+<p>The dollar code variable to pass LANGUAGE to other pages is $origlanguage$ &lt; input type="hidden" name="LANGUAGE" value="$origlanguage$" &gt;.</p>
+</div>
+<h3><a name="TemplateFiles">Template files and how it
+works</a></h3>
+<div style="margin-left: 2em">
+<p>Template files tell engine how to format the output of the data.
+To do that, it has special dollar codes which get replaced by the
+engine with actual dollar values. All the other information is
+passed through to the output as is, so you can arrange your output
+however you want.</p>
+<p>For example the line<br>
+<strong>The faceamount is $faceamount$</strong><br>
+in the TEMPLATE.HTM will cause the engine to substitute the actual
+face amount with the $face$ perhaps giving you<br>
+<strong>The faceamount is $500,000</strong><br>
+This simple method can also be used to pass variables through
+forms. For example<br>
+&lt; input="hidden" name="FaceAmount" value="$face$" &gt;<br>
+will pass on the face amount value into the engine on the next
+submit.</p>
+<p>The actual name of the template file can be changed in this
+method as well.</p>
+<p>The following is a list of the template files that you may end
+up modifying in order to give your look and feel to your web
+site:</p>
+</div>
+<table width="95%" class="default_table" border="1" cellpadding="5" cellspacing="0" bordercolor="#C0C0C0">
+<thead style="border-collapse: collapse; border: 1px solid #164489; background-color: #164489; padding: 2px; color: #FFFFFF;    font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; text-align: center; margin-left:auto; margin-right:auto;">
+<tr>
+<td>Default Filename</td>
+<td>Input Variable Name for overriding the default filename</td>
+<td>Dollar Code Variable (output of the filename which is
+used)</td>
+<td>Description</td>
+</tr>
+</thead>
+<tr>
+<td><p>TEMPLATE.HTM</td>
+<td><p>TEMPLATEFILE</td>
+<td><p>$templatefile$</td>
+<td><p>The standard output form for the comparison</td>
+</tr>
+<tr>
+<td><p>HTEMPLATE.HTM</td>
+<td><p>HTEMPLATEFILE</td>
+<td><p>$htemplatefile$</td>
+<td><p>Shows the results of a comparison using the Health Analysis,
+initiated from HINIT.HTM</td>
+</tr>
+<tr>
+<td><p>HINIT.HTM</td>
+<td><p>HINITFILE</td>
+<td><p>$hinitfile$</td>
+<td><p>Set up for Health Analysis Comparisons</td>
+</tr>
+<tr>
+<td><p>HEALTH.HTM</td>
+<td><p>HEALTHFILE</td>
+<td><p>$healthfile$</td>
+<td><p>Second page of health questions for Health Analysis
+Comparions</td>
+</tr>
+
+<tr>
+<td><p>MODCOMP.HTM</td>
+<td><p>MODCOMPFILE</td>
+<td><p>$modcompfile$</td>
+<td><p>Form for selecting companies to search on. A
+set-up file, which should only be used by a system administrator.
+Modifies COMP.INC which is equivilent to the file generated by
+gowin.exe when Companies are selected to be comparied. Permissions
+of COMP.INC need to be made public in order for the engine to
+modify it. Once setup the permissions of COMP.INC should be set to
+read only for public.</td>
+</tr>
+<tr>
+<td><p>SAVED.HTM</td>
+<td><p>SAVEDFILE</td>
+<td><p>$savedfile$</td>
+<td><p>This template file is used to show that the COMP.INC has been
+saved when the MODCOMP is run.</td>
+</tr>
+<tr>
+<td><p>PICKVIEW.HTM</td>
+<td><p>PICKVIEWFILE</td>
+<td><p>$pickviewfile$</td>
+<td><p>Side by Side Comparison</td>
+</tr>
+<tr>
+<td><p>ERCSETUP.HTM</td>
+<td><p>ERCSETUPFILE</td>
+<td><p>$ercsetupfile$</td>
+<td><p>Used to ask the questions for showing the Easy Retirement
+Calculator</td>
+</tr>
+<tr>
+<td><p>ERC.HTM</td>
+<td><p>ERCFILE</td>
+<td><p>$ercfile$</td>
+<td><p>The result template for the Easy Retirement Calculator</td>
+</tr>
+<tr>
+<td><p>IRCSETUP.HTM</td>
+<td><p>IRCSETUPFILE</td>
+<td><p>$ircsetupfile$</td>
+<td><p>Used to ask the questions for showing the Income Replacement
+Calculator</td>
+</tr>
+<tr>
+<td><p>IRC.HTM</td>
+<td><p>IRCFILE</td>
+<td><p>$ircfile$</td>
+<td><p>The result template for the Income Replacment Calculator</td>
+</tr>
+<tr>
+<td><p>NOREASON.HTM</td>
+<td><p>NOREASONFILE</td>
+<td><p>$noreasonfile$</td>
+<td><p>File to be shown for rejected Health result comparisons</td>
+</tr>
+<tr>
+<td><p>GOREASON.HTM</td>
+<td><p>GOREASONFILE</td>
+<td><p>$goreasonfile$</td>
+<td><p>File to be shown for non-rejected Health result
+comparisons</td>
+</tr>
+<tr>
+<td><p>DKREASON.HTM</td>
+<td><p>DKREASONFILE</td>
+<td><p>$dkreasonfile$</td>
+<td><p>File to be shown for unknown Health result comparisons</td>
+</tr>
+<tr>
+<td><p>GUIDE.HTM</td>
+<td><p>GUIDEFILE</td>
+<td><p>$guidefile$</td>
+<td><p>A.M. Best Guide page</td>
+</tr>
+<tr>
+<td><p>REFERRAL.HTM</td>
+<td><p>REFERRALFILE</td>
+<td><p>$referralfile$</td>
+<td><p>if referral is setup this file is used to handle the referral</td>
+</tr>
+</table>
+<p>Note that all filenames are in uppercase. This is a compulife
+standard. All template files have a equivilent INPUT and dollar
+code which has the same name plus "file"</p>
+<p>For example TEMPLATE.HTM can be overwritten by
+&lt;input="TEMPLATE" type="hidden" value="MYTEMPLATE.HTM"&gt;
+and dollar dollar code $templatefile$ will be replaced by whatever
+file was used as the template. This will be explained further
+below.
+<h3><a name="ComparisonResult">How to display the comparison result</a></h3>
+<div style="margin-left: 2em" start="0">
+<p>TEMPLATE.HTM is the main template file used to display the
+comparison results. To display the comparison result table you will
+need to define its starting point with $prodline=50$. You will also
+need to define it sending point with $/prodline$. The 50 represents
+the maximum number of results to display. In between the
+$prodline=50$ and $/prodline$ will be the prodline definition (the
+html code that will represent how you want the table to look). The
+code between the starting and ending prodline markers can have a
+maximum of 4000 characters. There will be special dollar codes that
+you can use within the prodline definition which will translate
+into information for the products that are illustrated. Dollar
+codes which are available for use within the prodline definition
+are:</p>
+</div>
+<table width="95%" class="default_table" border="1" cellpadding="5" cellspacing="0" bordercolor="#C0C0C0">
+<colgroup>
+<col width="147">
+<col width="772"></colgroup>
+<thead style="border-collapse: collapse; border: 1px solid #164489; background-color: #164489; background-image: url(http://www.compulife.com/images/bg_36px_blue.gif); padding: 2px; color: #FFFFFF;    font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; text-align: center; margin-left:auto; margin-right:auto;">
+<tr valign="top">
+<td width="147">
+Dollar Codes
+</td>
+<td width="772">
+Description
+</td>
+</tr>
+</thead>
+<tr valign="top">
+<td width="147">
+<p>$company$</p>
+</td>
+<td width="772">
+<p>The company name</p>
+</td>
+</tr>
+<tbody>
+<tr valign="top">
+<td width="147">
+<p>$product$</p>
+</td>
+<td width="772">
+<p>The product name</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="147">
+<p>$healthcat$</p>
+</td>
+<td width="772">
+<p>The health category for the product. for example: Super
+Preferred Non-Tobacco</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="147">
+<p>$PremiumAnnual$</p>
+</td>
+<td width="772">
+<p>The product's Annual premium</p>
+</td>
+</tr>
+
+
+
+<tr valign="top">
+<td width="147">
+<p>$Premium$</p>
+</td>
+<td width="772">
+<p>The product's premium (Annual,Monthly,Quarterly or Semi-Annual
+selected by Input variable ModeUsed)</p>
+</td>
+</tr>
+
+
+
+<tr valign="top">
+<td width="147">
+<p>$rgpfpp$</p>
+</td>
+<td width="772">
+<p>Regular, Regular Plus, Preferred and Preferred Plus (Rg, R+, Pf,
+P+)</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="147">
+<p>$guar$</p>
+</td>
+<td width="772">
+<p>becomes 'gtd' if the premium is guaranteed else becomes '**'</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="147">
+<p>$policyfee$</p>
+</td>
+<td width="772">
+<p>The annual policy fee of the product</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="147">
+<p>$comp$</p>
+</td>
+<td width="772">
+<p>The product's company code (for internal use)</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="147">
+<p>$prod$</p>
+</td>
+<td width="772">
+<p>The product's product code (for internal use)</p>
+</td>
+</tr>
+<tr valign="top"> <td width="27%"> <p>$rowEvenOdd$</p> </td> <td width="46%"> <p>Will return a 0 or 1 for even or odd rows, (useful for css programming)</p> </td> </tr>
+</tbody>
+</table>
+<p>Note that $PremiumAnnual$ will always show the annual premium, whereas $Premium$ will show the premium with the mode you are using. By using these two together you can show the Annual and monthly premiums side by side, for example. Just be aware that $premium$ can also show the annual premium, so it is possible to have two columns of annual premiums.</p>
+<p>Let's go through a very simple example:</p>
+<p>$prodline$
+<br>Company Name is $company$ Premium is $premium$
+<br>$/prodline$
+<p>In this example, for every product line the output will be:
+<i>Company Name is CompanyA Premium is 500.00</i></p>
+<p style="font-style: normal;">Of course, most of you would want to
+format the comparison results within a table of your own design.
+Take a look at the prodline definition in the sample TEMPLATE.HTM.
+It shows a very good example of how to define a prodline
+definition.</p>
+
+
+<p><b>Calling the engine</b></p>
+<div style="margin-left: 2em" start="0">
+<p>usmain.html (or canmain.html for Canada) contains an example of how to call the engine. It is
+a standard HTTP post method request.</p>
+<p>&lt;FORM action="cgi-bin/cqsl.cgi"
+method="POST"&gt; for Linux, use cqs32.exe for
+Windows</p>
+</div>
+
+<h3><a name="BaseDollarCodes">Base Dollar Code</a></h3>
+<div style="margin-left: 2em" start="0">
+<p>These dollar codes are available for use in the TEMPLATE.HTM
+file and other .HTM files as well.</p>
+</div>
+
+
+<table width="95%" class="default_table" border="1" cellpadding="5" cellspacing="0" bordercolor="#C0C0C0">
+<colgroup>
+<col width="74">
+<col width="182"></colgroup>
+<thead style="border-collapse: collapse; border: 1px solid #164489; background-color: #164489; background-image: url(http://www.compulife.com/images/bg_36px_blue.gif); padding: 2px; color: #FFFFFF;    font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; text-align: center; margin-left:auto; margin-right:auto;">
+<tr valign="top">
+<td width="29%">
+Dollar code
+</td>
+<td width="71%">
+Description
+</td>
+</tr>
+</thead>
+<tbody>
+<tr valign="top">
+<td width="29%">
+<p>$licensee$</p>
+</td>
+<td width="71%">
+<p>Licensed for exclusive use to...(Compulife Subscription Licensee Name)</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="29%">
+<p>$state$</p>
+</td>
+<td width="71%">
+<p>The name of state</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="29%">
+<p>$month$, $day$, $year$</p>
+</td>
+<td width="71%">
+<p>Birthday related</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="29%">
+<p>$nowmonth$, $nowday$, $nowyear$</p>
+</td>
+<td width="71%">
+<p>The current date</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="29%">
+<p>$face$</p>
+</td>
+<td width="71%">
+<p>The face amount IE. 500,000</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="29%">
+<p>$cat$</p>
+</td>
+<td width="71%">
+<p>The category. IE. 10 Year Term</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="29%">
+<p>$sex$</p>
+</td>
+<td width="71%">
+<p>The user's gender</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br>
+<br></p>
+
+
+
+
+<h3><a name="AMBest">A.M. Best</a></h3>
+<div style="margin-left: 2em" start="5">
+<p>You will need a special version of the Internet Engine in order
+to show A.M. Best ratings in the comparison. The Internet Engine
+with A.M.Best ratings will only be given out to those people who
+have provided Compulife a written agreement from A.M. Best
+indicating they have permission to use A.M. Best ratings in their
+comparison.</p>
+<p>This section applies to the people who have the A.M. Best version of the
+Internet Engine.</p>
+<p>Note: you can select the level of Besting Rating and Besting
+NewCategory filter you want from the gowin.exe program. Go to the
+client screen and set the best rating and best category combo boxes
+to what you want. Click on okay and close the program. Re-upload
+the GO.PRM to your server.</p>
+<p>The comparison page that uses A.M. Best ratings are TEMPLATE*.HTM
+and HTEMPLATE*.HTM. <b>$ambestdate$</b> represents the latest date
+that we last updated A.M. Best ratings on our system. The next few
+A.M. Best dollar codes can only be used within the prodline
+definition.</p></div>
+<table width="95%" class="default_table" border="1" cellpadding="5" cellspacing="0" bordercolor="#C0C0C0">
+<colgroup>
+<col width="52">
+<col width="204"></colgroup>
+<thead style="border-collapse: collapse; border: 1px solid #164489; background-color: #164489; background-image: url(http://www.compulife.com/images/bg_36px_blue.gif); padding: 2px; color: #FFFFFF;    font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; text-align: center; margin-left:auto; margin-right:auto;">
+<tr valign="top">
+<td width="20%">
+Dollar code
+</td>
+<td width="80%">
+Description
+</td>
+</tr>
+</thead>
+<tr valign="top">
+<td width="20%">
+<p>$ambest$</p>
+</td>
+<td width="80%">
+<p>This is entire A.M. Best string. An example is 'AMB # 08930 A+
+gX(6-14-03)'</p>
+</td>
+</tr>
+<tbody>
+<tr valign="top">
+<td width="20%">
+<p>$amb$</p>
+</td>
+<td width="80%">
+<p>The A.M. Best grade. IE. 'A+'</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%">
+<p>$ambm$</p>
+</td>
+<td width="80%">
+<p>The A.M. Best modifier. IE. 'g'</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%">
+<p>$ambmf$</p>
+</td>
+<td width="80%">
+<p>The A.M. Best Financial Size. IE. 'X'</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%">
+<p>$ambnumber$</p>
+</td>
+<td width="80%">
+<p>The A.M. Best number IE. '08930'</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p>In our sample file, we give the option of clicking on the A.M.
+Best letter which brings up an A.M. Best guide page(GUIDE.HTM). To
+do this you would need to submit with no value or
+value="". You should also pass in <b>AmBest</b> with
+value="$ambest$", <b>Company Name</b> with
+value="$company$" and <b>Company Code</b> with
+value="$comp$".</p>
+</div>
+<h2><a name="AdvancedFunctions">Advanced Functions</a></h2>
+<h3><a name="IRC">Income Replacement Calculator</a></h3>
+<div style="margin-left: 2em">
+<p>The income replacement calculator is similar to gowin's income
+replacement calculator. Based on some answers, the program will
+determine how much replacement income is needed if a breadwinner
+should die. In order to call the income replacement calculator, you
+would need to submit with value="IncReplace1". The
+first income replacement calculator page is IRCSETUP.HTM. The
+second income replacement calculator page is IRC.HTM. Minor tweaks
+aside, you should use these files as provided.</p>
+</div>
+<h3><a name="ERC">Easy Retirement Calculator</a></h3>
+<div style="margin-left: 2em" start="0">
+<p>The easy retirement calculator is similar to gowin's easy
+retirement calculator. Based on some answers, the program will
+determine how much savings you need to deposit per year in order
+you to retire easily. In order to call the easy retirement
+calculator, you would need to submit with
+value="EasyRetire1". The first easy retirement
+calculator page is ERCSETUP.HTM. The second easy retirement
+calculator page is ERC.HTM. Minor tweaks aside, you should use
+these files as provided.</p>
+</div>
+<h3><a name="SideBySide"></a> <a name="Pick 6">Side by Side
+Analysis (Spreadsheet)</a></h3>
+<div style="margin-left: 2em" start="0">
+<p>The Side by Side Analysis page is the page that shows a detailed
+side by side analysis of up to 6 policies. To do a side by side
+policy analysis, you will need to submit using
+value="SideBySide".The TEMPLATE.HTM page has an example
+of how to do this. The template file used by the pick 6 analysis is
+called <b>PICKVIEW.HTM</b>. <!-- You can pre-specify the maximum the
+number of products to display side by side by using the
+<b>MaxSideBySide</b> input variable(max 10 products). --></p>
+<p>The next table shows a list of input variables that can be
+passed in</p></div>
+<table width="95%" class="default_table" border="1" cellpadding="5" cellspacing="0" bordercolor="#C0C0C0">
+<colgroup>
+<col width="63">
+<col width="193"></colgroup>
+<thead style="border-collapse: collapse; border: 1px solid #164489; background-color: #164489; background-image: url(http://www.compulife.com/images/bg_36px_blue.gif); padding: 2px; color: #FFFFFF;    font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; text-align: center; margin-left:auto; margin-right:auto;">
+<tr valign="top">
+<td width="25%">
+Input Variable
+</td>
+<td width="75%">
+Description
+</td>
+</tr>
+</thead>
+<tbody>
+
+
+
+<tr valign="top">
+<td width="25%">
+<p>YearsToShow</p>
+</td>
+<td width="75%">
+<p>Use this to override the number of years to show on the spreadsheet.  The value must be at least 10 and no more than 40 .  The value must also be in multiples of 5.</p>
+</td>
+</tr>
+
+
+<tr valign="top"> <td width="25%"> <p>EmbeddedAccums</p> </td> 
+<td width="75%"> <p>Set it to "ON", if you want to embed an accumulated analysis into the side by side comparison every 5 years.</p> </td> </tr>
+<tr valign="top"> <td width="25%"> <p>AccumText1</p> </td> 
+<td width="75%"> <p>If not set, the value "Accumulated" is used for accumulated analysis title. If you set it, this value will be used instead on instances where the first title is used.  </p> </td> </tr>
+<tr valign="top"> <td width="25%"> <p>AccumText2</p> </td> 
+<td width="75%"> <p>If not set, the value "Accumulated" is used for accumulated analysis title. If you set it, this value will be used instead on instances where a second title is used.  </p> </td> </tr>
+<tr valign="top">
+<td width="25%">
+<p>EmbeddedAccumColor</p>
+</td>
+<td width="75%">
+<p>set it to the color you want the font to be</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p>EmbeddedIndexes</p>
+</td>
+<td width="75%">
+<p>Set it to "ON" , if you want to embed an indexed analysis into
+the side by side comparison every 5 years.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p>EmbeddedIndexColor</p>
+</td>
+<td width="75%">
+<p>Set it to the color you want the font to be</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p>EmbeddedPvac</p>
+</td>
+<td width="75%">
+<p>Set it to "ON", if you want to embed a Present value accumulated
+cost analysis into the side by side comparison every 5 years.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p>EmbeddedPvacColor</p>
+</td>
+<td width="75%">
+<p>Set it to the color you want the font to be</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p>PvacIntRate</p>
+</td>
+<td width="75%">
+<p>If EmbeddedPvac is set to "ON"then pass the interest rate that
+you want to use in calculating the present value accumulated cost.
+If nothing is passed in, then the program will assume an interest
+rate of 6.00 percent</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p>PvacTaxRate</p>
+</td>
+<td width="75%">
+<p>If EmbeddedPvac is set to "ON"then pass the tax rate that you
+want to use in calculating the present value accumulated cost. If
+nothing is passed in, then the program will assume a tax rate of
+30.00 percent</p>
+</td>
+</tr>
+
+
+
+<tr valign="top">
+<td width="25%">
+<p><br></p>
+</td>
+<td width="75%">
+<p>Note :If EmbeddedAccums, EmbeddedIndexes or EmbeddedPvac is
+turned on only if it is passed through and its value is set to
+"ON", otherwise it is defaulted to off.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Similar to a comparison lookup, you will need to define a
+prodline start and end point within the SIDEVIEW.HTM file in order
+to show the detailed side by side data.</p>
+<p>$prodline=30$This indicates that the prodline will show a
+maximum of 30 years side by side</p>
+<p>$/prodline$ This ends the prodline definition.</p>
+<p>In between the 2 prodline markers is where your HTML code will
+go. That code should define how you want your table to look. There
+is a limit of 4000 characters between the 2 prodline markers.</p>
+
+
+
+<table width="95%" class="default_table" border="1" cellpadding="5" cellspacing="0" bordercolor="#C0C0C0">
+<colgroup>
+<col width="51">
+<col width="205"></colgroup>
+<thead style="border-collapse: collapse; border: 1px solid #164489; background-color: #164489; background-image: url(http://www.compulife.com/images/bg_36px_blue.gif); padding: 2px; color: #FFFFFF;    font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; text-align: center; margin-left:auto; margin-right:auto;">
+<tr valign="top">
+<td width="20%">
+Dollar code
+</td>
+<td width="80%">
+These dollar codes are available for use within the prodline definition only
+</td>
+</tr>
+</thead>
+<tbody>
+<tr valign="top">
+<td width="20%">
+<p>$year$</p>
+</td>
+<td width="80%">
+<p>The year (starts counting from year 1)</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%">
+<p>$age$</p>
+</td>
+<td width="80%">
+<p>The age (starts counting from the person's current age)</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%">
+<p>$repeatcolumn$</p>
+<p>$/repeatcolumn$</p>
+</td>
+<td width="80%">
+<p>Use this in conjunction with the $guarprem$ to show the product
+line.</p>
+<p>$repeatcolumn$ to mark the start of a column. Use
+<b>$/repeatcolumn$</b> to mark the end of the column. When the
+program gets to the repeatcolumnmarkers, it will substitute within
+the prodline, the information contained within the repeatcolumn
+delimiters, n number of times where n is equal to the number of
+products to be compared side by side. To summarize, the html code
+that you define within the repeat column markers represent the
+definition of one column.</p>
+<p>Remember that the product line can only hold 4000 characters.
+The column being repeated will expand within the product line. The
+expanded product line cannot be more than 4000 characters or else
+it will be truncated.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%">
+<p><br></p>
+</td>
+<td width="80%">
+<p><br></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%">
+<p>$currprem$</p>
+</td>
+<td width="80%">
+<p>The current premium value</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%">
+<p>$currast$</p>
+</td>
+<td width="80%">
+<p>If the current premium value is different from the guaranteed
+value, then '*' else blank.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%">
+<p>$guarprem$</p>
+</td>
+<td width="80%">
+<p>The guaranteed premium value</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%">
+<p><br></p>
+</td>
+<td width="80%">
+<p>NOTE: for the 3 above dollar codes, the first instance of
+$currprem$in the prodline will represent the current premium for
+the first product. The second instance of $currprem$ in the
+prodline will represent the current premium for the second product
+and so forth. The same applies to $currast$ and $guarprem$.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%">
+<p><br></p>
+</td>
+<td width="80%">
+<p><br></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%">
+<p>$currprem10$</p>
+</td>
+<td width="80%">
+<p>The current premium value for product i, where i =
+{1,2,3,..10}</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%">
+<p>$currast1$,<br>
+$currast2$..<br>
+$currast10$</p>
+</td>
+<td width="80%">
+<p>If the current premium value is different from the guaranteed
+premium value for product i, then '*' else blank, where i =
+{1,2,3,..10}</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="20%">
+<p>$guarprem1$,<br>
+$guarprem2$..<br>
+$guarprem10$</p>
+</td>
+<td width="80%">
+<p>The guaranteed premium value for product i, where i =
+{1,2,3,..10}</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br>
+<br></p>
+<div style="margin-left: 2em" start="2">
+<p>$prodinfoline$ and <b>$/prodinfoline$</b> markers. An example of
+how to use this is available in the PICKVIEW.HTM file.<br>
+<b>Note:</b> To use <b>$prodinfoline$</b> and
+<b>$/prodinfoline$</b> , a detailed year by year analysis(IE.
+<b>$prodline=100$</b> ... <b>$/prodline$</b> ) <b>must</b> also
+exist somewhere in the PICKVIEW.HTM file.</p>
+<p>$prodinfoline$ indicates the start of the product info line, and
+<b>$/prodinfoline$</b> indicates the end of the prodinfoline.</p>
+</div>
+
+
+<table width="95%" class="default_table" border="1" cellpadding="5" cellspacing="0" bordercolor="#C0C0C0">
+<colgroup>
+<col width="63">
+<col width="193"></colgroup>
+<thead style="border-collapse: collapse; border: 1px solid #164489; background-color: #164489; background-image: url(http://www.compulife.com/images/bg_36px_blue.gif); padding: 2px; color: #FFFFFF;    font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; text-align: center; margin-left:auto; margin-right:auto;">
+<tr valign="top">
+<td width="25%">
+Dollar code
+</td>
+<td width="75%">
+These dollar codes are available for use within the prodinfoline
+definition only
+</td>
+</tr>
+</thead>
+<tbody>
+<tr valign="top">
+<td width="25%">
+<p>$companyname$</p>
+</td>
+<td width="75%">
+<p>The company name</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p>$productname$</p>
+</td>
+<td width="75%">
+<p>The product name</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p>$prefstat$</p>
+</td>
+<td width="75%">
+<p>The preferred status of the product</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p>$rgpfff$</p>
+</td>
+<td width="75%">
+<p>The regular/regular plus/preferred/preferred plus status of the
+product</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p>$prodannual$</p>
+</td>
+<td width="75%">
+<p>The product's annual premium</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p>$prodmonthly$</p>
+</td>
+<td width="75%">
+<p>The product's monthly premium</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p>$prodquarterly$</p>
+</td>
+<td width="75%">
+<p>The product's quarterly premium</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p>$prodsemi$</p>
+</td>
+<td width="75%">
+<p>The product's semi-annual premium</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p>$prodwaiveronly$</p>
+</td>
+<td width="75%">
+<p>The product's waiver premium for an annual lookup</p>
+</td>
+</tr>
+
+
+
+<tr valign="top">
+<td width="25%">
+<p>$ambest$</p>
+</td>
+<td width="75%">
+<p>A.M. Best's Rating</p>
+</td>
+</tr>
+
+
+
+</tbody>
+</table>
+
+
+<p><br>
+<br></p>
+<div style="margin-left: 2em" start="2">
+<p>$accumline$ .... <b>$/accumline$</b> markers.</p>
+<p>$pvacline$ ... <b>$/pvacline$</b> markers</p>
+<p>$indexline$ .. <b>$/indexline$</b> markers</p>
+<p>The logic of how this works is the same as the $prodinfoline$.
+Dollar codes that are used within the $accumline$, $pvacline$ and
+$indexline$ logic are</p>
+</div>
+
+
+<table width="95%" class="default_table" border="1" cellpadding="5" cellspacing="0" bordercolor="#C0C0C0">
+<colgroup>
+<col width="62">
+<col width="194"></colgroup>
+<thead style="border-collapse: collapse; border: 1px solid #164489; background-color: #164489; background-image: url(http://www.compulife.com/images/bg_36px_blue.gif); padding: 2px; color: #FFFFFF;    font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; text-align: center; margin-left:auto; margin-right:auto;">
+<tr valign="top">
+<td width="24%">
+Dollar code
+</td>
+<td width="76%">
+These dollar codes are available for use within the accumline
+definition only
+</td>
+</tr>
+</thead>
+<tbody>
+<tr valign="top">
+<td width="24%">
+<p>$atyear$</p>
+</td>
+<td width="76%">
+<p>Year number of the accumulation, increments by 5</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="24%">
+<p>$guarprem$</p>
+</td>
+<td width="76%">
+<p>The guaranteed accumulated premium value</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="24%">
+<p>$repeatcolum$<br>
+$/repeatcolumn$</p>
+</td>
+<td width="76%">
+<p>same as repeat column from the prodline definition.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br>
+<br></p>
+<h3><a name="SideRelookup">How to do a side by side re-lookup in a
+different mode</a></h3>
+<div style="margin-left: 4em">
+<p>You will need to pass in some hidden variables so that the
+re-lookup knows what to base it on. The sample SIDEVIEW.HTM file
+shows how to do this(near the bottom of the file). When doing a
+re-lookup in a different mode(quarterly, monthly, etc), you will
+need to set <b>NewModeUsed</b> to the new mode that you are trying
+to lookup, as well you <b>MUST</b> pass in the original mode that
+was looked up as a hidden input type. Also, you will need to pass
+in <b>NewDoWaiver</b> with its value set to "ON" to
+indicate that you are doing a waiver lookup, as well you must pass
+in the original DoWaiver that was looked up as a hidden input
+type.</p>
+<p>Each of these input variables should be re-passed in similar to
+this</p>
+<p>&lt;INPUT type="hidden" name="State"
+value="$origstate$"&gt;</p>
+</div>
+
+
+<table width="95%" class="default_table" border="1" cellpadding="5" cellspacing="0" bordercolor="#C0C0C0">
+<colgroup>
+<col width="68">
+<col width="188"></colgroup>
+<thead style="border-collapse: collapse; border: 1px solid #164489; background-color: #164489; background-image: url(http://www.compulife.com/images/bg_36px_blue.gif); padding: 2px; color: #FFFFFF;    font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; text-align: center; margin-left:auto; margin-right:auto;">
+<tr valign="top">
+<td width="26%">
+Variable
+</td>
+<td width="74%">
+Dollar code that represents the original values
+</td>
+</tr>
+</thead>
+<tbody>
+<tr valign="top">
+<td width="26%">
+<p>State</p>
+</td>
+<td width="74%">
+<p>$origstate$</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p>BirthDay</p>
+</td>
+<td width="74%">
+<p>$origday$</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p>BirthMonth</p>
+</td>
+<td width="74%">
+<p>$origmonth$</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p>BirthYear</p>
+</td>
+<td width="74%">
+<p>$origyear$</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p>Health</p>
+</td>
+<td width="74%">
+<p>$orighealth$</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p>FaceAmount</p>
+</td>
+<td width="74%">
+<p>$origface$</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p>Sex</p>
+</td>
+<td width="74%">
+<p>$origsex$</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p>Smoker</p>
+</td>
+<td width="74%">
+<p>$origsmoker$</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p>NewCategory</p>
+</td>
+<td width="74%">
+<p>$origcat$</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p>SelectedProducts</p>
+</td>
+<td width="74%">
+<p>$origprodselected1$, $origprodselected2$, $origprodselected3$,
+.. $origproductselected10$</p>
+<p>This variable should be passed in 10 times as there is a maximum
+of 10 products to view side by side.</p>
+</td>
+</tr>
+<tr valign="top" style="border-collapse: collapse; border: 1px solid #164489; background-color: #164489; background-image: url(http://www.compulife.com/images/bg_36px_blue.gif); padding: 2px; color: #FFFFFF;    font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; text-align: center; margin-left:auto; margin-right:auto;">
+<td colspan="2" width="100%">
+The next few should only be passed in only if it was being
+used from the original lookup page.
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p>EmbeddedAccums</p>
+</td>
+<td width="74%">
+<p>$origaccums$</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p>EmbeddedIndexes</p>
+</td>
+<td width="74%">
+<p>$origindexes$</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p>EmbeddedPvac</p>
+</td>
+<td width="74%">
+<p>$origpvac$</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p>EmbeddedAccumColor</p>
+</td>
+<td width="74%">
+<p>$origaccumcolor$</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p>EmbeddedIndexColor</p>
+</td>
+<td width="74%">
+<p>$origindexcolor$</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p>EmbeddedPvacColor</p>
+</td>
+<td width="74%">
+<p>$origpvaccolor$</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p>PvacIntRate</p>
+</td>
+<td width="74%">
+<p>$origpvacintrate$</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p>PvacTaxRate</p>
+</td>
+<td width="74%">
+<p>$origpvactaxrate$</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p><br></p>
+</td>
+<td width="74%">
+<p><br></p>
+</td>
+</tr>
+<tr valign="top"> <td width="26%"> <p>ModeUsed</p> </td> <td width="74%"> <p>$origmodeused$</p> <p>This <b>must</b> be passed in so that the re-lookup will work correctly.</p> </td> </tr>
+<tr valign="top"> <td width="26%"> <p>SortOverride1</p> </td> <td width="74%"> <p>$origsortoverride1$</p> 
+<p>This may be passed in to overrirde the sorting method that is used.  Possible Values are <b>'A',M','N'</b>.  'A' sets the sorting method to be Annual, 'M' sets the sortiing method to Modal which follows the ModeUsed (Annual,Half,Quarterly,Monthly) 'N' No override (default if not used) Normally the sorting method is 'M'</p> </td> </tr> 
+
+
+
+<tr valign="top">
+<td width="26%">
+<p>If you are using health analyzer, then you should re-pass all
+the health variables as hidden inputs as well.</p>
+</td>
+<td width="74%">
+<p>To see which health variables to re-pass, look at the sample
+HTEMPLATE.HTM file. In the example, the required input variables
+are grouped together, so it should be easy to find.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br>
+<br></p>
+<h3><a name="HealthAnalyzer">Health Analyzer</a></h3>
+<div style="margin-left: 2em" start="2">
+<p>Relevant files: HTEMPLATE.HTM, HINIT.HTM, HEALTH.HTM,
+GOREASON.HTM, NOREASON.HTM,DKREASON.HTM, go.bmp, no.bmp and
+dk.bmp.</p>
+<p>The*.bmp files are image bitmaps and should be place in the same
+directory as your usmain.html. The *REASON.HTM is used when a user
+wants to inquirer further about the health result for a particular
+product.</p>
+<p>Instead of TEMPLATE.HTM, HTEMPLATE.HTM is the main template file
+which health analyzer will use. HINIT.HTM is the first health
+questionnaire template file and HEALTH.HTM is the second health
+questionnaire template file.</p>
+<p>To get to the first health questionnaire page, use a submit
+button with value="InitHealth". To show the second
+health questionnaire page, from the first health questionnaire
+page, use a submit button with value="HealthDetails".
+When submitting from the first health questionnaire page, if there
+are no additional questions to ask, the program will skip the
+2<sup>nd</sup> health questionnaire page and go directly to the
+comparison results(HTEMPLATE.HTM) page.</p>
+<p>There will be 2 new variables available within HTEMPLATE.HTM's
+prodline definition for the purpose of showing the health result.
+They are <b>$healthval$</b> and <b>$healthcolor$</b> . If the
+health result is "go", "no go" or
+"don't know" then <b>$healthval$</b> becomes the value
+defined by GoString,NoGoString and DoNotKnowString respectively.
+If you haven't defined these strings, the <b>$healthval$</b> becomes 
+"go", "no", or "dk". 
+
+Similarly, <b>$healthcolor$</b> becomes the value defined by
+GoColor, NoGoColor and DoNotKnowColor respectively. In the sample
+files, the GoString,NoGoString, DoNotKnowString, GoColor, NoGoColor
+and DoNotKnowColor are defined in the HINIT.HTM file as hidden
+input variables.</p>
+<p>We are recommending that you do not alter the HINIT.HTM and
+HEALTH.HTM files . There is a lot of logic contained within these 2
+pages which the program expects in order to retrieve the health
+input values. We are not keen about providing technical support to
+people who experience problems as a result of modifications done to
+these 2 files because of its complexity. The only reason these 2
+pages are not hard wired is to allow people to make very minor
+cosmetic changes (IE. Font style or color changes) if they wish.
+Having said that, HINIT.HTM is a lot more flexible than HEALTH.HTM.
+There are 4 main questions in the HINIT.HTM page and it is possible
+to re-order questions. For example, you can ask the height weight
+question first and the smoking related questions second. You can
+also decide to leave out 1 or more of main questions. If you don't
+want to ask the cholesterol related health question, then you can
+take out that section of the code. The HEALTH.HTM file is a lot
+more complicated and messing around with it <b>is definitely not
+recommended</b> . You would clearly need to understand how code
+segments work within this file before even attempting to alter this
+file.</p>
+<p>HTEMPLATE.HTM is similar to TEMPLATE.HTM. In the sample
+HTEMPLATE.HTM page, we added an extra column to show the health
+result. If you put your cursor over the bitmap, you will be able to
+see the reasoning behind the health result. Please make note of the
+<b>$nonsmoketable$</b> and <b>$/nonsmoketable$</b> markers. The
+code contained between the starting <b>$nonsmoketable$</b> marker
+and the ending <b>$/nonsmoketable$</b> marker should be the
+comparison table,including the prodline table definition. Similar
+to our gowin.exe program, if the user is a smoker who does not use
+cigarettes, then the program will show an extra table. One for non
+smokers who would qualify and one for smokers. The logic should be
+as follows...</p>
+<p>$comparisonrepeat$</p>
+<p>$nonsmoketable$</p>
+<p>$prodline=50$ ... table line definition goes in here ...
+$/prodline$</p>
+<p>$/nonsmoketable$</p>
+<p>$/comparisonrepeat$</p>
+<p>very important. The comparison repeat markers are needed for
+people who allow the option to do multiple category comparisons.
+Remember to upload the HEALTH.DAT to your server and put it in the
+same directory as your GO.PRM.</p>
+<p>To do a Health reject reason lookup, you will need to submit
+with a blank name and make sure that the <b>HealthReason</b>
+variable is passed through. When the program sees the HealthReason
+input value along with a blank submit value, it will look for 6
+other variables. They are <b>ProductCode</b> , <b>HealthPref</b> ,
+<b>GoNoDk</b> , <b>CompanyName</b> , <b>ProductName</b> ,
+<b>HealthClass</b> . The corresponding dollar codes within the
+prodline that define these variables are: <b>$prod$</b> ,
+<b>$healthpref$</b> , <b>$gonodk$</b> , <b>$company$</b> ,
+<b>$product$</b> and <b>$healthcat$</b> . If you have the A.M. Best
+version of the engine, you should also pass through the
+<b>AmBest</b> variable and set its value to 'false'.</p>
+</div>
+<div style="margin-left: 2em" start="2">
+<p>In the second health template example file(HTEMPLATE2.HTM) which
+shows how to do a health reject reason click through, the health
+rejection reason is recalculated and requires a whole bunch of
+variables to be re-passed through. For those who want to avoid
+using JavaScript, you can pass in a variable called
+<b>CalculateRejectReason</b> and set it to "OFF". If
+you do this, you will also need to pass in
+<b>HealthRejectReason</b> and set its value to
+<b>$healthrejectreason$</b> within the prodline. The advantage of
+doing it this way is that you will not need to re-pass in the all
+the base and health variables.</p>
+<p>For simplicity , showing the health rejection reason in the
+prodline is an elegant solution and is sufficient. It would make
+doing a health rejection reason click through lookup redundant. For
+those who want to avoid using JavaScript, you should avoid
+including the health rejection reason click through functionality
+because it adds unnecessary complexity to your html code.</p>
+</div>
+<div style="margin-left: 2em" start="2">
+<p>Integrating the health questionnaire directly into the client
+entry page.</p>
+<p>You can do this by integrating the first health questionnaire
+page(HINIT.HTM) directly into the usmain.html page. You would need
+to submit using value="<b>HealthDetails</b> ", instead
+of"CqsComparison". Copy the entire section of code from
+HINIT.HTM pertaining to the health questions asked. Make sure you
+pass hidden input variable strings: GoString,
+NoGoString,DoNotKnowString, GoColor, NoGoColor, DoNotKnowColor as
+well. You will also need to pass the hidden input variable
+"<b>ErrorOnMissingHealthInput</b> " with
+value="<b>OFF</b> ".By default, if none of the health
+questionnaire questions are answered then the program will
+complain. Setting the ErrorOnMissingHealthInput to
+"OFF" will bypass the error message and go directly to
+the TEMPLATE.HTM page; if none of health questionnaire sections are
+answered. If at least one of the health questionnaire sections are
+answered then it will go directly to the HTEMPLATE.HTM page.</p>
+</div>
+<h3><a name="CompanySelection">Company Selection Feature</a></h3>
+<div style="margin-left: 2em" start="3">
+<p>The admin.html file represents the start page for doing this.  Password protecting the admin.html file (IE. With the use of a .htaccess file)is recommended, since we do not want users in general to be able to manipulate the companies that are being quoted.  The admin.html file can be placed anywhere as long as it links itself properly to the cqs32.exe/cqsl.cgi executables.</p>
+<p>For test purposes to get you going, place the admin.html in the same directory as your initial main lookup page. Edit the admin.html and adjust the "Form Action" line (if needed) to make sure it links you correctly to your cqs32.exe/cqsl.cgi executable.  Make sure that MODCOMP.HTM and SAVED.HTM are in the same directory as your TEMPLATE.HTM file.  Test this out by opening up the admin.html page with your web browser.  Click on the Here button, and
+it should bring you to a page with a list of all the companies that are being quoted.  From there should be able to select companies that you wish to quote.</p>
+<p>To bring the page that allows the user to select a group of companies to quote and set the values of the CONFIG.TXT file, you will need to submit with value="ModifyCompanies".  This submit will cause the program to look for the MODCOMP.HTM file.  The MODCOMP.HTM file contains the HTML code for selecting a list of companies to quote.</p>
+<p><b>Run down of how MODCOMP.HTM works.</b></p>
+<p>To reload the list of companies that is currently being used, you will need to submit with value= "ModifyCompanies".  To reload the of list companies where all the companies will be selected, you will need to submit using value="RefreshAllOn".  To reload the list of companies where none of the companies are selected, you will need to submit using value="RefreshAllOff".  To save the list of companies, you will need to submit using
+value="SaveCompanies".  When the list of companies is being saved, the program will look for the SAVED.HTM file which lets you customize what message is shown to the user after a save has been done.  If the SAVED.HTM doesn't exist, then the default 'Your settings have been saved message' will be used.</p>
+<p><b>Run down of how CONFIG.TXT works.</b></p>
+<p>When "SaveCompanies" is used it will also save values to the CONFIG.TXT file which holds the website, css, and email address that is echoed when the $website$, $css$, and $email$ are used.  The CONFIG.TXT file has been added for convenience sake and allows updating of this information from a browser without the need to use website databases. CONFIG.TXT must already be present in the USER folder, and have writeable permissions (666) by the engine to use this feature.  CONFIG.TXT will only work in USER folders.</p>
+<p>To show a list of the companies, similar to how "prodline=" works for a comparison, you will need to define the company line by starting it off with <b>$compline$</b> and ending it with <b>$/compline$</b>.  In between the compline markers, is the definition of how each company line will look.  The dollar codes that are valid within the compline markers are
+<b>$company$</b>, <b>$refnum$</b> and <b>$ischecked$</b>.  $company$ will expand into the company name, $refnum$ will expand into a reference/line number, and $ischecked$ will expand into "checked" if the company is selected,otherwise it will be blank. The input variable name inside the compline that we need to use is called NAME="<b>CompToInclude</b>".</p>
+</div>
+<h3><a name="Referral">Compulife Referral Feature</a></h3>
+<div style="margin-left: 2em" start="3">
+<p>The CONFIG.TXT can also contain two lines regarding referrals. One is reserved for future use by Compulife and the other being the list of states that are valid for this agent.</p>
+<p>The MODCOMP.HTM contains the input "referral" field which has the default value of <b>$referral$</b> which when loaded by the engine is replaced with the referral url contained in the CONFIG.TXT. This value is not used by the engine at this point, but may be used in the future.
+The MODCOMP.HTM also contains <b>$referralstates$</b> which when loaded by the engine is replaced with a check list of all states (or provinces if Canadian), with the states checked which the agent is licensed to sell insurance in.
+Using the SaveCompanies submit value will also save these two input fields.</p>
+<p>If a quotation is requested that is out of the list of referral states, the engine will load the url entered (default REFERRAL.HTM) with any dollar codes substituted. <b>Note: if the CONFIG.TXT does not have a referral line, the referral feature is ignored and the illustration proceeds normally.</p>
+<p>The reason an url is entered here instead of the normal file, is so that referrals can occur from external servers.</p> 
+<p>The REFERRAL.HTM (or whatever landing page is used) needs to have the following hidden input. &lt;input type="hidden" name="referral" value="$userlocation$"&gt; where userlocation is assigned to you by Compulife.  </p>
+</div>
+
+
+
+<h2><a name="VariableReferences">Variable and Dollar Code related
+References</a></h2>
+<h3><a name="SystemFlow">System Flow</a></h3>
+
+
+<table width="95%" class="default_table" border="1" cellpadding="5" cellspacing="0" bordercolor="#C0C0C0">
+<colgroup>
+<col width="40">
+<col width="111">
+<col width="105"></colgroup>
+<thead style="border-collapse: collapse; border: 1px solid #164489; background-color: #164489; background-image: url(http://www.compulife.com/images/bg_36px_blue.gif); padding: 2px; color: #FFFFFF;    font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; text-align: center; margin-left:auto; margin-right:auto;">
+<tr valign="top">
+<td width="16%">
+Submit Value
+</td>
+<td width="44%">
+Action
+</td>
+<td width="41%">
+File Referenced
+</td>
+</tr>
+</thead>
+<tbody>
+<tr valign="top">
+<td width="16%">
+<p>CqsComparison</p>
+</td>
+<td width="44%">
+<p>Does the main lookup</p>
+</td>
+<td width="41%">
+<p>TEMPLATE.HTM</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="16%">
+<p>EasyRetire1</p>
+</td>
+<td width="44%">
+<p>Calls the first page of the easy retirement calculator</p>
+</td>
+<td width="41%">
+<p>ERCSETUP.HTM</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="16%">
+<p>EasyRetire2</p>
+</td>
+<td width="44%">
+<p>Calls the second page of the easy retirement calculator</p>
+</td>
+<td width="41%">
+<p>ERC.HTM</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="16%">
+<p>IncReplace1</p>
+</td>
+<td width="44%">
+<p>Calls the first page of the income replacement calculator</p>
+</td>
+<td width="41%">
+<p>IRCSETUP.HTM</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="16%">
+<p>IncReplace2</p>
+</td>
+<td width="44%">
+<p>Calls the second page of the income replacement calculator</p>
+</td>
+<td width="41%">
+<p>IRC.HTM</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="16%">
+<p>InitHealth</p>
+</td>
+<td width="44%">
+<p>Calls the first page of the health analyzer</p>
+</td>
+<td width="41%">
+<p>HINIT.HTM</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="16%">
+<p>HealthDetails</p>
+</td>
+<td width="44%">
+<p>Calls the second page of the health analyzer</p>
+</td>
+<td width="41%">
+<p>HEALTH.HTM, if the program needs further ask health
+questions.</p>
+<p>HTEMPLATE.HTM if the program doesn't need to go to the second
+health questionnaire page.</p>
+<p>TEMPLATE.HTM if hidden input
+variable"ErrorOnMissingHealthInput" is passed in and
+set to"OFF", and none of the health questions are
+answered.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="16%">
+<p>ModifyCompanies</p>
+</td>
+<td width="44%">
+<p>Calls the companies selection page</p>
+</td>
+<td width="41%">
+<p>MODCOMP.HTM</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="16%">
+<p>RefreshAllOn</p>
+</td>
+<td width="44%">
+<p>Calls the companies selection page setting all values to
+checked</p>
+</td>
+<td width="41%">
+<p>MODCOMP.HTM</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="16%">
+<p>RefreshAllOff</p>
+</td>
+<td width="44%">
+<p>Calls the companies selection page with none of the values
+checked</p>
+</td>
+<td width="41%">
+<p>MODCOMP.HTM</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="16%">
+<p>SaveCompanies</p>
+</td>
+<td width="44%">
+<p>Calls page showing user that values have been saved.</p>
+</td>
+<td width="41%">
+<p>SAVED.HTM</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="16%">
+<p>SideBySide</p>
+</td>
+<td width="44%">
+<p>Calls the pick 6 side by side analysis page</p>
+</td>
+<td width="41%">
+<p>PICKVIEW.HTM</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="16%">
+<p>No submit value</p>
+</td>
+<td width="44%">
+<p>Calls the health reason rejection page.</p>
+<p><b>NOTE:</b> These hidden input values must be passed in and
+properly set.</p>
+<p>ProdCode, HealthPref, GoNoDk, CompanyName,
+ProductName,HealthClass. See HTEMPLATE.HTM for an example.</p>
+</td>
+<td width="41%">
+<p>GOREASON.HTM, NOREASON.HTM, DKREASON.HTM</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="16%">
+<p><br></p>
+</td>
+<td width="44%">
+<p>These next 2 apply to A.M. Best engines only</p>
+</td>
+<td width="41%">
+<p><br></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="16%">
+<p>No submit value</p>
+</td>
+<td width="44%">
+<p>Calls the health reason rejection page</p>
+<p><b>NOTE:</b> These hidden values must be passed in and properly
+set.</p>
+<p>ProdCode, HealthPref, GoNoDk, CompanyName,
+ProductName,HealthClass and AmBest. AmBest <b>must</b> be set to
+'false'</p>
+<p>See HTEMPLATE.HTM for an example.</p>
+</td>
+<td width="41%">
+<p>GOREASON.HTM, NOREASON.HTM, DKREASON.HTM</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="16%">
+<p>No submit value</p>
+</td>
+<td width="44%">
+<p>Calls the sample A.M. Best guide page</p>
+<p><b>NOTE:</b> These hidden values must be passed in and properly
+set.</p>
+<p>AmBest, CompanyName. Ambest should be set to $ambest$ dollar
+code from within the prodline. CompanyName should be set to
+$company$ from within the prodline.</p>
+</td>
+<td width="41%">
+<p>GUIDE.HTM</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+<h3><a name="RefMain">Reference for Main lookup page</a></h3>
+
+<table width="95%" class="default_table" border="1" cellpadding="5" cellspacing="0" bordercolor="#C0C0C0">
+<colgroup>
+<col width="47">
+<col width="37">
+<col width="42">
+<col width="130"></colgroup>
+<thead style="border-collapse: collapse; border: 1px solid #164489; background-color: #164489; padding: 2px; color: #FFFFFF; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; text-align: center; margin-left:auto; margin-right:auto;">
+<tr valign="top">
+<td width="18%">
+Input Variable
+</td>
+<td width="15%">
+dollar code representing the original value
+</td>
+<td width="16%">
+related processed/calculated dollar code
+</td>
+<td width="51%">
+Description
+</td>
+</tr>
+</thead>
+<tbody>
+<tr valign="top">
+<td width="18%">
+<p>FaceAmount</p>
+</td>
+<td width="15%">
+<p>$newface$</p>
+</td>
+<td width="16%">
+<p>$face$</p>
+</td>
+<td width="51%">
+<p>Face amount being looked up</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="18%">
+<p>State</p>
+</td>
+<td width="15%">
+<p>$origstate$</p>
+</td>
+<td width="16%">
+<p>$state$</p>
+</td>
+<td width="51%">
+<p>The state being looked up. Valid range is 1 to 56 for the US and 1 to 13 for Canadian. See <a href="#appendix1">Appendix 1</a> or 
+usmain.html or canmain.html for examples.
+</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="18%">
+<p>ModeUsed</p>
+</td>
+<td width="15%">
+<p>$origmodeused$</p>
+</td>
+<td width="16%">
+<p>$modeused$<br>
+$modeusedc$<br>
+$modeusedlc$<br>
+$modeuseduc$</p>
+</td>
+<td width="51%">
+<ul>
+<li>'A' for Annual</li>
+<li>'M' for Monthly</li>
+<li>'Q' for Quarterly</li>
+<li>'H' for Half-Yearly</li>
+</ul>
+<p>lc = lower case, uc=uppercase</p>
+</td>
+</tr>
+<tr valign="top"> 
+<td width="18%"> <p>SortOverride1</p> </td> 
+<td width="15%"> <p>$origsortoverride1$</p></td>
+<td>&nbsp;</td>
+<td><p>This may be passed in to override the sorting method that is used.  Possible Values are <b>'A',M','N'</b>.  'A' sets the sorting method to be Annual, 'M' sets the sorting method to Modal which follows the ModeUsed (Annual,Half,Quarterly,Monthly) 'N' No override (default if not used) Normally the sorting method is 'M'</p> </td> 
+</tr> 
+
+
+
+<tr valign="top">
+<td width="18%">
+<p>BirthYear</p>
+</td>
+<td width="15%">
+<p>$origyear$</p>
+</td>
+<td width="16%">
+<p>$year$</p>
+</td>
+<td width="51%">
+<p>The birth year (1900 to present)</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="18%">
+<p>BirthMonth</p>
+</td>
+<td width="15%">
+<p>$origmonth$</p>
+</td>
+<td width="16%">
+<p>$month$</p>
+</td>
+<td width="51%">
+<p>The birth month (1 to 12)</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="18%">
+<p>Birthday</p>
+</td>
+<td width="15%">
+<p>$origyear$</p>
+</td>
+<td width="16%">
+<p>$day$</p>
+</td>
+<td width="51%">
+<p>The birth day (1 to 31)</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="18%">
+<p>Sex</p>
+</td>
+<td width="15%">
+<p>$origsex$</p>
+</td>
+<td width="16%">
+<p>$sex$</p>
+</td>
+<td width="51%">
+<p>"M" or "F"</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="18%">
+<p>Smoker</p>
+</td>
+<td width="15%">
+<p>$origsmoker$</p>
+</td>
+<td width="16%">
+<p>$smoker$</p>
+</td>
+<td width="51%">
+<p>"Y" or "N"</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="18%">
+<p>Health</p>
+</td>
+<td width="15%">
+<p>$orighealth$</p>
+</td>
+<td width="16%">
+<p>$health$</p>
+</td>
+<td width="51%">
+<p>Regular</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="18%">
+<p>WebMaster</p>
+</td>
+<td width="15%">
+<p>$webmaster$</p>
+</td>
+<td width="16%">
+<p><br></p>
+</td>
+<td width="51%">
+<p>Pass in Webmaster if you want to set your own contact
+information when an error occurs. If it is not passed in, the
+contact information will default to Compulife</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="18%">
+<p>UserLocation</p>
+</td>
+<td width="15%">
+<p>$userlocation$</p>
+</td>
+<td width="16%">
+<p><br></p>
+</td>
+<td width="51%">
+<p>see <a href="#User%20Location">UserLocation</a></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="18%">
+<p>parm0,<br>
+parm1, up to<br>
+parm44</p>
+</td>
+<td width="15%">
+<p>$parm0$<br>
+$parm1$, up to<br>
+$parm44$</p>
+</td>
+<td width="16%">
+<p><br></p>
+</td>
+<td width="51%">
+<p>Variables that the web master can pass through for their own
+purposes. Maximum number of characters is 39.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="18%">
+<p>NewCategory</p>
+</td>
+<td width="15%">
+<p>$origcat$</p>
+</td>
+<td width="16%">
+<p>$cat$</p>
+</td>
+<td width="51%">
+<p>See chart below.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="18%">
+<p>css style sheet</p>
+</td>
+<td width="15%">&nbsp;</td>
+<td width="16%">
+<p>$css$<br></p>
+</td>
+<td width="51%">
+<p>Special case, this variable is read from the CONFIG.TXT file.  <a href="#CompanySelection">Click here</a> for more information</p></td>
+</tr>
+<tr valign="top">
+<td width="18%">
+<p>website</p>
+</td>
+<td width="15%">&nbsp;</td>
+<td width="16%">
+<p>$website$<br></p>
+</td>
+<td width="51%">
+<p>Special case, this variable is read from the CONFIG.TXT file.  <a href="#CompanySelection">Click here</a> for more information</p></td>
+</tr>
+<tr valign="top">
+<td width="18%">
+<p>email</p>
+</td>
+<td width="15%">&nbsp;</td>
+<td width="16%">
+<p>$email$<br></p>
+</td>
+<td width="51%">
+<p>Special case, this variable is read from the CONFIG.TXT file.  <a href="#CompanySelection">Click here</a> for more information</p></td>
+</tr>
+<tr valign="top">
+<td width="18%">
+<p>UseDefaultContentType</p>
+</td>
+<td width="15%">
+<p>$usedefaultcontenttype$</p>
+</td>
+<td width="16%">
+<p><br></p>
+</td>
+<td width="51%">
+<p>Almost no one will need to use this. It's just available for
+legacy support.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<br><br>
+
+<h3><a name="CATEGORY">NewCategory Syntax</a></h3>
+<p>
+<b>A special note to current engine users</b>
+In order to facitate previous versions of engine users the keyword "CATEGORY" will still be accepted. 
+This should be replaced with NewCategory as described below. 
+The engine will internally translate the CATEGORY to NewCategory, from the first page.
+This will allow the current engine users to update their systems with little editing, 
+until they are ready to use the new categories that are 
+available under the Newcategory.  Any category references that are passed through will have been translated 
+already and should work without any problems. The syntax for passed through variables is unchanged.
+
+</p>
+<p>U.S. and Canadian Categories are no longer fixed, and must be
+obtained from using gowin.exe (The Compulife Quotation Sytem
+windows program).  While in gowin.exe use Manage Product Database,
+List all categories, and use the HTML DROP DOWN List Code. This can
+be inserted into your main page or modified as needed. at the time
+of this writing, the US page looks like:<br></p>
+
+<p> &lt;SELECT name=&quot;NewCategory&quot;&gt;<br>&lt;OPTION value=&quot;1&quot;&gt;1 Year Level Term&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;2&quot;&gt;5 Year Level Term Guaranteed&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;3&quot;&gt;10 Year Level Term Guaranteed&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;4&quot;&gt;15 Year Level Term Guaranteed&lt;/OPTION&gt;<br>     &lt;OPTION SELECTED value=&quot;5&quot;&gt;20 Year Level Term Guaranteed&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;6&quot;&gt;25 Year Level Term Guaranteed&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;7&quot;&gt;30 Year Level Term Guaranteed&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;T&quot;&gt;To Age 65 Level Guaranteed&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;U&quot;&gt;To Age 70 Level Guaranteed&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;V&quot;&gt;To Age 75 Level Guaranteed&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;A&quot;&gt;To Age 80 Level Guaranteed&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;B&quot;&gt;To Age 85 Level Guaranteed&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;C&quot;&gt;To Age 90 Level Guaranteed&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;D&quot;&gt;To Age 95 Level Guaranteed&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;E&quot;&gt;To Age 100 Level Guaranteed&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;G&quot;&gt;To Age 105 Level Guaranteed&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;H&quot;&gt;To Age 110 Level Guaranteed&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;F&quot;&gt;Other Term&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;J&quot;&gt;15 Year Return of Premium&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;K&quot;&gt;20 Year Return of Premium&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;L&quot;&gt;25 Year Return of Premium&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;M&quot;&gt;30 Year Return of Premium&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;W&quot;&gt;To age 65 Return of Premium&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;X&quot;&gt;To age 70 Return of Premium&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;Y&quot;&gt;To age 75 Return of Premium&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;N&quot;&gt;Other Return of Premium&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;8&quot;&gt;To Age 121 Level  (No Lapse U/L)&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;P&quot;&gt;To Age 121 Level - Pay to 100&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;Q&quot;&gt;To Age 121 Level - Pay to 65&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;R&quot;&gt;To Age 121 Level - 20 Pay&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;S&quot;&gt;To Age 121 Level - 10 Pay&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;O&quot;&gt;To Age 121 Level - Single Pay&lt;/OPTION&gt;<br>     &lt;!-- example of 10 verse 20 versus 30, with a maximum of 40 results<br>     &lt;OPTION value=&quot;Z:357#4&quot;&gt;10 versus 20 versus 30&lt;/OPTION&gt;<br>     --&gt;<br>     &lt;/SELECT&gt;<br></p>
+
+<p>The Canadian page looks like:<br></p>
+
+<p> &lt;SELECT name=&quot;NewCategory&quot;&gt;<br>&lt;OPTION value=&quot;3&quot;&gt;10 Year Level Term&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;4&quot;&gt;15 Year Level Term&lt;/OPTION&gt;<br>     &lt;OPTION SELECTED value=&quot;5&quot;&gt;20 Year Level Term&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;6&quot;&gt;25 Year Level Term&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;7&quot;&gt;30 Year Level Term&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;9&quot;&gt;35 Year Level Term&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;0&quot;&gt;40 Year Level Term&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;A&quot;&gt;Level Term to age 65&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;B&quot;&gt;Level Term to age 70&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;C&quot;&gt;Level Term to age 75&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;W&quot;&gt;Level Term to age 80&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;F&quot;&gt;Other Term&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;G&quot;&gt;Decreasing Term&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;H&quot;&gt;Whole Life Guaranteed Life Pay&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;I&quot;&gt;Whole Life Guaranteed Pay to 65&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;J&quot;&gt;Whole Life Guaranteed 20 Pay&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;K&quot;&gt;Whole Life Guaranteed 15 Pay&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;S&quot;&gt;Whole Life Guaranteed 10 Pay&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;L&quot;&gt;U/L T100 - Minimum Premium&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;U&quot;&gt;U/L T100 - Minimum Premium - Pay to 65&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;M&quot;&gt;U/L T100 - Minimum Premium - 20 Pay&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;N&quot;&gt;U/L-T100 - Minimum Premium - 15 Pay&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;O&quot;&gt;U/L-T100 - Minimum Premium - 10 Pay&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;P&quot;&gt;Term to 100 Guaranteed Life Pay&lt;/OPTION&gt;<br>     &lt;OPTION value=&quot;R&quot;&gt;Term to 100 Guaranteed 20 Pay&lt;/OPTION&gt;<br>     &lt;!-- example of 10 verse 20 versus 30, with a maximum of 40 results<br>     &lt;OPTION value=&quot;Z:357#4&quot;&gt;10 versus 20 versus 30&lt;/OPTION&gt;<br>     --&gt;<br>     &lt;/SELECT&gt;<br></p>
+
+<p>As can be seen in the above example, up to 3 categories can be
+compared against each other by using the special category 'Z'
+followed by a colon (:) and then the list of the categories to be
+compared, followed by a number sign (#) and then the maxiumum
+number of results that can be obtained.</p>
+<p>The number of results produced from a look up can be limited by
+adding a #N where N is the maximum number of results shown. For
+example<br>
+<br>
+&lt;OPTION value=&quot;6#10&quot;&gt;25 Year Level Term Guaranteed&lt;/OPTION&gt;<br>
+<br>
+requests that at most 10 results are shown for the 25 Year Level
+Guaranteed comparison</p>
+<p>This gives a fine control over the number of results shown for
+each category, when doing multiple category comparisons it allows
+you to keep the page the same length as single category comparisons
+by reducing the number of results shown.
+
+
+</p>
+
+<br><br>
+
+<h3><a name="RefIRC">Income Replacement Calculator Dollar
+Codes</a></h3>
+
+<table width="95%" class="default_table" border="1" cellpadding="5" cellspacing="0" bordercolor="#C0C0C0">
+<colgroup>
+<col width="67">
+<col width="70">
+<col width="119"></colgroup>
+<thead style="border-collapse: collapse; border: 1px solid #164489; background-color: #164489; background-image: url(http://www.compulife.com/images/bg_36px_blue.gif); padding: 2px; color: #FFFFFF;    font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; text-align: center; margin-left:auto; margin-right:auto;">
+<tr valign="top">
+<td width="26%">
+Input Variable
+</td>
+<td width="27%">
+Original Dollar Code
+</td>
+<td width="46%">
+Description
+</td>
+</tr>
+</thead>
+<tbody>
+<tr valign="top">
+<td width="26%">
+<p>AgeToRetireAt</p>
+</td>
+<td width="27%">
+<p>$AgeToRetireAt$</p>
+</td>
+<td width="46%">
+<p>The age the user wants to retire at</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p>AnnualIncomeToReceive</p>
+</td>
+<td width="27%">
+<p>$AnnualIncomeToReceive$</p>
+</td>
+<td width="46%">
+<p>The annual income the user wants to receive at retirement in
+today's dollar</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p>InflationRate</p>
+</td>
+<td width="27%">
+<p>$InflationRate$</p>
+</td>
+<td width="46%">
+<p>The estimated inflation rate</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p>NumOfYearsIncomeNeededFor</p>
+</td>
+<td width="27%">
+<p>$NumOfYearsIncomeNeededFor$</p>
+</td>
+<td width="46%">
+<p>From the retirement age, the number of years the person needs to
+live off the income</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p>PostRetirementIntRate</p>
+</td>
+<td width="27%">
+<p>$PostRetirementIntRate$</p>
+</td>
+<td width="46%">
+<p>An estimate of what the interest rate will be when the person
+retires</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p>InitialSavings</p>
+</td>
+<td width="27%">
+<p>$InitialSavings$</p>
+</td>
+<td width="46%">
+<p>The initial amount saved towards retirement</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p>PreRetirementIntRate</p>
+</td>
+<td width="27%">
+<p>$PreRetirementIntRate$</p>
+</td>
+<td width="46%">
+<p>An estimate of the interest rate before retirement</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p>Program Calculated dollar codes</p>
+</td>
+<td width="27%">
+<p><br></p>
+</td>
+<td width="46%">
+<p><br></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p><br></p>
+</td>
+<td width="27%">
+<p>$ActualIncomeNeeded$</p>
+</td>
+<td width="46%">
+<p>The actual income needed when the person retires</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p><br></p>
+</td>
+<td width="27%">
+<p>$LumpSum$</p>
+</td>
+<td width="46%">
+<p>The lump sum of money needed at retirement</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p><br></p>
+</td>
+<td width="27%">
+<p>$AnnualDeposit$</p>
+</td>
+<td width="46%">
+<p>The amount the person needs to deposit annually in order to
+reach their goal</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p><br></p>
+</td>
+<td width="27%">
+<p>$tableline$</p>
+</td>
+<td width="46%">
+<p>put this dollar code on a line by itself, a table showing the
+values will replace it.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p><br></p>
+</td>
+<td width="27%">
+<p>$tablelinev$ $/endtable$</p>
+</td>
+<td width="46%">
+<p>For more control over the table use these (on separate lines by
+themselves) to mark the boundaries of the individual table
+parts</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p>tablelinev interior variables</p>
+</td>
+<td width="27%">
+<p><br></p>
+</td>
+<td width="46%">
+<p><br></p>
+</td>
+</tr>
+<tr valign="top"> <td width="26%"> <p><br></p> </td> <td width="27%"> <p>$rowEvenOdd$</p> </td> <td width="46%"> <p>Will return a 0 or 1 for even or odd rows, (useful for css programming)</p> </td> </tr>
+<tr valign="top">
+<td width="26%">
+<p><br></p>
+</td>
+<td width="27%">
+<p>$year$</p>
+</td>
+<td width="46%">
+<p>Year</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p><br></p>
+</td>
+<td width="27%">
+<p>$Age$</p>
+</td>
+<td width="46%">
+<p>Age</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p><br></p>
+</td>
+<td width="27%">
+<p>$initialcapital$</p>
+</td>
+<td width="46%">
+<p>Capital that income will be drawn from</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p><br></p>
+</td>
+<td width="27%">
+<p>$incomerequired$</p>
+</td>
+<td width="46%">
+<p>Income required</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p><br></p>
+</td>
+<td width="27%">
+<p>$capitalleft$</p>
+</td>
+<td width="46%">
+<p>Capital remaining after Income has been taken</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p><br></p>
+</td>
+<td width="27%">
+<p>$interestgrowth$</p>
+</td>
+<td width="46%">
+<p>Interest on the remaining capital</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br>
+<br></p>
+<h3><a name="RefERC">Easy Retirement Calculator Dollar
+Codes</a></h3>
+
+
+<table width="95%" class="default_table" border="1" cellpadding="5" cellspacing="0" bordercolor="#C0C0C0">
+<colgroup>
+<col width="78">
+<col width="84">
+<col width="94"></colgroup>
+<thead style="border-collapse: collapse; border: 1px solid #164489; background-color: #164489; background-image: url(http://www.compulife.com/images/bg_36px_blue.gif); padding: 2px; color: #FFFFFF;    font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; text-align: center; margin-left:auto; margin-right:auto;">
+<tr valign="top">
+<td width="30%">
+Input Variable
+</td>
+<td width="33%">
+Original Dollar Code
+</td>
+<td width="37%">
+Description
+</td>
+</tr>
+</thead>
+<tbody>
+<tr valign="top">
+<td width="30%">
+<p>GrossAnnualIncomeOfBreadWinner</p>
+</td>
+<td width="33%">
+<p>$GrossAnnualIncomeOfBreadWinner$</p>
+</td>
+<td width="37%">
+<p>The gross annual income of the breadwinner</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="30%">
+<p>PercentageIncomeRequiredByDependents</p>
+</td>
+<td width="33%">
+<p>$PercentageIncomeRequiredByDependents$</p>
+</td>
+<td width="37%">
+<p>The percentage of income that is required by the breadwinner's
+dependents</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="30%">
+<p>OtherIncome</p>
+</td>
+<td width="33%">
+<p>$OtherIncome$</p>
+</td>
+<td width="37%">
+<p>Other Annual Income.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="30%">
+<p>InterestRate</p>
+</td>
+<td width="33%">
+<p>$InterestRate$</p>
+</td>
+<td width="37%">
+<p>The estimated interest rate</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="30%">
+<p>InflationRate</p>
+</td>
+<td width="33%">
+<p>$InflationRate$</p>
+</td>
+<td width="37%">
+<p>The estimated inflation rate</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="30%">
+<p>NumYearsReplacementIncomeNeededFor</p>
+</td>
+<td width="33%">
+<p>$NumYearsReplacementIncomeNeededFor$</p>
+</td>
+<td width="37%">
+<p>The number of years that the replacement income is required
+for</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="30%">
+<p>Program calculated dollar codes</p>
+</td>
+<td width="33%">
+<p><br></p>
+</td>
+<td width="37%">
+<p><br></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="30%">
+<p><br></p>
+</td>
+<td width="33%">
+<p>$ReplacedFaceValue$</p>
+</td>
+<td width="37%">
+<p>The new face value that is determined by the program</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="30%">
+<p><br></p>
+</td>
+<td width="33%">
+<p>$RoundedReplacedFaceValue$</p>
+</td>
+<td width="37%">
+<p>The new face value rounded up to the nearest thousand.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="30%">
+<p><br></p>
+</td>
+<td width="33%">
+<p>$AnnualIndexedIncome$</p>
+</td>
+<td width="37%">
+<p>The annual indexed income needed</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="30%">
+<p><br></p>
+</td>
+<td width="33%">
+<p>$RemainingAfterYear1$</p>
+</td>
+<td width="37%">
+<p>The monetary amount that is remaining after the first year</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="30%">
+<p><br></p>
+</td>
+<td width="33%">
+<p>$RemainingYear1Interest$</p>
+</td>
+<td width="37%">
+<p>The interest after year 1</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="30%">
+<p><br></p>
+</td>
+<td width="33%">
+<p>$RemainingYear1WithInterest$</p>
+</td>
+<td width="37%">
+<p>The remaining year 1 amount including interest.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="30%">
+<p><br></p>
+</td>
+<td width="33%">
+<p>$SecondYearAnnualIndexedIncome$</p>
+</td>
+<td width="37%">
+<p>The second year annual indexed income</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="30%">
+<p><br></p>
+</td>
+<td width="33%">
+<p>$RemainingAfterYear2$</p>
+</td>
+<td width="37%">
+<p>The remaining dollar amount after year 2</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="30%">
+<p><br></p>
+</td>
+<td width="33%">
+<p>$tableline$</p>
+</td>
+<td width="37%">
+<p>put this dollar code on a line by itself in the IRC.HTM
+file.When the program finds this file, it will substitute a
+table/chart for it.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p><br></p>
+</td>
+<td width="27%">
+<p>$tablelinev$ $/endtable$</p>
+</td>
+<td width="46%">
+<p>For more control over the table use these (on separate lines by
+themselves) to mark the boundaries of the individual table parts
+Use this section twice for the pre and post retirement.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p>tablelinev interior variables</p>
+</td>
+<td width="27%">
+<p><br></p>
+</td>
+<td width="46%">
+<p><br></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p><br></p>
+</td>
+<td width="27%">
+<p>$rowEvenOdd$</p>
+</td>
+<td width="46%">
+<p>Will return a 0 or 1 for even or odd rows, (useful for css
+programming)</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p><br></p>
+</td>
+<td width="27%">
+<p>$year$</p>
+</td>
+<td width="46%">
+<p>Year</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p><br></p>
+</td>
+<td width="27%">
+<p>$Age$</p>
+</td>
+<td width="46%">
+<p>Age</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p><br></p>
+</td>
+<td width="27%">
+<p>$PVInvest$</p>
+</td>
+<td width="46%">
+<p>Present Value of Investment or deposits</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p><br></p>
+</td>
+<td width="27%">
+<p>$AVInvest$</p>
+</td>
+<td width="46%">
+<p>Actual Value of Investment or deposits</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p><br></p>
+</td>
+<td width="27%">
+<p>$TAVInvest$</p>
+</td>
+<td width="46%">
+<p>Current Actual Value Total of Savings</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="26%">
+<p><br></p>
+</td>
+<td width="27%">
+<p>$TPVInvest$</p>
+</td>
+<td width="46%">
+<p>Current Present Value Total of Savings</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br>
+<br></p>
+<h3><a name="SideDollarCodes"></a>
+<a name="RefPick6">Side by Side Analysis Dollar Codes</a></h3>
+
+
+<table width="95%" class="default_table" border="1" cellpadding="5" cellspacing="0" bordercolor="#C0C0C0">
+<colgroup>
+<col width="65">
+<col width="47">
+<col width="144"></colgroup>
+<thead style="border-collapse: collapse; border: 1px solid #164489; background-color: #164489; background-image: url(http://www.compulife.com/images/bg_36px_blue.gif); padding: 2px; color: #FFFFFF;    font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; text-align: center; margin-left:auto; margin-right:auto;">
+<tr valign="top">
+<td width="25%">
+Input Variable
+</td>
+<td width="18%">
+Original Dollar Code
+</td>
+<td width="56%">
+Description
+</td>
+</tr>
+</thead>
+<tbody>
+<tr valign="top">
+<td width="25%">
+<p>Passed in from TEMPLATE.HTM</p>
+</td>
+<td width="18%">
+<p><br></p>
+</td>
+<td width="56%">
+<p><br></p>
+</td>
+</tr>
+
+
+
+<tr valign="top">
+<td width="25%">
+<p>YearsToShow</p>
+</td>
+<td width="18%">
+<p>$yearstoshow$</p>
+</td>
+<td width="56%">
+<p>Use this to override the number of years to show on the spreadsheet.  The value must be at least 10 and no more than 40 .  The value must also be in multiples of 5.</p>
+</td>
+</tr>
+
+
+
+<tr valign="top">
+<td width="25%">
+<p>EmbeddedAccums</p>
+</td>
+<td width="18%">
+<p>$origaccums$</p>
+</td>
+<td width="56%">
+<p>Set it to "ON" if you want to embed an accumulated
+analysis into the side by side policy analysis every 5 years.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p>EmbeddedAccumColor</p>
+</td>
+<td width="18%">
+<p>$origaccumcolor$</p>
+</td>
+<td width="56%">
+<p>original value of EmbeddedAccumColor</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p>EmbeddedPvac</p>
+</td>
+<td width="18%">
+<p>$origpvac$</p>
+</td>
+<td width="56%">
+<p>Set it to "ON" if you want to embed a present value
+analysis into the side by side policy analysis every 5 years</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p>EmbeddedPvacColor</p>
+</td>
+<td width="18%">
+<p>$origpvaccolor$</p>
+</td>
+<td width="56%">
+<p>original value of EmbeddedPvacColor</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p>EmbeddedIndexes</p>
+</td>
+<td width="18%">
+<p>$origindexes$</p>
+</td>
+<td width="56%">
+<p>Set it to "ON" if you want to embed an indexed
+analysis into the side by side policy analysis every 5 years</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p>EmbeddedIndexColor</p>
+</td>
+<td width="18%">
+<p>$origindexcolor$</p>
+</td>
+<td width="56%">
+<p>original value of EmbeddedIndexColor</p>
+</td>
+</tr>
+
+
+
+<tr valign="top">
+<td width="25%">
+<p>MaxColumnPercentage</p>
+</td>
+<td width="18%">
+<p>Calculated</p>
+<p>$maxcolumnpercentage$</p>
+</td>
+<td width="56%">
+<p>If you are using tables to show the information, you might want
+to limit how far each row's width will cover. Each column will give
+20% with a maximum of 100%.<br>
+For example, if you select 2 products to view side by side,
+then$maxcolumnpercentage$ becomes 60. 20 for each
+column(Year,Product1 and Product2). If you user selects 4 or more
+products then $maxcolumnpercentage$ become 100 since we have at
+least 5 columns.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p><br></p>
+</td>
+<td width="18%">
+<p><br></p>
+</td>
+<td width="56%">
+<p><br></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+Dollar Codes
+</td>
+<td width="18%">
+<p><br></p>
+</td>
+<td width="56%">
+<p>These next few calculated dollar codes are available for use
+within the PICKVIEW.HTM file.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p>$guarprem1$, $guarprem2$,..<br>
+$guarprem10$</p>
+</td>
+<td width="18%">
+<p><br></p>
+</td>
+<td width="56%">
+<p>The guaranteed premium value for product i, where i =
+{1,2,..10}</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p>$companyname1$..<br>
+$companyname10$</p>
+</td>
+<td width="18%">
+<p><br></p>
+</td>
+<td width="56%">
+<p>The company name for product i, where i = {1,2,..10}</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p>$productname1$..<br>
+$productname10$</p>
+</td>
+<td width="18%">
+<p><br></p>
+</td>
+<td width="56%">
+<p>The product name for product i, where i = {1,2..10}</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p>$prefstat1$..<br>
+$prefstate10$</p>
+</td>
+<td width="18%">
+<p><br></p>
+</td>
+<td width="56%">
+<p>Product i's status label. for example: 'Preferred Best'</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p>$prod1annual$<br>
+$prod10annual$</p>
+</td>
+<td width="18%">
+<p><br></p>
+</td>
+<td width="56%">
+<p>Annual Premium for product i, where i = {1,2,3..10}</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p>$prod1monthly$..<br>
+$prod10monthly$</p>
+</td>
+<td width="18%">
+<p><br></p>
+</td>
+<td width="56%">
+<p>Product i's monthly premium.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p>$prod1quarterly$..<br>
+$prod10quarterly$</p>
+</td>
+<td width="18%">
+<p><br></p>
+</td>
+<td width="56%">
+<p>Product i's quarterly premium</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p>$prod1semi$..<br>
+$prod10semi$</p>
+</td>
+<td width="18%">
+<p><br></p>
+</td>
+<td width="56%">
+<p>Product i's semi-annual premium</p>
+</td>
+</tr>
+
+
+<tr valign="top">
+<td width="25%">
+<p>$currentsegment$</p>
+<p>$/currentsegment$</p>
+</td>
+<td width="18%">
+<p><br></p>
+</td>
+<td width="56%">
+<p>These are delimiters are always replaced with a blank. When
+doing a side by side comparison, there will be times where the
+current premiums and guaranteed premiums are the same(IE. For
+products that are guaranteed only). For this case it is logical to
+just show the guaranteed results only. If you don't want to show
+the current premiums when they are the same as the guaranteed
+premiums, then you will need to surround the html code that shows
+the current premiums with <b>$currentsegment$</b> and
+<b>$/currentsegment$</b> .By doing this, if all of the currents
+premiums are the same as the guaranteeds, then the program will not
+print out anything between the <b>$currentsegment$</b> and
+<b>$/currentsegment$</b> delimiters. If the current premiums and
+guaranteed premiums are not all the same, then the program will
+print out the html code that exists between the
+<b>$currentsegment$</b> and <b>$/currentsegment$</b> delimiters,
+thus showing the current premiums.</p>
+<p>SIDEVIEW.HTM file.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="25%">
+<p>$repeatcolumn$</p>
+<p>$/repeatcolumn$</p>
+</td>
+<td width="18%">
+<p><br></p>
+</td>
+<td width="56%">
+<p>$repeatcolumn$ and <b>$/repeatcolumn$</b> <b>must</b> be on the
+same line or else the program will not recognize it. Surround a
+column's definition with the <b>$repeatcolumn$</b> and
+<b>$/repeatcolumn$</b> markers. The program will recognize the code
+contained between the markers to be the definition of one column,
+and then will repeat that definition n number of times, where n is
+the number of products selected to viewed side by side.</p>
+<p>Remember that the program can only hold 4000 characters per
+line. The column being repeated will expand n times within the
+line. The expanded line cannot be more than 4000 characters or else
+it will be truncated.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br>
+<br></p>
+
+
+
+
+<h3><a name="RefHealth">Health Analyzer Dollar Codes</a></h3>
+
+<table width="95%" class="default_table" border="1" cellpadding="5" cellspacing="0" bordercolor="#C0C0C0">
+<colgroup>
+<col width="71">
+<col width="82">
+<col width="103"></colgroup>
+<thead style="border-collapse: collapse; border: 1px solid #164489; background-color: #164489; background-image: url(http://www.compulife.com/images/bg_36px_blue.gif); padding: 2px; color: #FFFFFF;    font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; text-align: center; margin-left:auto; margin-right:auto;">
+<tr valign="top">
+<td width="28%">
+Input Variable Name
+</td>
+<td width="32%">
+Original Dollar Code
+</td>
+<td width="40%">
+Description
+</td>
+</tr>
+</thead>
+<tbody>
+<tr valign="top">
+<td width="28%">
+<p>HealthTemplateFile</p>
+</td>
+<td width="32%">
+<p>$orighealthtemplatefile$</p>
+</td>
+<td width="40%">
+<p>The name of the health template file you want to use. If not
+specified, the default health file name used will be
+HTEMPLATE.HTM</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>GoString</p>
+</td>
+<td width="32%">
+<p>$origgostring$</p>
+</td>
+<td width="40%">
+<p>The string to show when the product is a go.<br>
+IE. "Go", you can also specify an image bitmap as shown
+in HEALTH.HTM</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>NoGoString</p>
+</td>
+<td width="32%">
+<p>$orignogostring$</p>
+</td>
+<td width="40%">
+<p>The string to show when the product is a no go. IE.
+"No"</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>DoNotKnowString</p>
+</td>
+<td width="32%">
+<p>$origdonotknowstring$</p>
+</td>
+<td width="40%">
+<p>The string to show when you do not know the product's health
+status. IE. "--"</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>GoColor</p>
+</td>
+<td width="32%">
+<p>$origgocolor$</p>
+</td>
+<td width="40%">
+<p>$healthcolor$,when defined within the comparison's prodline will
+be replaced by GoColor, NoGoColor or DoNotKnowColor depending on
+the product's health result.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>NoGoColor</p>
+</td>
+<td width="32%">
+<p>$orignogocolor$</p>
+</td>
+<td width="40%">
+<p>Specifies the no go color</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>DoNotKnowColor</p>
+</td>
+<td width="32%">
+<p>$origdonotknowcolor$</p>
+</td>
+<td width="40%">
+<p>Specifies the do not know color</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>GoMessage</p>
+</td>
+<td width="32%">
+<p>$origgomessage$</p>
+</td>
+<td width="40%">
+<p>Set this to what you want $healthrejectreason$ to be when the
+product is a go</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>DoNotKnowMessage</p>
+</td>
+<td width="32%">
+<p>$origdonotknowmessage$</p>
+</td>
+<td width="40%">
+<p>Set this to what you want $healthrejectreason$ to be when the
+product is a don't know</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>RejectReasonBr</p>
+</td>
+<td width="32%">
+<p>$origrejectreasonbr$</p>
+</td>
+<td width="40%">
+<p>if this is not passed in then &lt;BR&gt; is the separator
+between the health reject reasons(if there is more than one). If
+you pass this in and set it to "OFF", then the
+separator will be '\n' instead of &lt;BR&gt;</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>NoRedX</p>
+</td>
+<td width="32%">
+<p>$orignoredx$</p>
+</td>
+<td width="40%">
+<p>If this variable is not used, then the program assumes that it
+is "OFF".If it is set to "ON", then the
+health comparison table will not show products that have red
+x's.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p><br></p>
+</td>
+<td width="32%">
+<p>$selectednoredxon$</p>
+<p>$selectednoredxoff$</p>
+</td>
+<td width="40%">
+<p>If we are doing a no red x lookup, then $selectednoredx$
+becomes"selected" and $selectednoredxoff$ becomes
+""(a blank). The purpose of these two dollar codes is
+for the combo box to remember which option it should default
+"selected" to.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>SortByHealth</p>
+</td>
+<td width="32%">
+<p>$origsortbyhealth$</p>
+</td>
+<td width="40%">
+<p>If this variable is not used, then the program assumes that it
+is "OFF";that is we are sorting by premium. If it is
+set to "ON",then the health comparison will show
+products with green checks first followed by products with blank
+boxes followed by products with red x's.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p><br></p>
+</td>
+<td width="32%">
+<p>$selectedsortbyhealthon$</p>
+<p>$selectedsortbyhealthoff$</p>
+</td>
+<td width="40%">
+<p>If we are doing a sort by health lookup, then
+$selectedsortbyhealthon$becomes "selected" and
+$selectedsortbyhealthoff$becomes "" (a blank). The
+purpose of these two dollar codes is for the combo box to remember
+which option it should default "selected" to.</p>
+</td>
+</tr>
+
+
+
+<tr valign="top">
+<td width="28%">
+<p>HealthRejectReasonInProdLine</p>
+</td>
+<td width="32%">
+<p>$orighealthrejectreasoninprodline$</p>
+</td>
+<td width="40%">
+<p>By default, this in ON. If you don't want to show the health
+reject reason in the prodline, then pass this in and set it to
+"OFF".The advantage is it might speed your lookup a
+little bit if you are on a slow machine.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>CalculateRejectReason</p>
+</td>
+<td width="32%">
+<p><br></p>
+</td>
+<td width="40%">
+<p>Used when doing a health rejection reason lookup. It is
+defaulted to ON. Set this too "OFF" if you don't want
+to recalculate the health rejection reason lookup. If you set this
+to off, then you should pass in <b>HealthRejectReason</b> and set
+its value to $healthrejectreason$.</p>
+<p>One might choose to use this variable in order to avoid
+recalculating the health reject reason since the recalculate will
+expect all the base and health variables to be re-passed in.</p>
+</td>
+</tr>
+
+
+
+
+<tr valign="top">
+<td width="28%">
+<p><br></p>
+</td>
+<td width="32%">
+<p><br></p>
+</td>
+<td width="40%">
+<p>A reference for the curious; It is expected that most people
+will use the sample HINIT.HTM and HEALTH.HTM file as is, hence an
+understanding of the rest of these variables is not that
+important.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>DoSmokingTobacco</p>
+</td>
+<td width="32%">
+<p>$origdosmokingtobacco$</p>
+</td>
+<td width="40%">
+<p>Set to "ON" if you want to analyze tobacco
+information</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>DoHeightWeight</p>
+</td>
+<td width="32%">
+<p>$origdoheightweight$</p>
+</td>
+<td width="40%">
+<p>Set to"ON" if you want to analyze height weight
+information</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>DoBloodPressure</p>
+</td>
+<td width="32%">
+<p>$origdobloodpressure$</p>
+</td>
+<td width="40%">
+<p>Set to"ON" if you want to analyze blood pressure
+information</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>DoCholesterol</p>
+</td>
+<td width="32%">
+<p>$origdocholesterol$</p>
+</td>
+<td width="40%">
+<p>Set to "ON" if you want to analyze cholesterol
+information</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>DoDriving</p>
+</td>
+<td width="32%">
+<p>$origdodriving$</p>
+</td>
+<td width="40%">
+<p>Set to "ON" if you want to analyze driving
+information</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>DoCigarettes</p>
+</td>
+<td width="32%">
+<p>$origdocigarettes$</p>
+</td>
+<td width="40%">
+<p>Set to "ON" if you want to analyze cigarette
+usage</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>DoCigars</p>
+</td>
+<td width="32%">
+<p>$origdocigars$</p>
+</td>
+<td width="40%">
+<p>Set to "ON" if you want to analyze cigar usage</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>DoPipe</p>
+</td>
+<td width="32%">
+<p>$origdopipe$</p>
+</td>
+<td width="40%">
+<p>Set to "ON" if you want to analyze pipe usage</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>DoChewingTobacco</p>
+</td>
+<td width="32%">
+<p>$origdochewingtobacco$</p>
+</td>
+<td width="40%">
+<p>Set to "ON" if you want to analyze chewing tobacco
+usage</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>DoNicotinePatchesOrGum</p>
+</td>
+<td width="32%">
+<p>$origdonicotinepatchesorgum$</p>
+</td>
+<td width="40%">
+<p>Set to"ON" if you want to analyze nicotine patches
+or gum usage</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>NumCigarettes</p>
+</td>
+<td width="32%">
+<p>$orignumcigarettes$</p>
+</td>
+<td width="40%">
+<p>The number of cigarettes smoked per day</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p><br></p>
+</td>
+<td width="32%">
+<p>The Period Mapping is as follows</p>
+<p>It applies to all input variables that start with Period</p>
+</td>
+<td width="40%">
+<p align="left">0: 6 months or less<br>
+1: 1 year or less<br>
+2: 2 years or less<br>
+3: 3 years or less<br>
+4: 4 years or less<br>
+5: 5 years or less<br>
+6: 7 years or less<br>
+7: 10 years or less<br>
+8: 15 years or less<br>
+9: more than 15 years</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>PeriodCigarettes</p>
+</td>
+<td width="32%">
+<p>$origperiodcigarettes$</p>
+</td>
+<td width="40%">
+<p>Set to 0..9 to indicate when he user last smoked cigarettes</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>NumCigars</p>
+</td>
+<td width="32%">
+<p>$orignumcigars$</p>
+</td>
+<td width="40%">
+<p>The numbers of cigars smoked per month</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>PeriodCigars</p>
+</td>
+<td width="32%">
+<p>$origperiodcigars$</p>
+</td>
+<td width="40%">
+<p>Set to 0..9 to indicate when the user last smoked cigars</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>PeriodPipe</p>
+</td>
+<td width="32%">
+<p>$origperiodpipe$</p>
+</td>
+<td width="40%">
+<p>Set to 0..9 to indicate when the user last used a pipe</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>PeriodChewingTobacco</p>
+</td>
+<td width="32%">
+<p>$origperiodchewingtobacco$</p>
+</td>
+<td width="40%">
+<p>Set to 0..9 to indicate when the user last chewed tobacco</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>PeriodNicotinePatchesOrGum</p>
+</td>
+<td width="32%">
+<p>$origperiodnicotinepatchesorgum$</p>
+</td>
+<td width="40%">
+<p>Set to 0..9 to indicate when the user last used nicotine patches
+or gum</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>Weight</p>
+</td>
+<td width="32%">
+<p>$origweight$</p>
+</td>
+<td width="40%">
+<p>weight in pounds</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>Feet</p>
+</td>
+<td width="32%">
+<p>$origfeet$</p>
+</td>
+<td width="40%">
+<p>height (the feet portion)</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>Inches</p>
+</td>
+<td width="32%">
+<p>$originches$</p>
+</td>
+<td width="40%">
+<p>height (inches portion)</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>Systolic</p>
+</td>
+<td width="32%">
+<p>$origsystolic$</p>
+</td>
+<td width="40%">
+<p>Systolic Pressure</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>Dystolic</p>
+</td>
+<td width="32%">
+<p>$origdystolic$</p>
+</td>
+<td width="40%">
+<p>Dystolic Pressure</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>BloodPressureMedication</p>
+</td>
+<td width="32%">
+<p>$origbloodpressuremedication$</p>
+</td>
+<td width="40%">
+<p>Set to "Y" if the user currently takes medication
+for high blood pressure, else "N"</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>PeriodBloodPressure</p>
+</td>
+<td width="32%">
+<p>$origperiodbloodpressure$</p>
+</td>
+<td width="40%">
+<p>Set to 0..9 to indicate when the user was last treated for high
+blood pressure</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>PeriodBloodPressureControlDuration</p>
+</td>
+<td width="32%">
+<p>$origperiodbloodpressurecontrolduration$</p>
+</td>
+<td width="40%">
+<p><br></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>CholesterolLevel</p>
+</td>
+<td width="32%">
+<p>$origcholesterollevel$</p>
+</td>
+<td width="40%">
+<p>Cholesterol Level</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>HDLRatio</p>
+</td>
+<td width="32%">
+<p>$orighdlratio$</p>
+</td>
+<td width="40%">
+<p>HDL Ratio</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>CholesterolMedication</p>
+</td>
+<td width="32%">
+<p>$origcholesterolmedication$</p>
+</td>
+<td width="40%">
+<p>Set to"Y" if the user currently takes medication for
+cholesterol, else "N"</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>PeriodCholesterol</p>
+</td>
+<td width="32%">
+<p>$origperiodcholesterol$</p>
+</td>
+<td width="40%">
+<p>Set to0..9 to indicate when the user was last treated for high
+cholesterol</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>PeriodCholesterolControlDuration</p>
+</td>
+<td width="32%">
+<p>$origcholesterolcontrolduration$</p>
+</td>
+<td width="40%">
+<p><br></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>HadDriversLicense</p>
+</td>
+<td width="32%">
+<p>$orighaddriverslicense$</p>
+</td>
+<td width="40%">
+<p>If "Y" then we do the driving section, else we
+don't</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>MovingViolations0</p>
+</td>
+<td width="32%">
+<p>$origmovingviolations0$</p>
+</td>
+<td width="40%">
+<p>Number of moving violation in the last 6 months</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>MovingViolations1</p>
+</td>
+<td width="32%">
+<p>$origmovingviolations1$</p>
+</td>
+<td width="40%">
+<p>Number of moving violations for period ( &gt; 6 months and less
+than 1 year)</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>MovingViolations2</p>
+</td>
+<td width="32%">
+<p>$origmovingviolations2$</p>
+</td>
+<td width="40%">
+<p>Number of moving violations for period (&gt; 1 year and less
+than 2 years)</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>MovingViolations3</p>
+</td>
+<td width="32%">
+<p>$origmovingviolations3$</p>
+</td>
+<td width="40%">
+<p>Number of moving violations for period (&gt; 2 years and less
+than 3 years)</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>MovingViolations4</p>
+</td>
+<td width="32%">
+<p>$origmovingviolations4$</p>
+</td>
+<td width="40%">
+<p>Number of moving violations for period (&gt; 3 years and less
+than 5 years)</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>RecklessConviction</p>
+</td>
+<td width="32%">
+<p>$origrecklessconviction$</p>
+</td>
+<td width="40%">
+<p>Set to"Y" if the user has had a prior reckless
+driving conviction, else "N"</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>PeriodRecklessConviction</p>
+</td>
+<td width="32%">
+<p>$origperiodrecklessconviction$</p>
+</td>
+<td width="40%">
+<p>Set to0..9 to indicate when the user last got convicted for
+reckless driving</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>DwiConviction</p>
+</td>
+<td width="32%">
+<p>$origdwiconviction$</p>
+</td>
+<td width="40%">
+<p>Set to"Y" if the user has had a prior dwi/dui
+conviction, else "N"</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>PeriodDwiConviction</p>
+</td>
+<td width="32%">
+<p>$origperioddwiconviction$</p>
+</td>
+<td width="40%">
+<p>Set to 0..9 to indicate when the user last got convicted for
+dwi/dui</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>SuspendedConviction</p>
+</td>
+<td width="32%">
+<p>$origsuspendedconviction$</p>
+</td>
+<td width="40%">
+<p>Set to "Y" if the user has had a prior revoked or
+suspended license, else "N"</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>PeriodSuspendedConviction</p>
+</td>
+<td width="32%">
+<p>$origperiodsuspendedconviction$</p>
+</td>
+<td width="40%">
+<p>Set to 0..9 to indicate when the user last got their license
+revoked or suspended</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>MoreThanOneAccident</p>
+</td>
+<td width="32%">
+<p>$origmorethanoneaccident$</p>
+</td>
+<td width="40%">
+<p>Set to "Y" if the user has ever had more than one
+accident, else "N"</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>PeriodMoreThanOneAccident</p>
+</td>
+<td width="32%">
+<p>$origperiodmorethanoneaccident$</p>
+</td>
+<td width="40%">
+<p>Set to 0..9 to indicate when the user last got into an accident
+which preceded their last</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>NumDeaths</p>
+</td>
+<td width="32%">
+<p>$orignumdeaths$</p>
+</td>
+<td width="40%">
+<p>Number of parents/siblings who died before some age. Range is
+0..3</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>NumContracted</p>
+</td>
+<td width="32%">
+<p>$orignumcontracted$</p>
+</td>
+<td width="40%">
+<p>Number of parents/siblings who contracted a disease before some
+age. Range is 0..3</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>Note: For the next few variables the x and the y represent
+numbers</p>
+</td>
+<td width="32%">
+<p>Y = 0, 1 or 2</p>
+</td>
+<td width="40%">
+<p><br></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>AgeDiedXY</p>
+</td>
+<td width="32%">
+<p>$origagediedXY$</p>
+</td>
+<td width="40%">
+<p>Age the person died</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>AgeContractedXY</p>
+</td>
+<td width="32%">
+<p>$origagecontractedXY$</p>
+</td>
+<td width="40%">
+<p>Age at which the person contracted the disease. If you are
+greater than AgeDied then it will be given same value as
+AgeDied.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>IsParentXY</p>
+</td>
+<td width="32%">
+<p>$origisparentXY$</p>
+</td>
+<td width="40%">
+<p>Is that person a parent</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>CVDxy</p>
+</td>
+<td width="32%">
+<p>$origcvdXY$</p>
+</td>
+<td width="40%">
+<p>Pass in and set to "Y" if the cardiovascular disease
+applies</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>CADxy</p>
+</td>
+<td width="32%">
+<p>$origcadXY$</p>
+</td>
+<td width="40%">
+<p>Pass in and set to "Y" if coronary artery disease
+(heart attack) applies</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>CVIxy</p>
+</td>
+<td width="32%">
+<p>$origcviXY$</p>
+</td>
+<td width="40%">
+<p>Pass in and set to "Y" if cardiovascular impairments
+applies</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>CVAxy</p>
+</td>
+<td width="32%">
+<p>$origcvaXY$</p>
+</td>
+<td width="40%">
+<p>Pass in and set to "Y" if cerebrovascular disease
+applies</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>DiabetesXY</p>
+</td>
+<td width="32%">
+<p>$origdiabetesXY$</p>
+</td>
+<td width="40%">
+<p>Pass in and set to "Y" if diabetes applies</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>KidneyDiseaseXY</p>
+</td>
+<td width="32%">
+<p>$origkidneydiseaseXY$</p>
+</td>
+<td width="40%">
+<p>Pass in and set to "Y" if kidney disease applies</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>ColonCancerXY</p>
+</td>
+<td width="32%">
+<p>$origcoloncancerXY$</p>
+</td>
+<td width="40%">
+<p>Pass in and set to "Y" if colon cancer applies</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>IntestinalCancerXY</p>
+</td>
+<td width="32%">
+<p>$origintestinalcancerXY$</p>
+</td>
+<td width="40%">
+<p>Pass in and set to "Y" if intestinal cancer
+applies</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>BreastCancerXY</p>
+</td>
+<td width="32%">
+<p>$origbreastcancerXY$</p>
+</td>
+<td width="40%">
+<p>Pass in and set to "Y" if breast cancer applies</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>ProstateCancerXY</p>
+</td>
+<td width="32%">
+<p>$origprostatecancerXY$</p>
+</td>
+<td width="40%">
+<p>Pass in and set to "Y" if prostate cancer
+applies</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>OvarianCancerXY</p>
+</td>
+<td width="32%">
+<p>$origovariancancerXY$</p>
+</td>
+<td width="40%">
+<p>Pass in and set to "Y" if ovarian cancer applies</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>OtherInternalCancerXY</p>
+</td>
+<td width="32%">
+<p>$origotherinternalcancerXY$</p>
+</td>
+<td width="40%">
+<p>Pass in and set to "Y" if other internal cancer
+applies</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>MalignantMelanomaXY</p>
+</td>
+<td width="32%">
+<p>$origmalignantmelanomaXY$</p>
+</td>
+<td width="40%">
+<p>Pass in and set to "Y" if malignant melanoma
+applies</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>BasalCellCarcinomaXY</p>
+</td>
+<td width="32%">
+<p>$origbasalcellcarcinomaXY$</p>
+</td>
+<td width="40%">
+<p>Pass in and set to "Y" if basal cell carcinoma
+applies</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>Alcohol</p>
+</td>
+<td width="32%">
+<p>$alcohol$</p>
+</td>
+<td width="40%">
+<p>Pass in and set to "Y" if alcohol abuse applies</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>AlcYearsSinceTreatment</p>
+</td>
+<td width="32%">
+<p>$alcyearssincetreatment$</p>
+</td>
+<td width="40%">
+<p>Set to 0..9 to indicate number of years since alcohol abuse treatment</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>Drugs</p>
+</td>
+<td width="32%">
+<p>$drugs$</p>
+</td>
+<td width="40%">
+<p>Pass in and set to "Y" if drug abuse applies</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="28%">
+<p>DrugsYearsSinceTreatment</p>
+</td>
+<td width="32%">
+<p>$drugsyearssincetreatment$</p>
+</td>
+<td width="40%">
+<p>Set to 0..9 to indicate number of years since drug abuse treatment</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br>
+<br></p>
+<h3><a name="RefHealthSeg">Health Analyzer Segment Codes</a></h3>
+<div style="margin-left: 2em" start="7">
+<p>This is only for reference, an explanation of how segment codes
+work for the HEALTH.HTM file. It is expected that no one will need
+to bother with this chart/segment.</p>
+<p>Segments are used to show only the necessary health questions.
+For example if the user does not wish to analyze cholesterol
+information, then the HTML code contained within the
+$CholesterolSegment$ and$/CholesterolSegment$ will not be shown. A
+working example of how to use these segments can be found in the
+HEALTH.HTM file. These segments are only applicable to the
+HEALTH.HTM file. In the example files, the variables that control
+which segments to show is set in the HINIT.HTM file.</p>
+</div>
+
+
+<table width="95%" class="default_table" border="1" cellpadding="5" cellspacing="0" bordercolor="#C0C0C0">
+<colgroup>
+<col width="85">
+<col width="171"></colgroup>
+<thead style="border-collapse: collapse; border: 1px solid #164489; background-color: #164489; background-image: url(http://www.compulife.com/images/bg_36px_blue.gif); padding: 2px; color: #FFFFFF;    font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; text-align: center; margin-left:auto; margin-right:auto;">
+<tr valign="top">
+<td width="33%">
+Dollar Codes
+</td>
+<td width="67%">
+Description
+</td>
+</tr>
+</thead>
+<tr valign="top">
+<td width="33%">
+<p>$SmokingTobaccoSegment$</p>
+<p>$/SmokingTobaccoSegment$</p>
+</td>
+<td width="67%">
+<p>Surround the code that pertains to questions that are
+smoking/tobacco related in this segment.</p>
+<p>Note that Cigarettes segment, Cigars segment, Pipe segment,
+ChewingTobacco segment and NicotinePatchesOrGum segment should all
+be contained within the SmokingTobacco Segment.</p>
+<p>DoSmokingTobacco to "ON" to show this segment.</p>
+<p>If none of the 5 sub smoking categories are set to ON from the
+previous page, then DoSmoking sets itself to OFF and the code
+within the SmokingTobaccoSegment is not shown.</p>
+</td>
+</tr>
+<tbody>
+<tr valign="top">
+<td width="33%">
+<p>$CigarettesSegment$</p>
+<p>$/CigarettesSegment$</p>
+</td>
+<td width="67%">
+<p>Set <b>DoCigarettes</b> to "ON" to show this
+segment.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="33%">
+<p>$CigarsSegment$</p>
+<p>$/CigarsSegment$</p>
+</td>
+<td width="67%">
+<p>Set <b>DoCigars</b> to "ON" to show this
+segment.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="33%">
+<p>$PipeSegment$</p>
+<p>$/PipeSegment$</p>
+</td>
+<td width="67%">
+<p>Set <b>DoPipe</b> to "ON" to show this segment.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="33%">
+<p>$ChewingTobaccoSegment$</p>
+<p>$/ChewingTobaccoSegment$</p>
+</td>
+<td width="67%">
+<p>Set <b>DoChewingTobacco</b> to "ON" to show this
+segment.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="33%">
+<p>$NicotinePatchesOrGumSegment$</p>
+<p>$/NicotinePatchesOrGumSegment$</p>
+</td>
+<td width="67%">
+<p>Set <b>DoNicotinePatchesOrGum</b> to "ON" to show
+this segment.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="33%">
+<p>$HeightWeightSegment$</p>
+<p>$/HeightWeightSegment$</p>
+</td>
+<td width="67%">
+<p>Set <b>DoHeightWeight</b> to "ON" to show this
+segment.</p>
+<p>If Weight's value from the previous page is -1 (Don't Know)then
+DoHeightWeight sets itself to OFF and the code within the
+HeightWeightSegment is not shown.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="33%">
+<p>$BloodPressureSegment$</p>
+<p>$/BloodPressureSegment$</p>
+</td>
+<td width="67%">
+<p>Set <b>DoBloodPressure</b> to "ON" to show this
+segment.</p>
+<p>If Systolic's value from the previous page is -1 (Don't
+Know)then DoBloodPressure sets itself to OFF and the code within
+the BloodPressureSegment is not shown.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="33%">
+<p>$CholesterolSegment$</p>
+<p>$/CholesterolSegment$</p>
+</td>
+<td width="67%">
+<p>Set <b>DoCholesterol</b> to "ON" to show this
+segment.</p>
+<p>If CholesterolLevel's value from the previous page is -1(Don't
+Know) then DoCholesterol sets itself to OFF and the code within the
+CholesterolSegment is not shown.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="33%">
+<p>$DrivingSegment$</p>
+<p>$/DrivingSegment$</p>
+</td>
+<td width="67%">
+<p>Surround the code that pertains to questions that are driving
+related in this segment.</p>
+<p>Note that Reckless Conviction segment, Dwi Conviction
+segment,Suspended Conviction segment, and More than one Accident
+segment should all be contained within the SmokingTobacco
+Segment.</p>
+<p>DoDriving to "ON" to show this segment.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="33%">
+<p>$RecklessConvictionSegment$</p>
+<p>$/RecklessConvictionSegment$</p>
+</td>
+<td width="67%">
+<p>To show this segment, from the previous page set
+RecklessConviction to "Y"</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="33%">
+<p>$DwiConvictionSegment$</p>
+<p>$/DwiConvictionSegment$</p>
+</td>
+<td width="67%">
+<p>To show this segment, from the previous page set DwiConviction
+to "Y"</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="33%">
+<p>$SuspendedConvictionSegment$</p>
+<p>$/SuspendedConvictionSegment$</p>
+</td>
+<td width="67%">
+<p>To show this segment, from the previous page set
+SuspendedConviction to "Y"</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="33%">
+<p>$MoreThanOneAccidentSegment$</p>
+<p>$/MoreThanOneAccidentSegment$</p>
+</td>
+<td width="67%">
+<p>To show this segment, from the previous page set
+MoreThanOneAccident to "Y"</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="33%">
+<p>$FamilySegment$</p>
+<p>$/FamilySegment$</p>
+</td>
+<td width="67%">
+<p>Surround the code that pertain to questions relating to Family
+History with this Family Segments</p>
+<p>Note that all of the YoungestDeathSegmentX's and
+YoungestContractedSegmentY's should be contained with the
+FamilySegment, where X=1,2 or 3 and Y= 1, 2 or 3.</p>
+<p>Set DoFamily to "ON" to show this segment.</p>
+<p>If the number of family members(parents or siblings) who have
+died and number of family members(parents or siblings) who have
+contracted are both less than or equal to 0, than DoFamily will set
+itself to "OFF" and the code within the Family Segment
+is not shown.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="33%">
+<p>$YoungestDeathSegment1$</p>
+<p>$/YoungestDeathSegment1$</p>
+</td>
+<td width="67%">
+<p>The code that asks the questions about the youngest family
+member who has died is contained within this segment.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="33%">
+<p>$YoungestDeathSegment2$</p>
+<p>$/YoungestDeathSegment2$</p>
+</td>
+<td width="67%">
+<p>Code for the next youngest family member who has died is
+contained within this segment</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="33%">
+<p>$YoungestDeathSegment3$</p>
+<p>$/YoungestDeathSegment3$</p>
+</td>
+<td width="67%">
+<p>Code for the 3rd youngest family member who has died is
+contained within this segment</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="33%">
+<p>$YoungestContractedSegment1$</p>
+<p>$/YoungestContractedSegment1$</p>
+</td>
+<td width="67%">
+<p>The code that asks the questions about the youngest family
+member who has contracted a disease is contained within this
+segment.</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="33%">
+<p>$YoungestContractedSegment2$</p>
+<p>$/YoungestContractedSegment2$</p>
+</td>
+<td width="67%">
+<p>Code for the next youngest family member who has contracted a
+disease is contained within this segment</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="33%">
+<p>$YoungestContractedSegment3$</p>
+<p>$/YoungestContractedSegment3$</p>
+</td>
+<td width="67%">
+<p>Code for the 3rd youngest family member who has contracted a
+disease is contained within this segment</p>
+</td>
+</tr>
+<tr valign="top">
+<td width="33%">
+<p>$DoSubAbuse$</p>
+<p>$/DoSubAbuse$</p>
+</td>
+<td width="67%">
+<p>Code for substance abuse questions (alcohol and drugs)</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+</table>
+
+
+
+
+<br><br>
+
+
+<h2><a name="appendix1">Appendix 1 - State and Province Codes</a></h2>
+<p>The following are the codes for use with the input variable <a href="#RefMain">state</a>.
+<h3>State Codes</h3>
+
+<br><br>
+
+<br><br>
+<table width="95%" class="default_table" border="1" cellpadding="5" cellspacing="0" bordercolor="#C0C0C0">
+<thead style="border-collapse: collapse; border: 1px solid #164489; background-color: #164489; background-image: url(http://www.compulife.com/images/bg_36px_blue.gif); padding: 2px; color: #FFFFFF;    font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; text-align: center; margin-left:auto; margin-right:auto;">
+<tr><th>Code</th><th>Value</th></tr>
+</thead>
+<tr</td><td>1</td</td><td> Alabama</td></tr>
+<tr><td>2</td><td> Alaska</td></tr>
+<tr><td>3</td><td> Arizona</td></tr>
+<tr><td>4</td><td> Arkansas</td></tr>
+<tr><td>5</td><td> California</td></tr>
+<tr><td>6</td><td> Colorado</td></tr>
+<tr><td>7</td><td> Connecticut</td></tr>
+<tr><td>8</td><td> Delaware</td></tr>
+<tr><td>9</td><td> Dist.  Columbia</td></tr>
+<tr</td><td>10</td><td> Florida</td></tr>
+<tr</td><td>11</td><td> Georgia</td></tr>
+<tr</td><td>12</td><td> Hawaii</td></tr>
+<tr</td><td>13</td><td> Idaho</td></tr>
+<tr</td><td>14</td><td> Illinois</td></tr>
+<tr</td><td>15</td><td> Indiana</td></tr>
+<tr</td><td>16</td><td> Iowa</td></tr>
+<tr</td><td>17</td><td> Kansas</td></tr>
+<tr</td><td>18</td><td> Kentucky</td></tr>
+<tr</td><td>19</td><td> Louisiana</td></tr>
+<tr</td><td>20</td><td> Maine</td></tr>
+<tr</td><td>21</td><td> Maryland</td></tr>
+<tr</td><td>22</td><td> Massachusetts</td></tr>
+<tr</td><td>23</td><td> Michigan</td></tr>
+<tr</td><td>24</td><td> Minnesota </td></tr>
+<tr</td><td>25</td><td> Mississippi</td></tr>
+<tr</td><td>26</td><td> Missouri</td></tr>
+<tr</td><td>27</td><td> Montana</td></tr>
+<tr</td><td>28</td><td> Nebraska</td></tr>
+<tr</td><td>29</td><td> Nevada</td></tr>
+<tr</td><td>30</td><td> New Hampshire</td></tr>
+<tr</td><td>31</td><td> New Jersey</td></tr>
+<tr</td><td>32</td><td> New Mexico</td></tr>
+<tr</td><td>52</td><td> NY Non-Bus</td></tr>
+<tr</td><td>33</td><td> NY Business</td></tr>
+<tr</td><td>34</td><td> North Carolina</td></tr>
+<tr</td><td>35</td><td> North Dakota</td></tr>
+<tr</td><td>36</td><td> Ohio</td></tr>
+<tr</td><td>37</td><td> Oklahoma</td></tr>
+<tr</td><td>38</td><td> Oregon</td></tr>
+<tr</td><td>39</td><td> Pennsylvania</td></tr>
+<tr</td><td>40</td><td> Rhode Island</td></tr>
+<tr</td><td>41</td><td> South Carolina</td></tr>
+<tr</td><td>42</td><td> South Dakota</td></tr>
+<tr</td><td>43</td><td> Tennessee</td></tr>
+<tr</td><td>44</td><td> Texas</td></tr>
+<tr</td><td>45</td><td> Utah</td></tr>
+<tr</td><td>46</td><td> Vermont</td></tr>
+<tr</td><td>47</td><td> Virginia</td></tr>
+<tr</td><td>48</td><td> Washington</td></tr>
+<tr</td><td>49</td><td> West Virginia</td></tr>
+<tr</td><td>50</td><td> Wisconsin</td></tr>
+<tr</td><td>51</td><td> Wyoming</td></tr>
+<tr</td><td>53</td><td> Guam</td></tr>
+<tr</td><td>54</td><td> Puerto Rico</td></tr>
+<tr</td><td>55</td><td> Virgin Islands</td></tr>
+<tr</td><td>56</td><td> American Samoa</td></tr>
+</table>
+
+<h3>Province Codes</h3>
+<table width="95%" class="default_table" border="1" cellpadding="5" cellspacing="0" bordercolor="#C0C0C0">
+<thead style="border-collapse: collapse; border: 1px solid #164489; background-color: #164489; background-image: url(http://www.compulife.com/images/bg_36px_blue.gif); padding: 2px; color: #FFFFFF;    font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; text-align: center; margin-left:auto; margin-right:auto;">
+<tr><th>Code</th><th>Value</th></tr>
+</thead>
+<tr><td>1</td><td>Alberta</td></tr>
+<tr><td>2</td><td>British Columbia</td></tr>
+<tr><td>3</td><td>Manitoba</td></tr>
+<tr><td>4</td><td>New Brunswick</td></tr>
+<tr><td>5</td><td>Newfoundland</td></tr>
+<tr><td>6</td><td>Nova Scotia</td></tr>
+<tr><td>7</td><td>Northwest Territories</td></tr>
+<tr><td>8</td><td>Nunavut</td></tr>
+<tr><td>9</td><td>Ontario</td></tr>
+<tr><td>10</td><td>Prince Edward Island</td></tr>
+<tr><td>11</td><td>Quebec</td></tr>
+<tr><td>12</td><td>Saskatchewan</td></tr>
+<tr><td>13</td><td>Yukon</td></tr>
+</table>
+
+
+
+<br><br>
+
+</body>
+</html>

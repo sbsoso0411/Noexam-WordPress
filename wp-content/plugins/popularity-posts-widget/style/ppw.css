@@ -1,0 +1,38 @@
+/*
+Popularity Posts Widget plugin stylesheet
+Developed by Mihail Barinov
+
+Use the following classes to style your popular posts list as you like.
+*/
+
+.content {
+	
+}
+
+/* title styles */
+.ppw-post-title {
+
+}
+
+/* thumbnail styles */
+img.wpp-thumbnail {
+	border:0;
+	margin-bottom:6px;
+}
+
+/* Stats tag styles */
+.post-stats {
+	font-size:9px;
+	font-weight:bold;
+
+}
+	
+	.ppw-comments {
+	}
+	
+	.ppw-views {
+	}
+
+	.ppw-date {
+	}
+

@@ -1,0 +1,2500 @@
+/**
+ * CSS Styles used by WPMUDEV plugins.
+ *
+ * To apply these styles add these classes to the mentioned tags:
+ * <html> .. add class "wpmud-html"
+ * <body> .. add class "wpmud"
+ *
+ * -----------------------------------------------------------------------------
+ *
+ * 1. GLOBAL STYLES, TYPOGRAPHY
+ * 2. ELEMENT STATES
+ * 3. ELEMENT: BOX
+ * 4. ELEMENT: LIST
+ * 5. ELEMENT: LIST-TABLE
+ * 6. ELEMENT: GRID
+ * 7. ELEMENT: HORIZONTAL TABS
+ * 8. ELEMENT: VERTICAL TABS
+ * 9. ELEMENT: TOOLTIPS
+ * 10. ELEMENT: OVERLAYS
+ * 11. ELEMENT: DASHBOARD NOTIFICATONS (enhancements)
+ * 12. ELEMENT: BUTTONS
+ * 13. ELEMENT: FORMS
+ * 14. ELEMENT: INPUT (general styles)
+ * 15. ELEMENT: TOGGLE (styled checkbox)
+ * 16. ELEMENT: RADIO GROUP (styled radio)
+ * 17. ELEMENT: SELECT
+ * 18. ELEMENT: LISTINGS
+ * 19. ELEMENT: USER NOTIFICATIONS
+ * 20. ELEMENT: SEARCH BOX
+ * 21. ELEMENT: COUNT-BADGE
+ * 22. ELEMENT: PAGE HEADER
+ * 23. FONTAWESOME
+ * 24. WPMUDEV ICONFONT
+ * 25. CUSTOM ANIMATIONS
+ *
+ * -----------------------------------------------------------------------------
+ */
+
+/* ****************************************************************************
+ * 1. GLOBAL STYLES, TYPOGRAPHY
+ */
+.wpmud-html {
+	background-color: #F4F4F4;
+}
+.wpmud #wpbody {
+	background: #F4F4F4;
+    -webkit-font-smoothing: antialiased !important;
+}
+.wpmud #wpbody * {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.wpmud #container {
+	margin-top: 30px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.5em;
+	color: #777771;
+	letter-spacing: -0.015em;
+}
+.wpmud h1,
+.wpmud h2,
+.wpmud h3,
+.wpmud h4,
+.wpmud h5,
+.wpmud h6 {
+	display: block;
+	margin: 0.5em auto;
+	padding: 0;
+    line-height: 1em;
+    text-align: center;
+    color: #777771;
+}
+.wpmud h1,
+.wpmud h2,
+.wpmud h3 {
+	font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+	font-weight: 400;
+	max-width: 900px;
+	text-transform: uppercase;
+}
+.wpmud h4,
+.wpmud h5,
+.wpmud h6 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+.wpmud h1 {
+	font-size: 60px;
+	font-weight: 700;
+}
+.wpmud h2 {
+	font-size: 50px;
+	text-transform: none;
+}
+.wpmud h3 {
+	font-size: 50px;
+}
+.wpmud h4 {
+	font-size: 36px;
+	text-transform: uppercase;
+}
+.wpmud h5 {
+	font-size: 36px;
+}
+.wpmud h6 {
+	font-size: 28px;
+	font-weight: 400;
+}
+.wpmud p {
+	display: block;
+	margin: 0.5em 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 21px;
+	color: #777771;
+}
+.wpmud p small {
+	font-size: 12.5px;
+	line-height: 17px;
+	display: inline-block;
+	color: #555550;
+}
+.wpmud p big {
+	font-size: 18px;
+	line-height: 24px;
+	display: inline-block;
+	font-weight: 400;
+	color: #888882;
+}
+.wpmud p:first-child {
+	margin-top: 0;
+}
+.wpmud p:last-child {
+	margin-bottom: 0;
+}
+.wpmud .notice p {
+	margin:5px 0;
+}
+.wpmud dfn {
+	font-style: normal;
+	font-weight: normal;
+	border-bottom: 1px dotted #999;
+}
+.wpmud code,
+.wpmud pre {
+	font: 400 13px/15px Consolas, Monaco, monospace;
+	border-left: 2px solid rgba(0,0,0,0.2);
+	padding: 5px 10px 5px 10px;
+	background: rgba(0,0,0,0.05);
+	border-radius: 3px;
+	color: #555;
+	margin: 1em 0;
+	overflow: auto;
+	vertical-align: middle;
+}
+.wpmud code {
+	display: inline-block;
+	margin: 0;
+}
+.wpmud #wpfooter {
+	display: none;
+}
+
+.wpmud a {
+	text-decoration: none;
+	color: #19B4CF;
+}
+.wpmud a:active,
+.wpmud a:focus,
+.wpmud a:hover {
+	color: #477B92;
+}
+.wpmud a.disabled,
+.wpmud a.disabled:active,
+.wpmud a.disabled:hover,
+.wpmud a.disabled:focus {
+	color: 788084;
+	cursor: default;
+}
+
+/* ****************************************************************************
+ * 2. ELEMENT STATES
+ */
+.wpmud .block {
+	display: block;
+	width: 100%;
+	float: none;
+}
+.wpmud .button.block,
+.wpmud button.block,
+.wpmud input.block {
+	text-align: center;
+}
+.wpmud .space-t {
+	margin-top: 20px;
+}
+.wpmud .space-b {
+	margin-bottom: 20px;
+}
+.wpmud .tl {
+	text-align: left;
+}
+.wpmud .tc {
+	text-align: center;
+}
+.wpmud .tr {
+	text-align: right;
+}
+.wpmud .group {
+	clear: both;
+	margin: 0 0 30px;
+}
+.wpmud .group:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.wpmud .input-group {
+	display: inline-block;
+	white-space: nowrap;
+}
+.wpmud .float-r {
+	float: right;
+}
+.wpmud .float-l {
+	float: left;
+}
+.wpmud .pointer {
+	cursor: pointer;
+}
+.wpmud .dev-label {
+	background: #ECECEC;
+	border: 1px solid #E5E5E5;
+	color: #BABABA;
+	line-height: 30px;
+	padding: 0 10px;
+	border-radius: 3px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 5px;
+	cursor: default;
+}
+.wpmud .can-close .box-title .close,
+.wpmud .can-close .close-icon {
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	line-height: 22px;
+	float: right;
+}
+.wpmud .can-close .box-title .close {
+	float: right;
+	margin: 20px -10px 0 0;
+}
+.wpmud .can-close .box-title .close:after,
+.wpmud .can-close .close-icon:after {
+	content: "\79";
+	font-family: 'WPMU-DEV-App-Icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 22px;
+	text-align: center;
+	font-size: 14px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: #FFF;
+	color: #777771;
+	transition: color 0.3s;
+}
+.wpmud .can-close .box-title .close:hover:after,
+.wpmud .can-close .close-icon:hover:after {
+	color: #333;
+}
+/* http://loading.io/loader/?use=eyJzaXplIjo2MCwic3BlZWQiOjEsImNiayI6IiM5OTk5OTkiLCJjMSI6IiMwMDAiLCJjMiI6IjciLCJjMyI6IjEwIiwiYzQiOiJ5LWF4aXMiLCJ0eXBlIjoic3BpbiJ9 */
+.wpmud .loading.disabled:before,
+.wpmud .loading:before {
+	content: '';
+	background: transparent url(img/spin.gif) center center no-repeat;
+	background-size: contain;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	vertical-align: top;
+	position: static;
+	border: none;
+	margin: 0;
+	z-index: 1;
+	opacity: 1;
+}
+.wpmud .has-hover .show-on-hover {
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 0.3s;
+}
+.wpmud .has-hover:hover .show-on-hover,
+.wpmud .has-hover .show-on-hover.loading {
+	opacity: 1;
+}
+
+/* ****************************************************************************
+ * 3. ELEMENT: BOX
+ */
+.wpmud .dev-box {
+	border-radius: 5px;
+	background-color: #FFF;
+	box-shadow: 0 2px 0 #EAEAEA;
+	padding: 30px;
+	margin: 0 0 30px;
+}
+.wpmud .dev-box .box-title {
+	height: 60px;
+	padding: 0 30px;
+	border-bottom: 1px solid #EAEAEA;
+	margin: -30px -30px 30px -30px;
+}
+.wpmud .dev-box .box-title .buttons {
+	float: right;
+	margin: 15px -5px 0 0;
+}
+.wpmud .dev-box .box-title .button {
+	font-weight: 700;
+}
+.wpmud .dev-box .box-title h3 {
+	font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	color: #777771;
+	line-height: 60px;
+	margin: 0;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.wpmud .dev-box .box-title .buttons .dev-icon {
+	font-size: 18px;
+}
+.wpmud .box-footer {
+	text-align: center;
+    margin-top: 32px;
+    font-size: 16px;
+}
+
+/* ****************************************************************************
+ * 4. ELEMENT: LIST
+ */
+.wpmud .dev-list {
+	list-style: none;
+	margin: -20px 0 20px;
+	padding: 0;
+}
+.wpmud .dev-list.inline {
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+.wpmud .dev-list.standalone {
+	margin-bottom: -20px;
+}
+.wpmud .dev-list > li {
+	position: relative;
+	display: table;
+	width: 100%;
+	padding: 6px 0;
+	margin: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.wpmud .dev-list > li > div {
+	display: table-row; /* give each list item the full width */
+}
+.wpmud .dev-list > li.list-header {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: 'Roboto Condensed';
+	padding-top: 0;
+}
+.wpmud .dev-list > li .list-label {
+	padding: 10px 10px 10px 0;
+}
+.wpmud .dev-list > li .list-label.list-header {
+	font-family: 'Roboto Condensed';
+	color: #777771;
+	width: 200px;
+}
+.wpmud .dev-list > li .list-label,
+.wpmud .dev-list > li .list-detail {
+	display: table-cell;
+	vertical-align: middle;
+	cursor: default;
+	border-bottom: 1px solid #EEEEEE;
+}
+.wpmud .dev-list > li:last-child .list-label,
+.wpmud .dev-list > li:last-child .list-detail {
+	border-bottom: 1px solid transparent;
+}
+.wpmud .dev-list > li .list-detail {
+	text-align: right;
+	padding: 10px 0;
+}
+.wpmud .dev-list.top > li .list-label,
+.wpmud .dev-list.top > li .list-detail {
+	vertical-align: top;
+}
+.wpmud .dev-list.left > li .list-label,
+.wpmud .dev-list.left > li .list-detail {
+	text-align: left;
+}
+.wpmud .dev-list.top > li strong {
+	font-family: 'Roboto Condensed';
+}
+.wpmud .dev-list.nowrap > li .list-label,
+.wpmud .dev-list.nowrap > li .list-detail {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.wpmud .dev-list.nowrap > li .list-label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 50px;
+	border-bottom: 0;
+}
+.wpmud .dev-list.hover-effect > li.list-header:hover {
+	background: transparent;
+}
+.wpmud .dev-list.hover-effect > li.list-header:hover:before,
+.wpmud .dev-list.hover-effect > li.list-header:hover:after {
+	display: none;
+}
+.wpmud .dev-list.hover-effect > li:hover {
+	background: #FBFBFB;
+}
+.wpmud .dev-list.hover-effect > li:hover .list-label,
+.wpmud .dev-list.hover-effect > li:hover .list-detail {
+	border-bottom: 1px solid #EEE;
+}
+.wpmud .dev-list.hover-effect > li:hover:before,
+.wpmud .dev-list.hover-effect > li:hover:after {
+	content: '';
+	position: absolute;
+	left: -30px;
+	width: 30px;
+	bottom: 0;
+	top: -1px;
+	background: #FBFBFB;
+	border-top: 1px solid #EEE;
+	border-bottom: 1px solid #EEE;
+}
+.wpmud .dev-list.hover-effect > li:hover:after {
+	right: -30px;
+	left: auto;
+}
+
+/* ****************************************************************************
+ * 5. ELEMENT: LIST-TABLE
+ */
+.wpmud .list-table {
+	border: 0;
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+.wpmud .list-table > thead > tr > th {
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 8px 10px;
+	cursor: default;
+}
+.wpmud .list-table > thead > tr > th:first-child {
+	padding-left: 0;
+}
+.wpmud .list-table > thead > tr > th:last-child {
+	padding-right: 0;
+}
+.wpmud .list-table > tbody > tr > td {
+	padding: 8px 10px;
+	border-top: 1px solid #EEE;
+	cursor: default;
+	position: relative;
+	z-index: 1;
+}
+.wpmud .list-table > tbody > tr:last-child > td {
+	border-bottom: 1px solid transparent;
+}
+.wpmud .list-table > tbody > tr > td:first-child {
+	padding-left: 0;
+}
+.wpmud .list-table > tbody > tr > td:last-child {
+	padding-right: 0;
+}
+.wpmud .list-table.hover-effect > tbody > tr:hover > td:first-child:after,
+.wpmud .list-table.hover-effect > tbody > tr:hover > td:last-child:after {
+	content: '';
+	position: absolute;
+	left: -30px;
+	top: -1px;
+	bottom: -1px;
+	width: 30px;
+	border-top: 1px solid #EEE;
+	border-bottom: 1px solid #EEE;
+	background: #FBFBFB;
+}
+.wpmud .list-table.hover-effect > tbody > tr:hover > td:last-child:after {
+	right: -30px;
+	left: auto;
+}
+.wpmud .list-table.hover-effect > tbody > tr:hover {
+	background: #FBFBFB;
+}
+.wpmud .list-table.hover-effect > tbody > tr:hover > td {
+	border-top: 1px solid #EEE;
+	border-bottom: 1px solid #EEE;
+	z-index: 2;
+}
+
+/* ****************************************************************************
+ * 6. ELEMENT: GRID
+ */
+.wpmud .row,
+.wpmud .row-sep {
+	clear: both;
+	margin: 0 0 0 0;
+	position: relative;
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+.wpmud .row:after,
+.wpmud .row-sep:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.wpmud .row-sep {
+	height: 1px;
+	margin-bottom: 30px;
+	width: auto;
+	display: block;
+}
+.wpmud .row-sep:before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-bottom: 1px solid #E5E5E5;
+}
+.wpmud .row-sep .button {
+	margin: 20px auto 0;
+	display: block;
+	width: 480px;
+	text-align: center;
+	position: relative;
+	top: -20px;
+	position: relative;
+	z-index: 1;
+	background: #FFF;
+}
+.wpmud .row-sep .button.button-small {
+	top: -14px;
+}
+.wpmud .row-sep .button:before,
+.wpmud .row-sep .button:after {
+	content: '';
+	position: absolute;
+	z-index: 0;
+	left: -30px;
+	width: 30px;
+	top: 0;
+	bottom: 0;
+	background: #FFF;
+}
+.wpmud .row-sep .button:after {
+	right: -30px;
+	left: auto;
+}
+.wpmud .row-space {
+	margin-bottom: 30px;
+}
+.wpmud .row .col-third,
+.wpmud .row .col-two-third,
+.wpmud .row .col-half {
+	display: table-cell;
+	padding: 0 15px 0 15px;
+	position: relative;
+	vertical-align: top;
+}
+.wpmud .row .col-third {
+	width: 33.3333%;
+}
+.wpmud .row .col-two-third {
+	width: 66.6666%;
+}
+.wpmud .row .col-half {
+	width: 50%;
+}
+.wpmud .row .col-third:first-child,
+.wpmud .row .col-two-third:first-child,
+.wpmud .row .col-half:first-child {
+	padding-left: 0;
+}
+.wpmud .row .col-third:last-child,
+.wpmud .row .col-two-third:last-child,
+.wpmud .row .col-half:last-child {
+	padding-right: 0;
+}
+
+/* ****************************************************************************
+ * 7. ELEMENT: HORIZONTAL TABS
+ */
+.wpmud .tabs {
+	float: none;
+	position: relative;
+	padding: 0;
+	margin: 0 0 30px;
+	background-color: #FFF;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.wpmud .tabs:before,
+.wpmud .tabs:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.wpmud .tabs .tab {
+	float: left;
+}
+.wpmud .tabs .tab:first-child label {
+	border-top-left-radius: 5px;
+}
+.wpmud .tabs .tab label {
+	display: block;
+	padding: 10px 30px;
+	line-height: 40px;
+	margin: 0;
+	top: 0;
+	height: 60px;
+	cursor: pointer;
+	position: relative;
+	background-color: #FEFEFE;
+	color: #BFBABA;
+	border-right: 1px solid #EAEAEA;
+	text-transform: uppercase;
+}
+.wpmud .tabs .tab input[type=radio] {
+	display: none;
+}
+.wpmud .tabs .tab input[type=radio]:checked + label {
+	background-color: #FFF;
+	color: #777771;
+	height: 61px;
+	z-index: 3;
+}
+.wpmud .tabs .tab .content {
+	z-index: 2;
+	display: none;
+	text-align: left;
+	left: 0;
+	right: 0;
+	width: auto;
+	padding: 30px;
+	position: absolute;
+	top: 60px;
+	min-height: 150px;
+	border-top: 1px solid #EAEAEA;
+	background-color: #FFF;
+	overflow: auto;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	box-shadow: 0 2px 0 #EAEAEA;
+}
+.wpmud .tabs .tab input[type=radio]:checked ~ .content {
+	display: block;
+}
+.wpmud .dev-box .tabs {
+	border: 1px solid #EAEAEA;
+}
+.wpmud .dev-box .tabs .tab .content {
+	border: 1px solid #EAEAEA;
+	left: -1px;
+	right: -1px;
+	box-shadow: none;
+}
+
+/* ****************************************************************************
+ * 8. ELEMENT: VERTICAL TABS
+ */
+.wpmud .vertical-tabs {
+	display: block;
+	position: relative;
+	margin-bottom: 30px;
+}
+.wpmud .vertical-tabs > .tab > input[type="radio"] {
+	/* NO `top: -9999px` - else page scrolls to top when tab is clicked! */
+	left: -9999px;
+	position: absolute;
+	z-index: -10;
+	opacity: 0;
+}
+.wpmud .vertical-tabs > .tab {
+	display: block;
+}
+.wpmud .vertical-tabs > .tab > label {
+	cursor: pointer;
+	display: block;
+	padding: 15px 20px;
+	text-transform: uppercase;
+	font-size: 13px;
+	line-height: 28px;
+	position: relative;
+	width: 200px;
+	color: #AAA;
+	margin: 0;
+	border-radius: 5px 0 0 5px;
+	z-index: 10;
+	transition: color 0.3s, background 0.3s;
+}
+.wpmud .vertical-tabs > .tab > label * {
+	line-height: 28px;
+}
+.wpmud .vertical-tabs > .tab > label:hover {
+	color: #777771;
+}
+.wpmud .vertical-tabs > .tab > label:after {
+	content: '';
+	position: absolute;
+	left: 20px;
+	right: 20px;
+	bottom: -1px;
+	height: 1px;
+	border-bottom: 1px solid #E5E5E5;
+}
+.wpmud .vertical-tabs > .tab:last-child > label:after {
+	display: none;
+}
+.wpmud .vertical-tabs > .tab > .content {
+	display: none;
+	left: 200px;
+	right: 0;
+	min-width: 300px;
+	padding: 20px;
+	position: absolute;
+	top: 0;
+	background: #FFF;
+	box-shadow: 0 2px 0 #EAEAEA;
+}
+.wpmud .vertical-tabs > .tab > input[type="radio"]:checked + label {
+	background: #FFF;
+	color: #333;
+	box-shadow: 0 2px 0 #EAEAEA;
+}
+.wpmud .vertical-tabs > .tab > input[type="radio"]:checked + label:after {
+	display: none;
+}
+.wpmud .vertical-tabs > .tab > input[type="radio"]:checked ~ .content {
+	display: block;
+}
+.wpmud .vertical-tabs .tab-title {
+	border-bottom: 1px solid #EAEAEA;
+	margin: -20px -20px 20px -20px;
+	line-height: 28px;
+	padding: 15px 20px;
+	text-align: left;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/* ****************************************************************************
+ * 9. ELEMENT: TOOLTIPS
+ */
+.wpmud .dev-tip {
+	width: 420px;
+	margin: 0 auto 10px;
+	padding: 20px;
+	background-color: #0B2F3F;
+	border-radius: 5px;
+	position: relative;
+}
+.wpmud .dev-tip:after {
+	content: '';
+	position: absolute;
+	bottom: -14px;
+	left: 50%;
+	margin-left: -7px;
+	border: 7px solid transparent;
+	border-top-color: #0B2F3F;
+}
+.wpmud .dev-tip,
+.wpmud .dev-tip p {
+	font-size: 15px;
+	line-height: 18px;
+	color: #EEE;
+}
+.wpmud [tooltip] {
+	position: relative;
+	overflow: visible;
+}
+.wpmud [tooltip]:before {
+	content: '';
+	position: absolute;
+	border: 5px solid transparent;
+	border-top-color: #0B2F3F;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -5px;
+	margin-bottom: -5px;
+	opacity: 0;
+	z-index: -1;
+	transition: margin .2s, opacity .2s, z-index .2s linear .2s;
+	pointer-events: none;
+}
+.wpmud [tooltip]:after {
+	content: attr(tooltip);
+	position: absolute;
+	background: #0B2F3F;
+	color: #FFF;
+	bottom: 100%;
+	left: 50%;
+	width: 200px;
+	margin-left: -100px;
+	margin-bottom: 5px;
+	text-align: center;
+	padding: 5px;
+	border-radius: 4px;
+	text-transform: uppercase;
+	font: 600 13px/20px 'Roboto Condensed';
+	opacity: 0;
+	z-index: -1;
+	transition: margin .2s, opacity .2s, z-index .2s linear .2s;
+	white-space: pre-wrap;
+	pointer-events: none;
+}
+.wpmud [tooltip].tooltip-s:after {
+	width: 150px;
+	margin-left: -75px;
+}
+.wpmud [tooltip].tooltip-l:after {
+	width: 280px;
+	margin-left: -140px;
+}
+.wpmud [tooltip].tooltip-right:after {
+	margin-left: -180px;
+}
+.wpmud [tooltip].tooltip-s.tooltip-right:after {
+	margin-left: -130px;
+}
+.wpmud [tooltip].tooltip-l.tooltip-right:after {
+	margin-left: -260px;
+}
+.wpmud [tooltip].tooltip-bottom:before {
+	border-color: transparent;
+	border-bottom-color: #0B2F3F;
+	top: 100%;
+	bottom: auto;
+	margin-top: -5px;
+	margin-bottom: 0;
+}
+.wpmud [tooltip].tooltip-bottom:after {
+	bottom: auto;
+	top: 100%;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+.wpmud [tooltip]:hover:before {
+	opacity: 1;
+	z-index: 1;
+	margin-bottom: 0;
+	transition: margin .2s, opacity .2s;
+}
+.wpmud [tooltip]:hover:after {
+	opacity: 1;
+	z-index: 1;
+	margin-bottom: 10px;
+	transition: margin .2s, opacity .2s;
+}
+.wpmud .disabled[tooltip]:before,
+.wpmud .disabled[tooltip]:after {
+	display: none;
+}
+
+/* ****************************************************************************
+ * 10. ELEMENT: OVERLAYS
+ */
+.wpmud dialog {
+	display: none;
+}
+.wpmud .dev-overlay {
+	position: fixed;
+	left: 160px;
+	top: 32px;
+	right: 0;
+	bottom: 0;
+	z-index: 1000; /* fixed position is always on top */
+	display: none; /* hidden by default */
+	overflow: visible;
+}
+.wpmud.folded .dev-overlay {
+	left: 36px;
+}
+.wpmud .dev-overlay .back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(20, 72, 95, .85);
+	z-index: 0;
+}
+.wpmud .dev-overlay .box-scroll {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	overflow: auto;
+}
+.wpmud .dev-overlay .box {
+	position: absolute;
+	top: 0;
+	min-height: 120px;
+	left: 50%;
+	margin: 20px 0 20px -420px;
+	width: 840px;
+	background: #FFF;
+	border-radius: 5px;
+	padding: 40px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+	z-index: 2;
+	overflow: hidden;
+}
+.wpmud .dev-overlay.small .box {
+	width: 600px;
+	margin-left: -300px;
+}
+.wpmud .dev-overlay .box.loading:before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(255,255,255,0.75);
+	z-index: 1;
+	width: auto;
+	height: auto;
+	background-size: 18px;
+}
+.wpmud .dev-overlay.no-margin .content {
+	margin: -40px;
+}
+.wpmud .dev-overlay.no-margin .fullsize {
+	display: block;
+	width: 100%;
+}
+.wpmud .dev-overlay .box .title {
+	min-height: 60px;
+	padding: 0 60px 0 40px;
+	border-bottom: 1px solid #EAEAEA;
+	margin: -40px -40px 40px -40px;
+}
+.wpmud .dev-overlay .title .close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0 24px;
+	line-height: 60px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #BABABA;
+    cursor: pointer;
+}
+.wpmud .dev-overlay .title .close:hover {
+	color: #777771;
+}
+.wpmud .dev-overlay .title h3 {
+	font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	color: #777771;
+	line-height: 30px;
+	margin: 0;
+	padding: 15px 0;
+	text-align: left;
+}
+.wpmud .dev-overlay .title .title-action {
+	position: absolute;
+	right: 60px;
+	top: 0;
+	height: 60px;
+	vertical-align: middle;
+	box-sizing: border-box;
+	padding: 10px 0;
+}
+.wpmud .dev-overlay .title .title-action .button-small {
+	margin: 5px 0;
+}
+.wpmud-html.has-overlay {
+	overflow: hidden;
+}
+.wpmud-html.has-overlay ul#adminmenu a.wp-has-current-submenu:after,
+.wpmud-html.has-overlay ul#adminmenu > li.current > a.current:after {
+	border-right-color: #356175;
+}
+
+/* ****************************************************************************
+ * 11. ELEMENT: DASHBOARD NOTIFICATONS (enhancements)
+ */
+.wpmud .wrap .frash-notice.notice {
+	box-shadow: 0 0 0 2px #E8E8E5;
+}
+.wpmud .frash-notice .frash-notice-message {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.65em;
+	color: #777771;
+}
+.wpmud .frash-notice .frash-notice-message b.block {
+	display: block;
+	font-size: 16.5px;
+}
+
+/* ****************************************************************************
+ * 12. ELEMENT: BUTTONS
+ */
+.wpmud button:focus,
+.wpmud .button:focus {
+	outline-color: transparent;
+	outline-style: none;
+	border: 0;
+	box-shadow: none;
+}
+.wpmud button,
+.wpmud .button {
+	font: 500 15px/20px 'Roboto';
+	background: #00ACCA;
+	color: #FFF;
+	text-transform: uppercase;
+	padding: 11px 20px 9px;
+	height: auto;
+	display: inline-block;
+	margin: 0;
+	border: 0;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	cursor: pointer;
+	box-shadow: none;
+	-moz-transition: color 0.3s, opacity 0.3s;
+	transition: color 0.3s, opacity 0.3s;
+	text-shadow: none;
+}
+.wpmud button + button,
+.wpmud .button + button,
+.wpmud button + .button,
+.wpmud .button + .button,
+.wpmud a + button,
+.wpmud a + .button {
+	margin-left: 10px;
+}
+.wpmud button:hover:not(:focus):not(:active),
+.wpmud .button:hover:not(:focus):not(:active) {
+	background-color: #0093B1;
+	color: #FFF;
+	box-shadow: none;
+}
+/* http://www.colorzilla.com/gradient-editor/#0082a1+0,008fae+100 */
+.wpmud button:active,
+.wpmud button:focus,
+.wpmud .button:active,
+.wpmud .button:focus {
+	color: #FFF;
+	box-shadow: none;
+	background: #0082a1;
+	background: -moz-linear-gradient(top, #0082a1 0%, #008fae 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0082a1), color-stop(100%,#008fae));
+	background: -webkit-linear-gradient(top, #0082a1 0%,#008fae 100%);
+	background: -o-linear-gradient(top, #0082a1 0%,#008fae 100%);
+	background: -ms-linear-gradient(top, #0082a1 0%,#008fae 100%);
+	background: linear-gradient(to bottom, #0082a1 0%,#008fae 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0082a1', endColorstr='#008fae',GradientType=0 );
+}
+/* Variation: Green button */
+.wpmud .button-green {
+	background: #1ABC9C;
+}
+.wpmud .button-green:hover:not(:focus):not(:active) {
+	background: #148F77;
+}
+/* http://www.colorzilla.com/gradient-editor/#0a6550+0,0e9272+100 */
+.wpmud .button-green:active,
+.wpmud .button-green:focus {
+	color: #FFF;
+	background: #0a6550;
+	background: -moz-linear-gradient(top,  #0a6550 0%, #0e9272 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0a6550), color-stop(100%,#0e9272));
+	background: -webkit-linear-gradient(top,  #0a6550 0%,#0e9272 100%);
+	background: -o-linear-gradient(top,  #0a6550 0%,#0e9272 100%);
+	background: -ms-linear-gradient(top,  #0a6550 0%,#0e9272 100%);
+	background: linear-gradient(to bottom,  #0a6550 0%,#0e9272 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a6550', endColorstr='#0e9272',GradientType=0 );
+}
+/* Variation: Secondary Button */
+.wpmud .button-secondary {
+	background: transparent;
+	color: #00ACCA;
+	box-shadow: 0 0 0 2px #00ACCA inset;
+}
+/* Variation: Red Button */
+.wpmud .button-red {
+	background: transparent;
+	color: #fd6e70;
+	box-shadow: 0 0 0 2px #fd6e70 inset;
+}
+.wpmud .button-red:hover:not(:focus):not(:active) {
+	background: #fd6e70;
+}
+/* http://www.colorzilla.com/gradient-editor/#E24A4C+0,fd6e70+100 */
+.wpmud .button-red:active,
+.wpmud .button-red:focus {
+	color: #FFFFFF;
+	box-shadow: 0 0 0 1px #e24a4c inset;
+	background: #e24a4c;
+	background: -moz-linear-gradient(top,  #e24a4c 0%, #fd6e70 100%);
+	background: -webkit-linear-gradient(top,  #e24a4c 0%,#fd6e70 100%);
+	background: linear-gradient(to bottom,  #e24a4c 0%,#fd6e70 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e24a4c', endColorstr='#fd6e70',GradientType=0 );
+}
+/* Variation: Grey */
+.wpmud .button-grey {
+	background: #AEAEAE;
+}
+.wpmud .button-grey:hover:not(:focus):not(:active) {
+	background: #9E9E9E;
+}
+/* http://www.colorzilla.com/gradient-editor/#8e8e8e+0,9e9e9e+100 */
+.wpmud .button-grey:active,
+.wpmud .button-grey:focus {
+	color: #FFFFFF;
+	box-shadow: 0 0 0 1px #D8D8D8 inset;
+	background: #8e8e8e;
+	background: -moz-linear-gradient(top,  #8e8e8e 0%, #9e9e9e 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8e8e8e), color-stop(100%,#9e9e9e));
+	background: -webkit-linear-gradient(top,  #8e8e8e 0%,#9e9e9e 100%);
+	background: -o-linear-gradient(top,  #8e8e8e 0%,#9e9e9e 100%);
+	background: -ms-linear-gradient(top,  #8e8e8e 0%,#9e9e9e 100%);
+	background: linear-gradient(to bottom,  #8e8e8e 0%,#9e9e9e 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8e8e8e', endColorstr='#9e9e9e',GradientType=0 );
+}
+/* Variation: Yellow */
+.wpmud .button-yellow {
+	background: #FDCE43;
+}
+.wpmud .button-yellow:hover:not(:focus):not(:active) {
+	background: #E6BB3B;
+}
+/* http://www.colorzilla.com/gradient-editor/#E6BB3B+0,FDCE43+100 */
+.wpmud .button-yellow:active,
+.wpmud .button-yellow:focus {
+	color: #FFFFFF;
+	box-shadow: 0 0 0 1px #d6a719 inset;
+	background: #d6a719;
+	background: -moz-linear-gradient(top,  #d6a719 0%, #e6bb3b 100%);
+	background: -webkit-linear-gradient(top,  #d6a719 0%,#e6bb3b 100%);
+	background: linear-gradient(to bottom,  #d6a719 0%,#e6bb3b 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6a719', endColorstr='#e6bb3b',GradientType=0 );
+}
+/* Variation: Light */
+.wpmud .button-light {
+	background: transparent;
+	color: #777771;
+	box-shadow: 0 0 0 1px #E3E3E3 inset;
+}
+/* http://www.colorzilla.com/gradient-editor/#f4f4f4+0,e8e8e8+100 */
+.wpmud .button-light:hover:not(:focus):not(:active) {
+	color: #555;
+	box-shadow: 0 0 0 1px #D8D8D8 inset;
+	background: #f1f1f1;
+}
+/* http://www.colorzilla.com/gradient-editor/#d0d0d0+0,f4f4f4+100 */
+.wpmud .button-light:active,
+.wpmud .button-light:focus {
+	color: #444;
+	box-shadow: 0 0 0 1px #D0D0D0 inset;
+	background: #d8d8d8;
+	background: -moz-linear-gradient(top,  #d8d8d8 0%, #f4f4f4 100%);
+	background: -webkit-linear-gradient(top,  #d8d8d8 0%,#f4f4f4 100%);
+	background: linear-gradient(to bottom,  #d8d8d8 0%,#f4f4f4 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8d8d8', endColorstr='#f4f4f4',GradientType=0 );
+}
+/* Variation: Light */
+.wpmud .button-deactivated,
+.wpmud .button-deactivated:hover:not(:focus):not(:active),
+.wpmud .button-deactivated:active,
+.wpmud .button-deactivated:focus {
+	color: #AAA;
+	box-shadow: 0 0 0 1px #F3F3F3 inset;
+	background: #F8F8F8;
+}
+/* Variation: Text button */
+.wpmud .button-text {
+	background: transparent;
+	color: #777771;
+	box-shadow: none;
+	border: none;
+	padding-left: 0;
+	padding-right: 0;
+}
+.wpmud .button-text:hover:not(:focus):not(:active) {
+	color: #0093B1;
+	box-shadow: none;
+	background: transparent;
+}
+/* http://www.colorzilla.com/gradient-editor/#e8e8e8+0,f4f4f4+100 */
+.wpmud .button-text:active,
+.wpmud .button-text:focus {
+	color: #0093B1;
+	background: transparent;
+	box-shadow: none;
+}
+.wpmud .button.button-text.button-small,
+.wpmud .button.button-text.button-big {
+	padding-left: 0;
+	padding-right: 0;
+}
+.wpmud .button-text.disabled,
+.wpmud .button-text:disabled {
+	background: transparent !important;
+}
+/* Variation: Small button */
+.wpmud .button.button-small {
+	font: 500 14px/20px 'Roboto Condensed';
+	padding: 6px 12px 4px;
+	height: auto;
+}
+/* Variation: Big button */
+.wpmud .button.button-big {
+	padding: 18px 24px 17px;
+	height: auto;
+}
+/* Variation: CTA (normal) */
+.wpmud .button.button-cta {
+	box-shadow: 0px 3px 0px 0px #0093B1;
+}
+.wpmud .button.button-cta:hover:not(:focus):not(:active),
+.wpmud .button.button-cta:active,
+.wpmud .button.button-cta:focus {
+	box-shadow: 0px 3px 0px 0px #007391;
+}
+/* Variation: CTA (green) */
+.wpmud .button.button-green.button-cta {
+	box-shadow: 0px 3px 0px 0px #1F947B;
+}
+.wpmud .button.button-green.button-cta:hover:not(:focus):not(:active),
+.wpmud .button.button-green.button-cta:active,
+.wpmud .button.button-green.button-cta:focus {
+	box-shadow: 0px 3px 0px 0px #00745B;
+}
+/* Restore the default WP dismiss button */
+.wpmud .notice-dismiss,
+.wpmud .notice-dismiss:hover:not(:focus):not(:active),
+.wpmud .notice-dismiss:hover,
+.wpmud .notice-dismiss:focus,
+.wpmud .notice-dismiss:active {
+    border: none;
+    margin: 0;
+    padding: 9px;
+    background: none;
+    color: #b4b9be;
+    cursor: pointer;
+}
+
+/* ****************************************************************************
+ * 13. ELEMENT: FORMS
+ */
+.wpmud label {
+	display: block;
+	padding: 7px 10px;
+	font-weight: 500;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	margin: 0 0 4px;
+	color: #777771;
+}
+.wpmud label.inline-label {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	font-weight: inherit;
+	font-size: inherit;
+}
+.wpmud form > div {
+	padding-top: 5px;
+}
+.wpmud form > div:first-child,
+.wpmud form > div.buttons {
+	padding-top: 0;
+}
+
+/* ****************************************************************************
+ * 14. ELEMENT: INPUT (general styles)
+ */
+.wpmud :focus,
+.wpmud textarea:focus,
+.wpmud select:focus,
+.wpmud input:focus {
+	outline-color: transparent;
+	outline-style: none;
+	box-shadow: none;
+}
+.wpmud .input,
+.wpmud input[type="text"],
+.wpmud input[type="email"],
+.wpmud input[type="search"],
+.wpmud input[type="password"],
+.wpmud select,
+.wpmud textarea {
+	color: #999;
+	display: block;
+	font: 500 15px/25px 'Roboto';
+	width: 100%;
+	max-width: 100%;
+	padding: 7px 15px 6px;
+	margin: 0px 0px 15px 0px;
+	border: 1px solid #DDD;
+	background: #FFF;
+	border-radius: 4px;
+	box-shadow: none;
+	transition-property: background, color, border-color;
+	transition-duration: 0.3s;
+}
+.wpmud .input:hover,
+.wpmud .input:focus,
+.wpmud input[type="text"]:hover,
+.wpmud input[type="text"]:focus,
+.wpmud input[type="email"]:hover,
+.wpmud input[type="email"]:focus,
+.wpmud input[type="search"]:hover,
+.wpmud input[type="search"]:focus,
+.wpmud input[type="password"]:hover,
+.wpmud input[type="password"]:focus,
+.wpmud select:hover,
+.wpmud select:focus,
+.wpmud textarea:hover,
+.wpmud textarea:focus {
+	border-color: #BBB;
+	color: #3D464D;
+}
+.wpmud .input:hover:not(:focus),
+.wpmud input[type="text"]:hover:not(:focus),
+.wpmud input[type="email"]:hover:not(:focus),
+.wpmud input[type="search"]:hover:not(:focus),
+.wpmud input[type="password"]:hover:not(:focus),
+.wpmud select:hover:not(:focus),
+.wpmud textarea:hover:not(:focus) {
+	color: #3D464D;
+}
+.wpmud .input:disabled,
+.wpmud .input.disabled,
+.wpmud input[type="text"]:disabled,
+.wpmud input[type="text"].disabled,
+.wpmud input[type="email"]:disabled,
+.wpmud input[type="email"].disabled,
+.wpmud input[type="search"]:disabled,
+.wpmud input[type="search"].disabled,
+.wpmud input[type="password"]:disabled,
+.wpmud input[type="password"].disabled,
+.wpmud select:disabled,
+.wpmud select.disabled,
+.wpmud textarea:disabled,
+.wpmud textarea.disabled {
+	background: #F6F6F6 !important;
+	color: #AAA !important;
+	border-color: #DDD !important;
+	cursor: default;
+}
+.wpmud input[type="text"]::-webkit-input-placeholder,
+.wpmud input[type="email"]::-webkit-input-placeholder,
+.wpmud input[type="search"]::-webkit-input-placeholder,
+.wpmud input[type="password"]::-webkit-input-placeholder,
+.wpmud textarea::-webkit-input-placeholder {
+	position: relative;
+	top: 0;
+}
+.wpmud input[type="text"]:focus::-webkit-input-placeholder,
+.wpmud input[type="email"]:focus::-webkit-input-placeholder,
+.wpmud input[type="search"]:focus::-webkit-input-placeholder,
+.wpmud input[type="password"]:focus::-webkit-input-placeholder,
+.wpmud textarea:focus::-webkit-input-placeholder {
+	transition: opacity 0.3s 0.4s ease;
+	opacity: 0.25;
+}
+
+/* ****************************************************************************
+ * 15. ELEMENT: TOGGLE (styled checkbox)
+ */
+.wpmud .toggle {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+.wpmud .toggle .toggle-checkbox {
+	display: none;
+}
+.wpmud .toggle .toggle-label {
+	background: #1ABC9C;
+	display: inline-block;
+	position: relative;
+	height: 21px;
+	width: 34px;
+	padding: 0;
+	margin: 0;
+	border-radius: 11px;
+	transition: background .2s;
+}
+.wpmud .toggle .toggle-label:before {
+	content: '';
+	position: absolute;
+	transition: all .2s;
+	border-radius: 11px;
+	background: #DDD;
+}
+.wpmud .toggle .toggle-label:after {
+	content: '';
+	background: #FCFCFC;
+	display: inline-block;
+	position: relative;
+	width: 19px;
+	height: 19px;
+	transition: margin .2s;
+	border-radius: 11px;
+	margin: 1px;
+	box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+}
+.wpmud .toggle .toggle-checkbox:hover + .toggle-label:after,
+.wpmud .toggle .toggle-label:hover:after {
+	background: #FFF;
+	box-shadow: 0 0 15px 0px rgba(0,0,0,0.03), 0 5px 2px 0px rgba(0,0,0,0.05), 0 0 0 1px rgba(0,0,0,0.2);
+}
+.wpmud .toggle .toggle-checkbox + .toggle-label {
+	background: transparent;
+}
+.wpmud .toggle .toggle-checkbox + .toggle-label:before {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.wpmud .toggle .toggle-checkbox + .toggle-label:after {
+	margin-left: 1px;
+}
+.wpmud .toggle .toggle-checkbox:checked + .toggle-label {
+	background: #1ABC9C;
+}
+.wpmud .toggle .toggle-checkbox:checked + .toggle-label:before {
+	top: 1px;
+	left: 14px;
+	right: 1px;
+	bottom: 1px;
+}
+.wpmud .toggle .toggle-checkbox:checked + .toggle-label:after {
+	margin-left: 14px;
+}
+.wpmud .toggle.disabled label,
+.wpmud .toggle.loading label {
+	opacity: 0.6;
+	cursor: default;
+}
+.wpmud .toggle.disabled .toggle-checkbox:hover + .toggle-label:after,
+.wpmud .toggle.loading .toggle-checkbox:hover + .toggle-label:after,
+.wpmud .toggle.disabled .toggle-label:hover:after,
+.wpmud .toggle.loading .toggle-label:hover:after {
+	background: #FCFCFC;
+	box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+}
+.wpmud .toggle.disabled:before,
+.wpmud .toggle.loading:before {
+	vertical-align: middle;
+	margin-right: 6px;
+}
+
+/* ****************************************************************************
+ * 16. ELEMENT: RADIO GROUP (styled radio)
+ */
+.wpmud .radio-group {
+	border: 1px solid #DDD;
+	border-radius: 5px;
+	display: inline-block;
+	border-spacing: 0;
+	border-collapse: separate;
+	position: relative;
+}
+.wpmud .radio-group input[type="radio"] {
+	display: none;
+}
+.wpmud .radio-group input[type="radio"] + label {
+	background: rgba(255,255,255,0.35);
+	color: #C6C6C6;
+	display: table-cell;
+	border-right: 1px solid #DDD;
+	position: relative;
+	padding: 8px 10px;
+
+	transition-property: background, color;
+	transition-duration: 0.3s;
+}
+.wpmud .radio-group input[type="radio"] + label > [tooltip] {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 9;
+}
+.wpmud .radio-group input[type="radio"]:first-child + label {
+	border-radius: 4px 0 0 4px;
+}
+.wpmud .radio-group input[type="radio"] + label:last-child {
+	border-radius: 0 4px 4px 0;
+	border-right: 0;
+}
+.wpmud .radio-group input[type="radio"] + label:hover {
+	box-shadow: 0 0 0 1px rgba(0,0,0,0.05) inset;
+	color: #777771;
+}
+.wpmud .radio-group input[type="radio"]:checked + label {
+	box-shadow: 0 0 0 1px rgba(0,0,0,0.2) inset;
+	background: #F9F9F9;
+	color: #555;
+}
+.wpmud .radio-group.with-icon input[type="radio"] + label {
+	padding-right: 36px;
+}
+.wpmud .radio-group.with-icon input[type="radio"] + label:after {
+	content: '\68';
+
+	font-size: 22px;
+	vertical-align: middle;
+	position: absolute;
+	right: 8px;
+	top: 50%;
+	width: 22px;
+	height: 22px;
+	margin-top: -11px;
+	opacity: 0.8;
+	font-family: 'WPMU-DEV-App-Icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 22px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transition-property: color, opacity;
+	transition-duration: 0.2s;
+}
+.wpmud .radio-group.with-icon input[type="radio"] + label:hover:after {
+	color: #1ABC9C;
+}
+.wpmud .radio-group.with-icon input[type="radio"]:checked + label {
+	box-shadow: none;
+}
+.wpmud .radio-group.with-icon input[type="radio"]:checked + label:after {
+	content: '\67';
+	color: #1ABC9C;
+	box-shadow: none;
+	opacity: 1;
+}
+
+/* ****************************************************************************
+ * 17. ELEMENT: SELECT
+ */
+.wpmud .select-container {
+	position: relative;
+	z-index: 1;
+	display: block;
+	border: 1px solid #ddd;
+	background: #FFF;
+	cursor: pointer;
+	border-radius: 4px;
+	transition-property: background, border-color;
+	transition-duration: 0.3s;
+	z-index: 1;
+	text-align: left;
+}
+.wpmud .select-container .dropdown-handle {
+	transition: border-color 0.3s;
+	display: inline-block;
+	position: absolute;
+	width: 45px;
+	height: 41px;
+	top: -1px;
+	right: -1px;
+	z-index: 1011;
+	border-radius: 0 4px 4px 0;
+	border: 1px solid #DDD;
+	border-bottom: 0;
+	border-left-color: transparent;
+	background: #FFF;
+	padding: 0;
+	text-align: center;
+	line-height: 40px;
+	color: #DDD;
+	transition-property: color, border-color;
+	transition-duration: 0.3s;
+}
+.wpmud .select-list-container {
+	position: relative;
+	display: block;
+	vertical-align: middle;
+	padding-right: 45px;
+	zoom: 1;
+}
+.wpmud .select-list-container .list-value {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	background-clip: padding-box;
+	text-decoration: none;
+	white-space: nowrap;
+	line-height: 24px;
+	height: auto;
+	width: 100%;
+	padding: 8px 8px 8px 15px;
+	border: 0;
+	color: #999;
+	font: 500 15px/25px 'Roboto';
+	transition-property: color;
+	transition-duration: 0.3s;
+}
+.wpmud .select-list-container .list-results {
+	position: absolute;
+    top: 41px;
+    left: -9999px;
+    right: -9999px;
+    z-index: 1010;
+    width: 0;
+    border-top: 0;
+	background: #FFF;
+	border: 1px solid #ddd;
+	margin-left: -1px;
+	margin-right: -1px;
+	margin-top: -2px;
+	opacity: 0;
+	border-radius: 0 0 4px 4px;
+	font: 500 15px/25px 'Roboto';
+	transition-property: opacity, border-color;
+	transition-duration: 0.3s;
+}
+.wpmud .select-list-container .list-results li {
+	padding: 10px 15px;
+	background: none;
+	color: #777;
+	cursor: pointer;
+	list-style: none;
+	line-height: 15px;
+	word-wrap: break-word;
+	margin: 0;
+	opacity: 0.8;
+	transition-property: opacity;
+	transition-duration: 0.3s;
+}
+.wpmud .select-list-container .list-results li:last-child {
+	border-radius: 0 0 3px 3px;
+}
+.wpmud .select-list-container .list-results li:hover {
+	background: #b5e6f8;
+	color: #3d464d;
+}
+.wpmud .select-list-container .list-results .current {
+	background: #FFF;
+	color: #19b4cf;
+}
+.wpmud .select-container:hover {
+	border-color: #BBB;
+}
+.wpmud .select-container:hover .list-value {
+	color: #3D464D;
+}
+.wpmud .select-container:hover .list-results {
+	border-left-color: #BBB;
+	border-right-color: #BBB;
+	border-bottom-color: #BBB;
+}
+.wpmud .select-container:hover .dropdown-handle {
+	border-top-color: #BBB;
+	border-right-color: #BBB;
+}
+.wpmud .select-container.active {
+	z-index: 99999;
+}
+.wpmud .select-container.active .list-value {
+	background: #FCFCFC;
+	border-radius: 3px 0 0 0;
+	color: #999;
+}
+.wpmud .select-container.active .dropdown-handle {
+	border-color: #DDD;
+	border-bottom-right-radius: 0;
+}
+.wpmud .select-container.active .list-results {
+	left: 0;
+	right: 0;
+	width: auto;
+	opacity: 1;
+	transition-duration: 0;
+}
+.wpmud .select-container.active:hover {
+	border-color: #DDD;
+}
+.wpmud .select-container.active:hover .list-value {
+	color: #999;
+}
+.wpmud .select-container.active:hover .list-results {
+	border-color: #BBB;
+}
+.wpmud .select-container.active:hover .list-results li {
+	opacity: 1;
+}
+.wpmud .select-container.active:hover .dropdown-handle {
+	border-color: #BBB;
+	color: #BBB;
+}
+.wpmud .list-table > thead > .select-open th,
+.wpmud .list-table > tfoot > .select-open th,
+.wpmud .list-table > tbody > .select-open td {
+	z-index: 9;
+}
+
+/* ****************************************************************************
+ * 18. ELEMENT: LISTINGS
+ */
+.wpmud .listing li {
+	color: #777771;
+	line-height: 26px;
+	padding: 2px 0 2px 34px;
+	position: relative;
+}
+.wpmud .listing.bold li {
+	font-weight: bold;
+}
+.wpmud .listing li:before {
+	content: "\67";
+	color: #0093B1;
+	font-size: 22px;
+	vertical-align: middle;
+	position: absolute;
+	left: 0;
+	top: 3px;
+	width: 22px;
+	height: 22px;
+	opacity: 0.8;
+
+	font-family: 'WPMU-DEV-App-Icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.wpmud .listing li.circle:before {
+	content: "\68";
+}
+.wpmud .listing li.help:before {
+	content: "\70";
+}
+.wpmud .listing li.up:before {
+	content: "\72";
+}
+.wpmud .listing li.down:before {
+	content: "\65";
+}
+.wpmud .listing li.logo:before {
+	content: "\30";
+}
+.wpmud .listing li.cross:before {
+	content: "\79";
+}
+.wpmud .listing li.tick:before {
+	content: "\7a";
+}
+.wpmud .listing li.lock:before {
+	content: "\61";
+}
+.wpmud .listing li.unlock:before {
+	content: "\63";
+}
+.wpmud .listing li.black:before {
+	color: #777771;
+}
+.wpmud .listing li.red:before {
+	color: #fd6e70;
+}
+.wpmud .listing li.green:before {
+	color: #1ABC9C;
+}
+.wpmud .listing li.yellow:before {
+	color: #FDCE43;
+}
+
+/* ****************************************************************************
+ * 19. ELEMENT: USER NOTIFICATIONS
+ */
+.wpmud .update-notice,
+.wpmud .wpmud-loading-info {
+	position: fixed;
+	z-index: 999998;
+	top: 32px;
+	left: 160px;
+	right: 0;
+	margin: 0;
+	padding: 6px 50px;
+	text-align: center;
+	border-radius: 0;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+	box-shadow: 0 4px 7px -3px rgba(0,0,0,0.3);
+}
+.wpmud .update-notice.ok {
+	background: #1ABC9C;
+}
+.wpmud .update-notice.err {
+	background: #d54e21;
+}
+.wpmud .update-notice p {
+	color: #FFF;
+	font-weight: 400;
+}
+.wpmud .update-notice .check-animation {
+	border-color: #FFF;
+}
+.wpmud .update-notice .wdv-icon {
+	position: absolute;
+	left: 15px;
+	top: 14px;
+	color: #FFF;
+	font-size: 32px;
+	opacity: 0.75;
+}
+.wpmud .update-notice .close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 48px;
+	height: 48px;
+	text-align: center;
+	line-height: 48px;
+	padding: 0;
+	margin: 0;
+	color: #FFF;
+	cursor: pointer;
+	opacity: 0.35;
+	transition: opacity 0.3s;
+	font-weight: 100;
+	font-size: 20px;
+}
+.wpmud .update-notice .close:hover {
+	opacity: 1;
+}
+.wpmud .update-notice .extra-text {
+	display: block;
+	max-height: 100px;
+	overflow: auto;
+}
+.wpmud .wpmud-loading-info {
+	z-index: 999999;
+	padding: 20px 50px;
+	background: rgba(255, 255, 255, 0.9);
+}
+.wpmud .wpmud-loading-info p {
+	color: #000;
+	text-shadow: 0 -1px 1px #FFFFFF;
+}
+.wpmud.folded .update-notice,
+.wpmud.folded .wpmud-loading-info {
+	left: 36px;
+}
+
+/* ****************************************************************************
+ * 20. ELEMENT: SEARCH BOX
+ */
+.wpmud .search-box {
+	position: relative;
+	text-align: left;
+	z-index: 999;
+	background: transparent;
+}
+.wpmud .search-box .input-box {
+	position: relative;
+	width: 360px;
+}
+.wpmud .search-box .input-box input {
+	padding: 6px 40px 7px 15px;
+	margin: 0;
+}
+.wpmud .search-box .input-box .search-icon {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: #DDD;
+	cursor: pointer;
+	background: transparent url(img/spin.gif) 500px 500px no-repeat;
+	background-size: 16px;
+	transition-property: color;
+	transition-duration: 0.3s;
+}
+.wpmud .search-box .input-box:hover .search-icon {
+	color: #BBB;
+}
+.wpmud .search-box .input-box .search-icon:hover {
+	color: #666;
+}
+.wpmud .search-box.progress .search-icon {
+	background-position: center;
+	cursor: default;
+}
+.wpmud .search-box.progress .search-icon:before {
+	display: none;
+}
+.wpmud .tr > .search-box .input-box {
+	margin: 0 0 0 auto;
+}
+.wpmud .search-box .current-item {
+	display: none;
+	margin: 0 0;
+	padding: 8px 44px 8px 44px;
+	position: relative;
+	height: 40px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	cursor: pointer;
+	font: 500 15px/25px 'Roboto';
+	margin: 0;
+	border: 1px solid #DDD;
+	background: #FFF;
+	border-radius: 4px;
+	box-shadow: none;
+	transition-property: border;
+	transition-duration: 0.3s;
+}
+.wpmud .search-box .current-item:after {
+	content: "\f153";
+	position: absolute;
+	right: 6px;
+	top: 50%;
+	margin: -14px 0 0;
+	height: 28px;
+	width: 28px;
+	text-align: center;
+	cursor: pointer;
+	color: #EEE;
+	font: 400 16px/28px 'dashicons';
+	transition-property: color;
+	transition-duration: 0.3s;
+}
+.wpmud .search-box .search-results {
+	display: block;
+	position: absolute;
+	z-index: 9999;
+	margin: 6px 0 30px;
+	padding: 0;
+	width: 100%;
+	box-sizing: content-box;
+	background: #fff;
+	border: 1px solid rgba(0,0,0,0.12);
+	background-clip: padding-box;
+	box-shadow: 0 3px 7px rgba(0,0,0,0.12);
+	border-radius: 5px;
+	max-height: 460px;
+	overflow: auto;
+}
+.wpmud .search-box .no-results {
+	display: none;
+	position: absolute;
+	z-index: 9999;
+	margin: 6px 0 30px;
+	width: 100%;
+	background: #fcfcfc;
+	border: 1px solid rgba(0,0,0,0.08);
+	background-clip: padding-box;
+	box-shadow: 0 3px 7px rgba(0,0,0,0.08);
+	border-radius: 5px;
+	max-height: 460px;
+	overflow: auto;
+	text-align: center;
+	padding: 7px;
+	font-style: italic;
+	cursor: default;
+	color: #999;
+}
+.wpmud .search-box .search-results > ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.wpmud .search-box .search-results > ul > li {
+	margin: 0 0;
+	padding: 8px 8px 8px 44px;
+	position: relative;
+	min-height: 40px;
+	cursor: pointer;
+	border-bottom: 1px solid #eee;
+	color: #777771;
+	font-size: 13px;
+	transition-property: background, color;
+	transition-duration: 0.3s;
+}
+.wpmud .search-box .search-results > ul > li:first-child {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.wpmud .search-box .search-results > ul > li:last-child {
+	border-bottom: 0;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.wpmud .search-box .search-results > ul > li:hover {
+	background-color: #F4F4F4;
+	color: #333331;
+}
+.wpmud .search-box .current-item .title,
+.wpmud .search-box .search-results .title {
+	color: #0089d7;
+	font-size: 15px;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	transition-property: color;
+	transition-duration: 0.3s;
+}
+.wpmud .search-box .current-item .title {
+	color: #999;
+}
+.wpmud .search-box .current-item:hover {
+	border-color: #BBB;
+}
+.wpmud .search-box .current-item:hover:after {
+	color: #BBB;
+}
+.wpmud .search-box .current-item:hover .title {
+	color: #19B4CF;
+}
+.wpmud .search-box .current-item .thumb,
+.wpmud .search-box .search-results .thumb {
+	position: absolute;
+	left: 8px;
+	top: 50%;
+	margin: -14px 0 0;
+	width: 28px;
+	height: 28px;
+	background-size: cover;
+	background-position: center;
+}
+
+/* ****************************************************************************
+ * 21. ELEMENT: COUNT-BADGE
+ */
+.wpmud .count {
+	display: inline-block;
+	text-align: center;
+	padding: 2px 10px;
+	min-width: 35px;
+	position: relative;
+	border-radius: 5px;
+	border: 2px solid #DDDDDD;
+	vertical-align: middle;
+	height: 30px;
+	line-height: 24px;
+    color: #b6b6b6;
+    cursor: default;
+    font-weight: normal;
+}
+.wpmud .count.reply:before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    right: 4px;
+    border-width: 8px 0px 0px 12px;
+    border-style: solid;
+    border-color: #DDDDDD transparent;
+    display: block;
+    width: 0;
+}
+.wpmud .count.reply:after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    right: 6px;
+    border-width: 4px 0px 0px 6px;
+    border-style: solid;
+    border-color: #fff transparent;
+    display: block;
+    width: 0;
+}
+.wpmud .count.reply.mirror:before {
+    left: 4px;
+    border-width: 8px 12px 0px 0px;
+}
+.wpmud .count.reply.mirror:after {
+    left: 6px;
+    border-width: 4px 6px 0px 0px;
+}
+.wpmud .count.notification {
+    background: #fecf2f;
+    border-color: #fecf2f;
+    color: #fff;
+}
+.wpmud .count.notification:before,
+.wpmud .count.notification:after {
+    border-color: #fecf2f transparent;
+}
+
+/* ****************************************************************************
+ * 22. ELEMENT: PAGE HEADER
+ */
+.wpmud #header {
+	margin-bottom: 40px;
+}
+.wpmud #header h1 {
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 32px;
+	font-weight: bold;
+	max-width: none;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 40px;
+}
+.wpmud #header .actions {
+	float: right;
+}
+.wpmud #header .actions .button + .button {
+	margin-left: 2px;
+}
+.wpmud #header .actions .flag {
+	position: absolute;
+	top: 0;
+	background: #CAA;
+	color: #fff;
+	border-radius: 0;
+	margin-left: -41px;
+	line-height: 30px;
+	height: 40px;
+	width: 26px;
+	text-align: center;
+	font-size: 18px;
+	z-index: 1000;
+}
+.wpmud #header .actions .flag:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border: 13px solid transparent;
+	border-width: 8px 13px;
+	border-bottom-color: #F4F4F4;
+}
+.wpmud #header .actions .flag [tooltip] {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 5px;
+}
+.wpmud #subheader {
+	min-height: 60px;
+	margin-top: -34px;
+	margin-bottom: 20px;
+}
+
+/* ****************************************************************************
+ * 23. FONTAWESOME
+ */
+@font-face {
+    font-family: 'FontAwesomeWdv';
+    src: url('font/fontawesome-webfont.eot');
+    src: url('font/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+        url('font/fontawesome-webfont.woff') format('woff'),
+        url('font/fontawesome-webfont.ttf') format('truetype'),
+        url('font/fontawesome-webfont.svgz#FontAwesomeRegular') format('svg'),
+        url('font/fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.wdv-icon:before{font-family:FontAwesomeWdv;font-weight:normal;font-style:normal;display:inline-block;text-decoration:inherit}a .wdv-icon{display:inline-block;text-decoration:inherit}.wdv-icon-large:before{vertical-align:top;font-size:1.3333333333333333em}.btn .wdv-icon{line-height:.9em}li .wdv-icon, .action_links .wdv-icon, .wdv-icon.wdv-icon-fw{display:inline-block;width:1.25em;text-align:center}li .wdv-icon-large.wdv-icon,li .wdv-icon-large.wdv-icon{width:1.875em}li.wdv-icon{margin-left:0;list-style-type:none}li.wdv-icon:before{text-indent:-2em;text-align:center}li.wdv-icon.wdv-icon-large:before{text-indent:-1.3333333333333333em}.wdv-icon-glass:before{content:"\f000"}.wdv-icon-music:before{content:"\f001"}.wdv-icon-search:before{content:"\f002"}.wdv-icon-envelope:before{content:"\f003"}.wdv-icon-heart:before{content:"\f004"}.wdv-icon-star:before{content:"\f005"}.wdv-icon-star-empty:before{content:"\f006"}.wdv-icon-user:before{content:"\f007"}.wdv-icon-film:before{content:"\f008"}.wdv-icon-th-large:before{content:"\f009"}.wdv-icon-th:before{content:"\f00a"}.wdv-icon-th-list:before{content:"\f00b"}.wdv-icon-ok:before{content:"\f00c"}.wdv-icon-remove:before{content:"\f00d"}.wdv-icon-zoom-in:before{content:"\f00e"}.wdv-icon-zoom-out:before{content:"\f010"}.wdv-icon-off:before{content:"\f011"}.wdv-icon-signal:before{content:"\f012"}.wdv-icon-cog:before{content:"\f013"}.wdv-icon-trash:before{content:"\f014"}.wdv-icon-home:before{content:"\f015"}.wdv-icon-file:before{content:"\f016"}.wdv-icon-time:before{content:"\f017"}.wdv-icon-road:before{content:"\f018"}.wdv-icon-download-alt:before{content:"\f019"}.wdv-icon-download:before{content:"\f01a"}.wdv-icon-upload:before{content:"\f01b"}.wdv-icon-inbox:before{content:"\f01c"}.wdv-icon-play-circle:before{content:"\f01d"}.wdv-icon-repeat:before{content:"\f01e"}.wdv-icon-refresh:before{content:"\f021"}.wdv-icon-list-alt:before{content:"\f022"}.wdv-icon-lock:before{content:"\f023"}.wdv-icon-flag:before{content:"\f024"}.wdv-icon-headphones:before{content:"\f025"}.wdv-icon-volume-off:before{content:"\f026"}.wdv-icon-volume-down:before{content:"\f027"}.wdv-icon-volume-up:before{content:"\f028"}.wdv-icon-qrcode:before{content:"\f029"}.wdv-icon-barcode:before{content:"\f02a"}.wdv-icon-tag:before{content:"\f02b"}.wdv-icon-tags:before{content:"\f02c"}.wdv-icon-book:before{content:"\f02d"}.wdv-icon-bookmark:before{content:"\f02e"}.wdv-icon-print:before{content:"\f02f"}.wdv-icon-camera:before{content:"\f030"}.wdv-icon-font:before{content:"\f031"}.wdv-icon-bold:before{content:"\f032"}.wdv-icon-italic:before{content:"\f033"}.wdv-icon-text-height:before{content:"\f034"}.wdv-icon-text-width:before{content:"\f035"}.wdv-icon-align-left:before{content:"\f036"}.wdv-icon-align-center:before{content:"\f037"}.wdv-icon-align-right:before{content:"\f038"}.wdv-icon-align-justify:before{content:"\f039"}.wdv-icon-list:before{content:"\f03a"}.wdv-icon-indent-left:before{content:"\f03b"}.wdv-icon-indent-right:before{content:"\f03c"}.wdv-icon-facetime-video:before{content:"\f03d"}.wdv-icon-picture:before{content:"\f03e"}.wdv-icon-pencil:before{content:"\f040"}.wdv-icon-map-marker:before{content:"\f041"}.wdv-icon-adjust:before{content:"\f042"}.wdv-icon-tint:before{content:"\f043"}.wdv-icon-edit:before{content:"\f044"}.wdv-icon-share:before{content:"\f045"}.wdv-icon-check:before{content:"\f046"}.wdv-icon-move:before{content:"\f047"}.wdv-icon-step-backward:before{content:"\f048"}.wdv-icon-fast-backward:before{content:"\f049"}.wdv-icon-backward:before{content:"\f04a"}.wdv-icon-play:before{content:"\f04b"}.wdv-icon-pause:before{content:"\f04c"}.wdv-icon-stop:before{content:"\f04d"}.wdv-icon-forward:before{content:"\f04e"}.wdv-icon-fast-forward:before{content:"\f050"}.wdv-icon-step-forward:before{content:"\f051"}.wdv-icon-eject:before{content:"\f052"}.wdv-icon-chevron-left:before{content:"\f053"}.wdv-icon-chevron-right:before{content:"\f054"}.wdv-icon-plus-sign:before{content:"\f055"}.wdv-icon-minus-sign:before{content:"\f056"}.wdv-icon-remove-sign:before{content:"\f057"}.wdv-icon-ok-sign:before{content:"\f058"}.wdv-icon-question-sign:before{content:"\f059"}.wdv-icon-info-sign:before{content:"\f05a"}.wdv-icon-screenshot:before{content:"\f05b"}.wdv-icon-remove-circle:before{content:"\f05c"}.wdv-icon-ok-circle:before{content:"\f05d"}.wdv-icon-ban-circle:before{content:"\f05e"}.wdv-icon-arrow-left:before{content:"\f060"}.wdv-icon-arrow-right:before{content:"\f061"}.wdv-icon-arrow-up:before{content:"\f062"}.wdv-icon-arrow-down:before{content:"\f063"}.wdv-icon-share-alt:before{content:"\f064"}.wdv-icon-resize-full:before{content:"\f065"}.wdv-icon-resize-small:before{content:"\f066"}.wdv-icon-plus:before{content:"\f067"}.wdv-icon-minus:before{content:"\f068"}.wdv-icon-asterisk:before{content:"\f069"}.wdv-icon-exclamation-sign:before{content:"\f06a"}.wdv-icon-gift:before{content:"\f06b"}.wdv-icon-leaf:before{content:"\f06c"}.wdv-icon-fire:before{content:"\f06d"}.wdv-icon-eye-open:before{content:"\f06e"}.wdv-icon-eye-close:before{content:"\f070"}.wdv-icon-warning-sign:before{content:"\f071"}.wdv-icon-plane:before{content:"\f072"}.wdv-icon-calendar:before{content:"\f073"}.wdv-icon-random:before{content:"\f074"}.wdv-icon-comment:before{content:"\f075"}.wdv-icon-magnet:before{content:"\f076"}.wdv-icon-chevron-up:before{content:"\f077"}.wdv-icon-chevron-down:before{content:"\f078"}.wdv-icon-retweet:before{content:"\f079"}.wdv-icon-shopping-cart:before{content:"\f07a"}.wdv-icon-folder-close:before{content:"\f07b"}.wdv-icon-folder-open:before{content:"\f07c"}.wdv-icon-resize-vertical:before{content:"\f07d"}.wdv-icon-resize-horizontal:before{content:"\f07e"}.wdv-icon-bar-chart:before{content:"\f080"}.wdv-icon-twitter-sign:before{content:"\f081"}.wdv-icon-facebook-sign:before{content:"\f082"}.wdv-icon-camera-retro:before{content:"\f083"}.wdv-icon-key:before{content:"\f084"}.wdv-icon-cogs:before{content:"\f085"}.wdv-icon-comments:before{content:"\f086"}.wdv-icon-thumbs-up:before{content:"\f087"}.wdv-icon-thumbs-down:before{content:"\f088"}.wdv-icon-star-half:before{content:"\f089"}.wdv-icon-heart-empty:before{content:"\f08a"}.wdv-icon-signout:before{content:"\f08b"}.wdv-icon-linkedin-sign:before{content:"\f08c"}.wdv-icon-pushpin:before{content:"\f08d"}.wdv-icon-external-link:before{content:"\f08e"}.wdv-icon-signin:before{content:"\f090"}.wdv-icon-trophy:before{content:"\f091"}.wdv-icon-github-sign:before{content:"\f092"}.wdv-icon-upload-alt:before{content:"\f093"}.wdv-icon-lemon:before{content:"\f094"}.wdv-icon-phone:before{content:"\f095"}.wdv-icon-check-empty:before{content:"\f096"}.wdv-icon-bookmark-empty:before{content:"\f097"}.wdv-icon-phone-sign:before{content:"\f098"}.wdv-icon-twitter:before{content:"\f099"}.wdv-icon-facebook:before{content:"\f09a"}.wdv-icon-github:before{content:"\f09b"}.wdv-icon-unlock:before{content:"\f09c"}.wdv-icon-credit-card:before{content:"\f09d"}.wdv-icon-rss:before{content:"\f09e"}.wdv-icon-hdd:before{content:"\f0a0"}.wdv-icon-bullhorn:before{content:"\f0a1"}.wdv-icon-bell:before{content:"\f0a2"}.wdv-icon-certificate:before{content:"\f0a3"}.wdv-icon-hand-right:before{content:"\f0a4"}.wdv-icon-hand-left:before{content:"\f0a5"}.wdv-icon-hand-up:before{content:"\f0a6"}.wdv-icon-hand-down:before{content:"\f0a7"}.wdv-icon-circle-arrow-left:before{content:"\f0a8"}.wdv-icon-circle-arrow-right:before{content:"\f0a9"}.wdv-icon-circle-arrow-up:before{content:"\f0aa"}.wdv-icon-circle-arrow-down:before{content:"\f0ab"}.wdv-icon-globe:before{content:"\f0ac"}.wdv-icon-wrench:before{content:"\f0ad"}.wdv-icon-tasks:before{content:"\f0ae"}.wdv-icon-filter:before{content:"\f0b0"}.wdv-icon-briefcase:before{content:"\f0b1"}.wdv-icon-fullscreen:before{content:"\f0b2"}.wdv-icon-group:before{content:"\f0c0"}.wdv-icon-link:before{content:"\f0c1"}.wdv-icon-cloud:before{content:"\f0c2"}.wdv-icon-beaker:before{content:"\f0c3"}.wdv-icon-cut:before{content:"\f0c4"}.wdv-icon-copy:before{content:"\f0c5"}.wdv-icon-paper-clip:before{content:"\f0c6"}.wdv-icon-save:before{content:"\f0c7"}.wdv-icon-sign-blank:before{content:"\f0c8"}.wdv-icon-reorder:before{content:"\f0c9"}.wdv-icon-list-ul:before{content:"\f0ca"}.wdv-icon-list-ol:before{content:"\f0cb"}.wdv-icon-strikethrough:before{content:"\f0cc"}.wdv-icon-underline:before{content:"\f0cd"}.wdv-icon-table:before{content:"\f0ce"}.wdv-icon-magic:before{content:"\f0d0"}.wdv-icon-truck:before{content:"\f0d1"}.wdv-icon-pinterest:before{content:"\f0d2"}.wdv-icon-pinterest-sign:before{content:"\f0d3"}.wdv-icon-google-plus-sign:before{content:"\f0d4"}.wdv-icon-google-plus:before{content:"\f0d5"}.wdv-icon-money:before{content:"\f0d6"}.wdv-icon-caret-down:before{content:"\f0d7"}.wdv-icon-caret-up:before{content:"\f0d8"}.wdv-icon-caret-left:before{content:"\f0d9"}.wdv-icon-caret-right:before{content:"\f0da"}.wdv-icon-columns:before{content:"\f0db"}.wdv-icon-sort:before{content:"\f0dc"}.wdv-icon-sort-down:before{content:"\f0dd"}.wdv-icon-sort-up:before{content:"\f0de"}.wdv-icon-envelope-alt:before{content:"\f0e0"}.wdv-icon-linkedin:before{content:"\f0e1"}.wdv-icon-undo:before{content:"\f0e2"}.wdv-icon-legal:before{content:"\f0e3"}.wdv-icon-dashboard:before{content:"\f0e4"}.wdv-icon-comment-alt:before{content:"\f0e5"}.wdv-icon-comments-alt:before{content:"\f0e6"}.wdv-icon-bolt:before{content:"\f0e7"}.wdv-icon-sitemap:before{content:"\f0e8"}.wdv-icon-umbrella:before{content:"\f0e9"}.wdv-icon-paste:before{content:"\f0ea"}.wdv-icon-user-md:before{content:"\f200"}
+
+/* ****************************************************************************
+ * 24. WPMUDEV ICONFONT
+ */
+@font-face {
+	font-family: 'WPMU-DEV-App-Icons';
+	src:url('font/WPMU-DEV-App-Icons.eot?yhrhds');
+	src:url('font/WPMU-DEV-App-Icons.eot?#iefixyhrhds') format('embedded-opentype'),
+		url('font/WPMU-DEV-App-Icons.ttf?yhrhds') format('truetype'),
+		url('font/WPMU-DEV-App-Icons.woff?yhrhds') format('woff'),
+		url('font/WPMU-DEV-App-Icons.svg?yhrhds#WPMU-DEV-App-Icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.dev-icon {
+	font-family: 'WPMU-DEV-App-Icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	font-size: 14px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.dev-icon-comment:before {
+	content: "\41";
+}
+.dev-icon-speach:before {
+	content: "\6d";
+}
+.dev-icon-speach_alt:before {
+	content: "\3d";
+}
+.dev-icon-download:before {
+	content: "\42";
+}
+.dev-icon-download_alt:before {
+	content: "\69";
+}
+.dev-icon-upload:before {
+	content: "\56";
+}
+.dev-icon-error:before {
+	content: "\45";
+}
+.dev-icon-archive:before {
+	content: "\4f";
+}
+.dev-icon-logo:before {
+	content: "\39";
+}
+.dev-icon-logo_alt:before {
+	content: "\30";
+}
+.dev-icon-wordpress:before {
+	content: "\47";
+}
+.dev-icon-facebook:before {
+	content: "\46";
+}
+.dev-icon-twitter:before {
+	content: "\49";
+}
+.dev-icon-github:before {
+	content: "\4a";
+}
+.dev-icon-stackoverflow:before {
+	content: "\4b";
+}
+.dev-icon-linkedin:before {
+	content: "\4c";
+}
+.dev-icon-medium:before {
+	content: "\4d";
+}
+.dev-icon-quora:before {
+	content: "\51";
+}
+.dev-icon-seo:before {
+	content: "\53";
+}
+.dev-icon-minify:before {
+	content: "\4e";
+}
+.dev-icon-uptime:before {
+	content: "\55";
+}
+.dev-icon-world:before {
+	content: "\57";
+}
+.dev-icon-pos_footer:before {
+	content: "\59";
+}
+.dev-icon-pos_middle:before {
+	content: "\58";
+}
+.dev-icon-pos_header:before {
+	content: "\43";
+}
+.dev-icon-book:before {
+	content: "\62";
+}
+.dev-icon-support:before {
+	content: "\6e";
+}
+.dev-icon-rocket:before {
+	content: "\6a";
+}
+.dev-icon-rocket_alt:before {
+	content: "\76";
+}
+.dev-icon-lock:before {
+	content: "\61";
+}
+.dev-icon-unlock:before {
+	content: "\63";
+}
+.dev-icon-plugin:before {
+	content: "\64";
+}
+.dev-icon-caret_up:before {
+	content: "\72";
+}
+.dev-icon-caret_right:before {
+	content: "\33";
+}
+.dev-icon-caret_down:before {
+	content: "\65";
+}
+.dev-icon-caret_left:before {
+	content: "\7c";
+}
+.dev-icon-power:before {
+	content: "\66";
+}
+.dev-icon-radio_default:before {
+	content: "\68";
+}
+.dev-icon-radio:before {
+	content: "\68";
+}
+.dev-icon-radio_checked:before {
+	content: "\67";
+}
+.dev-icon-cross:before {
+	content: "\79";
+}
+.dev-icon-tick:before {
+	content: "\7a";
+}
+.dev-icon-search:before {
+	content: "\6b";
+}
+.dev-icon-info:before {
+	content: "\70";
+}
+.dev-icon-devman:before {
+	content: "\31";
+}
+.dev-icon-upfront:before {
+	content: "\37";
+}
+.dev-icon-hummingbird:before {
+	content: "\48";
+}
+.dev-icon-defender:before {
+	content: "\44";
+}
+.dev-icon-theme:before {
+	content: "\6c";
+}
+.dev-icon-pencil:before {
+	content: "\50";
+}
+.dev-icon-star:before {
+	content: "\5a";
+}
+.dev-icon-trash:before {
+	content: "\54";
+}
+.dev-icon-recycle:before {
+	content: "\52";
+}
+.dev-icon-fix:before {
+	content: "\32";
+}
+.dev-icon-edit:before {
+	content: "\6f";
+}
+.dev-icon-options:before {
+	content: "\73";
+}
+.dev-icon-cog:before {
+	content: "\74";
+}
+.dev-icon-badge:before {
+	content: "\71";
+}
+.dev-icon-cylinder:before {
+	content: "\75";
+}
+.dev-icon-trophy:before {
+	content: "\78";
+}
+.dev-icon-bell:before {
+	content: "\77";
+}
+
+/* ****************************************************************************
+ * 25. CUSTOM ANIMATIONS
+ */
+@keyframes fade-in {
+	0%   { opacity: 0; }
+	90%  { opacity: 1; }
+	100% { opacity: 1; }
+}
+@keyframes bounce-in {
+	0%   { transform: translateY(-200%) scale(1.5); opacity:0; }
+	30%  { opacity:1; }
+	58%  { transform: translateY(0) rotate(1deg) scale(1); opacity: 1 }
+	72%  { transform: translateY(-30px) rotate(-1deg); }
+	80%  { transform: translateY(0) rotate(0.5deg); }
+	100% { transform: translateY(0) rotate(0deg); }
+}
+@keyframes bounce-out {
+	0%   { transform: translateY(0); }
+	10%  { transform: translateY(-10px) rotate(-0.5deg); }
+	30%  { transform: translateY(20px) rotate(8deg); }
+	70%  { opacity: 1; }
+	90%  { transform: translateY(300%) translateX(40px) rotate(35deg); opacity: 0; }
+	100% { display: none; }
+}
+@keyframes check {
+	0%  { height: 0; width: 0; opacity: 0; }
+	24.9% { opacity: 0; }
+	25% { height: 0; width: 0; opacity: 1; }
+	35% { height: 0; width: 10px; }
+	50% { height: 20px; width: 10px; }
+}
+@keyframes spin {
+	100% { transform:rotate(360deg); }
+}
+@keyframes collapse {
+	0%   { opacity: 1; transform: scale(1); }
+	40%  { opacity: 1; transform: translateY(0); }
+	90%  { opacity: 0; height: 0; }
+	100% { transform: scale(1); transform: translateY(-30px) scale(0.9); }
+}
+.wpmud .check-animation {
+	transform: scaleX(-1) rotate(135deg);
+	transform-origin: left top;
+	border-right: 4px solid #cee;
+	border-top: 4px solid #cee;
+	display: block;
+	height: 20px;
+	left: 14px;
+	position: absolute;
+	top: 26px;
+	width: 10px;
+	animation: check 3s;
+	border-color: #6aa;
+}
+.wpmud .fade-in {
+	animation: fade-in 0.5s ease-in;
+}
+.wpmud .fade-out {
+	transition: opacity 0.5s ease-in-out;
+	opacity: 0;
+}
+.wpmud .bounce-in {
+	animation: bounce-in 0.8s ease-in;
+}
+.wpmud .bounce-out {
+	animation: bounce-out 0.6s ease-out;
+}
+.wpmud .spin {
+	animation: spin 1s linear infinite;
+}
+.wpmud .animated.collapse {
+	overflow: hidden;
+	animation: collapse 0.5s linear;
+}

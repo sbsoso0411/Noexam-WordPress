@@ -1,0 +1,29 @@
+@media print {
+
+	.noprint,
+	.responsive-tabs .responsive-tabs__list {
+		display: none;
+	}
+
+	 .responsive-tabs h2.tabtitle {
+		 display: block!important;
+	 }
+
+	.responsive-tabs .responsive-tabs__heading {
+		background: none;
+		border: none;
+		display: block;
+		font-size: 22px;
+		font-weight: bold;
+		text-transform: inherit;
+		margin: 0!important;
+		padding: 10px 0 0;
+	}
+
+	.responsive-tabs .responsive-tabs__panel {
+		display: block!important;
+		background: none;
+		border: none;
+		padding: 0;
+	}
+}

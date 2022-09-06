@@ -1,0 +1,201 @@
+html .mceContentBody {
+	max-width: 1080px;
+}
+
+/* =Fonts
+-------------------------------------------------------------- */
+@font-face {
+	font-family: 'Droid Sans';
+	src: url(fonts/droidsans-webfont.eot);
+	src: url(fonts/droidsans-webfont.eot?#iefix) format('embedded-opentype'),
+		url(fonts/droidsans-webfont.woff) format('woff'),
+		url(fonts/droidsans-webfont.ttf) format('truetype'),
+		url(fonts/droidsans-webfont.svg#droid_sansregular) format('svg');
+	font-weight: normal;
+	font-style: normal;	
+}
+@font-face {
+	font-family: 'Droid Serif';
+	src: url(fonts/droidserif-webfont.eot);
+	src: url(fonts/droidserif-webfont.eot?#iefix) format('embedded-opentype'),
+		url(fonts/droidserif-webfont.woff) format('woff'),
+		url(fonts/droidserif-webfont.ttf) format('truetype'),
+		url(fonts/droidserif-webfont.svg#droid_serifregular) format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* =Reset
+-------------------------------------------------------------- */
+body,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,a,img,dl,dt,dd,ol,ul,li,fieldset,form,legend,table,tbody,tfoot,thead,tr,th,td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	list-style: none;
+}
+body {
+	margin: 1% 2%;
+}
+
+/* =Links
+-------------------------------------------------------------- */
+a {
+	text-decoration: none;
+	color: #d90000;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/* =Contents
+-------------------------------------------------------------- */
+
+.alignleft {
+	float: left;
+	margin: 0 1em 1em 0;
+}
+
+.aligncenter {
+	margin: 0 auto;
+	display: block;
+}
+
+.alignright {
+	float: right;
+	margin: 0 1em 1em 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Droid Serif", serif;
+	color: #333;
+	font-weight: normal;
+
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: #333;
+}
+h1 {
+	font-size: 2.4em;
+	margin: 1em 0 0.3em;
+}
+
+h2 {
+	font-size: 1.7em;
+	margin: 1em 0 0.3em;
+}
+
+h3 {
+	font-size: 1.4em;
+	margin: 1em 0 0.3em;
+}
+
+h4 {
+	font-size: 1.3em;
+	margin: 0.7em 0 0.2em;
+}
+
+h5 {
+	font-size: 1.2em;
+	margin: 0.7em 0 0.2em;
+}
+
+h6 {
+	font-size: 1.1em;
+	margin: 0.5em 0 0.15em;
+}
+
+p,
+li,
+dd,
+dt,
+.page-links,
+caption,
+th,
+td {
+	font-size: 1.0em;
+	font-family: "Droid Sans", Helvetica, Arial, sans-serif;
+	color: #333;
+}
+p,
+li {
+	margin: 1.5em 0;
+}
+p {
+	line-height: 1.8em;
+}
+ul,
+ol {
+	margin: 1em 0 1em 1.2em;
+}
+ul li {
+	list-style: square;
+	line-height: 2em;
+	margin: 0;
+	padding: 0;
+}
+ol li {
+	list-style-type: decimal;
+	line-height: 2em;
+	margin: 0;
+	padding: 0;
+}
+dt {
+	font-weight: bold;
+}
+blockquote {
+	margin: 1.5em 0 1.5em 2.5em;
+}
+blockquote,
+blockquote p {
+	color: #999;
+	font-style: italic;
+}
+code,
+pre {
+	max-width: 100%;
+	overflow: auto;
+	font-family: monospace;
+	font-size: 0.9em;
+}
+
+/* =Images and captions
+-------------------------------------------------------------- */
+img {
+	max-width: 100%;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+.wp-caption {
+	max-width: 96%;
+	margin: 1em auto;
+	padding: 2% 2% 0 2%;
+	border: 1px solid #ddd;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+}
+.wp-caption p {
+	margin: 0.4em 0;
+	padding: 0 0.8em;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	color: #666;
+}
+.wp-caption img {
+	display: block;
+	margin: 0 auto;
+	margin: 0.4em auto 0;
+}

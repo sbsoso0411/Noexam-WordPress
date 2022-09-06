@@ -1,0 +1,279 @@
+<html>
+<head>
+   <title>Life Insurance Quotes - $licensee$</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">   
+   <meta name="Author" content="COMPULIFE Software, Inc.">
+   <link href="../../css/styles_website.css" type="text/css" rel="stylesheet">
+   <!-- You can use the CONFIG.TXT in the USER folder to read the css value and 
+   permit changes for USERS to switch other css style sheets from their admin.html
+   page.  If that is your preference, you can use the following line instead of 
+   hard coding the css style sheet above. -->
+   <!-- <link href="../../css/$css$" type="text/css" rel="stylesheet"> -->
+</head>
+<body>
+
+<form action="cqsl.cgi" method="POST">
+
+<br><br>
+
+<table  align="center" class="default_table">
+
+<tr class="default_header">
+<td colspan="2">Retirement Calculator</td>
+</tr>
+
+
+<tr class="default_sub_header">
+<td class="default_sub_header_center" colspan="2">
+<b>Enter the Following Retirement Information</b></td>
+</tr>
+
+<tr>
+<td class="gray_cell_right" width="75%" align="right">
+Your Current Age is:&nbsp;</td>
+
+<td class="gray_cell" width="25%">$currage$</td>
+</tr>
+
+
+<tr>
+<td class="gray_cell_right" width="75%" align="right">
+Planned retirement age:&nbsp;</td>
+
+<td class="gray_cell" width="25%"><select name="AgeToRetireAt">
+<option value="45">45</option>
+<option value="46">46</option>
+<option value="47">47</option>
+<option value="48">48</option>
+<option value="49">49</option>
+<option value="50">50</option>
+<option value="51">51</option>
+<option value="52">52</option>
+<option value="53">53</option>
+<option value="54">54</option>
+<option value="55">55</option>
+<option value="56">56</option>
+<option value="57">57</option>
+<option value="58">58</option>
+<option value="59">59</option>
+<option value="60">60</option>
+<option value="61">61</option>
+<option value="62">62</option>
+<option value="63">63</option>
+<option value="64">64</option>
+<option selected value="65">65</option>
+<option value="66">66</option>
+<option value="67">67</option>
+<option value="68">68</option>
+<option value="69">69</option>
+<option value="70">70</option>
+<option value="71">71</option>
+<option value="72">72</option>
+<option value="73">73</option>
+<option value="74">74</option>
+<option value="75">75</option>
+</select></td>
+</tr>
+
+
+
+<tr>
+<td class="gray_cell_right" width="75%" align="right">&nbsp;What Annual Income would you like to receive at retirement 
+(In Today's dollars):&nbsp;</td>
+
+<td class="gray_cell" width="25%">
+<select name="AnnualIncomeToReceive">
+<option value="15000">$15000</option>
+<option value="17500">$17500</option>
+<option value="20000">$20000</option>
+<option value="22500">$22500</option>
+<option value="25000">$25000</option>
+<option value="27500">$27500</option>
+<option value="30000">$30000</option>
+<option value="32500">$32500</option>
+<option value="35000">$35000</option>
+<option value="37500">$37500</option>
+<option selected value="40000">$40000</option>
+<option value="45000">$45000</option>
+<option value="50000">$50000</option>
+<option value="55000">$55000</option>
+<option value="60000">$60000</option>
+<option value="65000">$65000</option>
+<option value="70000">$70000</option>
+<option value="75000">$75000</option>
+<option value="80000">$80000</option>
+<option value="85000">$85000</option>
+<option value="90000">$90,000</option>
+<option value="95000">$95,000</option>
+<option value="100000">$100,000</option>
+</select></td>
+</tr>
+
+
+
+<tr>
+<td class="gray_cell_right" width="75%" align="right">After your retirement age, How many years will this income be needed for:&nbsp;</td>
+
+<td class="gray_cell" width="25%">
+<select name="NumOfYearsIncomeNeededFor">
+<option value="10">10</option>
+<option value="12">12</option>
+<option value="14">14</option>
+<option value="16">16</option>
+<option value="18">18</option>
+<option selected value="20">20</option>
+<option value="22">22</option>
+<option value="24">24</option>
+<option value="26">26</option>
+<option value="28">28</option>
+<option value="30">30</option>
+<option value="32">32</option>
+<option value="34">34</option>
+<option value="36">36</option>
+<option value="38">38</option>
+<option value="40">40</option>
+<option value="42">42</option>
+<option value="44">44</option>
+<option value="46">46</option>
+<option value="48">48</option>
+</select></td>
+</tr>
+
+
+
+<tr>
+<td class="gray_cell_right" width="75%" align="right">Estimate the inflation rate:&nbsp;</td>
+
+<td class="gray_cell" width="25%">
+<select name="InflationRate">
+<option value="1">1%</option>
+<option value="2">2%</option>
+<option selected value="3">3%</option>
+<option value="4">4%</option>
+<option value="5">5%</option>
+<option value="6">6%</option>
+<option value="7">7%</option>
+<option value="8">8%</option>
+<option value="9">9%</option>
+<option value="10">10%</option>
+<option value="11">11%</option>
+<option value="12">12%</option>
+<option value="13">13%</option>
+<option value="14">14%</option>
+<option value="15">15%</option>
+</select></td>
+</tr>
+
+
+
+<tr>
+<td class="gray_cell_right" width="75%" align="right">Estimate the pre-retirement interest rate:&nbsp;</td>
+
+<td class="gray_cell" width="25%">
+<select name="PreRetirementIntRate">
+<option value="1">1%</option>
+<option value="2">2%</option>
+<option value="3">3%</option>
+<option value="4">4%</option>
+<option value="5">5%</option>
+<option selected value="6">6%</option>
+<option value="7">7%</option>
+<option value="8">8%</option>
+<option value="9">9%</option>
+<option value="10">10%</option>
+<option value="11">11%</option>
+<option value="12">12%</option>
+<option value="13">13%</option>
+<option value="14">14%</option>
+<option value="15">15%</option>
+</select></td>
+</tr>
+
+
+
+
+<tr>
+<td class="gray_cell_right" width="75%" align="right">Estimate the post-retirement interest rate:&nbsp;</td>
+
+<td class="gray_cell" width="25%">
+<select name="PostRetirementIntRate">
+<option value="1">1%</option>
+<option value="2">2%</option>
+<option value="3">3%</option>
+<option value="4">4%</option>
+<option value="5">5%</option>
+<option selected value="6">6%</option>
+<option value="7">7%</option>
+<option value="8">8%</option>
+<option value="9">9%</option>
+<option value="10">10%</option>
+<option value="11">11%</option>
+<option value="12">12%</option>
+<option value="13">13%</option>
+<option value="14">14%</option>
+<option value="15">15%</option>
+</select></td>
+</tr>
+
+
+
+<tr>
+<td class="gray_cell_right" width="75%" align="right">How much have you already saved for retirement:&nbsp;</td>
+
+<td class="gray_cell" width="25%">
+<select name="InitialSavings">
+<option selected value="0">$0</option>
+<option value="2500">$2,500</option>
+<option value="5000">$5,000</option>
+<option value="7500">$7,500</option>
+<option value="10000">$10,000</option>
+<option value="15000">$15,000</option>
+<option value="20000">$20,000</option>
+<option value="25000">$25,000</option>
+<option value="30000">$30,000</option>
+<option value="35000">$35,000</option>
+<option value="40000">$40,000</option>
+<option value="50000">$50,000</option>
+<option value="60000">$60,000</option>
+<option value="65000">$65,000</option>
+<option value="70000">$70,000</option>
+<option value="75000">$75,000</option>
+<option value="80000">$80,000</option>
+<option value="85000">$85,000</option>
+<option value="90000">$90,000</option>
+<option value="95000">$95,000</option>
+<option value="100000">$100,000</option>
+</select></td>
+</tr>
+
+<tr>
+<td class="default_header" colspan="2">
+<input type="submit" name="EasyRetire2" value="Calculate"></td>
+</tr>
+
+</table>
+
+
+<p class="center"><b>Powered by <a class="nocolor" href="http://www.compulife.com">COMPULIFE</a><sup>&reg;</sup></b>
+
+<!-- Pass some hidden values onto the next page  -->
+<input type="hidden" name="State" value="$origstate$">
+<input type="hidden" name="Birthday" value="$origday$">
+<input type="hidden" name="BirthMonth" value="$origmonth$">
+<input type="hidden" name="BirthYear" value="$origyear$">
+<input type="hidden" name="Health" value="$orighealth$">
+<input type="hidden" name="FaceAmount" value="$origface$">
+<input type="hidden" name="Sex" value="$origsex$">
+<input type="hidden" name="Smoker" value="$origsmoker$">
+<input type="hidden" name="NewCategory" value="$origcat$">
+<input type="hidden" name="PostalCode" value="$postalcode$">
+<input type="hidden" name="ZipCode" value="$zipcode$">
+<input type="hidden" name="UserLocation" value="$userlocation$">
+<input type="hidden" name="email" value="$email$">
+<input type="hidden" name="css" value="$css$">
+<input type="hidden" name="TEMPLATEFILE" value="$templatefile$">
+<input type="hidden" name="HTEMPLATEFILE" value="$htemplatefile$">
+</form> 
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Popularity Posts Widget\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-01-25 08:01-0430\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Barinov Mihail <mih.barinov@gmail.com>\n"
+"Language-Team: Barinov Mihail <admin@dot.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en_VE\n"
+"X-Poedit-SourceCharset: iso-8859-1\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: class_PopularityPostsWidget.php:5
+msgid "Displays popularitypostswidget block at sidebar."
+msgstr "Отображает виджет для самых популярных постов."
+
+#: class_PopularityPostsWidget.php:20
+msgid "Title:"
+msgstr "Заголовок:"
+
+#: class_PopularityPostsWidget.php:26
+msgid "Condition:"
+msgstr "Условия выборки:"
+
+#: class_PopularityPostsWidget.php:29
+msgid "Total views"
+msgstr "Просмотры за все время"
+
+#: class_PopularityPostsWidget.php:30
+msgid "Views today"
+msgstr "Просмотры за сегодня"
+
+#: class_PopularityPostsWidget.php:31
+msgid "Views last 7 days"
+msgstr "Просмотры за последние 7 дней"
+
+#: class_PopularityPostsWidget.php:32
+msgid "Views last 30 days"
+msgstr "Просмотры за последние 30 дней"
+
+#: class_PopularityPostsWidget.php:37
+msgid "Number of posts:"
+msgstr "Количество постов:"
+
+#: class_PopularityPostsWidget.php:45
+msgid "Post title length:"
+msgstr "Длинна заголовков постов:"
+
+#: class_PopularityPostsWidget.php:54
+msgid "Display Settings"
+msgstr "Настройки отображения"
+
+#: class_PopularityPostsWidget.php:58
+msgid "Show views?"
+msgstr "Показывать просмотры?"
+
+#: class_PopularityPostsWidget.php:64
+msgid "Show comments?"
+msgstr "Показывать комментарии?"
+
+#: class_PopularityPostsWidget.php:70
+msgid "Show date?"
+msgstr "Показывать дату?"
+
+#: class_PopularityPostsWidget.php:80
+msgid "Date Format"
+msgstr "Формат даты"
+
+#: class_PopularityPostsWidget.php:100
+msgid "Filter Settings"
+msgstr "Настройки фильтера"
+
+#: class_PopularityPostsWidget.php:104
+msgid "Turn ON categories filter"
+msgstr "Включить фильтр категорий"
+
+#: class_PopularityPostsWidget.php:115
+msgid "Select needed categories"
+msgstr "Выберите нужные категории"

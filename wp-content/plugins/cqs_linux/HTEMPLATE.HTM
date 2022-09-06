@@ -1,0 +1,555 @@
+<html>
+
+<head>
+   <title>Life Insurance Quotes - $licensee$</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">   
+   <meta name="Author" content="COMPULIFE Software, Inc.">
+   <link href="../../css/styles_website.css" type="text/css" rel="stylesheet">
+   <!-- You can use the CONFIG.TXT in the USER folder to read the css value and 
+   permit changes for USERS to switch other css style sheets from their admin.html
+   page.  If that is your preference, you can use the following line instead of 
+   hard coding the css style sheet above. -->
+   <!-- <link href="../../css/styles_website.css" type="text/css" rel="stylesheet"> -->
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function getdetailed (prodcode, healthpref, gonodk, company, product, healthclass)
+{		
+  document.comparisonform.ProductCode.value = prodcode;
+  document.comparisonform.HealthPref.value = healthpref;  
+  document.comparisonform.GoNoDk.value = gonodk;
+  document.comparisonform.CompanyName.value = company;
+  document.comparisonform.ProductName.value = product;
+  document.comparisonform.HealthClass.value = healthclass;
+  document.comparisonform.AmBest.value = 'false';
+  document.comparisonform.OnClick=abc=window.open('','reason','width=700,height=300,left=20,top=20,scrollbars=yes');
+  document.comparisonform.target='reason';
+  abc.focus();
+  document.comparisonform.submit();
+}
+function addHInput(id,name,value)
+{
+if (value=="") return;
+var aform = document.getElementById(id);
+var field = document.createElement("input");
+	field.setAttribute("type","hidden");
+	field.setAttribute("value",value);
+	field.setAttribute("name",name);
+	aform.appendChild(field);
+}
+
+function getbest (ambest, company, compcode)
+{
+  addHInput('comparisonform','AmBest',ambest);
+  document.comparisonform.AmBest.value = ambest;
+  document.comparisonform.CompanyName.value = company;
+  document.comparisonform.CompanyCode.value = compcode;
+  document.comparisonform.OnClick=abc=window.open('','reason','width=700,height=500,left=20,top=20,scrollbars=yes');
+  document.comparisonform.target='reason';
+  abc.focus();
+  document.comparisonform.submit();
+}
+
+function addBasicInputFields(id)
+{
+addHInput(id,"Sex","$sex$");
+addHInput(id,"ActualAge","$aage$");
+addHInput(id,"NearestAge","$nage$");
+addHInput(id,"Birthday","$origday$");
+addHInput(id,"BirthMonth","$origmonth$");
+addHInput(id,"BirthYear","$origyear$");
+addHInput(id,"Smoker","$origsmoker$");
+addHInput(id,"NewCategory","$origcat$");
+addHInput(id,"FaceAmount","$origface$");
+//addHInput(id,"HealthCategory","$healthcat$");
+addHInput(id,"Health","$orighealth$");
+addHInput(id,"Healthval","$healthval$");
+addHInput(id,"State","$origstate$");
+addHInput(id,"UserLocation","$userlocation$");
+addHInput(id,"email","$email$");
+addHInput(id,"css","$css$");
+addHInput(id,"DoSmokingTobacco","$origdosmokingtobacco$");
+addHInput(id,"DoCigarettes","$origdocigarettes$");
+addHInput(id,"DoCigars","$origdocigars$");
+addHInput(id,"DoPipe","$origdopipe$");
+addHInput(id,"DoChewingTobacco","$origdochewingtobacco$");
+addHInput(id,"DoNicotinePatchesOrGum","$origdonicotinepatchesorgum$");
+addHInput(id,"NumCigarettes","$orignumcigarettes$");
+addHInput(id,"PeriodCigarettes","$origperiodcigarettes$");
+addHInput(id,"NumCigars","$orignumcigars$");
+addHInput(id,"PeriodCigars","$origperiodcigars$");
+addHInput(id,"PeriodPipe","$origperiodpipe$");
+addHInput(id,"PeriodChewingTobacco","$origperiodchewingtobacco$");
+addHInput(id,"PeriodNicotinePatchesOrGum","$origperiodnicotinepatchesorgum$");
+addHInput(id,"DoHeightWeight","$origdoheightweight$");
+addHInput(id,"Weight","$origweight$");
+addHInput(id,"Feet","$origfeet$");
+addHInput(id,"Inches","$originches$");
+addHInput(id,"DoBloodPressure","$origdobloodpressure$");
+addHInput(id,"Systolic","$origsystolic$");
+addHInput(id,"Dystolic","$origdystolic$");
+addHInput(id,"BloodPressureMedication","$origbloodpressuremedication$");
+addHInput(id,"PeriodBloodPressure","$origperiodbloodpressure$");
+addHInput(id,"PeriodBloodPressureControlDuration","$origperiodbloodpressurecontrolduration$");
+addHInput(id,"DoCholesterol","$origdocholesterol$");
+addHInput(id,"CholesterolLevel","$origcholesterollevel$");
+addHInput(id,"HDLRatio","$orighdlratio$");
+addHInput(id,"CholesterolMedication","$origcholesterolmedication$");
+addHInput(id,"PeriodCholesterol","$origperiodcholesterol$");
+addHInput(id,"PeriodCholesterolControlDuration","$origperiodcholesterolcontrolduration$");
+addHInput(id,"DoDriving","$origdodriving$");
+addHInput(id,"HadDriversLicense","$orighaddriverslicense$");
+addHInput(id,"MovingViolations0","$origmovingviolations0$");
+addHInput(id,"MovingViolations1","$origmovingviolations1$");
+addHInput(id,"MovingViolations2","$origmovingviolations2$");
+addHInput(id,"MovingViolations3","$origmovingviolations3$");
+addHInput(id,"MovingViolations4","$origmovingviolations4$");
+addHInput(id,"RecklessConviction","$origrecklessconviction$");
+addHInput(id,"PeriodRecklessConviction","$origperiodrecklessconviction$");
+addHInput(id,"DwiConviction","$origdwiconviction$");
+addHInput(id,"PeriodDwiConviction","$origperioddwiconviction$");
+addHInput(id,"SuspendedConviction","$origsuspendedconviction$");
+addHInput(id,"PeriodSuspendedConviction","$origperiodsuspendedconviction$");
+addHInput(id,"MoreThanOneAccident","$origmorethanoneaccident$");
+addHInput(id,"PeriodMoreThanOneAccident","$origperiodmorethanoneaccident$");
+addHInput(id,"DoFamily","$origdofamily$");
+addHInput(id,"NumDeaths","$orignumdeaths$");
+addHInput(id,"NumContracted","$orignumcontracted$");
+addHInput(id,"AgeDied00","$origagedied00$");
+addHInput(id,"AgeDied01","$origagedied01$");
+addHInput(id,"AgeDied02","$origagedied02$");
+addHInput(id,"AgeContracted00","$origagecontracted00$");
+addHInput(id,"AgeContracted01","$origagecontracted01$");
+addHInput(id,"AgeContracted02","$origagecontracted02$");
+addHInput(id,"AgeContracted10","$origagecontracted10$");
+addHInput(id,"AgeContracted11","$origagecontracted11$");
+addHInput(id,"AgeContracted12","$origagecontracted12$");
+addHInput(id,"IsParent00","$origisparent00$");
+addHInput(id,"IsParent01","$origisparent01$");
+addHInput(id,"IsParent02","$origisparent02$");
+addHInput(id,"IsParent10","$origisparent10$");
+addHInput(id,"IsParent11","$origisparent11$");
+addHInput(id,"IsParent12","$origisparent12$");
+addHInput(id,"CVD00","$origcvd00$");
+addHInput(id,"CVD01","$origcvd01$");
+addHInput(id,"CVD02","$origcvd02$");
+addHInput(id,"CVD10","$origcvd10$");
+addHInput(id,"CVD11","$origcvd11$");
+addHInput(id,"CVD12","$origcvd12$");
+addHInput(id,"CAD00","$origcad00$");
+addHInput(id,"CAD01","$origcad01$");
+addHInput(id,"CAD02","$origcad02$");
+addHInput(id,"CAD10","$origcad10$");
+addHInput(id,"CAD11","$origcad11$");
+addHInput(id,"CAD12","$origcad12$");
+addHInput(id,"CVI00","$origcvi00$");
+addHInput(id,"CVI01","$origcvi01$");
+addHInput(id,"CVI02","$origcvi02$");
+addHInput(id,"CVI10","$origcvi10$");
+addHInput(id,"CVI11","$origcvi11$");
+addHInput(id,"CVI12","$origcvi12$");
+addHInput(id,"CVA00","$origcva00$");
+addHInput(id,"CVA01","$origcva01$");
+addHInput(id,"CVA02","$origcva02$");
+addHInput(id,"CVA10","$origcva10$");
+addHInput(id,"CVA11","$origcva11$");
+addHInput(id,"CVA12","$origcva12$");
+addHInput(id,"Diabetes00","$origdiabetes00$");
+addHInput(id,"Diabetes01","$origdiabetes01$");
+addHInput(id,"Diabetes02","$origdiabetes02$");
+addHInput(id,"Diabetes10","$origdiabetes10$");
+addHInput(id,"Diabetes11","$origdiabetes11$");
+addHInput(id,"Diabetes12","$origdiabetes12$");
+addHInput(id,"KidneyDisease00","$origkidneydisease00$");
+addHInput(id,"KidneyDisease01","$origkidneydisease01$");
+addHInput(id,"KidneyDisease02","$origkidneydisease02$");
+addHInput(id,"KidneyDisease10","$origkidneydisease10$");
+addHInput(id,"KidneyDisease11","$origkidneydisease11$");
+addHInput(id,"KidneyDisease12","$origkidneydisease12$");
+addHInput(id,"ColonCancer00","$origcoloncancer00$");
+addHInput(id,"ColonCancer01","$origcoloncancer01$");
+addHInput(id,"ColonCancer02","$origcoloncancer02$");
+addHInput(id,"ColonCancer10","$origcoloncancer10$");
+addHInput(id,"ColonCancer11","$origcoloncancer11$");
+addHInput(id,"ColonCancer12","$origcoloncancer12$");
+addHInput(id,"IntestinalCancer00","$origintestinalcancer00$");
+addHInput(id,"IntestinalCancer01","$origintestinalcancer01$");
+addHInput(id,"IntestinalCancer02","$origintestinalcancer02$");
+addHInput(id,"IntestinalCancer10","$origintestinalcancer10$");
+addHInput(id,"IntestinalCancer11","$origintestinalcancer11$");
+addHInput(id,"IntestinalCancer12","$origintestinalcancer12$");
+addHInput(id,"BreastCancer00","$origbreastcancer00$");
+addHInput(id,"BreastCancer01","$origbreastcancer01$");
+addHInput(id,"BreastCancer02","$origbreastcancer02$");
+addHInput(id,"BreastCancer10","$origbreastcancer10$");
+addHInput(id,"BreastCancer11","$origbreastcancer11$");
+addHInput(id,"BreastCancer12","$origbreastcancer12$");
+addHInput(id,"ProstateCancer00","$origprostatecancer00$");
+addHInput(id,"ProstateCancer01","$origprostatecancer01$");
+addHInput(id,"ProstateCancer02","$origprostatecancer02$");
+addHInput(id,"ProstateCancer10","$origprostatecancer10$");
+addHInput(id,"ProstateCancer11","$origprostatecancer11$");
+addHInput(id,"ProstateCancer12","$origprostatecancer12$");
+addHInput(id,"OvarianCancer00","$origovariancancer00$");
+addHInput(id,"OvarianCancer01","$origovariancancer01$");
+addHInput(id,"OvarianCancer02","$origovariancancer02$");
+addHInput(id,"OvarianCancer10","$origovariancancer10$");
+addHInput(id,"OvarianCancer11","$origovariancancer11$");
+addHInput(id,"OvarianCancer12","$origovariancancer12$");
+addHInput(id,"OtherInternalCancer00","$origotherinternalcancer00$");
+addHInput(id,"OtherInternalCancer01","$origotherinternalcancer01$");
+addHInput(id,"OtherInternalCancer02","$origotherinternalcancer02$");
+addHInput(id,"OtherInternalCancer10","$origotherinternalcancer10$");
+addHInput(id,"OtherInternalCancer11","$origotherinternalcancer11$");
+addHInput(id,"OtherInternalCancer12","$origotherinternalcancer12$");
+addHInput(id,"MalignantMelanoma00","$origmalignantmelanoma00$");
+addHInput(id,"MalignantMelanoma01","$origmalignantmelanoma01$");
+addHInput(id,"MalignantMelanoma02","$origmalignantmelanoma02$");
+addHInput(id,"MalignantMelanoma10","$origmalignantmelanoma10$");
+addHInput(id,"MalignantMelanoma11","$origmalignantmelanoma11$");
+addHInput(id,"MalignantMelanoma12","$origmalignantmelanoma12$");
+addHInput(id,"BasalCellCarcinoma00","$origbasalcellcarcinoma00$");
+addHInput(id,"BasalCellCarcinoma01","$origbasalcellcarcinoma01$");
+addHInput(id,"BasalCellCarcinoma02","$origbasalcellcarcinoma02$");
+addHInput(id,"BasalCellCarcinoma10","$origbasalcellcarcinoma10$");
+addHInput(id,"BasalCellCarcinoma11","$origbasalcellcarcinoma11$");
+addHInput(id,"BasalCellCarcinoma12","$origbasalcellcarcinoma12$");
+addHInput(id,"DoSubAbuse","$origdosubabuse$");
+addHInput(id,"Alcohol","$origalcohol$");
+addHInput(id,"AlcYearsSinceTreatment","$origalcyearssincetreatment$");
+addHInput(id,"Drugs","$origdrugs$");
+addHInput(id,"DrugsYearsSinceTreatment","$origdrugsyearssincetreatment$");
+addHInput(id,"GoString","$origgostring$");
+addHInput(id,"NoGoString","$orignogostring$");
+addHInput(id,"DoNotKnowString","$origdonotknowstring$");
+addHInput(id,"GoColor","$origgocolor$");
+addHInput(id,"NoGoColor","$orignogocolor$");
+addHInput(id,"DoNotKnowColor","$origdonotknowcolor$");
+addHInput(id,"DoNotKnowMessage","$origdonotknowmessage$");
+}
+
+function ProdLineSubmit(id,Company, Product,ModeUsed,Cat,PremiumAnnual,Premium,HealthCat)
+{
+addHInput(id,"Company",Company);
+addHInput(id,"Product",Product);
+addHInput(id,"ModeUsed",ModeUsed);
+addHInput(id,"Category",Cat);
+addHInput(id,"PremiumAnnual",PremiumAnnual);
+addHInput(id,"PremiumMode",Premium);
+addHInput(id,"HealthCat",HealthCat);
+addBasicInputFields(id);
+return true;
+}
+-->
+</script>
+
+</head>
+
+<body>
+
+
+
+
+<table class="default_table" align="center">
+  <tr class="default_header"><!-- Row 1 -->
+    <td class="default_header" colspan="2"><b>Guide to Health Analyzer Icons</b></td>
+  </tr>
+  <tr class="default_sub_header"><!-- Row 5 -->
+    <td class="default_sub_header_center" colspan="2">&nbsp;Click the icon which follows the premium for more information</td>
+  </tr>
+  <tr class="default_table"><!-- Row 2 -->
+    <td class="default_table" ><A name="#5000"></A> <img src="$origgostring$"></td>
+    <td bgcolor="#CCFFCC">&nbsp;Based upon what you told the Health Analyzer, this <b>premium is available</b></td>
+  </tr>
+  <tr class="default_table"><!-- Row 3 -->
+    <td class="default_table" ><A name="#5001"></A> <img src="$origdonotknowstring$"></td>
+    <td class="default_table" >&nbsp;The Health Analyzer does not have enough information from the company to make a determination&nbsp;</td>
+  </tr>
+  <tr class="default_table"><!-- Row 4 -->
+    <td class="default_table" ><A name="#5002"></A> <img src="$orignogostring$"></td>
+    <td bgcolor="#FFDDDD">&nbsp;Based upon what you told the Health Analyzer, this <b>premium is not available</b>&nbsp;</td>
+  </tr>
+  
+
+</table>
+
+
+
+<table align="center">
+<tr>
+<td>
+<form name="relookupform" id="relookupform" action="cqsl.cgi" method="POST">
+<p><b>Filter:</b>
+<select name="NoRedX" size="1">
+<option $selectednoredxoff$ value=OFF">include products I do not qualify for</OPTION>
+<option $selectednoredxon$ value="ON">remove products I do not qualify for</OPTION>
+</select>
+&nbsp;&nbsp;&nbsp;<b>Sort:</b>
+<select name="SortByHealth" size="1">
+<option $selectedsortbyhealthoff$ value="OFF">by premium</OPTION>
+<option $selectedsortbyhealthon$ value="ON">by health</OPTION>
+</select>
+<input type="hidden" name="ModeUsed" value="$modeused$">
+&nbsp;&nbsp;<input type="submit" name="CqsComparison" value="Recalculate Results"></p>
+<input type="hidden" name="HTEMPLATEFILE" value="$htemplatefile$"> <!-- make sure same template is used when recalculating results -->
+<input type="hidden" name="AmBest" value="false">
+<script type="text/javascript">
+addBasicInputFields('relookupform'); 
+</script>
+
+
+</form>
+</td>
+</tr>
+</table>
+<form name="comparisonform" id="comparisonform" action="cqsl.cgi" method="POST">
+<script type="text/javascript">
+addBasicInputFields('comparisonform');
+
+</script>
+<!-- The next 7 variables are passed through.  Their values will be defined later -->
+<!-- on when the javascript function is called -->
+<input type="hidden" name="HealthReason" value="Health Reason">
+<input type="hidden" name="ProductCode">
+<input type="hidden" name="HealthPref">
+<input type="hidden" name="GoNoDk">
+<input type="hidden" name="CompanyName">
+<input type="hidden" name="CompanyCode">
+<input type="hidden" name="ProductName">
+<input type="hidden" name="HealthClass">
+<input type="hidden" name="AmBest">
+<input type="hidden" name="RejectReasonBr" value="on">
+</form>
+
+<!-- The next line represents the start of a comparison section -->
+<!-- It must be on a line by itself -->
+$comparisonrepeat$
+
+$nonsmoketable$
+<!--The following line defines the format for outputing the company and products, (max length is 400)-->
+
+<table class="default_table" width="100%">
+<tr>
+<td class="default_header" colspan="6">$title$</td>
+</tr>
+
+<tr>
+<!--<td class="default_sub_header" WIDTH="2%"></TD>-->
+<!-- <td class="default_sub_header">Company Logo</TD> -->
+<td class="default_sub_header" WIDTH="31%">Company Name</TD>
+<!-- <td class="default_sub_header" WIDTH="4%">AMB</TD> -->
+<td class="default_sub_header" WIDTH="6%">Annual</TD>
+<td class="default_sub_header" WIDTH="6%">$ModeUsedC$</TD>
+<td class="default_sub_header" WIDTH="3%" align="center">&nbsp;</TD>
+<!-- <td class="default_sub_header" WIDTH="3%">&nbsp;</TD> -->
+<td class="default_sub_header" WIDTH="27%">Product Name</TD>
+<!-- <td class="default_sub_header" WIDTH="3%">&nbsp;</TD> -->
+<td class="default_sub_header" WIDTH="23%">Health Category</TD>
+<!-- <td class="default_sub_header">Request Application</TD> -->
+</tr>
+
+<!-- The following line defines the format for outputing the company and products, (max length is 400)-->
+
+
+
+<!--
+-->
+$prodline=50$
+
+<form id="$comp$$prod$" action="./COMPLIFE/USER/$userlocation$/request_ap_health.php" method="POST">
+<script type="text/javascript">
+	 ProdLineSubmit('$comp$$prod$','$company$','$Product$','$modeused$','$cat$','$PremiumAnnual$','$Premium$','$healthcat$');
+</script>	 
+<tr style="background-color:$healthcolor$; padding:3px; border-bottom: 1px solid #808080;">
+<!-- <TD style="text-align:center; border-bottom: 1px solid #808080; border-right: 1px solid #808080; background-color: #FFFFFF;"><img src="../../images/logos/$COMP$.gif" valign="middle" align="center" alt="logo" border="0" vspace="3" hspace="3"></TD> -->
+<TD style="padding:3px; border-bottom: 1px solid #808080;" WIDTH="31%">$company$</TD>
+<!-- <TD style="padding:3px; border-bottom: 1px solid #808080;" WIDTH="4%"><b>$amb$</b></TD> -->
+<TD style="background-color:$healthcolor$; padding:2px; border-bottom: 1px solid #808080;" WIDTH="6%"><DIV style="border-bottom:none; background-color:$healthcolor$;" ALIGN="right"><b>$$premiumAnnual$</b></DIV></TD>
+<TD style="background-color:$healthcolor$; padding:2px; border-bottom: 1px solid #808080;" WIDTH="6%"><DIV style="border-bottom:none; background-color:$healthcolor$;" ALIGN="right"><b>$$premium$</b></DIV></TD>
+<TD align="center" style="padding:3px; border-bottom: 1px solid #808080;" WIDTH="2%">
+<a href="javascript:getdetailed('$prod$','$healthpref$','$gonodk$','$company$','$product$','$healthcat$')" TITLE="$healthrejectreason$">
+<img border="0" hspace="2" src="$healthval$"></a></TD>
+<!-- <TD style="padding:3px; border-bottom: 1px solid #808080;" WIDTH="3%"><font color="#0148CB">$guar$</TD> -->
+<TD style="padding:3px; border-bottom: 1px solid #808080;" WIDTH="27%">$product$</TD>
+<!-- <TD style="padding:3px; border-bottom: 1px solid #808080;" WIDTH="3%"><font color="#0148CB">$rgpfpp$&nbsp;</TD> -->
+<TD style="padding:3px; border-bottom: 1px solid #808080;" WIDTH="23%">$healthcat$</TD>
+<!-- <TD style="padding:3px; border-bottom: 1px solid #808080;" WIDTH="23%">
+<input type="submit" name="Submit" value="Request Application"></TD> -->
+</TR>
+
+</form>
+
+$/prodline$
+
+
+</TABLE>
+
+
+$/comparisonrepeat$
+<!-- The above line represents the end of a comparison section -->
+<!-- It must be on a line by itself -->
+
+</form>
+
+
+<!-- <p><I><font color="#0148CB">** and gtd</font></I></b> are indicators
+
+that identify whether the premium quoted is guaranteed for the level period
+
+that you are comparing.
+
+<P><b><I><font color="#0148CB">**</font></I></b> - indicates a premium that 
+is <b>NOT</b> guaranteed for the level term period.  For this product, the 
+life company reserves the right to increase the premium before the end of 
+the initial level term period.  Make sure that you ask your agent for 
+an authorized life company illustration which will give you more information
+about this premium and what guarantees the company does provide.
+
+<P><b><I><font color="#0148CB">gtd</font></I></b> - indicates a premium that 
+is guaranteed for the level term period.  --> 
+
+<!-- <p><I><font color="#0148CB">** and gtd</font></I></b> are indicators
+
+that identify whether the premium quoted is guaranteed for the level period
+
+that you are comparing.
+
+<P><b><I><font color="#0148CB">**</font></I></b> - indicates a premium that 
+is <b>NOT</b> guaranteed for the level term period.  For this product, the 
+life company reserves the right to increase the premium before the end of 
+the initial level term period.  Make sure that you ask your agent for 
+an authorized life company illustration which will give you more information
+about this premium and what guarantees the company does provide.
+
+<P><b><I><font color="#0148CB">gtd</font></I></b> - indicates a premium that 
+is guaranteed for the level term period.  
+
+<P><b><I><font color="#0148CB">P+, Pf, R+, and Rg</font></I></b> are indicators
+
+that will help you determine the underwriting (health and lifestyle) criteria
+
+that you will need to satisfy in order to qualify for the premium shown.
+
+
+<P><b><I><font color="#0148CB">P+</font></I></b> - indicates a rate for
+
+an individual in very preferred (preferred plus) health. A company offering
+
+a P+ premium also offers a preferred (Pf) and a regular (Rg) health premium.
+
+Pf premiums are less difficult to qualify for. Rg premiums are much less
+
+difficult to qualify for.
+
+
+
+<P><b><I><font color="#0148CB">Pf</font></I></b> - indicates a rate for
+
+an individual in preferred health. A company offering a Pf premium also
+
+offers a regular (Rg) health premium. Rg premiums are less difficult to
+
+qualify for.
+
+
+
+<P><b><I><font color="#0148CB">R+</font></I></b> - indicates a rate for
+
+an individual in somewhat better health than regular (Rg), but not what 
+
+the life insurance industry typically terms "preferred health".  
+
+A company offering an R+ premium also offers a regular (Rg) health premium. 
+
+Rg premiums are less difficult to qualify for.
+
+
+
+
+<P><b><I><font color="#0148CB">Rg</font></I></b> - indicates a rate for
+
+a person in normal health who does not have any medical or lifestyle condition
+
+which would increase their future risk of dying.
+
+
+
+<P><b><I><font color="#0148CB">Example:&nbsp; </font></I></b>A person who
+
+has moderately elevated blood pressure may not qualify for P+, Pf or R+ premium
+
+rates, but they might qualify for Rg. A private pilot may not qualify for
+
+P+ or Pf premiums, but might qualify for R+ or Rg rates. You will need to speak
+
+to the company or an insurance agent for more details. Premiums quoted
+
+for smokers already take into account that the insured person smokes and
+
+therefore has a greater risk of death than a non-smokers. Premiums offered
+
+to smokers are already higher than those for non-smokers. --> 
+
+
+
+
+
+<h3>Differences Between Companies and Products</h3>
+
+
+<P>The following is a brief list of some of the other factors that you will need to consider when comparing products and companies:
+
+
+
+<P><b><font color="#0148CB">Company Financial Strength</font></b> - Not all life insurance companies are the same. Some are very large financially, some are small. Some companies are in better financial condition than others.  The longer the level term period, the more important it is to consider how healthy and strong the life insurance company is. Make sure that you ask your agent for information about the financial ratings for the companies that you are considering.
+
+
+
+<P><b><font color="#0148CB">Premium Guarantees</font></b> - Are the premiums for the policy fully guaranteed?  Not all companies fully guarantee the initial premium for the entire level period. If two products have the same price, but one is guaranteed while the other is not, the guaranteed product would be better.
+
+
+
+<P><b><font color="#0148CB">Renewal Period</font></b> - Most level term policies have the ability to renew the policy beyond the initial level premium period. Two products may offer identical premiums for the initial level period, and yet there may be an enormous difference in renewal costs beyond the level period.  No Lapse U/L products have term-like 
+premiums which offer initial guaranteed level premiums comparable to the level periods of corresponding guaranteed level term policies.  For the intial level period, U/L policies with term-like guaranteed premiums provide comparable premium/death benefits as the 
+corresponding level term products.  However, the ability to renew those U/L policies, and the premiums that you might pay to renew those policies, can differ significantly from a corresponding level premium term policy.  
+
+
+
+<P><b><font color="#0148CB">Conversion Period</font></b> - Many term policies offer the ability to exchange the term policy for a whole life policy without having to again medically qualify. Should your health change, and should you not be able to buy a new policy elsewhere, you may find the conversion option important. Not all policies offer the same time period for conversion to take place, and not all give you access to the same types of whole life.
+
+
+
+<P><b><font color="#0148CB">Comparing Different Level Periods</font></b> - Should you be buying a 10 year term product, a 20 year term or a 30 year term? How long do you need the insurance? If you buy a 10 year term, how will future cost increases after the 10th year compare to a longer level term plan such as 20 year term? If you only need insurance for 10 years, you could be wasting your money buying a 20 year term product. You should discuss why you are buying the insurance with your agent and let them give you the benefit of their knowledge and experience. 
+
+
+
+<P><b><font color="#0148CB">Monthly Payment Options</font></b> - Many consumers pay their term insurance premiums on a monthly basis. The least expensive product based upon the annual premium may not have the lowest monthly, quarterly or semi-annual premium. Many life insurance companies charge extra to pay more frequently than annually, and some charge more than others.
+
+
+
+<P><b><font color="#0148CB">Health Risk Conditions</font></b> - Each life insurance company establishes its own health and lifestyle requirements to determine what premiums you may qualify for. Slightly high blood pressure may disqualify you for one company's preferred health premium, but might be acceptable to obtain another company's preferred health premium. Your agent will be able to give you more guidance.
+
+
+
+<P><b><font color="#0148CB">Smoking Considerations</font></b> - Not all life companies define smoking the same way. If you have never smoked or used tobacco products in any way, then a non-smoking comparison will include products that you can qualify for based upon non-smoking. If you were a smoker and later quit, then how long ago that you quit may limit your choices.  If you do smoke, some companies may offer products with better premiums depending on how little you smoke, or whether you smoke cigars or pipe rather than cigarettes. You will need to discuss all of this with your agent.
+
+
+
+<P><b><I><font color="#0148CB">There are other considerations that you will want to discuss with your agent.</font></I></b>
+
+
+<h3>About This Comparison</h3>
+
+
+
+<P>The information used in this comparison has been taken from the rate cards and rate manuals which life companies routinely publish and distribute to life agents and brokers. To the best of our ability we have done everything we can to ensure that the information contained in this comparison is up-to-date and accurate. However, <b><I><font color="#0148CB">WE CANNOT GUARANTEE ACCURACY.</font></I></b>
+
+
+
+<P>In the event that there is a discrepancy between the information contained in this comparison, and any life company authorized illustration and/or policy, <b><I><font color="#0148CB">the policy shall govern</font></I></b>.
+
+
+<p class="center"><b>Powered by <a class="nocolor" href="http://www.compulife.com">COMPULIFE</a><sup>&reg;</sup></b>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Wordpress Add Custom CSS\n"
+"POT-Creation-Date: 2014-10-04 16:46+0100\n"
+"PO-Revision-Date: 2015-04-08 15:25+0100\n"
+"Last-Translator: Bodo Graumann <mail@bodograumann.de>\n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../wordpress-add-custom-css.php:62
+msgid "Custom CSS"
+msgstr "Angepasstes CSS"
+
+#: ../wordpress-add-custom-css.php:88
+msgid "Add custom CSS rules for this %s"
+msgstr "Passe %s-Aussehen an"
+
+#: ../wordpress-add-custom-css.php:101
+msgid "Wordpress Add Custom CSS"
+msgstr "Angepasstes CSS Hinzufügen"
+
+#: ../wordpress-add-custom-css.php:105
+msgid "Save"
+msgstr "Speichern"
+
+#: ../wordpress-add-custom-css.php:107
+msgid "Credits"
+msgstr "Authoren"
+
+#: ../wordpress-add-custom-css.php:109
+msgid "\"WP Add Custom CSS\" is a plugin by"
+msgstr "\"WP Add Custom CSS\" ist ein Plugin von"
+
+#: ../wordpress-add-custom-css.php:116
+msgid "Write here the CSS rules you want to apply to the whole website."
+msgstr "Definiere hier die CSS-Regeln, welche für die gesamte Webseite gelten sollen."
+
+#: ../wordpress-add-custom-css.php:202
+msgid "Settings"
+msgstr "Einstellungen"
+

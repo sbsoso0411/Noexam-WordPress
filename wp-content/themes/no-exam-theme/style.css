@@ -1,0 +1,22 @@
+/*
+Theme Name: No Exam
+Author: Adam Clarke
+Author URI: http://adamclarke.co
+Description: Custom theme design for NoExam Life Insurance
+License: GNU General Public License
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, white, red, black, one-column, two-columns, right-sidebar, fluid-layout, custom-header, full-width-template, rtl-language-support, translation-ready, sticky-post, theme-options, threaded-comments
+
+Text Domain: NoExam
+
+*/
+
+
+/* =Redundant code for the WordPress.org theme review process
+-------------------------------------------------------------- */
+
+.wp-caption-text,
+.sticky,
+.gallery-caption,
+.bypostauthor {}
+

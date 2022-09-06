@@ -1,0 +1,49 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+Redirect 301 /home/ http://www.noexam.dev/
+Redirect 301 /exam-home/ http://www.noexam.dev/
+Redirect 301 /life-insurance-rates/ http://www.noexam.dev/rates/
+Redirect 301 /no-exam-life-insurance/ http://www.noexam.dev/
+Redirect 301 /quotes/ http://www.noexam.dev/
+Redirect 301 /life-insurance-without-physical/ http://www.noexam.dev/
+Redirect 301 /instant-life-insurance/ http://www.noexam.dev/
+Redirect 301 /life-insurance-elderly/ http://www.noexam.dev/
+Redirect 301 /life-insurance-parents/ http://www.noexam.dev/
+Redirect 301 /applying-life-insurance-online-safe/ http://www.noexam.dev/buy-online/
+Redirect 301 /what-is-guaranteed-life-insurance/ http://www.noexam.dev/
+Redirect 301 /how-much-life-insurance/ http://www.noexam.dev/guide/
+Redirect 301 /life-insurance-beneficiary/ http://www.noexam.dev/guide/
+Redirect 301 /mortgage-life-insurance/ http://www.noexam.dev/guide/
+Redirect 301 /spouse-life-insurance/ http://www.noexam.dev/guide/
+Redirect 301 /types-of-life-insurance/ http://www.noexam.dev/guide/
+Redirect 301 /will-and-proper-coverage/ http://www.noexam.dev/guide/
+Redirect 301 /term-life-insurance-vs-whole-life-insurance/ http://www.noexam.dev/guide/
+Redirect 301 /life-insurance-loans/ http://www.noexam.dev/guide/
+Redirect 301 /life-insurance-exam/ http://www.noexam.dev/guide/
+Redirect 301 /life-insurance-and-depression/ http://www.noexam.dev/guide/
+Redirect 301 /life-insurance-weight-charts/ http://www.noexam.dev/guide/
+Redirect 301 /third-party-ratings/ http://www.noexam.dev/guide/
+Redirect 301 /how-it-works/ http://www.noexam.dev/
+Redirect 301 /questions/ http://www.noexam.dev/
+Redirect 301 /rates/ http://www.noexam.dev/
+
+
+
+
+# block visitors referred from semalt.com
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} semalt\.com [NC]
+RewriteRule .* - [F]
+
+
+

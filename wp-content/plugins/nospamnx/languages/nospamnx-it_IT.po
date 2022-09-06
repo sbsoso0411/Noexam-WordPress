@@ -1,0 +1,549 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: NoSpamNX in italiano\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-04 07:42+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Sven Kubiak <sk@svenkubiak.de>\n"
+"Language-Team: Gianni Diurno | gidibao.net\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: Italian\n"
+"X-Poedit-Country: ITALY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_c;__ngettext_noop:1,2\n"
+"X-Poedit-Basepath: ./\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: nospamnx.php:79
+msgid "Your WordPress is to old. NoSpamNX requires at least WordPress 3.0!"
+msgstr "La tua versione di WordPress é datata. NoSpamNX richiede WordPress 3.0 o superiore!"
+
+#: nospamnx.php:274
+msgid "Settings"
+msgstr ""
+
+#: nospamnx.php:282
+msgid "FAQ"
+msgstr ""
+
+#: nospamnx.php:283
+msgid "Donate"
+msgstr ""
+
+#: nospamnx.php:292
+msgid "Sorry, but you have no permissions to change settings."
+msgstr "Non hai i permessi necessari per modificare le impostazioni."
+
+#: nospamnx.php:312
+msgid "NoSpamNX settings were saved successfully."
+msgstr "Le impostazioni di NoSpamNX sono state sqalvate con successo."
+
+#: nospamnx.php:317
+msgid "NoSpamNX Counter was reseted successfully."
+msgstr "Il contatore di NoSpamNX é stato azzerato con successo."
+
+#: nospamnx.php:328
+msgid "NoSpamNX Blacklist was updated successfully."
+msgstr "La blacklist di NoSpamNX Blacklist é stata aggiornata con successo."
+
+#: nospamnx.php:344
+msgid "Are you sure you want to reset the counter?"
+msgstr "Sei certo di volere azzerare il contatore?"
+
+#: nospamnx.php:351
+msgid "NoSpamNX Settings"
+msgstr "Impostazioni NoSpamNX"
+
+#: nospamnx.php:355
+msgid "Statistic"
+msgstr "Statistica"
+
+#: nospamnx.php:368
+msgid "Reset"
+msgstr "Azzera"
+
+#: nospamnx.php:374
+msgid "Operating mode"
+msgstr "Modalità operativa"
+
+#: nospamnx.php:376
+msgid "By default all Spambots are marked as Spam, but the recommended Mode is \"block\". If you are uncertain what will be blocked, select \"Mark as Spam\" at first and switch to \"block\" later on."
+msgstr "Sebbene utti gli Spambot saranno segnalati come Spam (predefinito), la modalità preferibile é \"blocco\". Qualora non fossi certo di cosa sarà bloccato, seleziona prima \"Segnala come spam\" quindi, passa a \"blocco\" in un secondo tempo."
+
+#: nospamnx.php:380
+msgid "Mode"
+msgstr "Modalità"
+
+#: nospamnx.php:383
+msgid "Block (recommended)"
+msgstr "Blocco (raccomandato)"
+
+#: nospamnx.php:385
+msgid "Mark as Spam"
+msgstr "Segnala come spam"
+
+#: nospamnx.php:390
+#: nospamnx.php:435
+msgid "Save"
+msgstr "Salva"
+
+#: nospamnx.php:396
+msgid "Blacklist"
+msgstr "Blacklist"
+
+#: nospamnx.php:398
+msgid "By default the Entries in the Blacklist will match Substrings (e.g. 'foobar' will match, if you have 'foo' in your Blacklist). Uncheck the following Option to only match exact words."
+msgstr ""
+
+#: nospamnx.php:402
+msgid "Match Substrings"
+msgstr ""
+
+#: nospamnx.php:405
+msgid "Local Blacklist"
+msgstr "Blacklist locale"
+
+#: nospamnx.php:406
+msgid "Global Blacklist"
+msgstr "Blacklist globale"
+
+#: nospamnx.php:409
+msgid "The local Blacklist is comparable to the WordPress Blacklist. However, the local Blacklist enables you to block comments containing certain values, instead of putting them in moderation queue. Thus, the local blacklist only makes sense when using NoSpamNX in blocking mode. The local Blacklist checks the given values against the ip address, the author, the E-Mail Address, the comment and the URL field of a comment. If a pattern matches, the comment will be blocked. Please use one value per line. The local Blacklist is case-insensitive."
+msgstr ""
+
+#: nospamnx.php:410
+msgid ""
+"The global Blacklist gives you the possibility to use one Blacklist for multiple WordPress Blogs. You need to setup a place where you store your Blacklist (e.g. Webspace, Dropbox, etc. - but HTTP only) and put it into the Field \"Update URL\". How you Built up your Blacklist (e.g. PHP-Script with Database, simple Textfile, etc.) is up to, but you need to make sure, your Update URL returns one value per line seperated by \"\\n"
+"\". Put the Update URL in all your Blogs where you want your Blacklist, and setup the update rotation according to your needs. The global Blacklist will be activated by adding an Update URL. The global Blacklist is case-insensitive."
+msgstr ""
+
+#: nospamnx.php:418
+#: nospamnx.php:420
+msgid "Last update"
+msgstr "Ultimo aggiornamento"
+
+#: nospamnx.php:427
+msgid "Update URL (e.g. http://www.mydomain.com/myblacklist.txt)"
+msgstr "URL aggiornamento (es.: http://www.mydomain.com/myblacklist.txt)"
+
+#: nospamnx.php:431
+msgid "Update every"
+msgstr "Aggiorna ogni"
+
+#: nospamnx.php:431
+msgid "minutes."
+msgstr "minuti."
+
+#: nospamnx.php:446
+msgid "Security-Check failed."
+msgstr "Verifica-sicurezza fallita."
+
+#: nospamnx.php:582
+msgid "NoSpamNX has stopped no birdbrained Spambots yet."
+msgstr "NoSpamNX non ha ancora bloccato nessun Spambot."
+
+#: nospamnx.php:585
+#, php-format
+msgid "Since %s %s has stopped %s birdbrained Spambot (approx. %s per Day)."
+msgid_plural "Since %s %s has stopped %s birdbrained Spambots (approx. %s per Day)."
+msgstr[0] "NoSpamNX non ha ancora bloccato nessun Spambot."
+msgstr[1] "Since %s %s has stopped %s birdbrained Spambots (approx. %s per Day)."
+
+#~ msgid ""
+#~ "Both local and global Blacklist are case-insensitive and match substrings!"
+#~ msgstr ""
+#~ "Tanto la Blacklist locale quanto la globale sono sensibili alle lettere "
+#~ "maiuscole ed alle sotto-stringhe corrispondenti!"
+
+#~ msgid "Display the string which has been blocked"
+#~ msgstr "Mostra la stringa che non é stata bloccata"
+
+#~ msgid "Sorry, but your comment seems to be Spam."
+#~ msgstr "Pare che il tuo commento sia spam."
+
+#~ msgid "Sorry, but your IP is blacklisted by dnsbl.tornevall.org"
+#~ msgstr ""
+#~ "Il tuo IP é presente nella blacklist del servizio dnsbl.tornevall.org"
+
+#~ msgid "DNSBL"
+#~ msgstr "DNSBL"
+
+#~ msgid "Check comment IP-Address against dnsbl.tornevall.org (recommended)"
+#~ msgstr ""
+#~ "Verifica l'indirizzo IP del commento via dnsbl.tornevall.org "
+#~ "(raccomandato)"
+
+#~ msgid "Your PHP is to old. NoSpamNX requires at least PHP 5.0!"
+#~ msgstr ""
+#~ "La tua versione di PHP é datata. NoSpamNX richiede PHP 5.0 o superiore!"
+
+#~ msgid "Referer-Check successfull! You may turn on Referer-Check."
+#~ msgstr ""
+#~ "Il referente é stato verificato con successo! Puoi attivare il Referer-"
+#~ "Check."
+
+#~ msgid ""
+#~ "Referer-Check failed! The referer does not match WordPress option \"home"
+#~ "\" or \"siteurl\"."
+#~ msgstr ""
+#~ "Referer-Check failed! The referer does not match WordPress option \"home"
+#~ "\" or \"siteurl\"."
+
+#~ msgid "Check HTTP Referer"
+#~ msgstr "Verifica HTTP referente"
+
+#~ msgid ""
+#~ "If enabled, NoSpamNX checks if the referer of a comment matches your Blog-"
+#~ "URL. Please check the correct functionality of this feature, using the "
+#~ "following Link."
+#~ msgstr ""
+#~ "Se attivato, NoSpamNX controllerà se il referente di un commento coincide "
+#~ "con il tuo URL del blog. Verifica il corretto funzionamento di questa "
+#~ "funzione utilizzando il seguente link:"
+
+#~ msgid "Stopped Spambots"
+#~ msgstr "Spambot bloccati"
+
+#~ msgid "NoSpamNX CSS name was updated successfully."
+#~ msgstr "Il nome CSS di NoSpamNX CSS é stato aggiornato con successo."
+
+#~ msgid "NoSpamNX CSS name was reseted successfully."
+#~ msgstr "Il nome CSS di NoSpamNX CSS é stato resettato con successo."
+
+#~ msgid "CSS"
+#~ msgstr "CSS"
+
+#~ msgid "CSS Name"
+#~ msgstr "Nome CSS"
+
+#~ msgid " has stopped %s birdbrained Spambot since it last activation."
+
+#~ msgid_plural ""
+#~ " has stopped %s birdbrained Spambots since it last activation."
+#~ msgstr[0] " ha bloccato %s Spambot dal momento della sua attivazione."
+#~ msgstr[1] " ha bloccato %s Spambot dal momento della sua attivazione."
+
+#~ msgid " %1$d per Day."
+#~ msgstr " %1$d al giorno."
+
+#~ msgid "Sorry, but it seems you are not human."
+#~ msgstr "Sorry, aber Du scheinst nicht menschlich zu sein."
+
+#~ msgid "Default value:"
+#~ msgstr "Standardwert"
+
+#~ msgid ""
+#~ "Do not change this, unless you know what you are doing! To reset just "
+#~ "enter the default value."
+#~ msgstr ""
+#~ "&Auml;ndere diesen Wert nur, wenn du weist, was du tust! Zum zur&uuml;"
+#~ "cksetzen den Standardwert eingeben."
+
+#~ msgid "Sorry, but access to this page is restricted."
+#~ msgstr "Sorry, aber der Zugriff auf diese Seite ist eingeschr&auml;nkt."
+
+#~ msgid ""
+#~ "NoSpamNX is currently inactive, due to missing required PHP functions."
+#~ msgstr ""
+#~ "NoSpamNX ist derzeit inaktiv, da ben&ouml;tigte PHP-Funktionen fehlen."
+
+#~ msgid "Moderate"
+#~ msgstr "Moderieren"
+
+#~ msgid "Check logged in User"
+#~ msgstr "Pr&uuml;fe angemeldete Benutzer"
+
+#~ msgid ""
+#~ "If enabled, NoSpamNX will add hidden fields and perform checks on logged "
+#~ "in users as well."
+#~ msgstr ""
+#~ "Wenn aktiviert, wird NoSpamNX versteckten Felder auch bei  angemeldeten "
+#~ "Benutzern hinzuf&uuml;gen und entsprechende &Uuml;berpr&uuml;fungen "
+#~ "durchf&uuml;hren."
+
+#~ msgid "Check Registration and Login Form"
+#~ msgstr "Pr&uuml;fe Anmeldung- und Login Formular"
+
+#~ msgid ""
+#~ "If enabled, NoSpamNX checks your Registration and Login Form for "
+#~ "automated (non-human) access. All automated (non-human) access will be "
+#~ "blocked."
+#~ msgstr ""
+#~ "Wenn aktiviert, pr&uuml;ft NoSpamNX Dein Formular für die Registrierung "
+#~ "und den Login auf automatisierte (nicht-menschlichen) Zugriffe. Jeder "
+#~ "automatisierte (nicht-menschliche) Zugriff wird blockiert."
+
+#~ msgid ""
+#~ "NoSpamNX is currently inactive! Some required PHP functions are not "
+#~ "available. See Settings -> NoSpamNX -> Information for more details."
+#~ msgstr ""
+#~ "NoSpamNX ist derzeit inaktiv! Einige ben&ouml;tigte PHP-Funktionen sind "
+#~ "nicht verf&uuml;gbar. Unter Einstellung -> NoSpamNX -> Informationen "
+#~ "findest du weitere Details."
+
+#~ msgid "Debug"
+#~ msgstr "Debug"
+
+#~ msgid "PHP-Info"
+#~ msgstr "PHP-Info"
+
+#~ msgid "Support"
+#~ msgstr "Support"
+
+#~ msgid ""
+#~ "Problems using NoSpamNX? Feel free to contact me via E-Mail (%s) or check "
+#~ "out the comments at the Plugin homepage. Please add the debug information "
+#~ "to your request."
+#~ msgstr ""
+#~ "Probleme mit NoSpamNX? Kontaktiere mich via E-Mail (%s) oder schau dir "
+#~ "die Kommentare auf der Plugin Homepage an. Bitte f&uuml;ge die Debug-"
+#~ "Informationen deiner Anfrage hinzu."
+
+#~ msgid ""
+#~ "Developing, maintaining and supporting this plugin requires time. You can "
+#~ "support further development with a donation. Thanks!"
+#~ msgstr ""
+#~ "Entwicklung, Pflege und Support dieses Plugin ben&ouml;tigt Zeit. Du "
+#~ "kannst die weitere Entwicklung mit einer Spende unterst&uuml;tzen. Danke!"
+
+#~ msgid "Mark as Spam (requires at least WP 2.7)"
+#~ msgstr "Als Spam markieren (ben&ouml;tigt mind. WP 2.7)"
+
+#~ msgid "Yes"
+#~ msgstr "Ja"
+
+#~ msgid "No"
+#~ msgstr "Nein"
+
+#~ msgid "IP-Address Lockout"
+#~ msgstr "IP-Adressen sperren"
+
+#~ msgid ""
+#~ "You can block an IP-Address of a catched Spambot for 1 hour, 24 hours or "
+#~ "indefinitely. This IP-Address can not post any comments during this time."
+#~ msgstr ""
+#~ "Du kannst die IP-Adresse eines erkannten Spambot für 1 Stunde, 24 Stunden "
+#~ "oder unendlich sperren. Von dieser IP-Adresse k&ouml;nnen in dieser Zeit "
+#~ "keine Kommentare abgegeben werden."
+
+#~ msgid "Block IP-Address"
+#~ msgstr "Blockiere IP-Adresse"
+
+#~ msgid "Block time"
+#~ msgstr "Blockzeit"
+
+#~ msgid "1 hour"
+#~ msgstr "1 Stunde"
+
+#~ msgid "24 hours"
+#~ msgstr "24 Stunden"
+
+#~ msgid "Indefinitely"
+#~ msgstr "Unendlich"
+
+#~ msgid "Entries"
+#~ msgstr "Eintr&auml;ge"
+
+#~ msgid " Currently %s out of 100 entries is stored."
+
+#~ msgid_plural " Currently %s out of 100 entries are stored."
+#~ msgstr[0] "Aktuell ist %s von 100 Eintr&auml;gen gespeichert."
+#~ msgstr[1] "Aktuell sind %s von 100 Eintr&auml;gen gespeichert."
+
+#~ msgid "Exclude page/post"
+#~ msgstr "Seite/Beitrag ausschlie&szlig;en"
+
+#~ msgid ""
+#~ "If you have Problems with NoSpamNX on a certain page/post you can exclude "
+#~ "this page/post from NoSpamNX. Just enter the ID(s) of the page/post (use "
+#~ "comma-separated values like 4,8,15,16,23,42)"
+#~ msgstr ""
+#~ "Wenn du Probleme mit NoSpamNX auf einer bestimmten Seite/Beitrag hast, "
+#~ "kannst du NoSpamNX von dieser Seite/Beitrag ausschlie&szlig;en. Gib dazu "
+#~ "einfach die ID(s) der Seite/Beitrag ein (benutze Komma getrennte Werte "
+#~ "wie 4,8,15,16,23,42)"
+
+#~ msgid "IDs"
+#~ msgstr "IDs"
+
+#~ msgid "Information"
+#~ msgstr "Informationen"
+
+#~ msgid "IP Lock"
+#~ msgstr "IP Sperre"
+
+#~ msgid "The required functions for creating the table could not be loaded."
+#~ msgstr ""
+#~ "Die ben&ouml;tigten Funktionen zum Erstellen der Tabelle konnten nicht "
+#~ "geladen werden."
+
+#~ msgid "YAWASP Formfields were successfully regenerated."
+#~ msgstr "YAWASP Formularfelder wurden erfolgreich regeneriert."
+
+#~ msgid "Are you sure you want to regenerate the Formfields?"
+#~ msgstr ""
+#~ "Bist du sicher, dass du die Namen der Formularfelder regenerieren m&ouml;"
+#~ "chtest?"
+
+#~ msgid "Total"
+#~ msgstr "Total"
+
+#~ msgid "Detailed"
+#~ msgstr "Detailliert"
+
+#~ msgid "No detailed statistic so far."
+#~ msgstr "Bisher keine detaillierte Statistik."
+
+#~ msgid "%s Spambot send the default author and/or comment field."
+
+#~ msgid_plural "%s Spambots send the default author and/or comment field."
+#~ msgstr[0] "%s Spambot sendete das Standard-Autor- und/oder Kommentarfeld."
+#~ msgstr[1] "%s Spambots sendeten das Standard-Autor- und/oder Kommentarfeld."
+
+#~ msgid "%s Spambot did not send the hidden field."
+
+#~ msgid_plural "%s Spambots did not send the hidden field."
+#~ msgstr[0] "%s Spambot sendete kein verstecktes Feld."
+#~ msgstr[1] "%s Spambots sendeten kein verstecktes Feld."
+
+#~ msgid "%s Spambot send the hidden field, but filled it out."
+
+#~ msgid_plural "%s Spambots send the hidden field, but filled it out."
+#~ msgstr[0] "%s Spambot sendete das versteckte Feld, aber f&uuml;llte es aus."
+#~ msgstr[1] ""
+#~ "%s Spambots sendeten das versteckte Feld, aber f&uuml;llten es aus."
+
+#~ msgid "%s Spambot was stopped because of their IP Address."
+
+#~ msgid_plural "%s Spambots was stopped because of their IP Address."
+#~ msgstr[0] ""
+#~ "%s Spambot wurde aufgrund einer gespeicherten IP-Adresse gestoppt."
+#~ msgstr[1] ""
+#~ "%s Spambots wurden aufgrund einer gespeicherten IP-Adresse gestoppt."
+
+#~ msgid "Reset Counter"
+#~ msgstr "Zähler zurücksetzen"
+
+#~ msgid "Formfields"
+#~ msgstr "Formularfelder"
+
+#~ msgid "Generate"
+#~ msgstr "Regenerieren"
+
+#~ msgid ""
+#~ "If you notice an increasing number of Spambots who make it to your blog, "
+#~ "you might want to regenerate the names of the YAWASP Formfields."
+#~ msgstr ""
+#~ "Wenn es zu einer steigenden Anzahl von Spambot-Kommentaren kommt, ist es "
+#~ "ratsam die YAWASP Formularfelder zu regenerieren."
+
+#~ msgid "Regenerate Formfields"
+#~ msgstr "Formularfelder regenerieren"
+
+#~ msgid ""
+#~ "YAWASP adds an additional Formfield (hidden to the \"real\" user) to your "
+#~ "comments.php. Most Spampots fall for this trap and fill it out blindly. "
+#~ "To make this trap as good as we can, we have to make this hidden as close "
+#~ "as it gets to a real Formfield. Therefore the id of this field is by "
+#~ "default set to the value \"Author\". However, as ids can not have the "
+#~ "same name twice, this is not strict HTML. Therefore you can decide on "
+#~ "your own if you want more proctection, but not strict HTML or less "
+#~ "protection, but strict HTML."
+#~ msgstr ""
+#~ "YAWASP f&uuml;gt deiner comments.php ein zus&auml;tzliches Feld "
+#~ "(versteckt vor einem \"echten\" Benutzer ) hinzu. Die meisten Spambots "
+#~ "tappen in diese Falle und f&uuml;llen das Feld blind aus.  Um diese Falle "
+#~ "so gut wie m&ouml;glich zu machen, muss dieses versteckte Feld nahezu "
+#~ "identisch zu einem echten Formularfeld sein. Dazu hat es standardm&auml;"
+#~ "ßig die id mit dem Wert \"Author\". Allerdings d&uuml;rfen ids keinen "
+#~ "Wert doppelt belegen, so dass dies zu einem nicht striktem HTML f&uuml;"
+#~ "hrt. Du kannst nun selbst entscheiden, ob du mehr Schutz, aber kein "
+#~ "striktes HTML, oder weniger Schutz, aber striktes HTML m&ouml;chtest."
+
+#~ msgid "Name of the hidden Formfield"
+#~ msgstr "Name des versteckten Feldes"
+
+#~ msgid "Author (Higher protection, but not HTML conform)"
+#~ msgstr "Author (Höherer Schutz, aber nicht HTML konform)"
+
+#~ msgid "Blank (Less protection, but HTML conform)"
+#~ msgstr "Blank (Weniger Schutz, aber HTML konform)"
+
+#~ msgid "Automatic template change"
+#~ msgstr "Automatische Änderung des Templates"
+
+#~ msgid ""
+#~ "You will find a Backup (comments.php.old) of your comments.php in your "
+#~ "template folder."
+#~ msgstr ""
+#~ "Ein Backup (comments.php.old) deiner comments.php findest du in deinen "
+#~ "Template Order."
+
+#~ msgid "Changes in comments.php"
+#~ msgstr "Änderungen in comments.php"
+
+#~ msgid "Change template"
+#~ msgstr "Änderungen durchführen"
+
+#~ msgid "Undo changes"
+#~ msgstr "Änderungen rückgängig machen"
+
+#~ msgid "Manual template change"
+#~ msgstr "Manuelle Änderung des Templates"
+
+#~ msgid ""
+#~ "Manual instructions for changing your comments.php are available in "
+#~ "english and german at the following websites:"
+#~ msgstr ""
+#~ "Anleitungen für das Anpasssen der comments.php stehen in Englisch und "
+#~ "Deutsch auf den folgenden Webseiten zur Verfügung:"
+
+#~ msgid "Instructions in German"
+#~ msgstr "Anleitung in Deutsch"
+
+#~ msgid "Instructions in English"
+#~ msgstr "Anleitung in Englisch"
+
+#~ msgid " Click %s for a detailed statistic."
+#~ msgstr " Klick %s für eine detaillierte Statistik."
+
+#~ msgid "here"
+#~ msgstr "hier"
+
+#~ msgid ""
+#~ "Your comments.php was changed successfully. YAWASP is up and running!"
+#~ msgstr ""
+#~ "Deine comments.php wurde erfolgreich angepasst. YAWASP ist betriebsbereit!"
+
+#~ msgid "Failed to change your comments.php. Please change manually"
+#~ msgstr ""
+#~ "Beim Ändern der comments.php ist ein Fehler aufgetreten. Bitte führe die "
+#~ "Änderungen manuel durch."
+
+#~ msgid "Changes in comments.php were successfully removed."
+#~ msgstr "Die Änderungen in der comments.php wurden erfolgreich entfernt."
+
+#~ msgid "Failed to remove changes in comments.php. Please remove manually"
+#~ msgstr ""
+#~ "Beim Entfernen der Änderungen in der comments.php ist ein Fehler "
+#~ "aufgetreten. Bitte entferne die Änderungen manuell."
+
+#~ msgid "Reset Names"
+#~ msgstr "Namen zurücksetzen"
+
+#~ msgid "Block/Mark/Moderate"
+#~ msgstr "Blockieren/Markieren/Moderieren"
+
+#~ msgid "Yawasp Statistic"
+#~ msgstr "Yawasp Statistik"
+
+#~ msgid ""
+#~ "If you still experience problems please visit the comments section for "
+#~ "futher help."
+#~ msgstr "Sollten dennoch Probleme auftreten, stehen für weitere"
+
+#~ msgid "Error in file: "
+#~ msgstr "Fehler in:"

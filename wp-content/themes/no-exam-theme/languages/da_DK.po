@@ -1,0 +1,230 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: v\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-05-11 20:34+0100\n"
+"PO-Revision-Date: 2013-08-18 17:38:59+0000\n"
+"Last-Translator: Henrik Schack <henrik@schack.dk>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: /home/ryan/Desktop/www/wordpress/wp-content/themes/hellish-simplicity/\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: /home/ryan/Desktop/www/wordpress/wp-content/themes/hellish-simplicity\n"
+"X-Textdomain-Support: yes"
+
+#: index.php:84
+#, php-format
+#@ hellish
+msgid " in %1$s"
+msgstr " i %1$s"
+
+#: full-width.php:37
+#: index.php:101
+#@ hellish
+msgid "% Comments"
+msgstr "% kommentarer"
+
+#: template-parts/numeric-pagination.php:39
+#@ hellish
+msgid "&laquo; Previous"
+msgstr "&laquo; Forrige"
+
+#: comments.php:18
+#@ hellish
+msgid "&larr; Older Comments"
+msgstr "&larr; Ældre kommentarer"
+
+#: index.php:80
+#: index.php:89
+#@ hellish
+msgid ", "
+msgstr ", "
+
+#: full-width.php:37
+#: index.php:101
+#@ hellish
+msgid "1 Comment"
+msgstr "1 kommentar"
+
+#: comments.php:17
+#@ hellish
+msgid "Comment navigation"
+msgstr "Kommentarnavigation"
+
+#: comments.php:72
+#@ hellish
+msgid "Comments are closed."
+msgstr "Der er lukket for kommentarer."
+
+#: full-width.php:29
+#: index.php:41
+#@ hellish
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Læs videre <span class=\"meta-nav\">&rarr;</span>"
+
+#: footer.php:16
+#@ hellish
+msgid "Copyright"
+msgstr "Copyright"
+
+#: functions.php:144
+#@ default
+msgid "Custom Header"
+msgstr "Egen header"
+
+#: functions.php:89
+#: functions.php:90
+#@ default
+msgid "Customize"
+msgstr "Tilpas"
+
+#: full-width.php:41
+#: index.php:105
+#@ hellish
+msgid "Edit"
+msgstr "Rediger"
+
+#: functions.php:171
+#: functions.php:267
+#@ hellish
+msgid "Example text:"
+msgstr "Eksempel tekst:"
+
+#: functions.php:77
+#: functions.php:78
+#@ default
+msgid "Header"
+msgstr "Header"
+
+#: functions.php:154
+#: functions.php:249
+#@ hellish
+msgid "Header Text"
+msgstr "Header tekst"
+
+#: functions.php:254
+#@ hellish
+msgid "Header text"
+msgstr "Header tekst"
+
+#: template-parts/no-results.php:26
+#@ hellish
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Siden findes ikke, prøv eventuelt søgefunktionen."
+
+#: full-width.php:37
+#: index.php:101
+#@ hellish
+msgid "Leave a comment"
+msgstr "Skriv en kommentar"
+
+#: comments.php:19
+#@ hellish
+msgid "Newer Comments &rarr;"
+msgstr "Nyere kommentarer &rarr;"
+
+#: template-parts/numeric-pagination.php:88
+#@ hellish
+msgid "Next &raquo;"
+msgstr "Næste &raquo;"
+
+#: template-parts/no-results.php:14
+#@ hellish
+msgid "Nothing Found"
+msgstr "Ingen resultater"
+
+#: functions.php:148
+#@ hellish
+msgid "Options saved"
+msgstr "Indstillinger gemt"
+
+#: full-width.php:30
+#: index.php:42
+#@ hellish
+msgid "Pages:"
+msgstr "Sider:"
+
+#: full-width.php:24
+#: index.php:32
+#, php-format
+#@ hellish
+msgid "Permalink to %s"
+msgstr "Permalink til %s"
+
+#: index.php:69
+#, php-format
+#@ hellish
+msgid "Posted on <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\">%4$s</time></a><span class=\"byline\"> by <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
+msgstr "Udgivet <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\">%4$s</time></a><span class=\"byline\"> af <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
+
+#: functions.php:179
+#@ hellish
+msgid "Save &raquo;"
+msgstr "Gem indstillinger &raquo;"
+
+#: searchform.php:10
+#: searchform.php:11
+#: searchform.php:12
+#: searchformold.php:10
+#: searchformold.php:11
+#: searchformold.php:12
+#: sidebar.php:28
+#@ default
+msgid "Search"
+msgstr "Søg"
+
+#: index.php:17
+#, php-format
+#@ hellish
+msgid "Search Results for: \"%s\" ..."
+msgstr "Søgeresultater for:  \"%s\" …"
+
+#: functions.php:224
+#@ hellish
+msgid "Sidebar"
+msgstr "Sidebar"
+
+#: template-parts/no-results.php:21
+#@ hellish
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Beklager, ingen søgeresultater. Prøv en anden søgning."
+
+#: index.php:94
+#, php-format
+#@ hellish
+msgid "Tagged %1$s"
+msgstr "Tags %1$s"
+
+#: index.php:75
+#, php-format
+#@ hellish
+msgid "View all posts by %s"
+msgstr "Vis alle indlæg af %s"
+
+#: footer.php:17
+#@ hellish
+msgid "WordPress theme by"
+msgstr "WordPress tema af"
+
+#: comments.php:43
+#, php-format
+#@ hellish
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "1 kommentar til &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s kommentarer til  &ldquo;%2$s&rdquo;"
+
+#: sidebar.php:22
+#@ default
+msgid "Archives"
+msgstr "Arkiv"
+

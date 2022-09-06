@@ -1,0 +1,30 @@
+.tablepress-row-details tbody tr td.row-details-toggle {
+	vertical-align: middle;
+	width: 20px;
+}
+.tablepress-row-details .row-details-toggle div {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+.tablepress-row-details .row-details-toggle .row-details-open {
+	background: url(open.png) no-repeat;
+}
+.tablepress-row-details .row-details-toggle .row-details-close {
+	background: url(close.png) no-repeat;
+}
+.tablepress-row-details tbody tr .row-details {
+	border-top: none;
+}
+.tablepress-row-details tbody tr.odd.row-details-row-open + tr td {
+	background-color: #f9f9f9;
+}
+.tablepress-row-details tbody tr.even.row-details-row-open + tr td {
+	background-color: #ffffff;
+}
+.tablepress-row-details .row-hover  tr.row-details-row-open:hover + tr td {
+	background-color: #f3f3f3;
+}
+.tablepress-row-details tbody tr .row-details-right {
+	float: right;
+}

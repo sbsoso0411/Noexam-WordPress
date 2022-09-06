@@ -1,0 +1,126 @@
+<html>
+<head>
+   <title>Life Insurance Quotes - $licensee$</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">   
+   <meta name="Author" content="COMPULIFE Software, Inc.">
+   <link href="../../css/styles_website.css" type="text/css" rel="stylesheet">
+   <!-- You can use the CONFIG.TXT in the USER folder to read the css value and 
+   permit changes for USERS to switch other css style sheets from their admin.html
+   page.  If that is your preference, you can use the following line instead of 
+   hard coding the css style sheet above. -->
+   <!-- <link href="../../css/$css$" type="text/css" rel="stylesheet"> -->
+</head>
+<body>
+
+<form action="cqsl.cgi" method="Post">
+
+
+<br><br>
+
+
+<table class="default_table" align="center">
+
+<tr class="default_header">
+<td colspan="2">Income Replacement Summary</td>
+</tr> 
+
+<tr>
+<td class="gray_cell" colspan="2"><p>
+Assuming <b><font color="#0148CB">$InflationRate$%</font></b> inflation and 
+	<b><font color="#0148CB">$InterestRate$%</font></b> earnings it requires   
+<b><font color="#0148CB">$$ReplacedFaceValue$</font></b> to provide an annual indexed income of 
+     <b><font color="#0148CB">$$AnnualIndexedIncome$</font></b>. 
+
+<p> 
+In the first year, <b><font color="#0148CB">$$AnnualIndexedIncome$</font></b> of income would be taken from the 
+<b><font color="#0148CB">$$ReplacedFaceValue$</font></b> of initial capital.  The  
+	<b><font color="#0148CB">$$RemainingAfterYear1$</font></b> of capital left to invest would earn 
+	<b><font color="#0148CB">$$RemainingYear1Interest$</font></b> providing                      
+<b><font color="#0148CB">$$RemainingYear1WithInterest$</font></b> of initial capital for the second year. In 
+the second year, <b><font color="#0148CB">$$SecondYearAnnualIndexedIncome$</font></b>
+of income would be taken as income leaving <b><font color="#0148CB">$$RemainingAfterYear2$</font></b> to be invested.                                  
+<p> 
+<b><font color="#0148CB">$$SecondYearAnnualIndexedIncome$</font></b> in the 2nd year has the same 
+     purchasing power as
+<b><font color="#0148CB">$$AnnualIndexedIncome$</font></b> in the 1st year 
+    (<b><font color="#0148CB">$InflationRate$%</font></b> inflation). 
+
+<p> 
+In the following schedule each year's income is 
+indexed to keep pace with inflation.  After <b><font color="#0148CB">$NumYearsReplacementIncomeRequiredFor$</font></b> years
+there is just enough left for the final year's income.
+</td>
+</tr>
+
+                             
+</table>
+
+
+<!-- pass some environment variables onto the next page -->
+<input type="hidden" name="State" value="$origstate$">
+<input type="hidden" name="Birthday" value="$origday$">
+<input type="hidden" name="BirthMonth" value="$origmonth$">
+<input type="hidden" name="BirthYear" value="$origyear$">
+<input type="hidden" name="Health" value="$orighealth$">
+<!-- <input type="hidden" name="FaceAmount" value="$origface$"> -->
+<input type="hidden" name="FaceAmount" value="$ReplacedFaceValue$">
+<input type="hidden" name="Sex" value="$origsex$">
+<input type="hidden" name="Smoker" value="$origsmoker$">
+<input type="hidden" name="NewCategory" value="$origcat$">
+<input type="hidden" name="ModeUsed" value="$modeused$">
+<input type="hidden" name="PostalCode" value="$postalcode$">
+<input type="hidden" name="ZipCode" value="$zipcode$">
+<input type="hidden" name="UserLocation" value="$userlocation$">
+<input type="hidden" name="MaxNumResults" value="$maxnumresults$">
+<input type="hidden" name="email" value="$email$">
+<input type="hidden" name="css" value="$css$">
+<input type="hidden" name="TEMPLATEFILE" value="$templatefile$">
+<input type="hidden" name="HTEMPLATEFILE" value="$htemplatefile$">
+<br><br>
+
+<table align="center">
+<tr>
+<td><p><input type="submit" name="CqsComparison" value=" Click Here ">&nbsp;
+to quote a face value of <b><font color="#0148CB">$$RoundedReplacedFaceValue$</font></b>
+</td>
+</tr>
+</table>
+
+<br><br>
+
+<!-- To use the default output table where the engine uses it's own values use "tableline" surrounded by '$' on it's own line -->
+
+<!-- or build your own table -->
+
+<table class="default_table" align="center">
+
+<tr class="default_header">
+<td colspan="6" class="default_header" align="center">Income Replacement Schedule</td>
+</tr>
+
+<tr class="default_sub_header_center">
+<td class="default_sub_header_center" width="5%">Year</td>
+<td class="default_sub_header_center" width="5%">Age</td>
+<td class="default_sub_header_center" width="20%">Initial<br>Capital</td>
+<td class="default_sub_header_center" width="20%">Income<br>Required</td>
+<td class="default_sub_header_center" width="20%">Capital Left<br>To Invest</td>
+<td class="default_sub_header_center" width="20%">Interest/<br>Growth</td>
+</tr>
+$tablelinev$
+<tr class="Row$rowEvenOdd$">
+<td align="center" width="5%">$year$</td> 
+<td align="center" width="5%">$age$</td> 
+<td align="center" width="20%">$$initialcapital$</td>
+<td align="center" width="20%">$$incomerequired$</td> 
+<td align="center" width="20%">$$capitalleft$</td> 
+<td align="center" width="20%">$$interestgrowth$</td> 
+</tr>
+$/endtable$
+</table>
+
+<p class="center"><b>Powered by <a class="nocolor" href="http://www.compulife.com">COMPULIFE</a><sup>&reg;</sup></b>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,255 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: NoSpamNX 4.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-04 07:42+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Sven Kubiak <sk@svenkubiak.de>\n"
+"Language-Team: Samuel Aguilera <correo@samuelaguilera.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: Spain\n"
+"X-Poedit-KeywordsList: __;_e;_n\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: nospamnx.php:79
+msgid "Your WordPress is to old. NoSpamNX requires at least WordPress 3.0!"
+msgstr "Tu WordPress es muy antiguo. ¡NoSpamNX necesita al menos WordPress 3.0!"
+
+#: nospamnx.php:274
+msgid "Settings"
+msgstr ""
+
+#: nospamnx.php:282
+msgid "FAQ"
+msgstr ""
+
+#: nospamnx.php:283
+msgid "Donate"
+msgstr ""
+
+#: nospamnx.php:292
+msgid "Sorry, but you have no permissions to change settings."
+msgstr "Lo siento, pero no tienes permiso para cambiar ajustes."
+
+#: nospamnx.php:312
+msgid "NoSpamNX settings were saved successfully."
+msgstr "Ajustes de NoSpamNX guardados satisfactoriamente."
+
+#: nospamnx.php:317
+msgid "NoSpamNX Counter was reseted successfully."
+msgstr "Contador de NoSpamNX reiniciado satisfactoriamente."
+
+#: nospamnx.php:328
+msgid "NoSpamNX Blacklist was updated successfully."
+msgstr "Contador de NoSpamNX reiniciado satisfactoriamente."
+
+#: nospamnx.php:344
+msgid "Are you sure you want to reset the counter?"
+msgstr "¿Estás seguro de que quieres reiniciar el contador?"
+
+#: nospamnx.php:351
+msgid "NoSpamNX Settings"
+msgstr "Ajustes de NoSpamNX"
+
+#: nospamnx.php:355
+msgid "Statistic"
+msgstr "Estadísticas"
+
+#: nospamnx.php:368
+msgid "Reset"
+msgstr "Reiniciar"
+
+#: nospamnx.php:374
+msgid "Operating mode"
+msgstr "Modo de operación"
+
+#: nospamnx.php:376
+msgid "By default all Spambots are marked as Spam, but the recommended Mode is \"block\". If you are uncertain what will be blocked, select \"Mark as Spam\" at first and switch to \"block\" later on."
+msgstr "Predeterminadamente todos los bots de spam son marcados como spam, pero el modo recomendado es \"Bloquear\" . Si no estás seguro de lo que se bloqueará, selecciona primero \"Marcar como Spam\" y cambia más adelante a \"Bloquear\"."
+
+#: nospamnx.php:380
+msgid "Mode"
+msgstr "Modo"
+
+#: nospamnx.php:383
+msgid "Block (recommended)"
+msgstr "Bloquear (recomendado)"
+
+#: nospamnx.php:385
+msgid "Mark as Spam"
+msgstr "Marcar como Spam"
+
+#: nospamnx.php:390
+#: nospamnx.php:435
+msgid "Save"
+msgstr "Guardar"
+
+#: nospamnx.php:396
+msgid "Blacklist"
+msgstr "Lista negra"
+
+#: nospamnx.php:398
+msgid "By default the Entries in the Blacklist will match Substrings (e.g. 'foobar' will match, if you have 'foo' in your Blacklist). Uncheck the following Option to only match exact words."
+msgstr ""
+
+#: nospamnx.php:402
+msgid "Match Substrings"
+msgstr ""
+
+#: nospamnx.php:405
+msgid "Local Blacklist"
+msgstr "Lista negra local"
+
+#: nospamnx.php:406
+msgid "Global Blacklist"
+msgstr "Lista negra global"
+
+#: nospamnx.php:409
+msgid "The local Blacklist is comparable to the WordPress Blacklist. However, the local Blacklist enables you to block comments containing certain values, instead of putting them in moderation queue. Thus, the local blacklist only makes sense when using NoSpamNX in blocking mode. The local Blacklist checks the given values against the ip address, the author, the E-Mail Address, the comment and the URL field of a comment. If a pattern matches, the comment will be blocked. Please use one value per line. The local Blacklist is case-insensitive."
+msgstr ""
+
+#: nospamnx.php:410
+msgid ""
+"The global Blacklist gives you the possibility to use one Blacklist for multiple WordPress Blogs. You need to setup a place where you store your Blacklist (e.g. Webspace, Dropbox, etc. - but HTTP only) and put it into the Field \"Update URL\". How you Built up your Blacklist (e.g. PHP-Script with Database, simple Textfile, etc.) is up to, but you need to make sure, your Update URL returns one value per line seperated by \"\\n"
+"\". Put the Update URL in all your Blogs where you want your Blacklist, and setup the update rotation according to your needs. The global Blacklist will be activated by adding an Update URL. The global Blacklist is case-insensitive."
+msgstr ""
+
+#: nospamnx.php:418
+#: nospamnx.php:420
+msgid "Last update"
+msgstr "Última actualización"
+
+#: nospamnx.php:427
+msgid "Update URL (e.g. http://www.mydomain.com/myblacklist.txt)"
+msgstr "URL de actualización  (p. ej. http://www.midominio.com/milistanegra.txt)"
+
+#: nospamnx.php:431
+msgid "Update every"
+msgstr "Actualizar cada"
+
+#: nospamnx.php:431
+msgid "minutes."
+msgstr "minutos."
+
+#: nospamnx.php:446
+msgid "Security-Check failed."
+msgstr "Comprobación de seguridad fallida."
+
+#: nospamnx.php:582
+msgid "NoSpamNX has stopped no birdbrained Spambots yet."
+msgstr "NoSpamNX todavía no ha parado ningún bot de spam."
+
+#~ msgid "Since %s %s has stopped %s birdbrained Spambot (approx. %s per Day)."
+#~ msgstr ""
+#~ "Desde el %s %s ha bloqueado %s bot de spam cabeza de chorlito (%s por "
+#~ "día)."
+
+#~ msgid ""
+#~ "Both local and global Blacklist are case-insensitive and match substrings!"
+#~ msgstr ""
+#~ "¡Tanto la lista negra local com la global no son sensibles a mayúsculas y "
+#~ "dará positivo en coincidencias parciales!"
+
+#~ msgid "Sorry, but your comment seems to be Spam."
+#~ msgstr "Lo siento, pero tu comentario parece ser Spam."
+
+#~ msgid "DNSBL"
+#~ msgstr "DNSBL"
+
+#~ msgid "Your PHP is to old. NoSpamNX requires at least PHP 5.0!"
+#~ msgstr "Tu PHP es muy antiguo. ¡NoSpamNX necesita al menos PHP 5.0!"
+
+#~ msgid "Referer-Check successfull! You may turn on Referer-Check."
+#~ msgstr ""
+#~ "¡Comprobación de referenciador satisfactoria!. Puedes activar la "
+#~ "comprobación de referenciador."
+
+#~ msgid ""
+#~ "Referer-Check failed! The referer does not match WordPress option \"home"
+#~ "\" or \"siteurl\"."
+#~ msgstr ""
+#~ "¡La comprobación de referenciador falló!. El referenciador no coincide "
+#~ "con la opción de WordPress \"Dirección de WordPress (URL)\" o \"Dirección "
+#~ "del blog (URL)\"."
+
+#~ msgid "NoSpamNX CSS name was updated successfully."
+#~ msgstr "Contador de NoSpamNX reiniciado satisfactoriamente."
+
+#~ msgid "NoSpamNX CSS name was reseted successfully."
+#~ msgstr ""
+#~ "El nombre del archivo CSS de NoSpamNX ha sido reiniciado "
+#~ "satisfactoriamente."
+
+#~ msgid "Stopped Spambots"
+#~ msgstr "Bots de spam parados"
+
+#~ msgid "Check HTTP Referer"
+#~ msgstr "Comprobar referenciador HTTP"
+
+#~ msgid ""
+#~ "If enabled, NoSpamNX checks if the referer of a comment matches your Blog-"
+#~ "URL. Please check the correct functionality of this feature, using the "
+#~ "following Link."
+#~ msgstr ""
+#~ "Si se activa, NoSpamNX comprobará que el referenciador de un comentario "
+#~ "coincida con la URL de tu blog. Por favor comprueba el correcto "
+#~ "funcionamiento de esta característica, usando el siguiente enlace."
+
+#~ msgid "CSS"
+#~ msgstr "CSS"
+
+#~ msgid ""
+#~ "By default NoSpamNX will include a predefined CSS-Stylesheet to hide the "
+#~ "inserted formfields. If you do not want NoSpamNX to include its own "
+#~ "stylesheet, enter the name of the class (e.g., hidebox) you would like to "
+#~ "associate it with in the field below and to your global stylesheet (i.e., "
+#~ "the one loaded by wordpress)."
+#~ msgstr ""
+#~ "NoSpamNX incluye de forma predeterminada una hoja de estilos CSS "
+#~ "predefinida para ocultar los campos del formulario insertados. Si no "
+#~ "quieres que NoSpamNX incluya su propia hoja de estilos CSS, introduce el "
+#~ "nombre de la clase (p.ej. ocultar-campos) que te gustaría asociar en el "
+#~ "campo de debajo y añádela también a tu hoja de estilos global (la que "
+#~ "carga WordPress)."
+
+#~ msgid "CSS Name"
+#~ msgstr "Nombre de archivo CSS"
+
+#~ msgid ""
+#~ "NoSpamNX is currently inactive, due to missing required PHP functions."
+#~ msgstr ""
+#~ "NoSpamNX está actualmente inactivo, debido a que faltan funciones PHP "
+#~ "necesarias."
+
+#~ msgid "Sorry, but access to this page is restricted."
+#~ msgstr "Lo siento, pero el acceso a esta página está restringido."
+
+#~ msgid "Moderate"
+#~ msgstr "Moderar"
+
+#~ msgid "Check logged in User"
+#~ msgstr "Comprobar usuarios conectados"
+
+#~ msgid ""
+#~ "If enabled, NoSpamNX will add hidden fields and perform checks on logged "
+#~ "in users as well."
+#~ msgstr ""
+#~ "Si se activa, NoSpamNX añadirá campos ocultos y también realizará "
+#~ "comprobaciones en los usuarios conectados."
+
+#~ msgid "Check Registration and Login Form"
+#~ msgstr "Comprobar formulario de registro e inicio de sesión"
+
+#~ msgid ""
+#~ "If enabled, NoSpamNX checks your Registration and Login Form for "
+#~ "automated (non-human) access. All automated (non-human) access will be "
+#~ "blocked."
+#~ msgstr ""
+#~ "Si está activado, NoSpamNX comprueba los accesos automatizados (no "
+#~ "humanos) de tus formularios de registro e inicio de sesión. Todos los "
+#~ "accesos automatizados (no humanos) serán bloqueados."

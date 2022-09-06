@@ -1,0 +1,916 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+   <title>Life Insurance Quotes</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">   
+   <link href="/css/styles_website.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<font face="Book Antiqua" size="7"><b>COMPULIFE</b></font><sup><sup><sup><sup><font size="3">&nbsp;&reg;</font></sup></sup></sup></sup>
+<font size="3" face="Arial">&nbsp;&nbsp;&nbsp;<b><i>on-line life insurance quotes</i></b></font>
+
+<hr size="4" style="color: #FF0000;"></hr>
+
+<form name="startform" action="/cgi-bin/cqsl.cgi" method="POST">
+
+<p><b>This sample start page uses U.S. Categories.</b>
+<p><b>The Canadian sample start page is indexminihealth_canada.html</b>
+
+<br><br>
+
+<hr></hr>
+
+<!-- Uncomment the next line if you are using it with user location -->
+<!-- <input type="hidden" name="UserLocation" value="USER2"> --> 
+
+<!-- Hidden value for using health questions on this page. -->
+<input type="hidden" name="DoHeightWeight" value="ON"> 
+
+<!-- Select a Template File For Your Results
+
+Use only one of the following template values for your results.  
+
+If you want to see an example of what the result templates look like, please visit: http://www.compulife.net/website/1
+
+IMPORTANT - Template names must be ALL CAPITAL LETTERS.
+
+Your Template Value Choices Are:
+
+TEMPLATE.HTM
+TEMPLATE_REQUEST_AP.HTM
+TEMPLATE_LOGO.HTM
+TEMPLATE_LOGO_0.HTM
+TEMPLATE_LOGO_1.HTM
+TEMPLATE_LOGO_2.HTM
+TEMPLATE_MORE_INFO.HTM
+TEMPLATE_MORE_INFO_LOGO.HTM
+-->
+
+<input type="hidden" name="TEMPLATEFILE" value="TEMPLATE.HTM">
+
+<!-- Select a Health Template File For Your Results
+
+Hint: It will match your Template File name with an "H" in front of the value -->
+
+<input type="hidden" name="HTEMPLATEFILE" value="HTEMPLATE.HTM">
+
+
+
+
+<br><br>
+
+
+
+<table align="center" class="default_table">
+
+<tr class="default_header">
+<td colspan="2" class="default_header">Instant Life Insurance Quote</td>
+</tr>
+
+
+<tr>
+<td style="text-align:right;" class="gray_cell"><b>State:</b>&nbsp;</td>
+
+<td class="gray_cell"><select name="State" size="1">
+<option value="1">Alabama</option>
+<option value="2">Alaska</option>
+<option value="3">Arizona</option>
+<option value="4">Arkansas</option>
+<option selected value="5">California</option>
+<option value="6">Colorado</option>
+<option value="7">Connecticut</option>
+<option value="8">Delaware</option>
+<option value="9">Dist.Columbia</option>
+<option value="10">Florida</option>
+<option value="11">Georgia</option>
+<option value="12">Hawaii</option>
+<option value="13">Idaho</option>
+<option value="14">Illinois</option>
+<option value="15">Indiana</option>
+<option value="16">Iowa</option>
+<option value="17">Kansas</option>
+<option value="18">Kentucky</option>
+<option value="19">Louisiana</option>
+<option value="20">Maine</option>
+<option value="21">Maryland</option>
+<option value="22">Massachusetts</option>
+<option value="23">Michigan</option>
+<option value="24">Minnesota</option>
+<option value="25">Mississippi</option>
+<option value="26">Missouri</option>
+<option value="27">Montana</option>
+<option value="28">Nebraska</option>
+<option value="29">Nevada</option>
+<option value="30">New Hampshire</option>
+<option value="31">New Jersey</option>
+<option value="32">New Mexico</option>
+<option value="52">NY Non-Bus</option>
+<option value="33">NY Business</option>
+<option value="34">North Carolina</option>
+<option value="35">North Dakota</option>
+<option value="36">Ohio</option>
+<option value="37">Oklahoma</option>
+<option value="38">Oregon</option>
+<option value="39">Pennsylvania</option>
+<option value="40">Rhode Island</option>
+<option value="41">South Carolina</option>
+<option value="42">South Dakota</option>
+<option value="43">Tennessee</option>
+<option value="44">Texas</option>
+<option value="45">Utah</option>
+<option value="46">Vermont</option>
+<option value="47">Virginia</option>
+<option value="48">Washington</option>
+<option value="49">West Virginia</option>
+<option value="50">Wisconsin</option>
+<option value="51">Wyoming</option>
+<option value="53">Guam</option>
+<option value="54">Puerto Rico</option>
+<option value="55">Virgin Islands</option>
+<option value="56">Amer. Samoa</option></select>
+
+</td>
+</tr>
+
+<tr>
+<td style="text-align:right;" class="gray_cell"><b>Birthdate:</b>&nbsp;
+</td>
+
+<td class="gray_cell">
+<select name="BirthMonth">
+<option value="1">January</option>
+<option value="2">February</option>
+<option value="3">March</option>
+<option value="4">April</option>
+<option value="5">May</option>
+<option selected value="6">June</option>
+<option value="7">July</option>
+<option value="8">August</option>
+<option value="9">September</option>
+<option value="10">October</option>
+<option value="11">November</option>
+<option value="12">December</option></select>
+
+<select name="Birthday" >
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option selected>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+<option>28</option>
+<option>29</option>
+<option>30</option>
+<option>31</option></select>
+
+<select name="BirthYear" >
+<option>1910</option>
+<option>1911</option>
+<option>1912</option>
+<option>1913</option>
+<option>1914</option>
+<option>1915</option>
+<option>1916</option>
+<option>1917</option>
+<option>1918</option>
+<option>1919</option>
+<option>1920</option>
+<option>1921</option>
+<option>1922</option>
+<option>1923</option>
+<option>1924</option>
+<option>1925</option>
+<option>1926</option>
+<option>1927</option>
+<option>1928</option>
+<option>1929</option>
+<option>1930</option>
+<option>1931</option>
+<option>1932</option>
+<option>1933</option>
+<option>1934</option>
+<option>1935</option>
+<option>1936</option>
+<option>1937</option>
+<option>1938</option>
+<option>1939</option>
+<option>1940</option>
+<option>1941</option>
+<option>1942</option>
+<option>1943</option>
+<option>1944</option>
+<option>1945</option>
+<option>1946</option>
+<option>1947</option>
+<option>1948</option>
+<option>1949</option>
+<option>1950</option>
+<option>1951</option>
+<option>1952</option>
+<option>1953</option>
+<option>1954</option>
+<option>1955</option>
+<option>1956</option>
+<option>1957</option>
+<option>1958</option>
+<option>1959</option>
+<option>1960</option>
+<option>1961</option>
+<option>1962</option>
+<option>1963</option>
+<option>1964</option>
+<option>1965</option>
+<option>1966</option>
+<option>1967</option>
+<option>1968</option>
+<option>1969</option>
+<option selected>1970</option>
+<option>1971</option>
+<option>1972</option>
+<option>1973</option>
+<option>1974</option>
+<option>1975</option>
+<option>1976</option>
+<option>1977</option>
+<option>1978</option>
+<option>1979</option>
+<option>1980</option>
+<option>1981</option>
+<option>1982</option>
+<option>1983</option>
+<option>1984</option>
+<option>1985</option>
+<option>1986</option>
+<option>1987</option>
+<option>1988</option>
+<option>1989</option>
+<option>1990</option>
+<option>1991</option>
+<option>1992</option>
+<option>1993</option>
+<option>1994</option>
+<option>1995</option>
+<option>1996</option>
+<option>1997</option>
+<option>1998</option>
+<option>1999</option>
+<option>2000</option>
+<option>2001</option>
+<option>2002</option>
+<option>2003</option>
+<option>2004</option>
+<option>2005</option>
+<option>2006</option>
+<option>2007</option>
+<option>2008</option>
+</select>
+
+</td>
+</tr>
+
+
+
+<tr>
+<td style="text-align:right;" class="gray_cell"><b>Gender:</b>&nbsp;</td>
+
+<td class="gray_cell">
+Male&nbsp;<input type="radio" checked name="Sex" value="M">&nbsp;&nbsp;&nbsp;
+Female&nbsp;<input type="radio" name="Sex" value="F">
+</td>
+</tr>
+
+
+<!-- Health Analizer Tobacco Questions will only be asked if user is a smoker and DoTobacco is "ON" -->
+<input type="HIDDEN" name="DoSmokingTobacco" value="ON">
+
+
+<tr>
+<td style="text-align:right;" class="gray_cell">&nbsp;<b>Have you ever smoked&nbsp;<br>or used tobacco?</b>&nbsp;</td>
+
+<td class="gray_cell">
+Yes&nbsp;<input type="radio" name="Smoker" value="Y">&nbsp;&nbsp;
+No&nbsp;<input type="radio" checked name="Smoker" value="N">
+</td>
+</tr>
+
+
+<tr>
+<td style="text-align:right;" class="gray_cell"><b>Height:</b>&nbsp;</td>
+
+<td class="gray_cell">
+<select name="Feet" size="1">
+<option value="4">4</option>
+<option selected value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+</select> feet
+&nbsp;&nbsp;
+<select name="Inches" size="1">
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option selected value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select> inches
+</td>
+</tr>
+
+
+<tr>
+<td style="text-align:right;" class="gray_cell"><b>Weight:</b>&nbsp;</td>
+
+<td class="gray_cell">
+<select name="Weight" size="1">
+<option value="74">75</option>
+<option value="75">75</option>
+<option value="76">76</option>
+<option value="77">77</option>
+<option value="78">78</option>
+<option value="79">79</option>
+<option value="80">80</option>
+<option value="81">81</option>
+<option value="82">82</option>
+<option value="83">83</option>
+<option value="84">84</option>
+<option value="85">85</option>
+<option value="86">86</option>
+<option value="87">87</option>
+<option value="88">88</option>
+<option value="89">89</option>
+<option value="90">90</option>
+<option value="91">91</option>
+<option value="92">92</option>
+<option value="93">93</option>
+<option value="94">94</option>
+<option value="95">95</option>
+<option value="96">96</option>
+<option value="97">97</option>
+<option value="98">98</option>
+<option value="99">99</option>
+<option value="100">100</option>
+<option value="101">101</option>
+<option value="102">102</option>
+<option value="103">103</option>
+<option value="104">104</option>
+<option value="105">105</option>
+<option value="106">106</option>
+<option value="107">107</option>
+<option value="108">108</option>
+<option value="109">109</option>
+<option value="110">110</option>
+<option value="111">111</option>
+<option value="112">112</option>
+<option value="113">113</option>
+<option value="114">114</option>
+<option value="115">115</option>
+<option value="116">116</option>
+<option value="117">117</option>
+<option value="118">118</option>
+<option value="119">119</option>
+<option value="120">120</option>
+<option value="121">121</option>
+<option value="122">122</option>
+<option value="123">123</option>
+<option value="124">124</option>
+<option value="125">125</option>
+<option value="126">126</option>
+<option value="127">127</option>
+<option value="128">128</option>
+<option value="129">129</option>
+<option value="130">130</option>
+<option value="131">131</option>
+<option value="132">132</option>
+<option value="133">133</option>
+<option value="134">134</option>
+<option value="135">135</option>
+<option value="136">136</option>
+<option value="137">137</option>
+<option value="138">138</option>
+<option value="139">139</option>
+<option value="140">140</option>
+<option value="141">141</option>
+<option value="142">142</option>
+<option value="143">143</option>
+<option value="144">144</option>
+<option value="145">145</option>
+<option value="146">146</option>
+<option value="147">147</option>
+<option value="148">148</option>
+<option value="149">149</option>
+<option value="150">150</option>
+<option value="151">151</option>
+<option value="152">152</option>
+<option value="153">153</option>
+<option value="154">154</option>
+<option value="155">155</option>
+<option value="156">156</option>
+<option value="157">157</option>
+<option value="158">158</option>
+<option value="159">159</option>
+<option value="160">160</option>
+<option value="161">161</option>
+<option value="162">162</option>
+<option value="163">163</option>
+<option value="164">164</option>
+<option value="165">165</option>
+<option value="166">166</option>
+<option value="167">167</option>
+<option value="168">168</option>
+<option value="169">169</option>
+<option value="170">170</option>
+<option value="171">171</option>
+<option value="172">172</option>
+<option value="173">173</option>
+<option value="174">174</option>
+<option value="175">175</option>
+<option value="176">176</option>
+<option value="177">177</option>
+<option value="178">178</option>
+<option value="179">179</option>
+<option value="180" selected>180</option>
+<option value="181">181</option>
+<option value="182">182</option>
+<option value="183">183</option>
+<option value="184">184</option>
+<option value="185">185</option>
+<option value="186">186</option>
+<option value="187">187</option>
+<option value="188">188</option>
+<option value="189">189</option>
+<option value="190">190</option>
+<option value="191">191</option>
+<option value="192">192</option>
+<option value="193">193</option>
+<option value="194">194</option>
+<option value="195">195</option>
+<option value="196">196</option>
+<option value="197">197</option>
+<option value="198">198</option>
+<option value="199">199</option>
+<option value="200">200</option>
+<option value="201">201</option>
+<option value="202">202</option>
+<option value="203">203</option>
+<option value="204">204</option>
+<option value="205">205</option>
+<option value="206">206</option>
+<option value="207">207</option>
+<option value="208">208</option>
+<option value="209">209</option>
+<option value="210">210</option>
+<option value="211">211</option>
+<option value="212">212</option>
+<option value="213">213</option>
+<option value="214">214</option>
+<option value="215">215</option>
+<option value="216">216</option>
+<option value="217">217</option>
+<option value="218">218</option>
+<option value="219">219</option>
+<option value="220">220</option>
+<option value="221">221</option>
+<option value="222">222</option>
+<option value="223">223</option>
+<option value="224">224</option>
+<option value="225">225</option>
+<option value="226">226</option>
+<option value="227">227</option>
+<option value="228">228</option>
+<option value="229">229</option>
+<option value="230">230</option>
+<option value="231">231</option>
+<option value="232">232</option>
+<option value="233">233</option>
+<option value="234">234</option>
+<option value="235">235</option>
+<option value="236">236</option>
+<option value="237">237</option>
+<option value="238">238</option>
+<option value="239">239</option>
+<option value="240">240</option>
+<option value="241">241</option>
+<option value="242">242</option>
+<option value="243">243</option>
+<option value="244">244</option>
+<option value="245">245</option>
+<option value="246">246</option>
+<option value="247">247</option>
+<option value="248">248</option>
+<option value="249">249</option>
+<option value="250">250</option>
+<option value="251">251</option>
+<option value="252">252</option>
+<option value="253">253</option>
+<option value="254">254</option>
+<option value="255">255</option>
+<option value="256">256</option>
+<option value="257">257</option>
+<option value="258">258</option>
+<option value="259">259</option>
+<option value="260">260</option>
+<option value="261">261</option>
+<option value="262">262</option>
+<option value="263">263</option>
+<option value="264">264</option>
+<option value="265">265</option>
+<option value="266">266</option>
+<option value="267">267</option>
+<option value="268">268</option>
+<option value="269">269</option>
+<option value="270">270</option>
+<option value="271">271</option>
+<option value="272">272</option>
+<option value="273">273</option>
+<option value="274">274</option>
+<option value="275">275</option>
+<option value="276">276</option>
+<option value="277">277</option>
+<option value="278">278</option>
+<option value="279">279</option>
+<option value="280">280</option>
+<option value="281">281</option>
+<option value="282">282</option>
+<option value="283">283</option>
+<option value="284">284</option>
+<option value="285">285</option>
+<option value="286">286</option>
+<option value="287">287</option>
+<option value="288">288</option>
+<option value="289">289</option>
+<option value="290">290</option>
+<option value="291">291</option>
+<option value="292">292</option>
+<option value="293">293</option>
+<option value="294">294</option>
+<option value="295">295</option>
+<option value="296">296</option>
+<option value="297">297</option>
+<option value="298">298</option>
+<option value="299">299</option>
+<option value="300">300</option>
+<option value="301">301</option>
+<option value="302">302</option>
+<option value="303">303</option>
+<option value="304">304</option>
+<option value="305">305</option>
+<option value="306">306</option>
+<option value="307">307</option>
+<option value="308">308</option>
+<option value="309">309</option>
+<option value="310">310</option>
+<option value="311">311</option>
+<option value="312">312</option>
+<option value="313">313</option>
+<option value="314">314</option>
+<option value="315">315</option>
+<option value="316">316</option>
+<option value="317">317</option>
+<option value="318">318</option>
+<option value="319">319</option>
+<option value="320">320</option>
+<option value="321">321</option>
+<option value="322">322</option>
+<option value="323">323</option>
+<option value="324">324</option>
+<option value="325">325</option>
+<option value="326">326</option>
+<option value="327">327</option>
+<option value="328">328</option>
+<option value="329">329</option>
+<option value="330">330</option>
+<option value="331">331</option>
+<option value="332">332</option>
+<option value="333">333</option>
+<option value="334">334</option>
+<option value="335">335</option>
+<option value="336">336</option>
+<option value="337">337</option>
+<option value="338">338</option>
+<option value="339">339</option>
+<option value="340">340</option>
+<option value="341">341</option>
+<option value="342">342</option>
+<option value="343">343</option>
+<option value="344">344</option>
+<option value="345">345</option>
+<option value="346">346</option>
+<option value="347">347</option>
+<option value="348">348</option>
+<option value="349">349</option>
+<option value="350">350</option>
+<option value="351">351</option>
+<option value="352">352</option>
+<option value="353">353</option>
+<option value="354">354</option>
+<option value="355">355</option>
+<option value="356">356</option>
+<option value="357">357</option>
+<option value="358">358</option>
+<option value="359">359</option>
+<option value="360">360</option>
+<option value="361">361</option>
+<option value="362">362</option>
+<option value="363">363</option>
+<option value="364">364</option>
+<option value="365">365</option>
+<option value="366">366</option>
+<option value="367">367</option>
+<option value="368">368</option>
+<option value="369">369</option>
+<option value="370">370</option>
+<option value="371">371</option>
+<option value="372">372</option>
+<option value="373">373</option>
+<option value="374">374</option>
+<option value="375">375</option>
+<option value="376">376</option>
+<option value="377">377</option>
+<option value="378">378</option>
+<option value="379">379</option>
+<option value="380">380</option>
+<option value="381">381</option>
+<option value="382">382</option>
+<option value="383">383</option>
+<option value="384">384</option>
+<option value="385">385</option>
+<option value="386">386</option>
+<option value="387">387</option>
+<option value="388">388</option>
+<option value="389">389</option>
+<option value="390">390</option>
+<option value="391">391</option>
+<option value="392">392</option>
+<option value="393">393</option>
+<option value="394">394</option>
+<option value="395">395</option>
+<option value="396">396</option>
+<option value="397">397</option>
+<option value="398">398</option>
+<option value="399">399</option>
+<option value="400">400</option>
+<option value="401">>400</option>
+</select> lbs.
+</td>
+</tr>
+
+
+
+<tr>
+<td style="text-align:right;" class="gray_cell">&nbsp;<b>Have you ever had&nbsp;<br>or been treated for&nbsp;<br>high blood pressure?</b>&nbsp;</td>
+
+<td class="gray_cell">
+Yes&nbsp;<input type="radio" name="DoBloodPressure" value="ON">&nbsp;&nbsp;
+No&nbsp;<input type="radio" checked name="DoBloodPressure" value="OFF">
+</td>
+</tr>
+
+
+
+<tr>
+<td style="text-align:right;" class="gray_cell">&nbsp;<b>Have you ever had&nbsp;<br>or been treated for&nbsp;<br>high cholesterol?</b>&nbsp;</td>
+
+<td class="gray_cell">
+Yes&nbsp;<input type="radio" name="DoCholesterol" value="ON">&nbsp;&nbsp;
+No&nbsp;<input type="radio" checked name="DoCholesterol" value="OFF">
+</td>
+</tr>
+
+
+<input type="hidden" name="Health" value="PP">
+<!-- <tr>
+<td style="text-align:right;" class="gray_cell"><b>Health Class:</b>&nbsp;</td>
+
+<td class="gray_cell">
+<select name="Health" size="1" >
+<option selected value="PP">Preferred Plus</option>
+<option value="P">Preferred</option>
+<option value="RP">Regular Plus</option>
+<option value="R">Regular</option>
+</select>
+</td>
+</tr> -->
+
+
+
+<!-- NOTE: Category works as before with a few enhancements.
+
+If you're not doing multiple categories then you can follow the Category choice 
+with :20 to specify that you want the side by side view to show for 20 years
+
+If you are doing a multiple categories view, follow the Z with :123 
+where 1,2,3 will be the categories to lookup.  You can choose which ever valid 
+categories you wish up to a maximum of 6.  You can further follow that by :20 
+to indicate that you want to show results for 20 years in the side by side view
+
+NOTE: The COMPULIFE category system has changed and to find the appropriate letters for your categories you need to use your Compulife Quote Software | Manage 
+Product Database | List all Categories there is a tab which will show you html 
+code for your categories -->
+
+
+<tr>
+<td style="text-align:right;" class="gray_cell">&nbsp;<b>Type of Insurance:</b>&nbsp;</td>
+
+<td class="gray_cell">
+<select name="NewCategory">
+<option value="1">1 Year Level Term</option>
+<option value="2">5 Year Level Term</option>
+<option value="3">10 Year Level Term</option>
+<option value="4">15 Year Level Term</option>
+<option SELECTED value="5">20 Year Level Term</option>
+<option value="6">25 Year Level Term</option>
+<option value="7">30 Year Level Term</option>
+<option value="T">To Age 65 Level</option>
+<option value="U">To Age 70 Level</option>
+<option value="V">To Age 75 Level</option>
+<option value="A">To Age 80 Level</option>
+<option value="B">To Age 85 Level</option>
+<option value="C">To Age 90 Level</option>
+<option value="D">To Age 95 Level</option>
+<option value="E">To Age 100 Level</option>
+<option value="G">To Age 105 Level</option>
+<option value="H">To Age 110 Level</option>
+<option value="F">Other Term</option>
+<option value="Z:357">10, 20, 30 Year Term</option>
+<option value="Z:123456790TUVABCDEGH#10">All Level Term Products</option>
+<option value="J">15 Year Return of Premium</option>
+<option value="K">20 Year Return of Premium</option>
+<option value="L">25 Year Return of Premium</option>
+<option value="M">30 Year Return of Premium</option>
+<option value="W">To age 65 Return of Premium</option>
+<option value="X">To age 70 Return of Premium</option>
+<option value="Y">To age 75 Return of Premium</option>
+<option value="N">Other Return of Premium</option>
+<option value="Z:JKM">15, 20, 30 Year with ROP</option>
+<option value="Z:IJKLMWXYN#10">All Return of Premium Products</option>
+<option value="8">To Age 121 Level  (No Lapse U/L)</option>
+<option value="P">To Age 121 Level - Pay to 100</option>
+<option value="Q">To Age 121 Level - Pay to 65</option>
+<option value="R">To Age 121 Level - 20 Pay</option>
+<option value="S">To Age 121 Level - 10 Pay</option>
+<option value="O">To Age 121 Level - Single Pay</option>
+<option value="Z:8PQRSO#10">All To Age 121 Level Products</option>
+<!-- example of 10 verse 20 versus 30, with a maximum of 4 results
+<option value="Z:357#4">10 versus 20 versus 30</option>
+-->
+</select>&nbsp;
+</td>
+</tr>
+
+
+<tr>
+<td style="text-align:right;" class="gray_cell"><b>Face Amount:</b>&nbsp;</td>
+
+<td class="gray_cell">
+<select name="FaceAmount" size="1">
+<option value="10000">$10,000</option>
+<option value="25000">$25,000</option>
+<option value="50000">$50,000</option>
+<option value="50000">$50,000</option>
+<option value="75000">$75,000</option>
+<option value="100000">$100,000</option>
+<option value="125000">$125,000</option>
+<option value="150000">$150,000</option>
+<option value="175000">$175,000</option>
+<option value="200000">$200,000</option>
+<option value="225000">$225,000</option>
+<option value="250000">$250,000</option>
+<option value="300000">$300,000</option>
+<option value="350000">$350,000</option>
+<option value="400000">$400,000</option>
+<option value="450000">$450,000</option>
+<option selected value="500000">$500,000</option>
+<option value="550000">$550,000</option>
+<option value="600000">$600,000</option>
+<option value="650000">$650,000</option>
+<option value="700000">$700,000</option>
+<option value="750000">$750,000</option>
+<option value="800000">$800,000</option>
+<option value="900000">$900,000</option>
+<option value="1000000">$1,000,000</option>
+<option value="1100000">$1,100,000</option>
+<option value="1250000">$1,250,000</option>
+<option value="1500000">$1,500,000</option>
+<option value="1750000">$1,750,000</option>
+<option value="2000000">$2,000,000</option>
+<option value="2500000">$2,500,000</option>
+<option value="3000000">$3,000,000</option>
+<option value="4000000">$4,000,000</option>
+<option value="5000000">$5,000,000</option>
+<option value="6000000">$6,000,000</option>
+<option value="7000000">$7,000,000</option>
+<option value="8000000">$8,000,000</option>
+<option value="9000000">$9,000,000</option>
+<option value="10000000">$10,000,000</option>
+</select>
+<!-- &nbsp;&nbsp;&nbsp;or use our Income Replacement&nbsp;<input type="submit" name="IncReplace1" value=" Calculator ">  -->
+</td>
+</tr>
+
+
+<input type="hidden" name="ModeUsed" value="M">
+<!-- <tr>
+<td style="text-align:right;" class="gray_cell"><b>Payment Option:</b>&nbsp;</td>
+
+<td class="gray_cell">
+<select name="ModeUsed" size="1">
+<option value="A"> Annual </option>
+<option selected value="M"> Monthly </option>
+<option value="Q"> Quarterly </option>
+<option value="H"> Semi-Annual </option>
+</select>
+</td>
+</tr> -->
+
+
+<!-- <tr>
+<td style="text-align:right;" class="gray_cell"><b>Minimum Life Company Rating:</b>&nbsp;</td>
+
+<td class="gray_cell">
+<select name="CompRating">
+<option value="1">A++ &nbsp;&nbsp;Superior</option>
+<option value="2">A+ &nbsp;&nbsp;&nbsp;&nbsp;Superior</option>
+<option value="3">A  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Excellent</option>
+<option selected value="4">A- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Excellent</option>
+<option value="5">B++ &nbsp;Very Good</option>
+<option value="6">B+ &nbsp;&nbsp;&nbsp;&nbsp;Very Good</option>
+<option value="7">B &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adequate</option>
+<option value="8">B- &nbsp;&nbsp;&nbsp;&nbsp;Adequate</option>
+<option value="9">C++ &nbsp;Fair</option>
+<option value="10">C+ &nbsp;&nbsp;&nbsp;&nbsp;Fair</option>
+<option value="11">C &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Marginal</option>
+<option value="12">C- &nbsp;&nbsp;&nbsp;&nbsp;Marginal</option><option value="13">D &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Very Vulnerable</option><option value="14">E &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Under State Supervision</option><option value="15">F &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In Liquidation</option><option value="16">Quote all with Best Rating</option>
+</select>
+</td>
+</tr> -->
+
+
+
+<!-- Pass some hidden values onto the next page -->
+<input type="hidden" name="GoColor" value="CCFFCC">
+<input type="hidden" name="NoGoColor" value="FFDDDD">
+<input type="hidden" name="DoNotKnowColor" value="">
+<input type="hidden" name="GoString" value="../../images/go.bmp">
+<input type="hidden" name="NoGoString" value="../../images/no.bmp">
+<input type="hidden" name="DoNotKnowString" value="../../images/dk.bmp">
+<input type="hidden" name="SortByHealth" value="OFF">
+<input type="hidden" name="RejectReasonBr" value="OFF">
+<input type="hidden" name="GoMessage" value="indicates, based upon what you told Health Analyzer, that the premium is available">
+<input type="hidden" name="DoNotKnowMessage" value="indicates we no have enough information from the company to make a determination">
+<input type="hidden" name="NoRedX" value="ON">
+
+
+
+
+<tr class="default_header">
+<td colspan="2">
+<input type="submit" name="MiniHealthDetails" value=" Compare Now ">
+</td>
+</tr>
+
+</table>
+
+
+<p class="center"><b>Powered by <a class="nocolor" href="http://www.compulife.com">COMPULIFE</a><sup>&reg;</sup></b>
+
+<br><br>
+
+
+<hr></hr>
+
+
+<P><b>COMPULIFE</b><sup><sup>®</sup></sup> is a registered trademark of Compulife Software, Inc.
+
+</form>
+
+</body>
+</html>

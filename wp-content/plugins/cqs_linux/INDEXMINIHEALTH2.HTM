@@ -1,0 +1,1150 @@
+<html>
+<head>
+   <title>Health Analyzer Questionnaire</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="description" content=" ">
+   <meta name="keywords" content=" ">   
+   <meta name="Author" content="COMPULIFE Software, Inc.">
+   <link href="../../css/styles_website.css" type="text/css" rel="stylesheet">
+   <!-- You can use the CONFIG.TXT in the USER folder to read the css value and 
+   permit changes for USERS to switch other css style sheets from their admin.html
+   page.  If that is your preference, you can use the following line instead of 
+   hard coding the css style sheet above. -->
+   <!-- <link href="../../css/$css$" type="text/css" rel="stylesheet"> -->
+</head>
+
+<body>
+
+<form action="cqsl.cgi" method="POST">
+
+<input type="hidden" name="DoHeightWeight" value="ON">
+<input type="hidden" name="Weight" value="$origweight$">
+ 
+<input type="hidden" name="Feet" value="$origfeet$">
+<input type="hidden" name="Inches" value="$originches$">
+<input type="hidden" name="DoSmokingTobacco" value="$origsmoker$"> 
+<input type="hidden" name="DoBloodPressure" value="$origdobloodpressure$">
+<input type="hidden" name="DoCholesterol" value="$origdocholesterol$" >
+
+<!-- Uncomment out the next few lines if you want to require them to enter personal information -->
+<!-- <b> Required Information </b><P><P> -->
+<!-- <input type="hidden" name="ErrorOnMissingPersonalInfo" value="ON"> -->
+<!-- <TABLE BORDER=0 WIDTH="100%"> -->
+<!-- <TR><TD WIDTH="15%"><DIV ALIGN=left>Name:</TD><TD WIDTH="85%"><input type="text" name="Name" size="60"></TD> -->
+<!-- <TR><TD WIDTH="15%"><DIV ALIGN=left>Address:</TD><TD WIDTH="85%"><input type="text" name="Address" size="60"></TD> -->
+<!-- <TR><TD WIDTH="15%"><DIV ALIGN=left>Phone Number:</TD><TD WIDTH="85%"><input type="text" name="PhoneNumber" size="20"></TD> -->
+<!-- </TABLE><P> -->
+
+
+<table class="default_table" width="600" align="center">
+<tr class="default_header">
+<td class="default_header">Health Analyzer Questionnaire</td>
+
+<!-- If the user selects Don't Know (-1), then DoHeightWeight gets turned -->
+<!-- off and the Height Weight section on the next page is not shown -->
+
+
+
+</tr>
+
+
+
+$SmokingTobaccoSegment$
+<!-- If all 5 sub smoking categories are not checked, then DoSmokingTobacco -->
+<!-- gets turned off and the smoking tobacco segment on the next page is -->
+<!-- not shown. -->
+
+<tr class="default_sub_header_center_border">
+<td class="default_sub_header_center_border">Additional Smoking/Tobacco Questions</td>
+</tr>
+
+<tr>
+<td class="gray_cell">
+
+
+<input type="hidden" name="DoSmokingTobacco" value="$origsmoker$">
+
+
+$CigarettesSegment$
+
+<br>
+
+<p>&nbsp;<b>Cigarettes:</b>
+
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Do you smoke cigarettes?&nbsp;<input type="checkbox" name="DoCigarettes" value="ON"> 
+<P>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+How long has it been since you last smoked a cigarette?&nbsp;
+<select name="PeriodCigarettes" size="1">
+<option value="0">6 months or less</OPTION>
+<option value="1">1 year or less</OPTION>
+<option value="2">2 years or less</OPTION>
+<option value="3">3 years or less</OPTION>
+<option value="4">4 years or less</OPTION>
+<option value="5">5 years or less</OPTION>
+<option value="6">7 years or less</OPTION>
+<option value="7">10 years or less</OPTION>
+<option value="8">15 years or less</OPTION>
+<option value="9">more than 15 years</OPTION>
+</select>
+
+<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+On average, how many cigarettes per day do/did you smoke?&nbsp;
+<select name="NumCigarettes" size="1">
+<option value="1">1</OPTION>
+<option value="2">2</OPTION>
+<option value="3">3</OPTION>
+<option value="4">4</OPTION>
+<option value="5">5</OPTION>
+<option value="6">6</OPTION>
+<option value="7">7</OPTION>
+<option value="8">8</OPTION>
+<option value="9">9</OPTION>
+<option value="10">10</OPTION>
+<option value="11">11</OPTION>
+<option value="12">12</OPTION>
+<option value="13">13</OPTION>
+<option value="14">14</OPTION>
+<option value="15">15</OPTION>
+<option value="16">16</OPTION>
+<option value="17">17</OPTION>
+<option value="18">18</OPTION>
+<option value="19">19</OPTION>
+<option selected value="20">20</OPTION>
+<option value="21">21</OPTION>
+<option value="22">22</OPTION>
+<option value="23">23</OPTION>
+<option value="24">24</OPTION>
+<option value="25">25</OPTION>
+<option value="26">26</OPTION>
+<option value="27">27</OPTION>
+<option value="28">28</OPTION>
+<option value="29">29</OPTION>
+<option value="30">30</OPTION>
+<option value="31">31</OPTION>
+<option value="32">32</OPTION>
+<option value="33">33</OPTION>
+<option value="34">34</OPTION>
+<option value="35">35</OPTION>
+<option value="36">36</OPTION>
+<option value="37">37</OPTION>
+<option value="38">38</OPTION>
+<option value="39">39</OPTION>
+<option value="40">40</OPTION>
+<option value="41">41</OPTION>
+<option value="42">42</OPTION>
+<option value="43">43</OPTION>
+<option value="44">44</OPTION>
+<option value="45">45</OPTION>
+<option value="46">46</OPTION>
+<option value="47">47</OPTION>
+<option value="48">48</OPTION>
+<option value="49">49</OPTION>
+<option value="50">50</OPTION>
+<option value="51">51</OPTION>
+<option value="52">52</OPTION>
+<option value="53">53</OPTION>
+<option value="54">54</OPTION>
+<option value="55">55</OPTION>
+<option value="56">56</OPTION>
+<option value="57">57</OPTION>
+<option value="58">58</OPTION>
+<option value="59">59</OPTION>
+<option value="60">60</OPTION>
+<option value="61">61</OPTION>
+<option value="62">62</OPTION>
+<option value="63">63</OPTION>
+<option value="64">64</OPTION>
+<option value="65">65</OPTION>
+<option value="66">66</OPTION>
+<option value="67">67</OPTION>
+<option value="68">68</OPTION>
+<option value="69">69</OPTION>
+<option value="70">70</OPTION>
+<option value="71">71</OPTION>
+<option value="72">72</OPTION>
+<option value="73">73</OPTION>
+<option value="74">74</OPTION>
+<option value="75">75</OPTION>
+<option value="76">76</OPTION>
+<option value="77">77</OPTION>
+<option value="78">78</OPTION>
+<option value="79">79</OPTION>
+<option value="80">80</OPTION>
+<option value="81">81</OPTION>
+<option value="82">82</OPTION>
+<option value="83">83</OPTION>
+<option value="84">84</OPTION>
+<option value="85">85</OPTION>
+<option value="86">86</OPTION>
+<option value="87">87</OPTION>
+<option value="88">88</OPTION>
+<option value="89">89</OPTION>
+<option value="90">90</OPTION>
+<option value="91">91</OPTION>
+<option value="92">92</OPTION>
+<option value="93">93</OPTION>
+<option value="94">94</OPTION>
+<option value="95">95</OPTION>
+<option value="96">96</OPTION>
+<option value="97">97</OPTION>
+<option value="98">98</OPTION>
+<option value="99">99</OPTION>
+</select>
+
+<br><br>
+
+$/CigarettesSegment$
+
+$CigarsSegment$
+
+<p>&nbsp;<b>Cigars:</b>
+
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Do you smoke cigars?&nbsp;<input type="Checkbox" name="DoCigars" value="ON">
+
+<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+How long has it been since you last smoked a cigar?&nbsp;
+<select name="PeriodCigars" size="1">
+<option value="0">6 months or less</OPTION>
+<option value="1">1 year or less</OPTION>
+<option value="2">2 years or less</OPTION>
+<option value="3">3 years or less</OPTION>
+<option value="4">4 years or less</OPTION>
+<option value="5">5 years or less</OPTION>
+<option value="6">7 years or less</OPTION>
+<option value="7">10 years or less</OPTION>
+<option value="8">15 years or less</OPTION>
+<option value="9">more than 15 years</OPTION>
+</select>
+
+<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+On average, how many cigars per month do/did you smoke?&nbsp;
+<select name="NumCigars" size="1">
+<option value="1">1</OPTION>
+<option value="2">2</OPTION>
+<option value="3">3</OPTION>
+<option value="4">4</OPTION>
+<option value="5">5</OPTION>
+<option value="6">6</OPTION>
+<option value="7">7</OPTION>
+<option value="8">8</OPTION>
+<option value="9">9</OPTION>
+<option value="10">10</OPTION>
+<option value="11">11</OPTION>
+<option value="12">12</OPTION>
+<option value="13">13</OPTION>
+<option value="14">14</OPTION>
+<option value="15">15</OPTION>
+<option value="16">16</OPTION>
+<option value="17">17</OPTION>
+<option value="18">18</OPTION>
+<option value="19">19</OPTION>
+<option value="20">20</OPTION>
+<option value="21">21</OPTION>
+<option value="22">22</OPTION>
+<option value="23">23</OPTION>
+<option value="24">24</OPTION>
+<option value="25">25</OPTION>
+<option value="26">26</OPTION>
+<option value="27">27</OPTION>
+<option value="28">28</OPTION>
+<option value="29">29</OPTION>
+<option value="30">30</OPTION>
+<option value="31">31</OPTION>
+<option value="32">32</OPTION>
+<option value="33">33</OPTION>
+<option value="34">34</OPTION>
+<option value="35">35</OPTION>
+<option value="36">36</OPTION>
+<option value="37">37</OPTION>
+<option value="38">38</OPTION>
+<option value="39">39</OPTION>
+<option value="40">40</OPTION>
+<option value="41">41</OPTION>
+<option value="42">42</OPTION>
+<option value="43">43</OPTION>
+<option value="44">44</OPTION>
+<option value="45">45</OPTION>
+<option value="46">46</OPTION>
+<option value="47">47</OPTION>
+<option value="48">48</OPTION>
+<option value="49">49</OPTION>
+<option value="50">50</OPTION>
+<option value="51">51</OPTION>
+<option value="52">52</OPTION>
+<option value="53">53</OPTION>
+<option value="54">54</OPTION>
+<option value="55">55</OPTION>
+<option value="56">56</OPTION>
+<option value="57">57</OPTION>
+<option value="58">58</OPTION>
+<option value="59">59</OPTION>
+<option value="60">60</OPTION>
+<option value="61">61</OPTION>
+<option value="62">62</OPTION>
+<option value="63">63</OPTION>
+<option value="64">64</OPTION>
+<option value="65">65</OPTION>
+<option value="66">66</OPTION>
+<option value="67">67</OPTION>
+<option value="68">68</OPTION>
+<option value="69">69</OPTION>
+<option value="70">70</OPTION>
+<option value="71">71</OPTION>
+<option value="72">72</OPTION>
+<option value="73">73</OPTION>
+<option value="74">74</OPTION>
+<option value="75">75</OPTION>
+<option value="76">76</OPTION>
+<option value="77">77</OPTION>
+<option value="78">78</OPTION>
+<option value="79">79</OPTION>
+<option value="80">80</OPTION>
+<option value="81">81</OPTION>
+<option value="82">82</OPTION>
+<option value="83">83</OPTION>
+<option value="84">84</OPTION>
+<option value="85">85</OPTION>
+<option value="86">86</OPTION>
+<option value="87">87</OPTION>
+<option value="88">88</OPTION>
+<option value="89">89</OPTION>
+<option value="90">90</OPTION>
+<option value="91">91</OPTION>
+<option value="92">92</OPTION>
+<option value="93">93</OPTION>
+<option value="94">94</OPTION>
+<option value="95">95</OPTION>
+<option value="96">96</OPTION>
+<option value="97">97</OPTION>
+<option value="98">98</OPTION>
+<option value="99">99</OPTION>
+</select><br>
+
+$/CigarsSegment$
+
+$PipeSegment$
+
+<p>&nbsp;<b>Pipe:</b>
+
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Do you smoke pipes?&nbsp;<input type="checkbox" name="DoPipe" value="ON">
+
+<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+How long has it been since you last smoked a pipe?&nbsp;
+<select name="PeriodPipe" size="1">
+<option value="0">6 months or less</OPTION>
+<option value="1">1 year or less</OPTION>
+<option value="2">2 years or less</OPTION>
+<option value="3">3 years or less</OPTION>
+<option value="4">4 years or less</OPTION>
+<option value="5">5 years or less</OPTION>
+<option value="6">7 years or less</OPTION>
+<option value="7">10 years or less</OPTION>
+<option value="8">15 years or less</OPTION>
+<option value="9">more than 15 years</OPTION>
+</select>
+
+<br><br>
+
+$/PipeSegment$
+
+$ChewingTobaccoSegment$
+
+<p>&nbsp;<b>Chewing Tobacco:</b>
+
+<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Do you use chewing tobacco?&nbsp;<input type="checkbox" name="DoChewingTobacco" value="ON">
+
+<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+How long has it been since you last you last chewed tobacco?&nbsp;
+<select name="PeriodChewingTobacco" size="1">
+<option value="0">6 months or less</OPTION>
+<option value="1">1 year or less</OPTION>
+<option value="2">2 years or less</OPTION>
+<option value="3">3 years or less</OPTION>
+<option value="4">4 years or less</OPTION>
+<option value="5">5 years or less</OPTION>
+<option value="6">7 years or less</OPTION>
+<option value="7">10 years or less</OPTION>
+<option value="8">15 years or less</OPTION>
+<option value="9">more than 15 years</OPTION>
+</select><br>
+
+$/ChewingTobaccoSegment$
+
+$NicotinePatchesOrGumSegment$
+
+<p>&nbsp;<b>Nicotine Patches or Gum:</b>
+
+
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Do you use Nicotine Patches or Gum?&nbsp;<input type="checkbox" name="DoNicotinePatchesOrGum" value="ON">
+
+<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+How long has it been since you last used a nicotine patch or gum?&nbsp;
+<select name="PeriodNicotinePatchesOrGum" size="1">
+<option value="0">6 months or less</OPTION>
+<option value="1">1 year or less</OPTION>
+<option value="2">2 years or less</OPTION>
+<option value="3">3 years or less</OPTION>
+<option value="4">4 years or less</OPTION>
+<option value="5">5 years or less</OPTION>
+<option value="6">7 years or less</OPTION>
+<option value="7">10 years or less</OPTION>
+<option value="8">15 years or less</OPTION>
+<option value="9">more than 15 years</OPTION>
+</select>
+
+<br><br>
+
+
+$/NicotinePatchesOrGumSegment$
+
+</td>
+</tr>
+$/SmokingTobaccoSegment$
+
+
+
+
+
+$BloodPressureSegment$
+
+<tr class="default_sub_header_center_border">
+<td class="default_sub_header_center_border"> Additional Blood Pressure Questions</td>
+</tr>
+
+<input type="hidden" name="DoBloodPressure" value="On">
+
+<tr>
+<td class="gray_cell">
+
+<br>
+
+<p>&nbsp;<b>Blood Pressure:</b>
+
+<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+What is your systolic pressure?&nbsp;
+<select name="Systolic" size="1">
+<option selected value="-1">Don't Know</OPTION>
+<option value="119">less than 120</OPTION>
+<option value="120">120</OPTION>
+<option value="121">121</OPTION>
+<option value="122">122</OPTION>
+<option value="123">123</OPTION>
+<option value="124">124</OPTION>
+<option value="125">125</OPTION>
+<option value="126">126</OPTION>
+<option value="127">127</OPTION>
+<option value="128">128</OPTION>
+<option value="129">129</OPTION>
+<option value="130">130</OPTION>
+<option value="131">131</OPTION>
+<option value="132">132</OPTION>
+<option value="133">133</OPTION>
+<option value="134">134</OPTION>
+<option value="135">135</OPTION>
+<option value="136">136</OPTION>
+<option value="137">137</OPTION>
+<option value="138">138</OPTION>
+<option value="139">139</OPTION>
+<option value="140">140</OPTION>
+<option value="141">141</OPTION>
+<option value="142">142</OPTION>
+<option value="143">143</OPTION>
+<option value="144">144</OPTION>
+<option value="145">145</OPTION>
+<option value="146">146</OPTION>
+<option value="147">147</OPTION>
+<option value="148">148</OPTION>
+<option value="149">149</OPTION>
+<option value="150">150</OPTION>
+<option value="151">151</OPTION>
+<option value="152">152</OPTION>
+<option value="153">153</OPTION>
+<option value="154">154</OPTION>
+<option value="155">155</OPTION>
+<option value="156">156</OPTION>
+<option value="157">157</OPTION>
+<option value="158">158</OPTION>
+<option value="159">159</OPTION>
+<option value="160">160</OPTION>
+<option value="161">161</OPTION>
+<option value="162">162</OPTION>
+<option value="163">163</OPTION>
+<option value="164">164</OPTION>
+<option value="165">165</OPTION>
+<option value="166">166</OPTION>
+<option value="167">167</OPTION>
+<option value="168">168</OPTION>
+<option value="169">169</OPTION>
+<option value="170">170</OPTION>
+<option value="171">171</OPTION>
+<option value="172">172</OPTION>
+<option value="173">173</OPTION>
+<option value="174">174</OPTION>
+<option value="175">175</OPTION>
+<option value="176">176</OPTION>
+<option value="177">177</OPTION>
+<option value="178">178</OPTION>
+<option value="179">179</OPTION>
+<option value="180">180</OPTION>
+<option value="181">181</OPTION>
+<option value="182">182</OPTION>
+<option value="183">183</OPTION>
+<option value="184">184</OPTION>
+<option value="185">185</OPTION>
+<option value="186">186</OPTION>
+<option value="187">187</OPTION>
+<option value="188">188</OPTION>
+<option value="189">189</OPTION>
+<option value="190">190</OPTION>
+<option value="191">191</OPTION>
+<option value="192">192</OPTION>
+<option value="193">193</OPTION>
+<option value="194">194</OPTION>
+<option value="195">195</OPTION>
+<option value="196">196</OPTION>
+<option value="197">197</OPTION>
+<option value="198">198</OPTION>
+<option value="199">199</OPTION>
+<option value="200">200</OPTION>
+<option value="201">201</OPTION>
+<option value="202">202</OPTION>
+<option value="203">203</OPTION>
+<option value="204">204</OPTION>
+<option value="205">205</OPTION>
+<option value="206">206</OPTION>
+<option value="207">207</OPTION>
+<option value="208">208</OPTION>
+<option value="209">209</OPTION>
+<option value="210">210</OPTION>
+<option value="211">211</OPTION>
+<option value="212">212</OPTION>
+<option value="213">213</OPTION>
+<option value="214">214</OPTION>
+<option value="215">215</OPTION>
+<option value="216">216</OPTION>
+<option value="217">217</OPTION>
+<option value="218">218</OPTION>
+<option value="219">219</OPTION>
+<option value="220">220</OPTION>
+<option value="221">221</OPTION>
+<option value="222">222</OPTION>
+<option value="223">223</OPTION>
+<option value="224">224</OPTION>
+<option value="225">225</OPTION>
+<option value="226">226</OPTION>
+<option value="227">227</OPTION>
+<option value="228">228</OPTION>
+<option value="229">229</OPTION>
+<option value="230">230</OPTION>
+<option value="231">231</OPTION>
+<option value="232">232</OPTION>
+<option value="233">233</OPTION>
+<option value="234">234</OPTION>
+<option value="235">235</OPTION>
+<option value="236">236</OPTION>
+<option value="237">237</OPTION>
+<option value="238">238</OPTION>
+<option value="239">239</OPTION>
+<option value="240">240</OPTION>
+<option value="241">241</OPTION>
+<option value="242">242</OPTION>
+<option value="243">243</OPTION>
+<option value="244">244</OPTION>
+<option value="245">245</OPTION>
+<option value="246">246</OPTION>
+<option value="247">247</OPTION>
+<option value="248">248</OPTION>
+<option value="249">249</OPTION>
+<option value="250">250</OPTION>
+<option value="251">>250</OPTION>
+</select>
+
+<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+What is your diastolic pressure?&nbsp;
+<select name="Dystolic" size="1">
+<option selected value="-1">Don't Know</OPTION>
+<option value="79">less than 80&nbsp;</option>
+<option value="80">80</OPTION>
+<option value="81">81</OPTION>
+<option value="82">82</OPTION>
+<option value="83">83</OPTION>
+<option value="84">84</OPTION>
+<option value="85">85</OPTION>
+<option value="86">86</OPTION>
+<option value="87">87</OPTION>
+<option value="88">88</OPTION>
+<option value="89">89</OPTION>
+<option value="90">90</OPTION>
+<option value="91">91</OPTION>
+<option value="92">92</OPTION>
+<option value="93">93</OPTION>
+<option value="94">94</OPTION>
+<option value="95">95</OPTION>
+<option value="96">96</OPTION>
+<option value="97">97</OPTION>
+<option value="98">98</OPTION>
+<option value="99">99</OPTION>
+<option value="100">100</OPTION>
+<option value="101">101</OPTION>
+<option value="102">102</OPTION>
+<option value="103">103</OPTION>
+<option value="104">104</OPTION>
+<option value="105">105</OPTION>
+<option value="106">106</OPTION>
+<option value="107">107</OPTION>
+<option value="108">108</OPTION>
+<option value="109">109</OPTION>
+<option value="110">110</OPTION>
+<option value="111">111</OPTION>
+<option value="112">112</OPTION>
+<option value="113">113</OPTION>
+<option value="114">114</OPTION>
+<option value="115">115</OPTION>
+<option value="116">116</OPTION>
+<option value="117">117</OPTION>
+<option value="118">118</OPTION>
+<option value="119">119</OPTION>
+<option value="120">120</OPTION>
+<option value="121">121</OPTION>
+<option value="122">122</OPTION>
+<option value="123">123</OPTION>
+<option value="124">124</OPTION>
+<option value="125">125</OPTION>
+<option value="126">126</OPTION>
+<option value="127">127</OPTION>
+<option value="128">128</OPTION>
+<option value="129">129</OPTION>
+<option value="130">130</OPTION>
+<option value="131">131</OPTION>
+<option value="132">132</OPTION>
+<option value="133">133</OPTION>
+<option value="134">134</OPTION>
+<option value="135">135</OPTION>
+<option value="136">136</OPTION>
+<option value="137">137</OPTION>
+<option value="138">138</OPTION>
+<option value="139">139</OPTION>
+<option value="140">140</OPTION>
+<option value="141">141</OPTION>
+<option value="142">142</OPTION>
+<option value="143">143</OPTION>
+<option value="144">144</OPTION>
+<option value="145">145</OPTION>
+<option value="146">146</OPTION>
+<option value="147">147</OPTION>
+<option value="148">148</OPTION>
+<option value="149">149</OPTION>
+<option value="150">150</OPTION>
+<option value="151">151</OPTION>
+<option value="152">152</OPTION>
+<option value="153">153</OPTION>
+<option value="154">154</OPTION>
+<option value="155">155</OPTION>
+<option value="156">156</OPTION>
+<option value="157">157</OPTION>
+<option value="158">158</OPTION>
+<option value="159">159</OPTION>
+<option value="160">160</OPTION>
+<option value="161">161</OPTION>
+<option value="162">162</OPTION>
+<option value="163">163</OPTION>
+<option value="164">164</OPTION>
+<option value="165">165</OPTION>
+<option value="166">166</OPTION>
+<option value="167">167</OPTION>
+<option value="168">168</OPTION>
+<option value="169">169</OPTION>
+<option value="170">170</OPTION>
+<option value="171">171</OPTION>
+<option value="172">172</OPTION>
+<option value="173">173</OPTION>
+<option value="174">174</OPTION>
+<option value="175">175</OPTION>
+<option value="176">176</OPTION>
+<option value="177">177</OPTION>
+<option value="178">178</OPTION>
+<option value="179">179</OPTION>
+<option value="180">180</OPTION>
+<option value="181">>180</OPTION>
+</select>
+
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Have you ever been treated for or taken medication for high blood pressure?&nbsp;
+<select name="BloodPressureMedication" size="1">
+<option value="Y">Yes</OPTION>
+<option selected value="N">No</OPTION>
+</select>
+
+<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+If yes, when were you last treated for high blood pressure?&nbsp;
+<select name="PeriodBloodPressure" size= "1">
+<option value="0">6 months or less</option>
+<option value="1">1 year or less</option>
+<option value="2">2 years or less</option>
+<option value="3">3 years or less</option>
+<option value="4">4 years or less</option>
+<option value="5">5 years or less</option>
+<option value="6">7 years or less</option>
+<option value="7">10 years or less</option>
+<option value="8">15 years or less</option>
+<option value="9">more than 15 years</option>
+</select>
+
+<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+If currently taking blood pressure medication, how long has your blood pressure
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;been successfully controlled by medication?&nbsp;
+<select name="PeriodBloodPressureControlDuration" size="1">
+<option value="0">6 months or less</option>
+<option value="1">1 year or less</option>
+<option value="2">2 years or less</option>
+<option value="3">3 years or less</option>
+<option value="4">4 years or less</option>
+<option value="5">5 years or less</option>
+<option value="6">7 years or less</option>
+<option value="7">10 years or less</option>
+<option value="8">15 years or less</option>
+<option value="9">more than 15 years</option>
+</select>
+
+<br><br>
+
+</td>
+</tr>
+$/BloodPressureSegment$
+
+
+$CholesterolSegment$
+
+<tr class="default_sub_header_center_border">
+<td class="default_sub_header_center_border">Additional Cholesterol Questions</td>
+</tr>
+
+
+<input type="hidden" name="DoCholesterol" value="ON"> 
+<input type="hidden" name="CholesterolMedication" value="Y">
+
+<tr>
+<td class="gray_cell"> 
+
+<br>
+
+<p>&nbsp;<b>Cholesterol:</b>
+
+<br><br>
+
+<!-- If the user selects Don't Know (-1), then DoCholesterol gets set -->
+<!-- to OFF and the Cholesterol segment on the next page is not shown -->
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+What is your cholesterol level?&nbsp;
+<select name="CholesterolLevel" size="1">
+<option value="100">100</OPTION>
+<option value="101">101</OPTION>
+<option value="102">102</OPTION>
+<option value="103">103</OPTION>
+<option value="104">104</OPTION>
+<option value="105">105</OPTION>
+<option value="106">106</OPTION>
+<option value="107">107</OPTION>
+<option value="108">108</OPTION>
+<option value="109">109</OPTION>
+<option value="110">110</OPTION>
+<option value="111">111</OPTION>
+<option value="112">112</OPTION>
+<option value="113">113</OPTION>
+<option value="114">114</OPTION>
+<option value="115">115</OPTION>
+<option value="116">116</OPTION>
+<option value="117">117</OPTION>
+<option value="118">118</OPTION>
+<option value="119">119</OPTION>
+<option value="120">120</OPTION>
+<option value="121">121</OPTION>
+<option value="122">122</OPTION>
+<option value="123">123</OPTION>
+<option value="124">124</OPTION>
+<option value="125">125</OPTION>
+<option value="126">126</OPTION>
+<option value="127">127</OPTION>
+<option value="128">128</OPTION>
+<option value="129">129</OPTION>
+<option value="130">130</OPTION>
+<option value="131">131</OPTION>
+<option value="132">132</OPTION>
+<option value="133">133</OPTION>
+<option value="134">134</OPTION>
+<option value="135">135</OPTION>
+<option value="136">136</OPTION>
+<option value="137">137</OPTION>
+<option value="138">138</OPTION>
+<option value="139">139</OPTION>
+<option value="140">140</OPTION>
+<option value="141">141</OPTION>
+<option value="142">142</OPTION>
+<option value="143">143</OPTION>
+<option value="144">144</OPTION>
+<option value="145">145</OPTION>
+<option value="146">146</OPTION>
+<option value="147">147</OPTION>
+<option value="148">148</OPTION>
+<option value="149">149</OPTION>
+<option value="150">150</OPTION>
+<option value="151">151</OPTION>
+<option value="152">152</OPTION>
+<option value="153">153</OPTION>
+<option value="154">154</OPTION>
+<option value="155">155</OPTION>
+<option value="156">156</OPTION>
+<option value="157">157</OPTION>
+<option value="158">158</OPTION>
+<option value="159">159</OPTION>
+<option value="160">160</OPTION>
+<option value="161">161</OPTION>
+<option value="162">162</OPTION>
+<option value="163">163</OPTION>
+<option value="164">164</OPTION>
+<option value="165">165</OPTION>
+<option value="166">166</OPTION>
+<option value="167">167</OPTION>
+<option value="168">168</OPTION>
+<option value="169">169</OPTION>
+<option value="170">170</OPTION>
+<option value="171">171</OPTION>
+<option value="172">172</OPTION>
+<option value="173">173</OPTION>
+<option value="174">174</OPTION>
+<option value="175">175</OPTION>
+<option value="176">176</OPTION>
+<option value="177">177</OPTION>
+<option value="178">178</OPTION>
+<option value="179">179</OPTION>
+<option value="180">180</OPTION>
+<option value="181">181</OPTION>
+<option value="182">182</OPTION>
+<option value="183">183</OPTION>
+<option value="184">184</OPTION>
+<option value="185">185</OPTION>
+<option value="186">186</OPTION>
+<option value="187">187</OPTION>
+<option value="188">188</OPTION>
+<option value="189">189</OPTION>
+<option value="190">190</OPTION>
+<option value="191">191</OPTION>
+<option value="192">192</OPTION>
+<option value="193">193</OPTION>
+<option value="194">194</OPTION>
+<option value="195">195</OPTION>
+<option value="196">196</OPTION>
+<option value="197">197</OPTION>
+<option value="198">198</OPTION>
+<option value="199">199</OPTION>
+<option selected value="-1">Don't Know</OPTION>
+<option value="200">200</OPTION>
+<option value="201">201</OPTION>
+<option value="202">202</OPTION>
+<option value="203">203</OPTION>
+<option value="204">204</OPTION>
+<option value="205">205</OPTION>
+<option value="206">206</OPTION>
+<option value="207">207</OPTION>
+<option value="208">208</OPTION>
+<option value="209">209</OPTION>
+<option value="210">210</OPTION>
+<option value="211">211</OPTION>
+<option value="212">212</OPTION>
+<option value="213">213</OPTION>
+<option value="214">214</OPTION>
+<option value="215">215</OPTION>
+<option value="216">216</OPTION>
+<option value="217">217</OPTION>
+<option value="218">218</OPTION>
+<option value="219">219</OPTION>
+<option value="220">220</OPTION>
+<option value="221">221</OPTION>
+<option value="222">222</OPTION>
+<option value="223">223</OPTION>
+<option value="224">224</OPTION>
+<option value="225">225</OPTION>
+<option value="226">226</OPTION>
+<option value="227">227</OPTION>
+<option value="228">228</OPTION>
+<option value="229">229</OPTION>
+<option value="230">230</OPTION>
+<option value="231">231</OPTION>
+<option value="232">232</OPTION>
+<option value="233">233</OPTION>
+<option value="234">234</OPTION>
+<option value="235">235</OPTION>
+<option value="236">236</OPTION>
+<option value="237">237</OPTION>
+<option value="238">238</OPTION>
+<option value="239">239</OPTION>
+<option value="240">240</OPTION>
+<option value="241">241</OPTION>
+<option value="242">242</OPTION>
+<option value="243">243</OPTION>
+<option value="244">244</OPTION>
+<option value="245">245</OPTION>
+<option value="246">246</OPTION>
+<option value="247">247</OPTION>
+<option value="248">248</OPTION>
+<option value="249">249</OPTION>
+<option value="250">250</OPTION>
+<option value="251">251</OPTION>
+<option value="252">252</OPTION>
+<option value="253">253</OPTION>
+<option value="254">254</OPTION>
+<option value="255">255</OPTION>
+<option value="256">256</OPTION>
+<option value="257">257</OPTION>
+<option value="258">258</OPTION>
+<option value="259">259</OPTION>
+<option value="260">260</OPTION>
+<option value="261">261</OPTION>
+<option value="262">262</OPTION>
+<option value="263">263</OPTION>
+<option value="264">264</OPTION>
+<option value="265">265</OPTION>
+<option value="266">266</OPTION>
+<option value="267">267</OPTION>
+<option value="268">268</OPTION>
+<option value="269">269</OPTION>
+<option value="270">270</OPTION>
+<option value="271">271</OPTION>
+<option value="272">272</OPTION>
+<option value="273">273</OPTION>
+<option value="274">274</OPTION>
+<option value="275">275</OPTION>
+<option value="276">276</OPTION>
+<option value="277">277</OPTION>
+<option value="278">278</OPTION>
+<option value="279">279</OPTION>
+<option value="280">280</OPTION>
+<option value="281">281</OPTION>
+<option value="282">282</OPTION>
+<option value="283">283</OPTION>
+<option value="284">284</OPTION>
+<option value="285">285</OPTION>
+<option value="286">286</OPTION>
+<option value="287">287</OPTION>
+<option value="288">288</OPTION>
+<option value="289">289</OPTION>
+<option value="290">290</OPTION>
+<option value="291">291</OPTION>
+<option value="292">292</OPTION>
+<option value="293">293</OPTION>
+<option value="294">294</OPTION>
+<option value="295">295</OPTION>
+<option value="296">296</OPTION>
+<option value="297">297</OPTION>
+<option value="298">298</OPTION>
+<option value="299">299</OPTION>
+<option value="300">300</OPTION>
+</select>
+
+<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+What is your HDL ratio?&nbsp;
+<select name="HDLRatio" size="1">
+<option value="2.50">2.50</OPTION>
+<option value="2.60">2.60</OPTION>
+<option value="2.70">2.70</OPTION>
+<option value="2.80">2.80</OPTION>
+<option value="2.90">2.90</OPTION>
+<option value="3.00">3.00</OPTION>
+<option value="3.10">3.10</OPTION>
+<option value="3.20">3.20</OPTION>
+<option value="3.30">3.30</OPTION>
+<option value="3.40">3.40</OPTION>
+<option value="3.50">3.50</OPTION>
+<option value="3.60">3.60</OPTION>
+<option value="3.70">3.70</OPTION>
+<option value="3.80">3.80</OPTION>
+<option value="3.90">3.90</OPTION>
+<option value="4.00">4.00</OPTION>
+<option value="4.10">4.10</OPTION>
+<option value="4.20">4.20</OPTION>
+<option value="4.30">4.30</OPTION>
+<option value="4.40">4.40</OPTION>
+<option value="4.50">4.50</OPTION>
+<option value="4.60">4.60</OPTION>
+<option value="4.70">4.70</OPTION>
+<option value="4.80">4.80</OPTION>
+<option value="4.90">4.90</OPTION>
+<option selected value="-1">Don't Know</OPTION>
+<option value="5.00">5.00</OPTION>
+<option value="5.10">5.10</OPTION>
+<option value="5.20">5.20</OPTION>
+<option value="5.30">5.30</OPTION>
+<option value="5.40">5.40</OPTION>
+<option value="5.50">5.50</OPTION>
+<option value="5.60">5.60</OPTION>
+<option value="5.70">5.70</OPTION>
+<option value="5.80">5.80</OPTION>
+<option value="5.90">5.90</OPTION>
+<option value="6.00">6.00</OPTION>
+<option value="6.10">6.10</OPTION>
+<option value="6.20">6.20</OPTION>
+<option value="6.30">6.30</OPTION>
+<option value="6.40">6.40</OPTION>
+<option value="6.50">6.50</OPTION>
+<option value="6.60">6.60</OPTION>
+<option value="6.70">6.70</OPTION>
+<option value="6.80">6.80</OPTION>
+<option value="6.90">6.90</OPTION>
+<option value="7.00">7.00</OPTION>
+<option value="7.10">7.10</OPTION>
+<option value="7.20">7.20</OPTION>
+<option value="7.30">7.30</OPTION>
+<option value="7.40">7.40</OPTION>
+<option value="7.50">7.50</OPTION>
+<option value="7.60">7.60</OPTION>
+<option value="7.70">7.70</OPTION>
+<option value="7.80">7.80</OPTION>
+<option value="7.90">7.90</OPTION>
+<option value="8.00">8.00</OPTION>
+<option value="8.10">8.10</OPTION>
+<option value="8.20">8.20</OPTION>
+<option value="8.30">8.30</OPTION>
+<option value="8.40">8.40</OPTION>
+<option value="8.50">8.50</OPTION>
+<option value="8.60">8.60</OPTION>
+<option value="8.70">8.70</OPTION>
+<option value="8.80">8.80</OPTION>
+<option value="8.90">8.90</OPTION>
+<option value="9.00">9.00</OPTION>
+<option value="9.10">9.10</OPTION>
+<option value="9.20">9.20</OPTION>
+<option value="9.30">9.30</OPTION>
+<option value="9.40">9.40</OPTION>
+<option value="9.50">9.50</OPTION>
+<option value="9.60">9.60</OPTION>
+<option value="9.70">9.70</OPTION>
+<option value="9.80">9.80</OPTION>
+<option value="9.90">9.90</OPTION>
+<option value="10.00">10.00</OPTION>
+</select>
+
+<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When were you last treated for high cholesterol?&nbsp;
+<select name="PeriodCholesterol" size="1">
+<option value="0">6 months or less</option>
+<option value="1">1 year or less</option>
+<option value="2">2 years or less</option>
+<option value="3">3 years or less</option>
+<option value="4">4 years or less</option>
+<option value="5">5 years or less</option>
+<option value="6">7 years or less</option>
+<option value="7">10 years or less</option>
+<option value="8">15 years or less</option>
+<option value="9">more than 15 years</option>
+</select>
+
+<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+If currently taking cholesterol medication, how long has your cholesterol
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+been successfully controlled by medication?&nbsp;
+<select name="PeriodCholesterolControlDuration" size="1">
+<option value="0">6 months or less</option>
+<option value="1">1 year or less</option>
+<option value="2">2 years or less</option>
+<option value="3">3 years or less</option>
+<option value="4">4 years or less</option>
+<option value="5">5 years or less</option>
+<option value="6">7 years or less</option>
+<option value="7">10 years or less</option>
+<option value="8">15 years or less</option>
+<option value="9">more than 15 years</option>
+</select>
+
+<br><br>
+
+
+
+$/CholesterolSegment$
+
+</td>
+</tr>
+
+
+<br><br>
+
+
+<tr>
+<td class="default_header"> 
+<input type="submit" name="CqsComparison" value="Click Here"> to see your results
+ 
+ </tr>
+
+</table>
+
+
+
+<!-- Pass some hidden values onto the next page -->
+<input type="hidden" name="State" value="$origstate$">
+<input type="hidden" name="Birthday" value="$origday$">
+<input type="hidden" name="BirthMonth" value="$origmonth$">
+<input type="hidden" name="BirthYear" value="$origyear$">
+<input type="hidden" name="Health" value="$orighealth$">
+<input type="hidden" name="FaceAmount" value="$origface$">
+<input type="hidden" name="Sex" value="$origsex$">
+<input type="hidden" name="Smoker" value="$origsmoker$">
+<input type="hidden" name="Category" value="$origcat$">
+<input type="hidden" name="UserLocation" value="$userlocation$">
+<input type="hidden" name="TEMPLATEFILE" value="$templatefile$">
+<input type="hidden" name="HTEMPLATEFILE" value="$htemplatefile$">
+<input type="hidden" name="ZipCode" value="$zipcode$">
+<input type="hidden" name="SortOverride1" value="$origsortoverride1$">
+<input type="hidden" name="ModeUsed" value="$origmodeused$">
+<input type="hidden" name="GoColor" value="CCFFCC">
+<input type="hidden" name="NoGoColor" value="FFDDDD">
+<input type="hidden" name="DoNotKnowColor" value="">
+<input type="hidden" name="GoString" value="$origgostring$">
+<input type="hidden" name="NoGoString" value="$orignogostring$">
+<input type="hidden" name="DoNotKnowString" value="$origdonotknowstring$">
+<input type="hidden" name="SortByHealth" value="OFF">
+<input type="hidden" name="RejectReasonBr" value="OFF">
+<input type="hidden" name="GoMessage" value="indicates, based upon what you told Health Analyzer, that the premium is available">
+<input type="hidden" name="DoNotKnowMessage" value="indicates we no have enough information from the company to make a determination">
+<input type="hidden" name="NoRedX" value="ON">
+
+</form>
+
+</body>
+</html>

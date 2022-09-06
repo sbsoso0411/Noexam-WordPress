@@ -1,0 +1,38 @@
+{
+  "name": "basecrm/basecrm-php",
+  "description": "BaseCRM Official API V2 library client for PHP",
+  "homepage": "http://developers.getbase.com/",
+  "keywords": [
+    "base crm",
+    "http",
+    "api",
+    "v2",
+    "client",
+    "HTTP client"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "email": "developers@getbase.com",
+      "homepage": "https://github.com/basecrm/basecrm-php/graphs/contributors",
+      "name": "BaseCRM developers"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "BaseCRM\\": "lib/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "BaseCRM\\": "tests/"
+    }
+  },
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0"
+  },
+  "type": "library"
+}

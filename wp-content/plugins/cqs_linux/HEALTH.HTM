@@ -1,0 +1,1985 @@
+<html>
+<head>
+   <title>Health Analyzer Questionnaire - Part 2</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="description" content=" ">
+   <meta name="keywords" content=" ">   
+   <meta name="Author" content="COMPULIFE Software, Inc.">
+   <link href="../../css/styles_website.css" type="text/css" rel="stylesheet">
+   <!-- You can use the CONFIG.TXT in the USER folder to read the css value and 
+   permit changes for USERS to switch other css style sheets from their admin.html
+   page.  If that is your preference, you can use the following line instead of 
+   hard coding the css style sheet above. -->
+   <!-- <link href="../../css/$css$" type="text/css" rel="stylesheet"> -->
+</head>
+
+<body>
+
+<form action="cqsl.cgi" method="POST">
+
+<!-- uncomment out the next few lines if you want to show the personal info from the previous page -->
+<!-- <TABLE BORDER=0 WIDTH="100%"> -->
+<!-- <TR><TD WIDTH="15%"><DIV ALIGN=left>Name:</TD><TD WIDTH="85%">$origname$</TD> -->
+<!-- <TR><TD WIDTH="15%"><DIV ALIGN=left>Address:</TD><TD WIDTH="85%">$origaddress$</TD> -->
+<!-- <TR><TD WIDTH="15%"><DIV ALIGN=left>Phone Number:</TD><TD WIDTH="85%">$origphonenumber$</TD> -->
+<!-- </TABLE><P> -->
+
+
+<br><br>
+
+<table class="default_table" width="600" align="center">
+<tr class="default_header">
+<td class="default_header">Health Analyzer Questionnaire - Part 2</td>
+
+<input type="hidden" name="ErrorOnMissingPersonalInfo" value="$origerroronmissingpersonalinfo$">
+<input type="hidden" name="Name" value="$origname$">
+<input type="hidden" name="Address" value="$origaddress$">
+<input type="hidden" name="PhoneNumber" value="$origphonenumber$">
+<input type="hidden" name="MaxNumResults" value="$maxnumresults$">
+
+</tr>
+
+
+
+$SmokingTobaccoSegment$
+<!-- If all 5 sub smoking categories are not checked, then DoSmokingTobacco -->
+<!-- gets turned off and the smoking tobacco segment on the next page is -->
+<!-- not shown. -->
+
+<tr class="default_sub_header_center_border">
+<td class="default_sub_header_center_border">Additional Smoking/Tobacco Questions</td>
+</tr>
+
+<tr>
+<td class="gray_cell">
+
+
+<input type="hidden" name="DoSmokingTobacco" value="$origdosmokingtobacco$">
+
+
+$CigarettesSegment$
+
+
+ 
+
+<br>
+
+<p>&nbsp;<b>Cigarettes:</b>
+
+
+<input type="hidden" name="DoCigarettes" value="$origdocigarettes$"> 
+<P>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+How long has it been since you last smoked a cigarette?&nbsp;
+<select name="PeriodCigarettes" size="1">
+<option value="0">6 months or less</OPTION>
+<option value="1">1 year or less</OPTION>
+<option value="2">2 years or less</OPTION>
+<option value="3">3 years or less</OPTION>
+<option value="4">4 years or less</OPTION>
+<option value="5">5 years or less</OPTION>
+<option value="6">7 years or less</OPTION>
+<option value="7">10 years or less</OPTION>
+<option value="8">15 years or less</OPTION>
+<option value="9">more than 15 years</OPTION>
+</select>
+
+<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+On average, how many cigarettes per day do/did you smoke?&nbsp;
+<select name="NumCigarettes" size="1">
+<option value="1">1</OPTION>
+<option value="2">2</OPTION>
+<option value="3">3</OPTION>
+<option value="4">4</OPTION>
+<option value="5">5</OPTION>
+<option value="6">6</OPTION>
+<option value="7">7</OPTION>
+<option value="8">8</OPTION>
+<option value="9">9</OPTION>
+<option value="10">10</OPTION>
+<option value="11">11</OPTION>
+<option value="12">12</OPTION>
+<option value="13">13</OPTION>
+<option value="14">14</OPTION>
+<option value="15">15</OPTION>
+<option value="16">16</OPTION>
+<option value="17">17</OPTION>
+<option value="18">18</OPTION>
+<option value="19">19</OPTION>
+<option selected value="20">20</OPTION>
+<option value="21">21</OPTION>
+<option value="22">22</OPTION>
+<option value="23">23</OPTION>
+<option value="24">24</OPTION>
+<option value="25">25</OPTION>
+<option value="26">26</OPTION>
+<option value="27">27</OPTION>
+<option value="28">28</OPTION>
+<option value="29">29</OPTION>
+<option value="30">30</OPTION>
+<option value="31">31</OPTION>
+<option value="32">32</OPTION>
+<option value="33">33</OPTION>
+<option value="34">34</OPTION>
+<option value="35">35</OPTION>
+<option value="36">36</OPTION>
+<option value="37">37</OPTION>
+<option value="38">38</OPTION>
+<option value="39">39</OPTION>
+<option value="40">40</OPTION>
+<option value="41">41</OPTION>
+<option value="42">42</OPTION>
+<option value="43">43</OPTION>
+<option value="44">44</OPTION>
+<option value="45">45</OPTION>
+<option value="46">46</OPTION>
+<option value="47">47</OPTION>
+<option value="48">48</OPTION>
+<option value="49">49</OPTION>
+<option value="50">50</OPTION>
+<option value="51">51</OPTION>
+<option value="52">52</OPTION>
+<option value="53">53</OPTION>
+<option value="54">54</OPTION>
+<option value="55">55</OPTION>
+<option value="56">56</OPTION>
+<option value="57">57</OPTION>
+<option value="58">58</OPTION>
+<option value="59">59</OPTION>
+<option value="60">60</OPTION>
+<option value="61">61</OPTION>
+<option value="62">62</OPTION>
+<option value="63">63</OPTION>
+<option value="64">64</OPTION>
+<option value="65">65</OPTION>
+<option value="66">66</OPTION>
+<option value="67">67</OPTION>
+<option value="68">68</OPTION>
+<option value="69">69</OPTION>
+<option value="70">70</OPTION>
+<option value="71">71</OPTION>
+<option value="72">72</OPTION>
+<option value="73">73</OPTION>
+<option value="74">74</OPTION>
+<option value="75">75</OPTION>
+<option value="76">76</OPTION>
+<option value="77">77</OPTION>
+<option value="78">78</OPTION>
+<option value="79">79</OPTION>
+<option value="80">80</OPTION>
+<option value="81">81</OPTION>
+<option value="82">82</OPTION>
+<option value="83">83</OPTION>
+<option value="84">84</OPTION>
+<option value="85">85</OPTION>
+<option value="86">86</OPTION>
+<option value="87">87</OPTION>
+<option value="88">88</OPTION>
+<option value="89">89</OPTION>
+<option value="90">90</OPTION>
+<option value="91">91</OPTION>
+<option value="92">92</OPTION>
+<option value="93">93</OPTION>
+<option value="94">94</OPTION>
+<option value="95">95</OPTION>
+<option value="96">96</OPTION>
+<option value="97">97</OPTION>
+<option value="98">98</OPTION>
+<option value="99">99</OPTION>
+</select>
+
+<br><br>
+
+$/CigarettesSegment$
+
+ 
+$CigarsSegment$
+
+<p>&nbsp;<b>Cigars:</b>
+
+<input type="hidden" name="DoCigars" value="$origdocigars$">
+
+<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+How long has it been since you last smoked a cigar?&nbsp;
+<select name="PeriodCigars" size="1">
+<option value="0">6 months or less</OPTION>
+<option value="1">1 year or less</OPTION>
+<option value="2">2 years or less</OPTION>
+<option value="3">3 years or less</OPTION>
+<option value="4">4 years or less</OPTION>
+<option value="5">5 years or less</OPTION>
+<option value="6">7 years or less</OPTION>
+<option value="7">10 years or less</OPTION>
+<option value="8">15 years or less</OPTION>
+<option value="9">more than 15 years</OPTION>
+</select>
+
+<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+On average, how many cigars per month do/did you smoke?&nbsp;
+<select name="NumCigars" size="1">
+<option value="1">1</OPTION>
+<option value="2">2</OPTION>
+<option value="3">3</OPTION>
+<option value="4">4</OPTION>
+<option value="5">5</OPTION>
+<option value="6">6</OPTION>
+<option value="7">7</OPTION>
+<option value="8">8</OPTION>
+<option value="9">9</OPTION>
+<option value="10">10</OPTION>
+<option value="11">11</OPTION>
+<option value="12">12</OPTION>
+<option value="13">13</OPTION>
+<option value="14">14</OPTION>
+<option value="15">15</OPTION>
+<option value="16">16</OPTION>
+<option value="17">17</OPTION>
+<option value="18">18</OPTION>
+<option value="19">19</OPTION>
+<option value="20">20</OPTION>
+<option value="21">21</OPTION>
+<option value="22">22</OPTION>
+<option value="23">23</OPTION>
+<option value="24">24</OPTION>
+<option value="25">25</OPTION>
+<option value="26">26</OPTION>
+<option value="27">27</OPTION>
+<option value="28">28</OPTION>
+<option value="29">29</OPTION>
+<option value="30">30</OPTION>
+<option value="31">31</OPTION>
+<option value="32">32</OPTION>
+<option value="33">33</OPTION>
+<option value="34">34</OPTION>
+<option value="35">35</OPTION>
+<option value="36">36</OPTION>
+<option value="37">37</OPTION>
+<option value="38">38</OPTION>
+<option value="39">39</OPTION>
+<option value="40">40</OPTION>
+<option value="41">41</OPTION>
+<option value="42">42</OPTION>
+<option value="43">43</OPTION>
+<option value="44">44</OPTION>
+<option value="45">45</OPTION>
+<option value="46">46</OPTION>
+<option value="47">47</OPTION>
+<option value="48">48</OPTION>
+<option value="49">49</OPTION>
+<option value="50">50</OPTION>
+<option value="51">51</OPTION>
+<option value="52">52</OPTION>
+<option value="53">53</OPTION>
+<option value="54">54</OPTION>
+<option value="55">55</OPTION>
+<option value="56">56</OPTION>
+<option value="57">57</OPTION>
+<option value="58">58</OPTION>
+<option value="59">59</OPTION>
+<option value="60">60</OPTION>
+<option value="61">61</OPTION>
+<option value="62">62</OPTION>
+<option value="63">63</OPTION>
+<option value="64">64</OPTION>
+<option value="65">65</OPTION>
+<option value="66">66</OPTION>
+<option value="67">67</OPTION>
+<option value="68">68</OPTION>
+<option value="69">69</OPTION>
+<option value="70">70</OPTION>
+<option value="71">71</OPTION>
+<option value="72">72</OPTION>
+<option value="73">73</OPTION>
+<option value="74">74</OPTION>
+<option value="75">75</OPTION>
+<option value="76">76</OPTION>
+<option value="77">77</OPTION>
+<option value="78">78</OPTION>
+<option value="79">79</OPTION>
+<option value="80">80</OPTION>
+<option value="81">81</OPTION>
+<option value="82">82</OPTION>
+<option value="83">83</OPTION>
+<option value="84">84</OPTION>
+<option value="85">85</OPTION>
+<option value="86">86</OPTION>
+<option value="87">87</OPTION>
+<option value="88">88</OPTION>
+<option value="89">89</OPTION>
+<option value="90">90</OPTION>
+<option value="91">91</OPTION>
+<option value="92">92</OPTION>
+<option value="93">93</OPTION>
+<option value="94">94</OPTION>
+<option value="95">95</OPTION>
+<option value="96">96</OPTION>
+<option value="97">97</OPTION>
+<option value="98">98</OPTION>
+<option value="99">99</OPTION>
+</select>
+
+<br><br>
+
+$/CigarsSegment$
+
+
+$PipeSegment$
+
+<p>&nbsp;<b>Pipe:</b>
+
+<input type="hidden" name="DoPipe" value="$origdopipe$">
+
+<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+How long has it been since you last smoked a pipe?&nbsp;
+<select name="PeriodPipe" size="1">
+<option value="0">6 months or less</OPTION>
+<option value="1">1 year or less</OPTION>
+<option value="2">2 years or less</OPTION>
+<option value="3">3 years or less</OPTION>
+<option value="4">4 years or less</OPTION>
+<option value="5">5 years or less</OPTION>
+<option value="6">7 years or less</OPTION>
+<option value="7">10 years or less</OPTION>
+<option value="8">15 years or less</OPTION>
+<option value="9">more than 15 years</OPTION>
+</select>
+
+<br><br>
+
+$/PipeSegment$
+
+
+$ChewingTobaccoSegment$
+
+<p>&nbsp;<b>Chewing Tobacco:</b>
+
+<input type="hidden" name="DoChewingTobacco" value="$origdochewingtobacco$">
+
+<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+How long has it been since you last you last chewed tobacco?&nbsp;
+<select name="PeriodChewingTobacco" size="1">
+<option value="0">6 months or less</OPTION>
+<option value="1">1 year or less</OPTION>
+<option value="2">2 years or less</OPTION>
+<option value="3">3 years or less</OPTION>
+<option value="4">4 years or less</OPTION>
+<option value="5">5 years or less</OPTION>
+<option value="6">7 years or less</OPTION>
+<option value="7">10 years or less</OPTION>
+<option value="8">15 years or less</OPTION>
+<option value="9">more than 15 years</OPTION>
+</select>
+
+<br><br>
+
+$/ChewingTobaccoSegment$
+
+
+
+$NicotinePatchesOrGumSegment$
+
+<p>&nbsp;<b>Nicotine Patches or Gum:</b>
+
+<input type="hidden" name="DoNicotinePatchesOrGum" value="$origdonicotinepatchesorgum$">
+
+<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+How long has it been since you last used a nicotine patch or gum?&nbsp;
+<select name="PeriodNicotinePatchesOrGum" size="1">
+<option value="0">6 months or less</OPTION>
+<option value="1">1 year or less</OPTION>
+<option value="2">2 years or less</OPTION>
+<option value="3">3 years or less</OPTION>
+<option value="4">4 years or less</OPTION>
+<option value="5">5 years or less</OPTION>
+<option value="6">7 years or less</OPTION>
+<option value="7">10 years or less</OPTION>
+<option value="8">15 years or less</OPTION>
+<option value="9">more than 15 years</OPTION>
+</select>&nbsp;
+
+<br><br>
+
+
+$/NicotinePatchesOrGumSegment$
+
+</td>
+</tr>
+$/SmokingTobaccoSegment$
+
+
+
+
+$HeightWeightSegment$
+<!-- <tr class="default_sub_header_center_border">
+<td class="default_sub_header_center_border"> Additional Height/Weight Questions</td>
+</tr> -->
+
+
+<!-- <tr>
+<td class="gray_cell">  -->
+
+<input type="hidden" name="DoHeightWeight" value="$origdoheightweight$">
+<input type="hidden" name="Weight" value="$origweight$">
+<input type="hidden" name="Feet" value="$origfeet$">
+<input type="hidden" name="Inches" value="$originches$">
+
+<!-- </td>
+</tr> -->
+$/HeightWeightSegment$
+
+
+
+
+$BloodPressureSegment$
+<tr class="default_sub_header_center_border">
+<td class="default_sub_header_center_border"> Additional Blood Pressure Questions</td>
+</tr>
+
+<tr>
+<td class="gray_cell">
+
+<input type="hidden" name="DoBloodPressure" value="$origdobloodpressure$">
+<input type="hidden" name="Systolic" value="$origsystolic$">
+<input type="hidden" name="Dystolic" value="$origdystolic$">
+<input type="hidden" name="BloodPressureMedication" value="$origbloodpressuremedication$">
+<!-- <input type="hidden" name="PeriodBloodPressure" value="$origperiodbloodpressure$"> --> 
+
+<br>
+
+<p>&nbsp;<b>Blood Pressure:</b>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When were  you last treated for high blood pressure?&nbsp;
+<select name="PeriodBloodPressure" size="1">
+<option value="0">6 months or less</OPTION>
+<option value="1">1 year or less</OPTION>
+<option value="2">2 years or less</OPTION>
+<option value="3">3 years or less</OPTION>
+<option value="4">4 years or less</OPTION>
+<option value="5">5 years or less</OPTION>
+<option value="6">7 years or less</OPTION>
+<option value="7">10 years or less</OPTION>
+<option value="8">15 years or less</OPTION>
+<option value="9">more than 15 years</OPTION>
+</select>
+
+<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+If currently taking blood pressure medication, How long has your blood pressure
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+been successfully controlled by medication?&nbsp;
+<select name="PeriodBloodPressureControlDuration" size="1">
+<option value="0">6 months or less</OPTION>
+<option value="1">1 year or less</OPTION>
+<option value="2">2 years or less</OPTION>
+<option value="3">3 years or less</OPTION>
+<option value="4">4 years or less</OPTION>
+<option value="5">5 years or less</OPTION>
+<option value="6">7 years or less</OPTION>
+<option value="7">10 years or less</OPTION>
+<option value="8">15 years or less</OPTION>
+<option value="9">more than 15 years</OPTION>
+</select>
+
+<br><br>
+
+</td>
+</tr>
+$/BloodPressureSegment$
+
+
+
+$CholesterolSegment$
+
+<tr class="default_sub_header_center_border">
+<td class="default_sub_header_center_border">Additional Cholesterol Questions</td>
+</tr>
+
+
+<input type="hidden" name="DoCholesterol" value="$origdocholesterol$">
+<input type="hidden" name="CholesterolLevel" value="$origcholesterollevel$">
+<input type="hidden" name="HDLRatio" value="$orighdlratio$">
+<input type="hidden" name="CholesterolMedication" value="$origcholesterolmedication$">
+
+
+<tr>
+<td class="gray_cell"> 
+
+<br>
+
+<p>&nbsp;<b>Cholesterol:</b>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When were you last treated for high cholesterol?&nbsp;
+<select name="PeriodCholesterol" size="1">
+<option value="0">6 months or less</OPTION>
+<option value="1">1 year or less</OPTION>
+<option value="2">2 years or less</OPTION>
+<option value="3">3 years or less</OPTION>
+<option value="4">4 years or less</OPTION>
+<option value="5">5 years or less</OPTION>
+<option value="6">7 years or less</OPTION>
+<option value="7">10 years or less</OPTION>
+<option value="8">15 years or less</OPTION>
+<option value="9">more than 15 years</OPTION>
+</select><br>
+<P>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+If currently taking cholesterol medication, How long has your cholesterol
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+been successfully controlled by medication?&nbsp;
+<select name="PeriodCholesterolControlDuration" size="1">
+<option value="0">6 months or less</OPTION>
+<option value="1">1 year or less</OPTION>
+<option value="2">2 years or less</OPTION>
+<option value="3">3 years or less</OPTION>
+<option value="4">4 years or less</OPTION>
+<option value="5">5 years or less</OPTION>
+<option value="6">7 years or less</OPTION>
+<option value="7">10 years or less</OPTION>
+<option value="8">15 years or less</OPTION>
+<option value="9">more than 15 years</OPTION>
+</select>
+
+<br><br>
+
+</td>
+</tr>
+$/CholesterolSegment$
+
+
+
+
+
+$DrivingSegment$
+
+<tr class="default_sub_header_center_border">
+<td class="default_sub_header_center_border">Additional Driving Questions</td>
+</tr>
+
+<tr>
+<td class="gray_cell"> 
+
+<input type="hidden" name="DoDriving" value="$origdodriving$">
+<input type="hidden" name="HadDriversLicense" value="$orighaddriverslicense$">
+<input type="hidden" name="MovingViolations0" value="$origmovingviolations0$">
+<input type="hidden" name="MovingViolations1" value="$origmovingviolations1$">
+<input type="hidden" name="MovingViolations2" value="$origmovingviolations2$">
+<input type="hidden" name="MovingViolations3" value="$origmovingviolations3$">
+<input type="hidden" name="MovingViolations4" value="$origmovingviolations4$">
+<input type="hidden" name="RecklessConviction" value="$origrecklessconviction$">
+<input type="hidden" name="DwiConviction" value="$origdwiconviction$">
+<input type="hidden" name="SuspendedConviction" value="$origsuspendedconviction$">
+<input type="hidden" name="MoreThanOneAccident" value="$origmorethanoneaccident$">
+
+
+$RecklessConvictionSegment$
+
+<br>
+
+<p>&nbsp;<b>Reckless Driving:</b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;How long since the most recent conviction<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+for reckless driving?&nbsp;
+<select name="PeriodRecklessConviction" size="1">
+<option value="0">6 months or less</OPTION>
+<option value="1">1 year or less</OPTION>
+<option value="2">2 years or less</OPTION>
+<option value="3">3 years or less</OPTION>
+<option value="4">4 years or less</OPTION>
+<option value="5">5 years or less</OPTION>
+<option value="6">7 years or less</OPTION>
+<option value="7">10 years or less</OPTION>
+<option value="8">15 years or less</OPTION>
+<option value="9">more than 15 years</OPTION>
+</select>
+
+<br><br>
+$/RecklessConvictionSegment$
+
+
+$DwiConvictionSegment$
+<p>&nbsp;<b>Drunken Driving:</b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;How long since the most recent conviction<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ for drunken driving (DUI/DWI)?&nbsp;
+<select name="PeriodDwiConviction" size="1">
+<option value="0">6 months or less</OPTION>
+<option value="1">1 year or less</OPTION>
+<option value="2">2 years or less</OPTION>
+<option value="3">3 years or less</OPTION>
+<option value="4">4 years or less</OPTION>
+<option value="5">5 years or less</OPTION>
+<option value="6">7 years or less</OPTION>
+<option value="7">10 years or less</OPTION>
+<option value="8">15 years or less</OPTION>
+<option value="9">more than 15 years</OPTION>
+</select>
+
+<br><br>
+$/DwiConvictionSegment$
+
+ 
+$SuspendedConvictionSegment$
+<p>&nbsp;<b>Revoked or Suspended license:</b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;How long since the most recent conviction resulting in a <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+revoked or suspended license?&nbsp;
+<select name="PeriodSuspendedConviction" size="1">
+<option value="0">6 months or less</OPTION>
+<option value="1">1 year or less</OPTION>
+<option value="2">2 years or less</OPTION>
+<option value="3">3 years or less</OPTION>
+<option value="4">4 years or less</OPTION>
+<option value="5">5 years or less</OPTION>
+<option value="6">7 years or less</OPTION>
+<option value="7">10 years or less</OPTION>
+<option value="8">15 years or less</OPTION>
+<option value="9">more than 15 years</OPTION>
+</select><P>
+$/SuspendedConvictionSegment$
+
+
+
+$MoreThanOneAccidentSegment$
+<p>&nbsp;<b>More than One Accident:</b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Not counting your last accident, how long has it been since  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+the accident which preceeded your last?&nbsp;
+<select name="PeriodMoreThanOneAccident" size="1">
+<option value="0">6 months or less</OPTION>
+<option value="1">1 year or less</OPTION>
+<option value="2">2 years or less</OPTION>
+<option value="3">3 years or less</OPTION>
+<option value="4">4 years or less</OPTION>
+<option value="5">5 years or less</OPTION>
+<option value="6">7 years or less</OPTION>
+<option value="7">10 years or less</OPTION>
+<option value="8">15 years or less</OPTION>
+<option value="9">more than 15 years</OPTION>
+</select><P>
+$/MoreThanOneAccidentSegment$
+
+$/DrivingSegment$
+</td>
+</tr>
+
+
+
+
+$FamilySegment$
+
+<tr class="default_sub_header_center_border">
+<td class="default_sub_header_center_border">Additional Family Questions</td>
+</tr>
+
+<tr>
+<td class="gray_cell"> 
+
+<input type="hidden" name="DoFamily" value="$origdofamily$">
+<input type="hidden" name="NumDeaths" value="$orignumdeaths$">
+<input type="hidden" name="NumContracted" value="$orignumcontracted$">
+
+
+$YoungestDeathSegment1$
+
+<br>
+
+<p>&nbsp;<b>Youngest Family Death Due to Disease (Father, mother, brother or sister)</b>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please indicate the age of the youngest family member<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;who died due the named illnesses which follow&nbsp;
+<select name="AgeDied00" size="1">
+<option value="0">0</OPTION>
+<option value="1">1</OPTION>
+<option value="2">2</OPTION>
+<option value="3">3</OPTION>
+<option value="4">4</OPTION>
+<option value="5">5</OPTION>
+<option value="6">6</OPTION>
+<option value="7">7</OPTION>
+<option value="8">8</OPTION>
+<option value="9">9</OPTION>
+<option value="10">10</OPTION>
+<option value="11">11</OPTION>
+<option value="12">12</OPTION>
+<option value="13">13</OPTION>
+<option value="14">14</OPTION>
+<option value="15">15</OPTION>
+<option value="16">16</OPTION>
+<option value="17">17</OPTION>
+<option value="18">18</OPTION>
+<option value="19">19</OPTION>
+<option value="20">20</OPTION>
+<option value="21">21</OPTION>
+<option value="22">22</OPTION>
+<option value="23">23</OPTION>
+<option value="24">24</OPTION>
+<option value="25">25</OPTION>
+<option value="26">26</OPTION>
+<option value="27">27</OPTION>
+<option value="28">28</OPTION>
+<option value="29">29</OPTION>
+<option value="30">30</OPTION>
+<option value="31">31</OPTION>
+<option value="32">32</OPTION>
+<option value="33">33</OPTION>
+<option value="34">34</OPTION>
+<option value="35">35</OPTION>
+<option value="36">36</OPTION>
+<option value="37">37</OPTION>
+<option value="38">38</OPTION>
+<option value="39">39</OPTION>
+<option value="40">40</OPTION>
+<option value="41">41</OPTION>
+<option value="42">42</OPTION>
+<option value="43">43</OPTION>
+<option value="44">44</OPTION>
+<option value="45">45</OPTION>
+<option value="46">46</OPTION>
+<option value="47">47</OPTION>
+<option value="48">48</OPTION>
+<option value="49">49</OPTION>
+<option value="50">50</OPTION>
+<option value="51">51</OPTION>
+<option value="52">52</OPTION>
+<option value="53">53</OPTION>
+<option value="54">54</OPTION>
+<option value="55">55</OPTION>
+<option value="56">56</OPTION>
+<option value="57">57</OPTION>
+<option value="58">58</OPTION>
+<option value="59">59</OPTION>
+<option value="60">60</OPTION>
+<option value="61">61</OPTION>
+<option value="62">62</OPTION>
+<option value="63">63</OPTION>
+<option value="64">64</OPTION>
+<option value="65">65</OPTION>
+<option value="66">66</OPTION>
+<option value="67">67</OPTION>
+<option value="68">68</OPTION>
+<option value="69">69</OPTION>
+<option selected value="70">70</OPTION>
+<option value="71">71</OPTION>
+<option value="72">72</OPTION>
+<option value="73">73</OPTION>
+<option value="74">74</OPTION>
+<option value="75">75</OPTION>
+<option value="76">76</OPTION>
+<option value="77">77</OPTION>
+<option value="78">78</OPTION>
+<option value="79">79</OPTION>
+<option value="80">80</OPTION>
+<option value="81">81</OPTION>
+<option value="82">82</OPTION>
+<option value="83">83</OPTION>
+<option value="84">84</OPTION>
+<option value="85">85</OPTION>
+<option value="86">86</OPTION>
+<option value="87">87</OPTION>
+<option value="88">88</OPTION>
+<option value="89">89</OPTION>
+<option value="90">90</OPTION>
+<option value="91">91</OPTION>
+<option value="92">92</OPTION>
+<option value="93">93</OPTION>
+<option value="94">94</OPTION>
+<option value="95">95</OPTION>
+<option value="96">96</OPTION>
+<option value="97">97</OPTION>
+<option value="98">98</OPTION>
+<option value="99">99</OPTION>
+</select>&nbsp;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please indicate the age when this person first contracted any of the named illnesses&nbsp;
+<select name="AgeContracted00" size="1">
+<option value="0">0</OPTION>
+<option value="1">1</OPTION>
+<option value="2">2</OPTION>
+<option value="3">3</OPTION>
+<option value="4">4</OPTION>
+<option value="5">5</OPTION>
+<option value="6">6</OPTION>
+<option value="7">7</OPTION>
+<option value="8">8</OPTION>
+<option value="9">9</OPTION>
+<option value="10">10</OPTION>
+<option value="11">11</OPTION>
+<option value="12">12</OPTION>
+<option value="13">13</OPTION>
+<option value="14">14</OPTION>
+<option value="15">15</OPTION>
+<option value="16">16</OPTION>
+<option value="17">17</OPTION>
+<option value="18">18</OPTION>
+<option value="19">19</OPTION>
+<option value="20">20</OPTION>
+<option value="21">21</OPTION>
+<option value="22">22</OPTION>
+<option value="23">23</OPTION>
+<option value="24">24</OPTION>
+<option value="25">25</OPTION>
+<option value="26">26</OPTION>
+<option value="27">27</OPTION>
+<option value="28">28</OPTION>
+<option value="29">29</OPTION>
+<option value="30">30</OPTION>
+<option value="31">31</OPTION>
+<option value="32">32</OPTION>
+<option value="33">33</OPTION>
+<option value="34">34</OPTION>
+<option value="35">35</OPTION>
+<option value="36">36</OPTION>
+<option value="37">37</OPTION>
+<option value="38">38</OPTION>
+<option value="39">39</OPTION>
+<option value="40">40</OPTION>
+<option value="41">41</OPTION>
+<option value="42">42</OPTION>
+<option value="43">43</OPTION>
+<option value="44">44</OPTION>
+<option value="45">45</OPTION>
+<option value="46">46</OPTION>
+<option value="47">47</OPTION>
+<option value="48">48</OPTION>
+<option value="49">49</OPTION>
+<option value="50">50</OPTION>
+<option value="51">51</OPTION>
+<option value="52">52</OPTION>
+<option value="53">53</OPTION>
+<option value="54">54</OPTION>
+<option value="55">55</OPTION>
+<option value="56">56</OPTION>
+<option value="57">57</OPTION>
+<option value="58">58</OPTION>
+<option value="59">59</OPTION>
+<option value="60">60</OPTION>
+<option value="61">61</OPTION>
+<option value="62">62</OPTION>
+<option value="63">63</OPTION>
+<option value="64">64</OPTION>
+<option value="65">65</OPTION>
+<option value="66">66</OPTION>
+<option value="67">67</OPTION>
+<option value="68">68</OPTION>
+<option value="69">69</OPTION>
+<option selected value="70">70</OPTION>
+<option value="71">71</OPTION>
+<option value="72">72</OPTION>
+<option value="73">73</OPTION>
+<option value="74">74</OPTION>
+<option value="75">75</OPTION>
+<option value="76">76</OPTION>
+<option value="77">77</OPTION>
+<option value="78">78</OPTION>
+<option value="79">79</OPTION>
+<option value="80">80</OPTION>
+<option value="81">81</OPTION>
+<option value="82">82</OPTION>
+<option value="83">83</OPTION>
+<option value="84">84</OPTION>
+<option value="85">85</OPTION>
+<option value="86">86</OPTION>
+<option value="87">87</OPTION>
+<option value="88">88</OPTION>
+<option value="89">89</OPTION>
+<option value="90">90</OPTION>
+<option value="91">91</OPTION>
+<option value="92">92</OPTION>
+<option value="93">93</OPTION>
+<option value="94">94</OPTION>
+<option value="95">95</OPTION>
+<option value="96">96</OPTION>
+<option value="97">97</OPTION>
+<option value="98">98</OPTION>
+<option value="99">99</OPTION>
+</select>&nbsp;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Was this person a parent&nbsp;
+<select name="IsParent00" size="1">
+<option value="Y">Yes</OPTION>
+<option selected value="N">No</OPTION>
+</select><P>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please check off any and all illnesses which this family member experienced:<br>
+<table width=100% border=0>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="CVD00" value="Y"> Cardiovascular Disease CVD</td>
+<td align="left" width="40%"><p><input type="checkbox" name="ColonCancer00" value="Y"> colon cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="CAD00" value="Y"> Coronary Artery Disease CAD (or Heart attack)</td>
+<td align="left" width="40%"><p><input type="checkbox" name="IntestinalCancer00" value="Y"> intestinal cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="CVI00" value="Y"> Cardiovascular Impairments</td>
+<td align="left" width="40%"><p><input type="checkbox" name="BreastCancer00" value="Y"> breast cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="CVA00" value="Y"> Cerebrovascular Disease CVA (or Stroke)</td>
+<td align="left" width="40%"><p><input type="checkbox" name="ProstateCancer00" value="Y"> prostate cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="Diabetes00" value="Y"> Diabetes</td>
+<td align="left" width="40%"><p><input type="checkbox" name="OvarianCancer00" value="Y"> ovarian cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="KidneyDisease00" value="Y"> Kidney Disease</td>
+<td align="left" width="40%"><p><input type="checkbox" name="OtherInternalCancer00" value="Y"> other internal cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;</td>
+<td align="left" width="40%"><p><input type="checkbox" name="MalignantMelanoma00" value="Y"> malignant melanoma</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;</td>
+<td align="left" width="40%"><p><input type="checkbox" name="BasalCellCarcinoma00" value="Y"> basal cell carcinoma</td></tr>
+</table>
+<P>
+
+$/YoungestDeathSegment1$
+
+
+
+$YoungestDeathSegment2$
+
+<br>
+
+&nbsp;<b>2nd Youngest Family Death Due to Disease (Father, mother, brother or sister)</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please indicate the age of the youngest family member<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;who died due the named illnesses which follow&nbsp;
+<select name="AgeDied01" size="1">
+<option value="0">0</OPTION>
+<option value="1">1</OPTION>
+<option value="2">2</OPTION>
+<option value="3">3</OPTION>
+<option value="4">4</OPTION>
+<option value="5">5</OPTION>
+<option value="6">6</OPTION>
+<option value="7">7</OPTION>
+<option value="8">8</OPTION>
+<option value="9">9</OPTION>
+<option value="10">10</OPTION>
+<option value="11">11</OPTION>
+<option value="12">12</OPTION>
+<option value="13">13</OPTION>
+<option value="14">14</OPTION>
+<option value="15">15</OPTION>
+<option value="16">16</OPTION>
+<option value="17">17</OPTION>
+<option value="18">18</OPTION>
+<option value="19">19</OPTION>
+<option value="20">20</OPTION>
+<option value="21">21</OPTION>
+<option value="22">22</OPTION>
+<option value="23">23</OPTION>
+<option value="24">24</OPTION>
+<option value="25">25</OPTION>
+<option value="26">26</OPTION>
+<option value="27">27</OPTION>
+<option value="28">28</OPTION>
+<option value="29">29</OPTION>
+<option value="30">30</OPTION>
+<option value="31">31</OPTION>
+<option value="32">32</OPTION>
+<option value="33">33</OPTION>
+<option value="34">34</OPTION>
+<option value="35">35</OPTION>
+<option value="36">36</OPTION>
+<option value="37">37</OPTION>
+<option value="38">38</OPTION>
+<option value="39">39</OPTION>
+<option value="40">40</OPTION>
+<option value="41">41</OPTION>
+<option value="42">42</OPTION>
+<option value="43">43</OPTION>
+<option value="44">44</OPTION>
+<option value="45">45</OPTION>
+<option value="46">46</OPTION>
+<option value="47">47</OPTION>
+<option value="48">48</OPTION>
+<option value="49">49</OPTION>
+<option value="50">50</OPTION>
+<option value="51">51</OPTION>
+<option value="52">52</OPTION>
+<option value="53">53</OPTION>
+<option value="54">54</OPTION>
+<option value="55">55</OPTION>
+<option value="56">56</OPTION>
+<option value="57">57</OPTION>
+<option value="58">58</OPTION>
+<option value="59">59</OPTION>
+<option value="60">60</OPTION>
+<option value="61">61</OPTION>
+<option value="62">62</OPTION>
+<option value="63">63</OPTION>
+<option value="64">64</OPTION>
+<option value="65">65</OPTION>
+<option value="66">66</OPTION>
+<option value="67">67</OPTION>
+<option value="68">68</OPTION>
+<option value="69">69</OPTION>
+<option selected value="70">70</OPTION>
+<option value="71">71</OPTION>
+<option value="72">72</OPTION>
+<option value="73">73</OPTION>
+<option value="74">74</OPTION>
+<option value="75">75</OPTION>
+<option value="76">76</OPTION>
+<option value="77">77</OPTION>
+<option value="78">78</OPTION>
+<option value="79">79</OPTION>
+<option value="80">80</OPTION>
+<option value="81">81</OPTION>
+<option value="82">82</OPTION>
+<option value="83">83</OPTION>
+<option value="84">84</OPTION>
+<option value="85">85</OPTION>
+<option value="86">86</OPTION>
+<option value="87">87</OPTION>
+<option value="88">88</OPTION>
+<option value="89">89</OPTION>
+<option value="90">90</OPTION>
+<option value="91">91</OPTION>
+<option value="92">92</OPTION>
+<option value="93">93</OPTION>
+<option value="94">94</OPTION>
+<option value="95">95</OPTION>
+<option value="96">96</OPTION>
+<option value="97">97</OPTION>
+<option value="98">98</OPTION>
+<option value="99">99</OPTION>
+</select>&nbsp;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please indicate the age when this person first contracted any of the named illnesses&nbsp;
+<select name="AgeContracted01" size="1">
+<option value="0">0</OPTION>
+<option value="1">1</OPTION>
+<option value="2">2</OPTION>
+<option value="3">3</OPTION>
+<option value="4">4</OPTION>
+<option value="5">5</OPTION>
+<option value="6">6</OPTION>
+<option value="7">7</OPTION>
+<option value="8">8</OPTION>
+<option value="9">9</OPTION>
+<option value="10">10</OPTION>
+<option value="11">11</OPTION>
+<option value="12">12</OPTION>
+<option value="13">13</OPTION>
+<option value="14">14</OPTION>
+<option value="15">15</OPTION>
+<option value="16">16</OPTION>
+<option value="17">17</OPTION>
+<option value="18">18</OPTION>
+<option value="19">19</OPTION>
+<option value="20">20</OPTION>
+<option value="21">21</OPTION>
+<option value="22">22</OPTION>
+<option value="23">23</OPTION>
+<option value="24">24</OPTION>
+<option value="25">25</OPTION>
+<option value="26">26</OPTION>
+<option value="27">27</OPTION>
+<option value="28">28</OPTION>
+<option value="29">29</OPTION>
+<option value="30">30</OPTION>
+<option value="31">31</OPTION>
+<option value="32">32</OPTION>
+<option value="33">33</OPTION>
+<option value="34">34</OPTION>
+<option value="35">35</OPTION>
+<option value="36">36</OPTION>
+<option value="37">37</OPTION>
+<option value="38">38</OPTION>
+<option value="39">39</OPTION>
+<option value="40">40</OPTION>
+<option value="41">41</OPTION>
+<option value="42">42</OPTION>
+<option value="43">43</OPTION>
+<option value="44">44</OPTION>
+<option value="45">45</OPTION>
+<option value="46">46</OPTION>
+<option value="47">47</OPTION>
+<option value="48">48</OPTION>
+<option value="49">49</OPTION>
+<option value="50">50</OPTION>
+<option value="51">51</OPTION>
+<option value="52">52</OPTION>
+<option value="53">53</OPTION>
+<option value="54">54</OPTION>
+<option value="55">55</OPTION>
+<option value="56">56</OPTION>
+<option value="57">57</OPTION>
+<option value="58">58</OPTION>
+<option value="59">59</OPTION>
+<option value="60">60</OPTION>
+<option value="61">61</OPTION>
+<option value="62">62</OPTION>
+<option value="63">63</OPTION>
+<option value="64">64</OPTION>
+<option value="65">65</OPTION>
+<option value="66">66</OPTION>
+<option value="67">67</OPTION>
+<option value="68">68</OPTION>
+<option value="69">69</OPTION>
+<option selected value="70">70</OPTION>
+<option value="71">71</OPTION>
+<option value="72">72</OPTION>
+<option value="73">73</OPTION>
+<option value="74">74</OPTION>
+<option value="75">75</OPTION>
+<option value="76">76</OPTION>
+<option value="77">77</OPTION>
+<option value="78">78</OPTION>
+<option value="79">79</OPTION>
+<option value="80">80</OPTION>
+<option value="81">81</OPTION>
+<option value="82">82</OPTION>
+<option value="83">83</OPTION>
+<option value="84">84</OPTION>
+<option value="85">85</OPTION>
+<option value="86">86</OPTION>
+<option value="87">87</OPTION>
+<option value="88">88</OPTION>
+<option value="89">89</OPTION>
+<option value="90">90</OPTION>
+<option value="91">91</OPTION>
+<option value="92">92</OPTION>
+<option value="93">93</OPTION>
+<option value="94">94</OPTION>
+<option value="95">95</OPTION>
+<option value="96">96</OPTION>
+<option value="97">97</OPTION>
+<option value="98">98</OPTION>
+<option value="99">99</OPTION>
+</select>&nbsp;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Was this person a parent&nbsp;
+<select name="IsParent01" size="1">
+<option value="Y">Yes</OPTION>
+<option selected value="N">No</OPTION>
+</select><P>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please check off any and all illnesses which this family member experienced:<br>
+<table width=100% border=0>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="CVD01" value="Y"> Cardiovascular Disease CVD</td>
+<td align="left" width="40%"><p><input type="checkbox" name="ColonCancer01" value="Y"> colon cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="CAD01" value="Y"> Coronary Artery Disease CAD (or Heart attack)</td>
+<td align="left" width="40%"><p><input type="checkbox" name="IntestinalCancer01" value="Y"> intestinal cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="CVI01" value="Y"> Cardiovascular Impairments</td>
+<td align="left" width="40%"><p><input type="checkbox" name="BreastCancer01" value="Y"> breast cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="CVA01" value="Y"> Cerebrovascular Disease CVA (or Stroke)</td>
+<td align="left" width="40%"><p><input type="checkbox" name="ProstateCancer01" value="Y"> prostate cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="Diabetes01" value="Y"> Diabetes</td>
+<td align="left" width="40%"><p><input type="checkbox" name="OvarianCancer01" value="Y"> ovarian cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="KidneyDisease01" value="Y"> Kidney Disease</td>
+<td align="left" width="40%"><p><input type="checkbox" name="OtherInternalCancer01" value="Y"> other internal cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;</td>
+<td align="left" width="40%"><p><input type="checkbox" name="MalignantMelanoma01" value="Y"> malignant melanoma</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;</td>
+<td align="left" width="40%"><p><input type="checkbox" name="BasalCellCarcinoma01" value="Y"> basal cell carcinoma</td></tr>
+</table>
+
+<P>
+
+$/YoungestDeathSegment2$
+
+
+ 
+$YoungestDeathSegment3$
+
+<br>
+
+&nbsp;<b>3rd Youngest Family Death Due to Disease (Father, mother, brother or sister)</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please indicate the age of the youngest family member<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;who died due the named illnesses which follow&nbsp;
+<select name="AgeDied02" size="1">
+<option value="0">0</OPTION>
+<option value="1">1</OPTION>
+<option value="2">2</OPTION>
+<option value="3">3</OPTION>
+<option value="4">4</OPTION>
+<option value="5">5</OPTION>
+<option value="6">6</OPTION>
+<option value="7">7</OPTION>
+<option value="8">8</OPTION>
+<option value="9">9</OPTION>
+<option value="10">10</OPTION>
+<option value="11">11</OPTION>
+<option value="12">12</OPTION>
+<option value="13">13</OPTION>
+<option value="14">14</OPTION>
+<option value="15">15</OPTION>
+<option value="16">16</OPTION>
+<option value="17">17</OPTION>
+<option value="18">18</OPTION>
+<option value="19">19</OPTION>
+<option value="20">20</OPTION>
+<option value="21">21</OPTION>
+<option value="22">22</OPTION>
+<option value="23">23</OPTION>
+<option value="24">24</OPTION>
+<option value="25">25</OPTION>
+<option value="26">26</OPTION>
+<option value="27">27</OPTION>
+<option value="28">28</OPTION>
+<option value="29">29</OPTION>
+<option value="30">30</OPTION>
+<option value="31">31</OPTION>
+<option value="32">32</OPTION>
+<option value="33">33</OPTION>
+<option value="34">34</OPTION>
+<option value="35">35</OPTION>
+<option value="36">36</OPTION>
+<option value="37">37</OPTION>
+<option value="38">38</OPTION>
+<option value="39">39</OPTION>
+<option value="40">40</OPTION>
+<option value="41">41</OPTION>
+<option value="42">42</OPTION>
+<option value="43">43</OPTION>
+<option value="44">44</OPTION>
+<option value="45">45</OPTION>
+<option value="46">46</OPTION>
+<option value="47">47</OPTION>
+<option value="48">48</OPTION>
+<option value="49">49</OPTION>
+<option value="50">50</OPTION>
+<option value="51">51</OPTION>
+<option value="52">52</OPTION>
+<option value="53">53</OPTION>
+<option value="54">54</OPTION>
+<option value="55">55</OPTION>
+<option value="56">56</OPTION>
+<option value="57">57</OPTION>
+<option value="58">58</OPTION>
+<option value="59">59</OPTION>
+<option value="60">60</OPTION>
+<option value="61">61</OPTION>
+<option value="62">62</OPTION>
+<option value="63">63</OPTION>
+<option value="64">64</OPTION>
+<option value="65">65</OPTION>
+<option value="66">66</OPTION>
+<option value="67">67</OPTION>
+<option value="68">68</OPTION>
+<option value="69">69</OPTION>
+<option selected value="70">70</OPTION>
+<option value="71">71</OPTION>
+<option value="72">72</OPTION>
+<option value="73">73</OPTION>
+<option value="74">74</OPTION>
+<option value="75">75</OPTION>
+<option value="76">76</OPTION>
+<option value="77">77</OPTION>
+<option value="78">78</OPTION>
+<option value="79">79</OPTION>
+<option value="80">80</OPTION>
+<option value="81">81</OPTION>
+<option value="82">82</OPTION>
+<option value="83">83</OPTION>
+<option value="84">84</OPTION>
+<option value="85">85</OPTION>
+<option value="86">86</OPTION>
+<option value="87">87</OPTION>
+<option value="88">88</OPTION>
+<option value="89">89</OPTION>
+<option value="90">90</OPTION>
+<option value="91">91</OPTION>
+<option value="92">92</OPTION>
+<option value="93">93</OPTION>
+<option value="94">94</OPTION>
+<option value="95">95</OPTION>
+<option value="96">96</OPTION>
+<option value="97">97</OPTION>
+<option value="98">98</OPTION>
+<option value="99">99</OPTION>
+</select>&nbsp;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please indicate the age when this person first contracted any of the named illnesses&nbsp;
+<select name="AgeContracted02" size="1">
+<option value="0">0</OPTION>
+<option value="1">1</OPTION>
+<option value="2">2</OPTION>
+<option value="3">3</OPTION>
+<option value="4">4</OPTION>
+<option value="5">5</OPTION>
+<option value="6">6</OPTION>
+<option value="7">7</OPTION>
+<option value="8">8</OPTION>
+<option value="9">9</OPTION>
+<option value="10">10</OPTION>
+<option value="11">11</OPTION>
+<option value="12">12</OPTION>
+<option value="13">13</OPTION>
+<option value="14">14</OPTION>
+<option value="15">15</OPTION>
+<option value="16">16</OPTION>
+<option value="17">17</OPTION>
+<option value="18">18</OPTION>
+<option value="19">19</OPTION>
+<option value="20">20</OPTION>
+<option value="21">21</OPTION>
+<option value="22">22</OPTION>
+<option value="23">23</OPTION>
+<option value="24">24</OPTION>
+<option value="25">25</OPTION>
+<option value="26">26</OPTION>
+<option value="27">27</OPTION>
+<option value="28">28</OPTION>
+<option value="29">29</OPTION>
+<option value="30">30</OPTION>
+<option value="31">31</OPTION>
+<option value="32">32</OPTION>
+<option value="33">33</OPTION>
+<option value="34">34</OPTION>
+<option value="35">35</OPTION>
+<option value="36">36</OPTION>
+<option value="37">37</OPTION>
+<option value="38">38</OPTION>
+<option value="39">39</OPTION>
+<option value="40">40</OPTION>
+<option value="41">41</OPTION>
+<option value="42">42</OPTION>
+<option value="43">43</OPTION>
+<option value="44">44</OPTION>
+<option value="45">45</OPTION>
+<option value="46">46</OPTION>
+<option value="47">47</OPTION>
+<option value="48">48</OPTION>
+<option value="49">49</OPTION>
+<option value="50">50</OPTION>
+<option value="51">51</OPTION>
+<option value="52">52</OPTION>
+<option value="53">53</OPTION>
+<option value="54">54</OPTION>
+<option value="55">55</OPTION>
+<option value="56">56</OPTION>
+<option value="57">57</OPTION>
+<option value="58">58</OPTION>
+<option value="59">59</OPTION>
+<option value="60">60</OPTION>
+<option value="61">61</OPTION>
+<option value="62">62</OPTION>
+<option value="63">63</OPTION>
+<option value="64">64</OPTION>
+<option value="65">65</OPTION>
+<option value="66">66</OPTION>
+<option value="67">67</OPTION>
+<option value="68">68</OPTION>
+<option value="69">69</OPTION>
+<option selected value="70">70</OPTION>
+<option value="71">71</OPTION>
+<option value="72">72</OPTION>
+<option value="73">73</OPTION>
+<option value="74">74</OPTION>
+<option value="75">75</OPTION>
+<option value="76">76</OPTION>
+<option value="77">77</OPTION>
+<option value="78">78</OPTION>
+<option value="79">79</OPTION>
+<option value="80">80</OPTION>
+<option value="81">81</OPTION>
+<option value="82">82</OPTION>
+<option value="83">83</OPTION>
+<option value="84">84</OPTION>
+<option value="85">85</OPTION>
+<option value="86">86</OPTION>
+<option value="87">87</OPTION>
+<option value="88">88</OPTION>
+<option value="89">89</OPTION>
+<option value="90">90</OPTION>
+<option value="91">91</OPTION>
+<option value="92">92</OPTION>
+<option value="93">93</OPTION>
+<option value="94">94</OPTION>
+<option value="95">95</OPTION>
+<option value="96">96</OPTION>
+<option value="97">97</OPTION>
+<option value="98">98</OPTION>
+<option value="99">99</OPTION>
+</select>&nbsp;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Was this person a parent?&nbsp;
+<select name="IsParent02" size="1">
+<option value="Y">Yes</OPTION>
+<option selected value="N">No</OPTION>
+</select><P>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please check off any and all illnesses which this family member experienced:<br>
+<table width=100% border=0>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="CVD02" value="Y"> Cardiovascular Disease CVD</td>
+<td align="left" width="40%"><p><input type="checkbox" name="ColonCancer02" value="Y"> colon cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="CAD02" value="Y"> Coronary Artery Disease CAD (or Heart attack)</td>
+<td align="left" width="40%"><p><input type="checkbox" name="IntestinalCancer02" value="Y"> intestinal cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="CVI02" value="Y"> Cardiovascular Impairments</td>
+<td align="left" width="40%"><p><input type="checkbox" name="BreastCancer02" value="Y"> breast cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="CVA02" value="Y"> Cerebrovascular Disease CVA (or Stroke)</td>
+<td align="left" width="40%"><p><input type="checkbox" name="ProstateCancer02" value="Y"> prostate cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="Diabetes02" value="Y"> Diabetes</td>
+<td align="left" width="40%"><p><input type="checkbox" name="OvarianCancer02" value="Y"> ovarian cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="KidneyDisease02" value="Y"> Kidney Disease</td>
+<td align="left" width="40%"><p><input type="checkbox" name="OtherInternalCancer02" value="Y"> other internal cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;</td>
+<td align="left" width="40%"><p><input type="checkbox" name="MalignantMelanoma02" value="Y"> malignant melanoma</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;</td>
+<td align="left" width="40%"><p><input type="checkbox" name="BasalCellCarcinoma02" value="Y"> basal cell carcinoma</td></tr>
+</table>
+
+<P>
+
+$/YoungestDeathSegment3$
+
+
+
+$YoungestContractedSegment1$
+
+<br>
+
+&nbsp;<b>Youngest Family Member to contract one of the following diseases
+<br>&nbsp;(Father, mother, brother or sister)</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please indicate the age of the youngest family member<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;who contracted any of the named illnesses which follow&nbsp;
+<select name="AgeContracted10" size="1">
+<option value="0">0</OPTION>
+<option value="1">1</OPTION>
+<option value="2">2</OPTION>
+<option value="3">3</OPTION>
+<option value="4">4</OPTION>
+<option value="5">5</OPTION>
+<option value="6">6</OPTION>
+<option value="7">7</OPTION>
+<option value="8">8</OPTION>
+<option value="9">9</OPTION>
+<option value="10">10</OPTION>
+<option value="11">11</OPTION>
+<option value="12">12</OPTION>
+<option value="13">13</OPTION>
+<option value="14">14</OPTION>
+<option value="15">15</OPTION>
+<option value="16">16</OPTION>
+<option value="17">17</OPTION>
+<option value="18">18</OPTION>
+<option value="19">19</OPTION>
+<option value="20">20</OPTION>
+<option value="21">21</OPTION>
+<option value="22">22</OPTION>
+<option value="23">23</OPTION>
+<option value="24">24</OPTION>
+<option value="25">25</OPTION>
+<option value="26">26</OPTION>
+<option value="27">27</OPTION>
+<option value="28">28</OPTION>
+<option value="29">29</OPTION>
+<option value="30">30</OPTION>
+<option value="31">31</OPTION>
+<option value="32">32</OPTION>
+<option value="33">33</OPTION>
+<option value="34">34</OPTION>
+<option value="35">35</OPTION>
+<option value="36">36</OPTION>
+<option value="37">37</OPTION>
+<option value="38">38</OPTION>
+<option value="39">39</OPTION>
+<option value="40">40</OPTION>
+<option value="41">41</OPTION>
+<option value="42">42</OPTION>
+<option value="43">43</OPTION>
+<option value="44">44</OPTION>
+<option value="45">45</OPTION>
+<option value="46">46</OPTION>
+<option value="47">47</OPTION>
+<option value="48">48</OPTION>
+<option value="49">49</OPTION>
+<option value="50">50</OPTION>
+<option value="51">51</OPTION>
+<option value="52">52</OPTION>
+<option value="53">53</OPTION>
+<option value="54">54</OPTION>
+<option value="55">55</OPTION>
+<option value="56">56</OPTION>
+<option value="57">57</OPTION>
+<option value="58">58</OPTION>
+<option value="59">59</OPTION>
+<option value="60">60</OPTION>
+<option value="61">61</OPTION>
+<option value="62">62</OPTION>
+<option value="63">63</OPTION>
+<option value="64">64</OPTION>
+<option value="65">65</OPTION>
+<option value="66">66</OPTION>
+<option value="67">67</OPTION>
+<option value="68">68</OPTION>
+<option value="69">69</OPTION>
+<option selected value="70">70</OPTION>
+<option value="71">71</OPTION>
+<option value="72">72</OPTION>
+<option value="73">73</OPTION>
+<option value="74">74</OPTION>
+<option value="75">75</OPTION>
+<option value="76">76</OPTION>
+<option value="77">77</OPTION>
+<option value="78">78</OPTION>
+<option value="79">79</OPTION>
+<option value="80">80</OPTION>
+<option value="81">81</OPTION>
+<option value="82">82</OPTION>
+<option value="83">83</OPTION>
+<option value="84">84</OPTION>
+<option value="85">85</OPTION>
+<option value="86">86</OPTION>
+<option value="87">87</OPTION>
+<option value="88">88</OPTION>
+<option value="89">89</OPTION>
+<option value="90">90</OPTION>
+<option value="91">91</OPTION>
+<option value="92">92</OPTION>
+<option value="93">93</OPTION>
+<option value="94">94</OPTION>
+<option value="95">95</OPTION>
+<option value="96">96</OPTION>
+<option value="97">97</OPTION>
+<option value="98">98</OPTION>
+<option value="99">99</OPTION>
+</select>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Was this person a parent?&nbsp;
+<select name="IsParent10" size="1">
+<option value="Y">Yes</OPTION>
+<option selected value="N">No</OPTION>
+</select><P>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please check off any and all illnesses which this family member experienced:<br>
+<table width=100% border=0>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="CVD10" value="Y"> Cardiovascular Disease CVD</td>
+<td align="left" width="40%"><p><input type="checkbox" name="ColonCancer10" value="Y"> colon cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="CAD10" value="Y"> Coronary Artery Disease CAD (or Heart attack)</td>
+<td align="left" width="40%"><p><input type="checkbox" name="IntestinalCancer10" value="Y"> intestinal cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="CVI10" value="Y"> Cardiovascular Impairments</td>
+<td align="left" width="40%"><p><input type="checkbox" name="BreastCancer10" value="Y"> breast cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="CVA10" value="Y"> Cerebrovascular Disease CVA (or Stroke)</td>
+<td align="left" width="40%"><p><input type="checkbox" name="ProstateCancer10" value="Y"> prostate cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="Diabetes10" value="Y"> Diabetes</td>
+<td align="left" width="40%"><p><input type="checkbox" name="OvarianCancer10" value="Y"> ovarian cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="KidneyDisease10" value="Y"> Kidney Disease</td>
+<td align="left" width="40%"><p><input type="checkbox" name="OtherInternalCancer10" value="Y"> other internal cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;</td>
+<td align="left" width="40%"><p><input type="checkbox" name="MalignantMelanoma10" value="Y"> malignant melanoma</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;</td>
+<td align="left" width="40%"><p><input type="checkbox" name="BasalCellCarcinoma10" value="Y"> basal cell carcinoma</td></tr>
+</table>
+
+<P>
+
+$/YoungestContractedSegment1$
+
+
+
+
+$YoungestContractedSegment2$
+
+<br>
+
+&nbsp;<b>2nd Youngest Family Member to contract one of the following diseases
+<br>&nbsp;(Father, mother, brother or sister)</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please indicate the age of the youngest family member<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;who contracted any of the named illnesses which follow&nbsp;
+<select name="AgeContracted11" size="1">
+<option value="0">0</OPTION>
+<option value="1">1</OPTION>
+<option value="2">2</OPTION>
+<option value="3">3</OPTION>
+<option value="4">4</OPTION>
+<option value="5">5</OPTION>
+<option value="6">6</OPTION>
+<option value="7">7</OPTION>
+<option value="8">8</OPTION>
+<option value="9">9</OPTION>
+<option value="10">10</OPTION>
+<option value="11">11</OPTION>
+<option value="12">12</OPTION>
+<option value="13">13</OPTION>
+<option value="14">14</OPTION>
+<option value="15">15</OPTION>
+<option value="16">16</OPTION>
+<option value="17">17</OPTION>
+<option value="18">18</OPTION>
+<option value="19">19</OPTION>
+<option value="20">20</OPTION>
+<option value="21">21</OPTION>
+<option value="22">22</OPTION>
+<option value="23">23</OPTION>
+<option value="24">24</OPTION>
+<option value="25">25</OPTION>
+<option value="26">26</OPTION>
+<option value="27">27</OPTION>
+<option value="28">28</OPTION>
+<option value="29">29</OPTION>
+<option value="30">30</OPTION>
+<option value="31">31</OPTION>
+<option value="32">32</OPTION>
+<option value="33">33</OPTION>
+<option value="34">34</OPTION>
+<option value="35">35</OPTION>
+<option value="36">36</OPTION>
+<option value="37">37</OPTION>
+<option value="38">38</OPTION>
+<option value="39">39</OPTION>
+<option value="40">40</OPTION>
+<option value="41">41</OPTION>
+<option value="42">42</OPTION>
+<option value="43">43</OPTION>
+<option value="44">44</OPTION>
+<option value="45">45</OPTION>
+<option value="46">46</OPTION>
+<option value="47">47</OPTION>
+<option value="48">48</OPTION>
+<option value="49">49</OPTION>
+<option value="50">50</OPTION>
+<option value="51">51</OPTION>
+<option value="52">52</OPTION>
+<option value="53">53</OPTION>
+<option value="54">54</OPTION>
+<option value="55">55</OPTION>
+<option value="56">56</OPTION>
+<option value="57">57</OPTION>
+<option value="58">58</OPTION>
+<option value="59">59</OPTION>
+<option value="60">60</OPTION>
+<option value="61">61</OPTION>
+<option value="62">62</OPTION>
+<option value="63">63</OPTION>
+<option value="64">64</OPTION>
+<option value="65">65</OPTION>
+<option value="66">66</OPTION>
+<option value="67">67</OPTION>
+<option value="68">68</OPTION>
+<option value="69">69</OPTION>
+<option selected value="70">70</OPTION>
+<option value="71">71</OPTION>
+<option value="72">72</OPTION>
+<option value="73">73</OPTION>
+<option value="74">74</OPTION>
+<option value="75">75</OPTION>
+<option value="76">76</OPTION>
+<option value="77">77</OPTION>
+<option value="78">78</OPTION>
+<option value="79">79</OPTION>
+<option value="80">80</OPTION>
+<option value="81">81</OPTION>
+<option value="82">82</OPTION>
+<option value="83">83</OPTION>
+<option value="84">84</OPTION>
+<option value="85">85</OPTION>
+<option value="86">86</OPTION>
+<option value="87">87</OPTION>
+<option value="88">88</OPTION>
+<option value="89">89</OPTION>
+<option value="90">90</OPTION>
+<option value="91">91</OPTION>
+<option value="92">92</OPTION>
+<option value="93">93</OPTION>
+<option value="94">94</OPTION>
+<option value="95">95</OPTION>
+<option value="96">96</OPTION>
+<option value="97">97</OPTION>
+<option value="98">98</OPTION>
+<option value="99">99</OPTION>
+</select>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Was this person a parent?&nbsp;
+<select name="IsParent11" size="1">
+<option value="Y">Yes</OPTION>
+<option selected value="N">No</OPTION>
+</select><P>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please check off any and all illnesses which this family member experienced:<br>
+<table width=100% border=0>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="CVD11" value="Y"> Cardiovascular Disease CVD</td>
+<td align="left" width="40%"><p><input type="checkbox" name="ColonCancer11" value="Y"> colon cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="CAD11" value="Y"> Coronary Artery Disease CAD (or Heart attack)</td>
+<td align="left" width="40%"><p><input type="checkbox" name="IntestinalCancer11" value="Y"> intestinal cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="CVI11" value="Y"> Cardiovascular Impairments</td>
+<td align="left" width="40%"><p><input type="checkbox" name="BreastCancer11" value="Y"> breast cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="CVA11" value="Y"> Cerebrovascular Disease CVA (or Stroke)</td>
+<td align="left" width="40%"><p><input type="checkbox" name="ProstateCancer11" value="Y"> prostate cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="Diabetes11" value="Y"> Diabetes</td>
+<td align="left" width="40%"><p><input type="checkbox" name="OvarianCancer11" value="Y"> ovarian cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="KidneyDisease11" value="Y"> Kidney Disease</td>
+<td align="left" width="40%"><p><input type="checkbox" name="OtherInternalCancer11" value="Y"> other internal cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;</td>
+<td align="left" width="40%"><p><input type="checkbox" name="MalignantMelanoma11" value="Y"> malignant melanoma</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;</td>
+<td align="left" width="40%"><p><input type="checkbox" name="BasalCellCarcinoma11" value="Y"> basal cell carcinoma</td></tr>
+</table>
+
+<P>
+
+$/YoungestContractedSegment2$
+
+
+
+
+$YoungestContractedSegment3$
+
+<br>
+
+&nbsp;<b>3rd Youngest Family Member to contract one of the following diseases
+<br>&nbsp;(Father, mother, brother or sister)</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please indicate the age of the youngest family member<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;who contracted any of the named illnesses which follow&nbsp;
+<select name="AgeContracted12" size="1">
+<option value="0">0</OPTION>
+<option value="1">1</OPTION>
+<option value="2">2</OPTION>
+<option value="3">3</OPTION>
+<option value="4">4</OPTION>
+<option value="5">5</OPTION>
+<option value="6">6</OPTION>
+<option value="7">7</OPTION>
+<option value="8">8</OPTION>
+<option value="9">9</OPTION>
+<option value="10">10</OPTION>
+<option value="11">11</OPTION>
+<option value="12">12</OPTION>
+<option value="13">13</OPTION>
+<option value="14">14</OPTION>
+<option value="15">15</OPTION>
+<option value="16">16</OPTION>
+<option value="17">17</OPTION>
+<option value="18">18</OPTION>
+<option value="19">19</OPTION>
+<option value="20">20</OPTION>
+<option value="21">21</OPTION>
+<option value="22">22</OPTION>
+<option value="23">23</OPTION>
+<option value="24">24</OPTION>
+<option value="25">25</OPTION>
+<option value="26">26</OPTION>
+<option value="27">27</OPTION>
+<option value="28">28</OPTION>
+<option value="29">29</OPTION>
+<option value="30">30</OPTION>
+<option value="31">31</OPTION>
+<option value="32">32</OPTION>
+<option value="33">33</OPTION>
+<option value="34">34</OPTION>
+<option value="35">35</OPTION>
+<option value="36">36</OPTION>
+<option value="37">37</OPTION>
+<option value="38">38</OPTION>
+<option value="39">39</OPTION>
+<option value="40">40</OPTION>
+<option value="41">41</OPTION>
+<option value="42">42</OPTION>
+<option value="43">43</OPTION>
+<option value="44">44</OPTION>
+<option value="45">45</OPTION>
+<option value="46">46</OPTION>
+<option value="47">47</OPTION>
+<option value="48">48</OPTION>
+<option value="49">49</OPTION>
+<option value="50">50</OPTION>
+<option value="51">51</OPTION>
+<option value="52">52</OPTION>
+<option value="53">53</OPTION>
+<option value="54">54</OPTION>
+<option value="55">55</OPTION>
+<option value="56">56</OPTION>
+<option value="57">57</OPTION>
+<option value="58">58</OPTION>
+<option value="59">59</OPTION>
+<option value="60">60</OPTION>
+<option value="61">61</OPTION>
+<option value="62">62</OPTION>
+<option value="63">63</OPTION>
+<option value="64">64</OPTION>
+<option value="65">65</OPTION>
+<option value="66">66</OPTION>
+<option value="67">67</OPTION>
+<option value="68">68</OPTION>
+<option value="69">69</OPTION>
+<option selected value="70">70</OPTION>
+<option value="71">71</OPTION>
+<option value="72">72</OPTION>
+<option value="73">73</OPTION>
+<option value="74">74</OPTION>
+<option value="75">75</OPTION>
+<option value="76">76</OPTION>
+<option value="77">77</OPTION>
+<option value="78">78</OPTION>
+<option value="79">79</OPTION>
+<option value="80">80</OPTION>
+<option value="81">81</OPTION>
+<option value="82">82</OPTION>
+<option value="83">83</OPTION>
+<option value="84">84</OPTION>
+<option value="85">85</OPTION>
+<option value="86">86</OPTION>
+<option value="87">87</OPTION>
+<option value="88">88</OPTION>
+<option value="89">89</OPTION>
+<option value="90">90</OPTION>
+<option value="91">91</OPTION>
+<option value="92">92</OPTION>
+<option value="93">93</OPTION>
+<option value="94">94</OPTION>
+<option value="95">95</OPTION>
+<option value="96">96</OPTION>
+<option value="97">97</OPTION>
+<option value="98">98</OPTION>
+<option value="99">99</OPTION>
+</select>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Was this person a parent?&nbsp;
+<select name="IsParent12" size="1">
+<option value="Y">Yes</OPTION>
+<option selected value="N">No</OPTION>
+</select><P>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please check off any and all illnesses which this family member experienced:<br>
+<table width=100% border=0>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="CVD12" value="Y"> Cardiovascular Disease CVD</td>
+<td align="left" width="40%"><p><input type="checkbox" name="ColonCancer12" value="Y"> colon cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="CAD12" value="Y"> Coronary Artery Disease CAD (or Heart attack)</td>
+<td align="left" width="40%"><p><input type="checkbox" name="IntestinalCancer12" value="Y"> intestinal cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="CVI12" value="Y"> Cardiovascular Impairments</td>
+<td align="left" width="40%"><p><input type="checkbox" name="BreastCancer12" value="Y"> breast cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="CVA12" value="Y"> Cerebrovascular Disease CVA (or Stroke)</td>
+<td align="left" width="40%"><p><input type="checkbox" name="ProstateCancer12" value="Y"> prostate cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="Diabetes12" value="Y"> Diabetes</td>
+<td align="left" width="40%"><p><input type="checkbox" name="OvarianCancer12" value="Y"> ovarian cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="KidneyDisease12" value="Y"> Kidney Disease</td>
+<td align="left" width="40%"><p><input type="checkbox" name="OtherInternalCancer12" value="Y"> other internal cancer</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;</td>
+<td align="left" width="40%"><p><input type="checkbox" name="MalignantMelanoma12" value="Y"> malignant melanoma</td></tr>
+<tr><td align="left" width="60%"><p>&nbsp;</td>
+<td align="left" width="40%"><p><input type="checkbox" name="BasalCellCarcinoma12" value="Y"> basal cell carcinoma</td></tr>
+</table>
+
+$/YoungestContractedSegment3$
+
+<br><br>
+
+$/FamilySegment$
+</td>
+</tr>
+
+
+<tr>
+<td class="default_header"> 
+<input type="submit" name="CqsComparison" value="Click Here"> to see your results</td>
+</tr>
+
+</table>
+
+<!-- Pass some hidden values onto the next page -->
+<input type="hidden" name="State" value="$origstate$">
+<input type="hidden" name="Birthday" value="$origday$">
+<input type="hidden" name="BirthMonth" value="$origmonth$">
+<input type="hidden" name="BirthYear" value="$origyear$">
+<input type="hidden" name="Health" value="$orighealth$">
+<input type="hidden" name="FaceAmount" value="$origface$">
+<input type="hidden" name="Sex" value="$origsex$">
+<input type="hidden" name="Smoker" value="$origsmoker$">
+<input type="hidden" name="Category" value="$origcat$">
+<input type="hidden" name="UserLocation" value="$userlocation$">
+<input type="hidden" name="TEMPLATEFILE" value="$templatefile$">
+<input type="hidden" name="HTEMPLATEFILE" value="$htemplatefile$">
+<input type="hidden" name="ZipCode" value="$zipcode$">
+<input type="hidden" name="SortOverride1" value="$origsortoverride1$">
+<input type="hidden" name="ModeUsed" value="$origmodeused$">
+
+
+
+
+
+
+<!-- pass some environment variables onto the next page -->
+<input type="hidden" name="State" value="$origstate$">
+<input type="hidden" name="Birthday" value="$origday$">
+<input type="hidden" name="BirthMonth" value="$origmonth$">
+<input type="hidden" name="BirthYear" value="$origyear$">
+<input type="hidden" name="Health" value="$orighealth$">
+<input type="hidden" name="FaceAmount" value="$newface$">
+<input type="hidden" name="Sex" value="$origsex$">
+<input type="hidden" name="Smoker" value="$origsmoker$">
+<input type="hidden" name="NewCategory" value="$origcat$">
+<input type="hidden" name="ModeUsed" value="$origmodeused$">
+<input type="hidden" name="EmbeddedAccums" value="ON">
+<input type="hidden" name="EmbeddedAccumColor" value="#FF0000">
+<input type="hidden" name="UserLocation" value="$userlocation$">
+<input type="hidden" name="TEMPLATEFILE" value="$templatefile$">
+<input type="hidden" name="HTEMPLATEFILE" value="$htemplatefile$">
+<input type="hidden" name="ZipCode" value="$zipcode$">
+<input type="hidden" name="MaxNumResults" value="$maxnumresults$">
+
+<input type="hidden" name="GoColor" value="CCFFCC">
+<input type="hidden" name="NoGoColor" value="FFDDDD">
+<input type="hidden" name="DoNotKnowColor" value="">
+<input type="hidden" name="GoString" value="../../images/go.bmp">
+<input type="hidden" name="NoGoString" value="../../images/no.bmp">
+<input type="hidden" name="DoNotKnowString" value="../../images/dk.bmp">
+<input type="hidden" name="NoRedX" value="ON">
+<input type="hidden" name="SortByHealth" value="OFF">
+<input type="hidden" name="RejectReasonBr" value="OFF">
+<input type="hidden" name="GoMessage" value="Based upon what you told the Health Analyzer, this premium is available">
+<input type="hidden" name="DoNotKnowMessage" value="The Health Analyzer does not have enough information from the company to make a determination">
+
+<input type="hidden" name="DoSmokingTobacco" value="$origdosmokingtobacco$">
+<input type="hidden" name="DoHeightWeight" value="$origdoheightweight$">
+<input type="hidden" name="DoBloodPressure" value="$origdobloodpressure$">
+<input type="hidden" name="DoCholesterol" value="$origdocholesterol$">
+<input type="hidden" name="DoDriving" value="$origdodriving$">
+<input type="hidden" name="DoFamily" value="$origdofamily$">
+<input type="hidden" name="DoCigarettes" value="$origdocigarettes$">
+<input type="hidden" name="DoCigars" value="$origdocigars$">
+<input type="hidden" name="DoPipe" value="$origdopipe$">
+<input type="hidden" name="DoChewingTobacco" value="$origdochewingtobacco$">
+<input type="hidden" name="DoNicotinePatchesOrGum" value="$origdonicotinepatchesorgum$">
+
+<input type="hidden" name="Weight" value="$origweight$">
+<input type="hidden" name="Feet" value="$origfeet$">
+<input type="hidden" name="Inches" value="$originches$">
+
+<input type="hidden" name="Systolic" value="$origsystolic$">
+<input type="hidden" name="Dystolic" value="$origdystolic$">
+<input type="hidden" name="BloodPressureMedication" value="$origbloodpressuremedication$">
+
+<input type="hidden" name="CholesterolLevel" value="$origcholesterollevel$">
+<input type="hidden" name="HDLRatio" value="$orighdlratio$">
+<input type="hidden" name="CholesterolMedication" value="$origcholesterolmedication$">
+
+<input type="hidden" name="HadDriversLicense" value="$orighaddriverslicense$">
+<input type="hidden" name="MovingViolations0" value="$origmovingviolations0$">
+<input type="hidden" name="MovingViolations1" value="$origmovingviolations1$">
+<input type="hidden" name="MovingViolations2" value="$origmovingviolations2$">
+<input type="hidden" name="MovingViolations3" value="$origmovingviolations3$">
+<input type="hidden" name="MovingViolations4" value="$origmovingviolations4$">
+<input type="hidden" name="RecklessConviction" value="$origrecklessconviction$">
+<input type="hidden" name="DwiConviction" value="$origdwiconviction$">
+<input type="hidden" name="SuspendedConviction" value="$origsuspendedconviction$">
+<input type="hidden" name="MoreThanOneAccident" value="$origmorethanoneaccident$">
+
+<input type="hidden" name="NumDeaths" value="$orignumdeaths$">
+<input type="hidden" name="NumContracted" value="$orignumcontracted$">
+
+<input type="hidden" name="DoSubAbuse" value="$origdosubabuse$">
+<input type="hidden" name="Alcohol" value="$origalcohol$">
+<input type="hidden" name="AlcYearsSinceTreatment" value="$origalcyearssincetreatment$">
+<input type="hidden" name="Drugs" value="$origdrugs$">
+<input type="hidden" name="DrugsYearsSinceTreatment" value="$origdrugsyearssincetreatment$">
+
+</form>
+
+</body>
+</html>

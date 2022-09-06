@@ -1,0 +1,12 @@
+User-agent: *
+
+Disallow: /no-exam/
+Disallow: /life-insurance-quotes/
+Disallow: /request/
+Disallow: /test2/
+Disallow: /test3/
+Disallow: /test1/
+Disallow: /testpage/
+Disallow: /quote-results/
+Disallow: /request-app/
+Disallow: /under-review/

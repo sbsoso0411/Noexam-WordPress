@@ -1,0 +1,7 @@
+#comments start with #
+#website line is first non-comment line
+http://www.your_website.com/about_us.html
+#email address is next non-comment line
+agent@your_website.com
+#CSS location is the next non-comment line
+styles_website.css

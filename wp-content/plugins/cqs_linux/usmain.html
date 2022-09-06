@@ -1,0 +1,497 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+   <title>Life Insurance Quotes</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">   
+   <link href="/css/styles_website.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<font face="Book Antiqua" size="7"><b>COMPULIFE</b></font><sup><sup><sup><sup><font size="3">&nbsp;&reg;</font></sup></sup></sup></sup>
+<font size="3" face="Arial">&nbsp;&nbsp;&nbsp;<b><i>on-line life insurance quotes</i></b></font>
+
+<hr size="4" style="color: #FF0000;"></hr>
+
+<form name="startform" action="/cgi-bin/cqsl.cgi" method="POST">
+
+<p><b>This sample start page uses U.S. Categories.</b>
+<p><b>The Canadian sample start page is canmain.html</b>
+
+<br><br>
+
+<hr></hr>
+
+<!-- uncomment the UserLocation line if you want to use a different directory for 
+your *.HTM files.  The *.HTM files will be in the COMPLIFE\USER\USER2 directory -->
+<!-- <input type="hidden" name="UserLocation" value="USER2"> -->
+
+
+<!-- Select a Template File For Your Results
+
+Use only one of the following template values for your results.  
+
+If you want to see an example of what the result templates look like, please visit: http://www.compulife.net/website/1
+
+IMPORTANT - Template names must be ALL CAPITAL LETTERS.
+
+Your Template Value Choices Are:
+
+TEMPLATE.HTM
+TEMPLATE_REQUEST_AP.HTM
+TEMPLATE_LOGO.HTM
+TEMPLATE_LOGO_0.HTM
+TEMPLATE_LOGO_1.HTM
+TEMPLATE_LOGO_2.HTM
+TEMPLATE_MORE_INFO.HTM
+TEMPLATE_MORE_INFO_LOGO.HTM
+-->
+
+<input type="hidden" name="TEMPLATEFILE" value="TEMPLATE.HTM">
+
+<!-- Select a Health Template File For Your Results
+
+Hint: It will match your Template File name with an "H" in front of the value -->
+
+<input type="hidden" name="HTEMPLATEFILE" value="HTEMPLATE.HTM">
+
+<br><br>
+
+<table align="center" class="default_table">
+
+<tr class="default_header">
+<td colspan="2" class="default_header">Instant Life Insurance Quote</td>
+</tr>
+
+
+<tr>
+<td style="text-align:right;" class="gray_cell"><b>State:</b>&nbsp;</td>
+
+<td class="gray_cell"><select name="State" size="1">
+<option value="1">Alabama</option>
+<option value="2">Alaska</option>
+<option value="3">Arizona</option>
+<option value="4">Arkansas</option>
+<option selected value="5">California</option>
+<option value="6">Colorado</option>
+<option value="7">Connecticut</option>
+<option value="8">Delaware</option>
+<option value="9">Dist.Columbia</option>
+<option value="10">Florida</option>
+<option value="11">Georgia</option>
+<option value="12">Hawaii</option>
+<option value="13">Idaho</option>
+<option value="14">Illinois</option>
+<option value="15">Indiana</option>
+<option value="16">Iowa</option>
+<option value="17">Kansas</option>
+<option value="18">Kentucky</option>
+<option value="19">Louisiana</option>
+<option value="20">Maine</option>
+<option value="21">Maryland</option>
+<option value="22">Massachusetts</option>
+<option value="23">Michigan</option>
+<option value="24">Minnesota</option>
+<option value="25">Mississippi</option>
+<option value="26">Missouri</option>
+<option value="27">Montana</option>
+<option value="28">Nebraska</option>
+<option value="29">Nevada</option>
+<option value="30">New Hampshire</option>
+<option value="31">New Jersey</option>
+<option value="32">New Mexico</option>
+<option value="52">NY Non-Bus</option>
+<option value="33">NY Business</option>
+<option value="34">North Carolina</option>
+<option value="35">North Dakota</option>
+<option value="36">Ohio</option>
+<option value="37">Oklahoma</option>
+<option value="38">Oregon</option>
+<option value="39">Pennsylvania</option>
+<option value="40">Rhode Island</option>
+<option value="41">South Carolina</option>
+<option value="42">South Dakota</option>
+<option value="43">Tennessee</option>
+<option value="44">Texas</option>
+<option value="45">Utah</option>
+<option value="46">Vermont</option>
+<option value="47">Virginia</option>
+<option value="48">Washington</option>
+<option value="49">West Virginia</option>
+<option value="50">Wisconsin</option>
+<option value="51">Wyoming</option>
+<option value="53">Guam</option>
+<option value="54">Puerto Rico</option>
+<option value="55">Virgin Islands</option>
+<option value="56">Amer. Samoa</option></select>
+
+</td>
+</tr>
+
+<tr>
+<td style="text-align:right;" class="gray_cell"><b>Birthdate:</b>&nbsp;
+</td>
+
+<td class="gray_cell">
+<select name="BirthMonth">
+<option value="1">January</option>
+<option value="2">February</option>
+<option value="3">March</option>
+<option value="4">April</option>
+<option value="5">May</option>
+<option selected value="6">June</option>
+<option value="7">July</option>
+<option value="8">August</option>
+<option value="9">September</option>
+<option value="10">October</option>
+<option value="11">November</option>
+<option value="12">December</option></select>
+
+<select name="Birthday" >
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option selected>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+<option>28</option>
+<option>29</option>
+<option>30</option>
+<option>31</option></select>
+
+<select name="BirthYear" >
+<option>1910</option>
+<option>1911</option>
+<option>1912</option>
+<option>1913</option>
+<option>1914</option>
+<option>1915</option>
+<option>1916</option>
+<option>1917</option>
+<option>1918</option>
+<option>1919</option>
+<option>1920</option>
+<option>1921</option>
+<option>1922</option>
+<option>1923</option>
+<option>1924</option>
+<option>1925</option>
+<option>1926</option>
+<option>1927</option>
+<option>1928</option>
+<option>1929</option>
+<option>1930</option>
+<option>1931</option>
+<option>1932</option>
+<option>1933</option>
+<option>1934</option>
+<option>1935</option>
+<option>1936</option>
+<option>1937</option>
+<option>1938</option>
+<option>1939</option>
+<option>1940</option>
+<option>1941</option>
+<option>1942</option>
+<option>1943</option>
+<option>1944</option>
+<option>1945</option>
+<option>1946</option>
+<option>1947</option>
+<option>1948</option>
+<option>1949</option>
+<option>1950</option>
+<option>1951</option>
+<option>1952</option>
+<option>1953</option>
+<option>1954</option>
+<option>1955</option>
+<option>1956</option>
+<option>1957</option>
+<option>1958</option>
+<option>1959</option>
+<option>1960</option>
+<option>1961</option>
+<option>1962</option>
+<option>1963</option>
+<option>1964</option>
+<option>1965</option>
+<option>1966</option>
+<option>1967</option>
+<option>1968</option>
+<option>1969</option>
+<option selected>1970</option>
+<option>1971</option>
+<option>1972</option>
+<option>1973</option>
+<option>1974</option>
+<option>1975</option>
+<option>1976</option>
+<option>1977</option>
+<option>1978</option>
+<option>1979</option>
+<option>1980</option>
+<option>1981</option>
+<option>1982</option>
+<option>1983</option>
+<option>1984</option>
+<option>1985</option>
+<option>1986</option>
+<option>1987</option>
+<option>1988</option>
+<option>1989</option>
+<option>1990</option>
+<option>1991</option>
+<option>1992</option>
+<option>1993</option>
+<option>1994</option>
+<option>1995</option>
+<option>1996</option>
+<option>1997</option>
+<option>1998</option>
+<option>1999</option>
+<option>2000</option>
+<option>2001</option>
+<option>2002</option>
+<option>2003</option>
+<option>2004</option>
+<option>2005</option>
+<option>2006</option>
+<option>2007</option>
+<option>2008</option>
+</select>
+
+</td>
+</tr>
+
+
+
+<tr>
+<td style="text-align:right;" class="gray_cell"><b>Gender:</b>&nbsp;</td>
+
+<td class="gray_cell">
+Male&nbsp;<input type="radio" checked name="Sex" value="M">&nbsp;&nbsp;&nbsp;
+Female&nbsp;<input type="radio" name="Sex" value="F">
+</td>
+</tr>
+
+
+
+<tr>
+<td style="text-align:right;" class="gray_cell"><b>Smoker/Tobacco:</b>&nbsp;</td>
+
+<td class="gray_cell">
+Yes&nbsp;<input type="radio" name="Smoker" value="Y">&nbsp;&nbsp;
+No&nbsp;<input type="radio" checked name="Smoker" value="N">
+</td>
+</tr>
+
+
+
+
+<tr>
+<td style="text-align:right;" class="gray_cell"><b>Health Class:</b>&nbsp;</td>
+
+<td class="gray_cell">
+<select name="Health" size="1" >
+<option selected value="PP">Preferred Plus</option>
+<option value="P">Preferred</option>
+<option value="RP">Regular Plus</option>
+<option value="R">Regular</option>
+</select>
+</td>
+</tr>
+
+
+<!-- NOTE: Category works as before with a few enhancements.
+
+If you're not doing multiple categories then you can follow the Category choice 
+with :20 to specify that you want the side by side view to show for 20 years
+
+If you are doing a multiple categories view, follow the Z with :123 
+where 1,2,3 will be the categories to lookup.  You can choose which ever valid 
+categories you wish up to a maximum of 6.  You can further follow that by :20 
+to indicate that you want to show results for 20 years in the side by side view
+
+NOTE: The COMPULIFE category system has changed and to find the appropriate letters for your categories you need to use your Compulife Quote Software | Manage 
+Product Database | List all Categories there is a tab which will show you html 
+code for your categories -->
+
+<tr>
+<td style="text-align:right;" class="gray_cell">&nbsp;<b>Type of Insurance:</b>&nbsp;</td>
+
+<td class="gray_cell">
+<select name="NewCategory">
+<option value="1">1 Year Level Term</option>
+<option value="2">5 Year Level Term</option>
+<option value="3">10 Year Level Term</option>
+<option value="4">15 Year Level Term</option>
+<option SELECTED value="5">20 Year Level Term</option>
+<option value="6">25 Year Level Term</option>
+<option value="7">30 Year Level Term</option>
+<option value="T">To Age 65 Level</option>
+<option value="U">To Age 70 Level</option>
+<option value="V">To Age 75 Level</option>
+<option value="A">To Age 80 Level</option>
+<option value="B">To Age 85 Level</option>
+<option value="C">To Age 90 Level</option>
+<option value="D">To Age 95 Level</option>
+<option value="E">To Age 100 Level</option>
+<option value="G">To Age 105 Level</option>
+<option value="H">To Age 110 Level</option>
+<option value="F">Other Term</option>
+<option value="Z:357">10, 20, 30 Year Term</option>
+<option value="Z:123456790TUVABCDEGH#10">All Level Term Products</option>
+<option value="J">15 Year Return of Premium</option>
+<option value="K">20 Year Return of Premium</option>
+<option value="L">25 Year Return of Premium</option>
+<option value="M">30 Year Return of Premium</option>
+<option value="W">To age 65 Return of Premium</option>
+<option value="X">To age 70 Return of Premium</option>
+<option value="Y">To age 75 Return of Premium</option>
+<option value="N">Other Return of Premium</option>
+<option value="Z:JKM">15, 20, 30 Year with ROP</option>
+<option value="Z:IJKLMWXYN#10">All Return of Premium Products</option>
+<option value="8">To Age 121 Level  (No Lapse U/L)</option>
+<option value="P">To Age 121 Level - Pay to 100</option>
+<option value="Q">To Age 121 Level - Pay to 65</option>
+<option value="R">To Age 121 Level - 20 Pay</option>
+<option value="S">To Age 121 Level - 10 Pay</option>
+<option value="O">To Age 121 Level - Single Pay</option>
+<option value="Z:8PQRSO#10">All To Age 121 Level Products</option>
+<!-- example of 10 verse 20 versus 30, with a maximum of 4 results
+<option value="Z:357#4">10 versus 20 versus 30</option>
+-->
+</select>&nbsp;
+</td>
+</tr>
+
+
+<tr>
+<td style="text-align:right;" class="gray_cell"><b>Face Amount:</b>&nbsp;</td>
+
+<td class="gray_cell">
+<select name="FaceAmount" size="1">
+<option value="10000">$10,000</option>
+<option value="25000">$25,000</option>
+<option value="50000">$50,000</option>
+<option value="50000">$50,000</option>
+<option value="75000">$75,000</option>
+<option value="100000">$100,000</option>
+<option value="125000">$125,000</option>
+<option value="150000">$150,000</option>
+<option value="175000">$175,000</option>
+<option value="200000">$200,000</option>
+<option value="225000">$225,000</option>
+<option value="250000">$250,000</option>
+<option value="300000">$300,000</option>
+<option value="350000">$350,000</option>
+<option value="400000">$400,000</option>
+<option value="450000">$450,000</option>
+<option selected value="500000">$500,000</option>
+<option value="550000">$550,000</option>
+<option value="600000">$600,000</option>
+<option value="650000">$650,000</option>
+<option value="700000">$700,000</option>
+<option value="750000">$750,000</option>
+<option value="800000">$800,000</option>
+<option value="900000">$900,000</option>
+<option value="1000000">$1,000,000</option>
+<option value="1100000">$1,100,000</option>
+<option value="1250000">$1,250,000</option>
+<option value="1500000">$1,500,000</option>
+<option value="1750000">$1,750,000</option>
+<option value="2000000">$2,000,000</option>
+<option value="2500000">$2,500,000</option>
+<option value="3000000">$3,000,000</option>
+<option value="4000000">$4,000,000</option>
+<option value="5000000">$5,000,000</option>
+<option value="6000000">$6,000,000</option>
+<option value="7000000">$7,000,000</option>
+<option value="8000000">$8,000,000</option>
+<option value="9000000">$9,000,000</option>
+<option value="10000000">$10,000,000</option>
+</select>
+<!-- &nbsp;&nbsp;&nbsp;or use our Income Replacement&nbsp;<input type="submit" name="IncReplace1" value=" Calculator ">  -->
+</td>
+</tr>
+
+
+<input type="hidden" name="ModeUsed" value="M">
+<!-- <tr>
+<td style="text-align:right;" class="gray_cell"><b>Payment Option:</b>&nbsp;</td>
+
+<td class="gray_cell">
+<select name="ModeUsed" size="1">
+<option value="A"> Annual </option>
+<option selected value="M"> Monthly </option>
+<option value="Q"> Quarterly </option>
+<option value="H"> Semi-Annual </option>
+</select>
+</td>
+</tr> -->
+
+
+<!-- <tr>
+<td style="text-align:right;" class="gray_cell"><b>Minimum Life Company Rating:</b>&nbsp;</td>
+
+<td class="gray_cell">
+<select name="CompRating">
+<option value="1">A++ &nbsp;&nbsp;Superior</option>
+<option value="2">A+ &nbsp;&nbsp;&nbsp;&nbsp;Superior</option>
+<option value="3">A  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Excellent</option>
+<option selected value="4">A- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Excellent</option>
+<option value="5">B++ &nbsp;Very Good</option>
+<option value="6">B+ &nbsp;&nbsp;&nbsp;&nbsp;Very Good</option>
+<option value="7">B &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adequate</option>
+<option value="8">B- &nbsp;&nbsp;&nbsp;&nbsp;Adequate</option>
+<option value="9">C++ &nbsp;Fair</option>
+<option value="10">C+ &nbsp;&nbsp;&nbsp;&nbsp;Fair</option>
+<option value="11">C &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Marginal</option>
+<option value="12">C- &nbsp;&nbsp;&nbsp;&nbsp;Marginal</option><option value="13">D &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Very Vulnerable</option><option value="14">E &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Under State Supervision</option><option value="15">F &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In Liquidation</option><option value="16">Quote all with Best Rating</option>
+</select>
+</td>
+</tr> -->
+
+
+<tr class="default_header">
+<td colspan="2">
+<input type="submit" name="CqsComparison" value=" Compare Now ">
+</td>
+</tr>
+
+</table>
+
+
+<p class="center"><b>Powered by <a class="nocolor" href="http://www.compulife.com">COMPULIFE</a><sup>&reg;</sup></b>
+
+<br><br>
+
+
+<hr></hr>
+
+</form>
+
+<P><b>COMPULIFE</b><sup><sup>®</sup></sup> is a registered trademark of Compulife Software, Inc.
+</body>
+</html>

@@ -1,0 +1,5 @@
+{
+    "require": {
+        "basecrm/basecrm-php": "^1.2"
+    }
+}

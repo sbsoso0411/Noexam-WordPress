@@ -1,0 +1,7 @@
+.content_wrapper{ display:table; width:100%;}
+.content_wrapper .left{ display:table-cell; float:none; vertical-align:top; }
+.content_wrapper .right{ display:table-cell; float:none; vertical-align:top; width:261px; padding:0 0 0 20px; }
+@media screen and (max-width: 1200px) {
+.content_wrapper .left{ float:left; width:100%; }
+.content_wrapper .right{ float:left; width:100%; padding:20px 0 0 0; }
+}

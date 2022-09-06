@@ -1,0 +1,43 @@
+/* to be depricated soon */
+
+tr#leads {
+    display: table-row !important;
+}
+
+#add-landing-page.hide-if-js {
+    display: block !important;
+}
+
+#menu-posts-landing-page .wp-submenu.wp-submenu-wrap {
+    z-index: 99999;
+}
+
+.branch-3-7 #adminmenu .menu-icon-landing-page div.wp-menu-image:before {
+display: none;
+}
+#adminmenu .menu-icon-landing-page div.wp-menu-image img{
+    display: none;
+}
+.branch-3-7 #adminmenu .menu-icon-landing-page div.wp-menu-image img {
+    display: block;
+}
+
+body #calls-to-action .toggle .switch-versions, body #landing-pages .toggle .switch-versions, body #leads .toggle .switch-versions {
+    display: none;
+}
+
+#wp-admin-bar-inbound-docs-searchform, #wp-admin-bar-inbound-leads-search {
+    margin-bottom: 10px !important;
+}
+
+.inbound-form-shortcode input {
+    overflow:hidden;
+}
+
+.inbound-form-shortcode  {
+    overflow:hidden;
+}
+
+.acf-postbox pre {
+    overflow-x: scroll !important;
+}
